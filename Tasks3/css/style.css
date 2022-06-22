@@ -1,3 +1,33 @@
 strong{
     color: red;
 }
+h1{
+    font-size: 32px;
+    font-weight: 700;
+}
+h2 {
+    font-size: 24px;
+    font-style: italic;
+}
+p{
+    font-size: 14px;
+    font-style: normal;
+}
+.clgreen {
+    color: green;
+}
+.clblue {
+    color: blue;
+}
+.clburlywood {
+    color: burlywood;
+}
+.clyellow {
+    color: yellow;
+}
+.clcyan {
+    color: cyan;
+}
+.clperu {
+color: peru;
+}
