@@ -1,0 +1,12 @@
+pre {
+    font-size: 30px;
+    color: #808080;
+    letter-spacing: 5px;
+    word-spacing: 50px;
+}
+ins+span{
+    text-decoration: overline;
+}
+.bolt {
+    font-weight: 900;
+}
