@@ -19,7 +19,11 @@ ins .prime del{
 .power{
     color: rgba(171, 27, 111, 0.3);
     }
-    pre:hover {
-       opacity: 1;
-       color: black;
-    }
+
+.opas {
+    opacity: 0;
+}
+.opas:hover {
+    opacity: 1;
+}
+   
