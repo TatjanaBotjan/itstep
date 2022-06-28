@@ -4,9 +4,22 @@ pre {
     letter-spacing: 5px;
     word-spacing: 50px;
 }
-ins+span{
+ins + span{
     text-decoration: overline;
 }
-.bolt {
+.prime {
     font-weight: 900;
 }
+ins del {
+    text-shadow: 2px 2px 4px orange;    
+}
+ins .prime del{
+    font-size: 35px;
+}
+.power{
+    color: rgba(171, 27, 111, 0.3);
+    }
+    pre:hover {
+       opacity: 1;
+       color: black;
+    }
