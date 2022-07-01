@@ -1,0 +1,17 @@
+p {
+    text-indent: 20px;
+    font-size: 14px;
+}
+h1 {
+    font-size: 24px;
+    font-family: Arima;
+    color: brown;
+}
+h2 {
+    font-size: 18px;
+    font-family: Arima;
+}
+.lfloat {
+    float: left;
+    margin: 7px 7px 7px 0;
+}
