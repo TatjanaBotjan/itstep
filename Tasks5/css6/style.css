@@ -1,0 +1,61 @@
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: 2px solid rgb(0, 0, 0);
+}
+th {
+    border: 2px solid rgb(245, 239, 239);
+}
+
+td {
+    width: 120px;
+    height: 120px;
+    border: 2px solid rgb(245, 239, 239);
+}
+.day {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+}
+.clred {
+    color: rgb(245, 14, 14);
+}
+.clgray {
+    color: rgb(162, 162, 162);
+    font-size: 50px;
+    text-align: center;
+}
+.clblack {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    text-align: center;
+}
+.holiday {
+    color: rgb(224, 17, 17);
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgb(241, 135, 135);
+    font-size: 50px;
+
+}
+.weekend {
+    color: rgb(245, 14, 14);
+}
+th {
+    background-color: rgb(213, 164, 137);
+}
+tr:nth-child(2n+2) {
+    background-color: rgb(217, 175, 111);
+}
+tr:nth-child(2n+1) {
+    background-color: rgb(241, 221, 170);
+}
+.caption {
+    color: rgb(224, 66, 13);
+    font-size: 60px;
+    font-weight: 900px;
+    text-shadow: 2px 2px 3px;
+}
+.background-image {
+    background-image:./img/Auto.jpg;
+}
