@@ -1,12 +1,12 @@
 body {
      text-align: justify;
+     margin: 10px;
     
 }
 p {
- text-indent: 20px;
+    text-indent: 20px;
     font-size: 14px;
-   
-}
+   }
 h1 {
     font-size: 24px;
     font-family: Arima;
@@ -42,9 +42,7 @@ img {
     padding:6px; 
    }
    .centrefoto {
-    width: 120px;
-    height: 120px;
-    margin: 0px auto;
+        margin: 30px;
 
    }
    p.fig {
@@ -59,21 +57,41 @@ img {
     width: 200px;
     height: 40px;
     border: 2px solid rgb(87, 85, 85);
-   background-color: rgb(218, 229, 246);
-   text-align: center;
-   color: black;
+    background-color: rgb(218, 229, 246);
+    text-align: center;
+    color: black;
 }
 
 td {
     width: 200px;
     height: 40px;   
-    
     text-align: left;
     color: black;
+    border-bottom: 1px solid blue;
 }
 tr:nth-child(2n+2) {
-        border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(204, 204, 238);
 }
-td:nth-child(2n+1) {
+td:nth-child(2) {
     border-left: 1px solid rgb(14, 67, 226);
+}
+.title {
+    font-size: 20px;
+    font-weight: 900;
+}
+.dgreen {
+    color: rgb(2, 108, 2);
+}
+tr:nth-child(2n+1) td:nth-child(3) {
+    border-left: 1px solid rgb(14, 67, 226);
+}
+tr:nth-child(2n+1) td:nth-child(4) {
+    border-left: 1px solid rgb(14, 67, 226);
+}
+.limage {
+    list-style-image: url(../img/js.png);
+    list-style: none; 
+    background: url(/example/image/book.png) no-repeat 0 50%; 
+    padding-left: 24px;
 }
