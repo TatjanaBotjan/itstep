@@ -57,5 +57,18 @@ tr:nth-child(2n+1) {
     text-shadow: 2px 2px 3px;
 }
 .background-image {
-    background-image:./img/Auto.jpg;
+    background-image: url(../img/Auto.jpg)
+    
 }
+.mbackground-image {
+    background-image: url(../img/mother.jpg);
+}
+.pbackground-image {
+    background-image: url(../img/papi\ copy.jpg);
+}
+.fsize {
+    font-size: 20px;
+    color: blue;
+    text-align: center;
+    vertical-align: bottom;
+} 
