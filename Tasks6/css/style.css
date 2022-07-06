@@ -89,12 +89,10 @@ tr:nth-child(2n+1) td:nth-child(3) {
 tr:nth-child(2n+1) td:nth-child(4) {
     border-left: 1px solid rgb(14, 67, 226);
 }
-.limage {
-    list-style-image: url(../img/js.png);
-    list-style: none; 
-    background: url(/example/image/book.png) no-repeat 0 50%; 
-    padding-left: 24px;
-}
+
 .center {
     text-align: center;
+}
+.limage {
+    list-style-image: url(../img/JS.jpg);
 }
