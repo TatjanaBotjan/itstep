@@ -19,15 +19,20 @@
     position: absolute;
 }
 .inner1{
- margin-right: 300px;
+left: -100px;
+top: -100px;
 }
 .inner2{
-margin-left: 300px;
+left: 400px;
+top: -100px;
+
 }
+
 .inner3{
-margin-top: 300px;
+    top: 400px;
+    left: -100px;
 }
 .inner4{
-margin-top: 300px;
-margin-left: 300px;
+left: 400px;
+top: 400px;
 }
