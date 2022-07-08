@@ -1,11 +1,12 @@
 body {
      text-align: justify;
-     margin: 10px;
-    
+     margin: 10px; 
 }
 p {
     text-indent: 20px;
     font-size: 14px;
+    font-style: normal;
+    letter-spacing: 1px;
 }
 h1 {
     font-size: 24px;
@@ -35,6 +36,7 @@ img {
     border:1px solid;
     padding:6px;
     border-color:rgb(147, 111, 111)
+    
 }
 .rightfoto {
     float: right;
@@ -94,13 +96,13 @@ tr:nth-child(2n+1) td:nth-child(4) {
 
 .center {
     text-align: center;
-    
+   
 }
 .limage {
     list-style-image: url(../img/JS.jpg);
 }
 .cblue {
-    color: rgb(33, 33, 248);
+    color: rgb(134, 134, 202);
 }
 div {
     width: 250px;
@@ -121,4 +123,7 @@ div {
 }
 .tshadov {
     text-shadow: 2px -2px 2px rgb(119, 114, 114);
+}
+.ltype {
+    list-style-type: circle;
 }
