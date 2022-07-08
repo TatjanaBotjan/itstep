@@ -32,14 +32,16 @@ img {
 .leftfoto {
     float:left;
     margin: 4px 4px 4px 2px;
-    border:1px solid #CCC;
+    border:1px solid;
     padding:6px;
+    border-color:rgb(147, 111, 111)
 }
 .rightfoto {
     float: right;
     margin: 10px;
-    border:1px solid #CCC;
+    border:1px solid;
     padding:6px; 
+    border-color:rgb(147, 111, 111)
    }
    .centrefoto {
         margin: 30px;
@@ -92,6 +94,7 @@ tr:nth-child(2n+1) td:nth-child(4) {
 
 .center {
     text-align: center;
+    
 }
 .limage {
     list-style-image: url(../img/JS.jpg);
@@ -102,6 +105,20 @@ tr:nth-child(2n+1) td:nth-child(4) {
 div {
     width: 250px;
     height: 100px;
-    background-color: rgb(214, 232, 245);
+    background-color: rgb(250, 208, 193);
     border: 2px solid rgb(88, 88, 88);
+}
+.clfon {
+    background: rgb(247, 236, 236);
+}
+.radius {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border:1px solid;
+    border-color:rgb(147, 111, 111)
+}
+.tshadov {
+    text-shadow: 2px -2px 2px rgb(119, 114, 114);
 }
