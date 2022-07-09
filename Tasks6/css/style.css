@@ -2,12 +2,14 @@ body {
      text-align: justify;
      margin: 10px; 
 }
+
 p {
     text-indent: 20px;
     font-size: 14px;
     font-style: normal;
     letter-spacing: 1px;
-}
+    word-wrap: normal;
+    }
 h1 {
     font-size: 24px;
     font-family: Arima;
@@ -29,41 +31,42 @@ img {
     color: brown;
 }
 
-
 .leftfoto {
     float:left;
     margin: 4px 4px 4px 2px;
     border:1px solid;
     padding:6px;
-    border-color:rgb(147, 111, 111)
-    
+    border-color:rgb(147, 111, 111);
+    opacity: 0.8;
+        
 }
 .rightfoto {
     float: right;
     margin: 10px;
     border:1px solid;
     padding:6px; 
-    border-color:rgb(147, 111, 111)
+    border-color:rgb(147, 111, 111);
+    opacity: 0.8;
    }
-   .centrefoto {
-        margin: 30px;
-
-   }
+ 
    p.fig {
     text-align: center;
    }
-   table {
+table {
     border-spacing: 0;
     border-collapse: collapse;
     border: 2px solid rgb(87, 85, 85);
+    margin-left: 50px;
+    border-bottom-color: brown;
    }
-   th {
+th {
     width: 200px;
     height: 40px;
     border: 2px solid rgb(87, 85, 85);
     background-color: rgb(218, 229, 246);
     text-align: center;
     color: black;
+    border-top-color: brown;
 }
 
 td {
@@ -72,6 +75,9 @@ td {
     text-align: left;
     color: black;
     border-bottom: 1px solid blue;
+    padding-left: 5px;
+    padding-right: 5px;
+    vertical-align: middle;
 }
 tr:nth-child(2n+2) {
     border: 1px solid rgb(255, 255, 255);
@@ -96,7 +102,7 @@ tr:nth-child(2n+1) td:nth-child(4) {
 
 .center {
     text-align: center;
-   
+      
 }
 .limage {
     list-style-image: url(../img/JS.jpg);
@@ -119,11 +125,17 @@ div {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     border:1px solid;
-    border-color:rgb(147, 111, 111)
+    border-color:rgb(147, 111, 111);
+    opacity: 0,1;
 }
 .tshadov {
     text-shadow: 2px -2px 2px rgb(119, 114, 114);
 }
 .ltype {
     list-style-type: circle;
+}
+h3 {
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    font-variant: normal;
 }
