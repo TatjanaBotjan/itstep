@@ -1,0 +1,67 @@
+div{
+    position: relative;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    font-size: 30px;
+}
+.main{
+    width: 800px;
+    height: 1600px;
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
+}
+.h1{
+    width: 200px;
+    height: 400px;
+    background: rgb(238, 148, 148);
+    line-height: 400px;
+}
+.h2{
+    width: 600px;
+    height: 400px;
+    background: rgb(139, 78, 78);
+    line-height: 400px;
+}
+.menu1{
+    width: 200px;
+    height: 600px;
+    background: rgb(207, 236, 162);
+    line-height: 600px;
+}
+.product{
+    width: 200px;
+    height: 200px;
+    background: rgb(237, 239, 110);
+    line-height: 200px;
+}
+.stocks{
+    width: 200px;
+    height: 200px;
+    background: rgb(84, 127, 228);
+    line-height: 200px;
+}
+.stock{
+    width: 200px;
+    height: 200px;
+    background: rgb(175, 130, 239);
+    line-height: 200px;
+}
+.footer1{
+    width: 200px;
+    height: 200px;
+    background: rgb(239, 95, 105);
+    line-height: 200px;
+}
+.footer2{
+    width: 600px;
+    height: 100px;
+    background: rgb(130, 28, 111);
+}
+.footer3{
+    width: 600px;
+    height: 100px;
+    background: rgb(239, 138, 221);
+}

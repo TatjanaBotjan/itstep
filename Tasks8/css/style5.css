@@ -20,15 +20,8 @@
     float: left;
 }
 .inner1{
+    margin-right: 200px;
+}
+.ml100{
     margin-left: 100px;
-}
-.inner2{
-right: 100px;
-}
-.inner3{
-margin-left: 300px;
-top: -100px;
-}
-.inner4{
-    top: -100px;
 }
