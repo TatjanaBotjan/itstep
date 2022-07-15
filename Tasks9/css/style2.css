@@ -1,5 +1,4 @@
-div{
-    
+div{ 
     float: left;
     text-align: center;
     line-height: 100px;
@@ -9,7 +8,7 @@ div{
 .main{
     width: 800px;
     height: 1200px;
-    position: absolute;
+    position: relative;
     top: calc(50% - 200px);
     left: calc(50% - 200px);
 }
@@ -63,16 +62,19 @@ div{
     background: rgb(31, 239, 3); 
 }
 .footer{
-    
+    position: relative;
     width: 800px;
     height: 200px;
-    
+    float: left;  
 }
 .feedback{
     width: 400px;
     height: 100px;
-    background: rgb(232, 6, 138);
-    
+    background: rgb(232, 6, 138); 
+    position: relative;
+    float: left;
+    margin-left: 200px;
+    margin-top: -200px;
 }
 .info{
     width: 200px;
@@ -80,8 +82,21 @@ div{
     background: rgb(103, 79, 79);
     float: right;
     margin-right: 0px;
-    margin-top: -100px;
+    margin-top: -200px;
 }
-.purchase{
-    
+.payment{
+   width: 200px; 
+   height: 100px;
+   background: rgb(66, 38, 99);
+   position: relative;
+   float: left;
+   margin: -100px 0 0 200px; 
+}
+.delivery{
+   width: 200px; 
+   height: 100px;
+   background: rgb(194, 163, 230);
+   position: relative;
+   float: left;
+   margin: -100px 0 0 400px;
 }
