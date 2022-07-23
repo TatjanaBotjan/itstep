@@ -1,7 +1,7 @@
 .cl-1{
     background: #cd5c5c;
 }
-.cl-2{
+.cl-1{
     background: #dc143c;
 }
 .cl-3{
@@ -17,17 +17,26 @@
     background: #c71585;
 }
 .cl-7{
-    background: #adff2f;
-}
-.cl-8{
-    background: #00ff00;
-}
-.cl-9{
     background: #32cd32;
 }
-.cl-10{
+.cl-8{
     background: #00fa9a;
 }
-.cl-11{
+.cl-9{
     background: #2e8b57;
+}
+.cl-10{
+    background: #006400;
+}
+.cl-11{
+    background: #9acd32;
+}
+.cl-12{
+    background: #808000;
+}
+.cl-13{
+    background: #adff2f;
+}
+.cl-14{
+    background: #00ff00;
 }
