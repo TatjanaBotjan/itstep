@@ -7,8 +7,6 @@
     background: #000;
     padding: 20px;
 }
-
-
 .portfolio-title{
     display: flex;
     flex-direction: column; 
@@ -316,7 +314,7 @@
         .image{
             position: relative;
             float: left;
-        
+
             height: 300px;
             display: flex;
             flex-wrap: wrap;
@@ -376,43 +374,46 @@
         }
        
        
-        }
+    }
 
-        @media (max-width:600px) {
-        .team-container{
+        .team-row{
             display: flex;
             flex-wrap: wrap;
-            
+            padding: 30px 0;
+            justify-content: space-evenly;
             width: 90%;
+            margin: 50px 0; 
+            
         }
         .map {
             float: left;
-            max-width: 50%;
-            margin: 58px;
-            object-fit: cover;
-        
-       
-            }
+            width: 340px;
+            height: 294px;
             
-          .content{
-            max-width: 100%;
-            margin-top: 100px;
+            box-sizing: border-box;
+        }
+            
+        .content{
+            width: 308px;
+            
+            box-sizing: border-box;
             
           }
     
-          .elvo{
-            color: rgb(17, 17, 17);;
-            font-size: 20px;
+          .elvo {
+            color: rgb(17, 17, 17);
+            font-size: 30px;
             font-family: Roboto;
             margin: 0 16px;
-            width: 398px;
+            
             height: 30px;
             text-align: center;
+            font-weight: 500;
           }
           .content-heading{
-            width: 398px;
+           
             height: 79px;
-            margin: 20px 16px 0;
+            margin: 20px 6px 0;
             color: rgb(17, 17, 17);;
             font-family: Roboto;
             font-size: 36px;
@@ -421,22 +422,24 @@
           }
     
           .content p{
-            width: 398px;
-            height: 153px;
+           
+            height: 204px;
             color: rgb(17, 17, 17);
             font-family: Open Sans;
             font-size: 16px;
             text-align: center;
             margin: 30px 16px 0;
-            box-sizing: border-box;
+            
           }
           .mein-button{
+            width: 300px;
+            height: 24px;
+            margin: 0 56px;
             
-            margin: 5px 111px 0;
             
             
           }
-          button.btn {
+          .btn {
             font-weight: 600;
             color: black;
             text-transform: uppercase;
@@ -445,69 +448,62 @@
             border: 2px solid black;
             text-align: center;
             font-family: Open Sans;
-            font-size: 16px;
+            font-size: 14px;
+            line-height: 22.4px;
+            letter-spacing: 2px;
+            font-weight: 400;
+            
           }
+
+        .footer{
+            background: #000;
+            box-sizing: border-box;
+            color: #fff;
         }
-        .team-container{
+        .footer-row {
             display: flex;
-            justify-content: space-between;
-            position: 50% 50%;
-            width: 90%;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 30px 0;
         }
-        .map {
-            float: left;
+        .contact-person h6 {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21.6px;
+            margin: 30px 0;
+            width: 320px;
+            height: 86px;
+            text-align: center;
+            font-family: Open Sans;
         }
         
-      .content{
-        max-width: 500px;
-        margin-top: 100px;
-        box-sizing: border-box;
-      }
+        .person {
+            font-size: 20px;
+            line-height: 30px;
+            margin: 20px 0;
+            letter-spacing: 2px;
+            font-weight: 500;
+            text-align: center;
 
-      .elvo{
-        color: rgb(17, 17, 17);;
-        font-size: 20px;
-        font-family: Roboto;
-        margin: 0 16px;
-        width: 398px;
-        height: 30px;
-        text-align: center;
-      }
-      .content-heading{
-        width: 398px;
-        height: 79px;
-        margin: 20px 16px 0;
-        color: rgb(17, 17, 17);;
-        font-family: Roboto;
-        font-size: 36px;
-        line-height: 36px;
-        text-align: center;
-      }
-
-      .content p{
-        width: 398px;
-        height: 153px;
-        color: rgb(17, 17, 17);
-        font-family: Open Sans;
-        font-size: 16px;
-        text-align: center;
-        margin: 30px 16px 0;
-        box-sizing: border-box;
-      }
-      .mein-button{
-        
-        margin: 5px 111px 0;
-        
-        
-      }
-      button.btn {
-        font-weight: 600;
-        color: black;
-        text-transform: uppercase;
-        padding: 10px 30px;
-        background: white;
-        border: 2px solid black;
-        text-align: center;
-        font-family: Open Sans;
-        font-size: 16px;
-      }
+        }
+        .contact {
+            width: 350px;
+            height: 155px;
+            
+        }
+        .contact h2 {
+            font-family: Roboto;
+            line-height: 1.2;
+            font-weight: 700;
+            font-size: 36px;
+            text-align: center;
+            
+        }
+        .contact p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25.6px;
+            margin: 30px 0;
+            text-align: center;
+        }
+      
