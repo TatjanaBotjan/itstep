@@ -1,10 +1,17 @@
 .container {
     width: 800px;
     height: 600px;
-    background: rgb(239, 233, 233);
+    background: rgb(224, 219, 219);
     position: relative;
     margin: 0 auto;
-}
-.label[FIO]{
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #ccc;
     
+}
+.form-label{
+   margin: 10px 10px 10px 100px;
+    
+}
+.form-control{
+    margin: 10px 100px 10px 10px;
 }
