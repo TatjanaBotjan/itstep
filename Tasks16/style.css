@@ -1,0 +1,27 @@
+.circle{
+    border-bottom: 100px solid rgb(189, 180, 180);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 30;
+    width: 100px;
+}
+.circle-eye-l{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: rgb(12, 12, 12);
+    border-radius: 50%;
+    margin: 100px 300px 100px;
+    bottom: 361px;
+    left: 50px;
+}
+.circle-eye-r{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: rgb(12, 12, 12);
+    border-radius: 50%;
+    margin: 100px 300px 100px;
+    bottom: 361px;
+    left: 180px;
+}
