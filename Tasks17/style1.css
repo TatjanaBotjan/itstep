@@ -1,0 +1,295 @@
+a{
+    position: fixed;
+    display: block;
+    color: #fff;
+    background: black;
+    padding: 15px 20px;
+    top: 40px;
+}
+.start{
+    left: calc(50% - 300px);
+}
+.end{
+    left: calc(50% + 30px);
+}
+.bodycat{
+    width: 0;
+    height: 105px;
+    border-bottom: 400px solid rgb(218, 162, 134);
+    border-right: 230px solid transparent;
+    margin: 200px 400px 400px 500px;
+    }
+.face{
+    width: 200px;
+    position: absolute;
+    height: 170px;
+    background: rgb(218, 162, 134);
+    border-radius: 50%;
+    margin-left: 403px;
+    margin-top: -963px;
+}
+.ear-left{
+    width: 0;
+    height: 0;
+    border-left: 37px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgb(192, 182, 177);
+    transform: rotate(-41deg);
+    margin-top: -1018px;
+    margin-left: 353px;
+    position: absolute;
+}
+.ear-right{
+    width: 0;
+    height: 0;
+    border-left: 37px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgb(192, 182, 177);
+    transform: rotate(41deg);
+    margin-top: -1023px;
+    margin-left: 561px;
+    position: absolute;
+}
+.circle-eye-left{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: rgb(11, 141, 181);
+    border-radius: 50%;
+    margin: 100px 300px 100px;
+    bottom: 381px;
+    left: 140px;
+    transition-property: background;
+    transition-timing-function: ease-in-out;
+    transition-duration: 5s;
+}
+#cat:target .circle-eye-left{
+    background: rgb(27, 186, 16);
+}
+.circle-eye-right{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: rgb(11, 141, 181);
+    border-radius: 50%;
+    margin: 100px 300px 100px;
+    bottom: 381px;
+    left: 223px;
+    transition-property: background;
+    transition-timing-function: ease-in-out;
+    transition-duration: 5s;
+}
+#cat:target .circle-eye-right{
+    background: rgb(27, 186, 16);
+}
+.pupil-left{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: rgb(12, 12, 12);
+    border-radius: 50%;
+    margin: 100px 300px 100px;
+    bottom: 383px;
+    left: 145px;
+}
+.pupil-right{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: rgb(12, 12, 12);
+    border-radius: 50%;
+    margin: 100px 300px 100px;
+    bottom: 384px;
+    left: 227px;
+}
+.nose{
+    position: absolute;
+    width: 54px;
+    height: 31px;
+    background: rgb(12, 12, 12);
+    border-radius: 50%;
+    margin: 100px 300px 100px;
+    bottom: 345px;
+    left: 176px;
+    transition-property: background;
+    transition-timing-function: linear;
+    transition-duration: 5s;
+    }
+.nose:hover{
+    background: rgb(138, 138, 139);
+    }
+.mouth{
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #251d1d;
+    bottom: 427px;
+    position: absolute;
+    left: 490px;
+    transition-property: background,border-left,border-right,border-bottom;
+    transition-timing-function: linear;
+    transition-duration: 5s;
+    }
+#cat:target .mouth{
+    background: red;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid transparent;
+    }
+.mustache_1{
+    position: absolute;
+    width: 2px;
+    height: 129px;
+    background:#090909;
+    transform: rotate(70deg);
+    bottom: 422px;
+    left: 582px;
+    transition-property: background, height;
+    transition-timing-function: linear;
+    transition-duration: 5s;
+    }
+#cat:target .mustache_1{
+    background:#616060;
+    height: 133px;
+    }
+.mustache_2{
+    position: absolute;
+    width: 2px;
+    height: 135px;
+    background: #090909;
+    transform: rotate(85deg);
+    bottom: 402px;
+    left: 582px;
+    transition-property: background, height;
+    transition-timing-function: linear;
+    transition-duration: 5s;
+    }
+#cat:target .mustache_2{
+    background:#616060;
+    height: 133px;
+    }
+.mustache_3{
+    position: absolute;
+    width: 2px;
+    height: 129px;
+    background: #090909;
+    transform: rotate(95deg);
+    bottom: 391px;
+    left: 582px;
+    transition-property: background, height;
+    transition-timing-function: linear;
+    transition-duration: 5s;
+    }
+#cat:target .mustache_3{
+    background:#616060;
+    height: 133px;
+    }
+.mustache_4{
+    position: absolute;
+    width: 2px;
+    height: 129px;
+    background: #090909;
+    transform: rotate(-95deg);
+    bottom: 387px;
+    left: 419px;
+    transition-property: background, height;
+    transition-timing-function: linear;
+    transition-duration: 5s;
+    }
+#cat:target .mustache_4{
+    background:#616060;
+    height: 133px;
+    }
+.mustache_5{
+    position: absolute;
+    width: 2px;
+    height: 136px;
+    background: #090909;
+    transform: rotate(-85deg);
+    bottom: 401px;
+    left: 419px;
+    transition-property: background, height;
+    transition-timing-function: linear;
+    transition-duration: 5s;
+    }
+#cat:target .mustache_5{
+    background:#616060;
+    height: 133px;
+    }
+.mustache_6{
+    position: absolute;
+    width: 2px;
+    height: 129px;
+    background: #090909;
+    transform: rotate(-75deg);
+    bottom: 419px;
+    left: 419px;
+    transition-property: background, height;
+    transition-timing-function: linear;
+    transition-duration: 5s;
+    }
+#cat:target .mustache_6{
+    background:#616060;
+    height: 133px;
+    }
+.tail{
+    display: block;
+    width: 59px;
+    height: 365px;
+    background-color: rgb(192, 182, 177);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    left: 796px;
+    position: absolute;
+    bottom: -7px;
+    transform: rotate(30deg);
+    transition-property: background,width,height,transform;
+    transition-timing-function: linear;
+    transition-duration: 3s;
+    }
+.tail:hover{
+    width: 100px;
+    height: 400px;
+    background: indigo;
+    transform:rotate(35deg)
+    }
+.paws{
+    position: absolute;
+    width: 60px;
+    height: 82px;
+    background: rgb(192, 182, 177);
+    bottom: 17px;
+    left: 448px;
+    }
+.strip_1{
+    position: absolute;
+    border-bottom: 49px solid rgb(159, 152, 148);
+    border-left: 0px solid transparent;
+    border-right: 29px solid transparent;
+    height: 43px;
+    width: 72px;
+    bottom: 242px;
+    left: 508px;
+    }
+.strip_2{
+    position: absolute;
+    border-bottom: 49px solid rgb(159, 152, 148);
+    border-left: 0px solid transparent;
+    border-right: 28px solid transparent;
+    height: 43px;
+    width: 141px;
+    bottom: 124px;
+    left: 508px;
+    }
+.strip_3{
+    position: absolute;
+    border-bottom: 49px solid rgb(159, 152, 148);
+    border-left: 0px solid transparent;
+    border-right: 29px solid transparent;
+    height: 43px;
+    width: 201px;
+    bottom: 17px;
+    left: 508px;
+    }
+   
+
