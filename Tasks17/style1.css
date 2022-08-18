@@ -18,7 +18,13 @@ a{
     border-bottom: 400px solid rgb(218, 162, 134);
     border-right: 230px solid transparent;
     margin: 200px 400px 400px 500px;
+    transition-property: border-bottom;
+    transition-timing-function: ease-in;
+    transition-duration: 10s;
     }
+#cat:target .bodycat{
+    border-bottom: 400px solid rgb(203, 109, 62);
+}
 .face{
     width: 200px;
     position: absolute;
@@ -27,6 +33,14 @@ a{
     border-radius: 50%;
     margin-left: 403px;
     margin-top: -963px;
+    transition-property: width,height,background;
+    transition-timing-function: ease-in;
+    transition-duration: 10s;
+}
+#cat:target .face{
+    width: 193px;
+    height: 163px;
+    background: rgb(184, 89, 41);
 }
 .ear-left{
     width: 0;
@@ -38,6 +52,15 @@ a{
     margin-top: -1018px;
     margin-left: 353px;
     position: absolute;
+    transition-property: transform,margin-top,margin-left,border-bottom;
+    transition-timing-function: linear;
+    transition-duration: 5s;
+}
+#cat:target .ear-left{
+    transform: rotate(-22deg);
+    margin-top: -1045px;
+    margin-left: 395px;
+    border-bottom: 100px solid rgb(103, 99, 96);
 }
 .ear-right{
     width: 0;
@@ -49,6 +72,15 @@ a{
     margin-top: -1023px;
     margin-left: 561px;
     position: absolute;
+    transition-property: transform,margin-top,margin-left,border-bottom;
+    transition-timing-function: linear;
+    transition-duration: 5s;
+}
+#cat:target .ear-right{
+    transform: rotate(26deg);
+    margin-top: -1041px;
+    margin-left: 524px;
+    border-bottom: 100px solid rgb(103, 99, 96);
 }
 .circle-eye-left{
     position: absolute;
@@ -112,11 +144,10 @@ a{
     bottom: 345px;
     left: 176px;
     transition-property: background;
-    transition-timing-function: linear;
     transition-duration: 5s;
     }
-.nose:hover{
-    background: rgb(138, 138, 139);
+#cat:target .nose{
+    background: rgb(84, 83, 83);
     }
 .mouth{
     width: 0;
@@ -124,18 +155,15 @@ a{
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-bottom: 20px solid #251d1d;
-    bottom: 427px;
+    bottom: 424px;
     position: absolute;
-    left: 490px;
-    transition-property: background,border-left,border-right,border-bottom;
+    left: 487px;
+    transition-property: border-bottom;
     transition-timing-function: linear;
     transition-duration: 5s;
     }
 #cat:target .mouth{
-    background: red;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 15px solid transparent;
+    border-bottom: 20px solid red;
     }
 .mustache_1{
     position: absolute;
@@ -144,7 +172,7 @@ a{
     background:#090909;
     transform: rotate(70deg);
     bottom: 422px;
-    left: 582px;
+    left: 588px;
     transition-property: background, height;
     transition-timing-function: linear;
     transition-duration: 5s;
@@ -160,7 +188,7 @@ a{
     background: #090909;
     transform: rotate(85deg);
     bottom: 402px;
-    left: 582px;
+    left: 594px;
     transition-property: background, height;
     transition-timing-function: linear;
     transition-duration: 5s;
@@ -175,8 +203,8 @@ a{
     height: 129px;
     background: #090909;
     transform: rotate(95deg);
-    bottom: 391px;
-    left: 582px;
+    bottom: 385px;
+    left: 594px;
     transition-property: background, height;
     transition-timing-function: linear;
     transition-duration: 5s;
@@ -191,8 +219,8 @@ a{
     height: 129px;
     background: #090909;
     transform: rotate(-95deg);
-    bottom: 387px;
-    left: 419px;
+    bottom: 383px;
+    left: 410px;
     transition-property: background, height;
     transition-timing-function: linear;
     transition-duration: 5s;
@@ -208,7 +236,7 @@ a{
     background: #090909;
     transform: rotate(-85deg);
     bottom: 401px;
-    left: 419px;
+    left: 409px;
     transition-property: background, height;
     transition-timing-function: linear;
     transition-duration: 5s;
@@ -224,7 +252,7 @@ a{
     background: #090909;
     transform: rotate(-75deg);
     bottom: 419px;
-    left: 419px;
+    left: 414px;
     transition-property: background, height;
     transition-timing-function: linear;
     transition-duration: 5s;
@@ -247,19 +275,42 @@ a{
     transition-timing-function: linear;
     transition-duration: 3s;
     }
-.tail:hover{
+.cat:target .tail{
     width: 100px;
     height: 400px;
-    background: indigo;
+    background: rgb(78, 78, 79);
     transform:rotate(35deg)
     }
-.paws{
+.paw_1{
     position: absolute;
     width: 60px;
     height: 82px;
     background: rgb(192, 182, 177);
     bottom: 17px;
     left: 448px;
+    transition-property: background,bottom;
+    transition-timing-function: ease-in;
+    transition-duration: 5s;
+    }
+.cat:target .paw_1{
+    background: rgb(78, 78, 79);
+    bottom: 23px;
+    }
+.paw_2{
+    position: absolute;
+    width: 60px;
+    height: 82px;
+    background: rgb(192, 182, 177);
+    bottom: 17px;
+    left: 448px;
+    transform:rotate(0deg);
+    transition-property: background,transform;
+    transition-timing-function: ease-in;
+    transition-duration: 5s;
+    }
+.cat:target .paw_2{
+    background: rgb(78, 78, 79);
+    transform:rotate(25deg);
     }
 .strip_1{
     position: absolute;
@@ -270,7 +321,13 @@ a{
     width: 72px;
     bottom: 242px;
     left: 508px;
-    }
+    transition-property: border-bottom;
+    transition-timing-function: linear;
+    transition-duration: 5s;
+}
+#cat:target .strip_1{
+    border-bottom: 49px solid rgb(46, 25, 14);
+}
 .strip_2{
     position: absolute;
     border-bottom: 49px solid rgb(159, 152, 148);
@@ -280,7 +337,13 @@ a{
     width: 141px;
     bottom: 124px;
     left: 508px;
-    }
+    transition-property: border-bottom;
+    transition-timing-function: linear;
+    transition-duration: 5s;
+}
+#cat:target .strip_2{
+    border-bottom: 49px solid rgb(46, 25, 14);
+}
 .strip_3{
     position: absolute;
     border-bottom: 49px solid rgb(159, 152, 148);
@@ -290,6 +353,12 @@ a{
     width: 201px;
     bottom: 17px;
     left: 508px;
-    }
+    transition-property: border-bottom;
+    transition-timing-function: linear;
+    transition-duration: 5s;
+}
+#cat:target .strip_3{
+    border-bottom: 49px solid rgb(46, 25, 14);
+}
    
 
