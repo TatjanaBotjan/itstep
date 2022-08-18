@@ -20,10 +20,10 @@ a{
     margin: 200px 400px 400px 500px;
     transition-property: border-bottom;
     transition-timing-function: ease-in;
-    transition-duration: 10s;
+    transition-duration: 5s;
     }
 #cat:target .bodycat{
-    border-bottom: 400px solid rgb(203, 109, 62);
+    border-bottom: 400px solid rgb(253, 158, 110);
 }
 .face{
     width: 200px;
@@ -35,12 +35,12 @@ a{
     margin-top: -963px;
     transition-property: width,height,background;
     transition-timing-function: ease-in;
-    transition-duration: 10s;
+    transition-duration: 5s;
 }
 #cat:target .face{
     width: 193px;
     height: 163px;
-    background: rgb(184, 89, 41);
+    background: rgb(253, 158, 110);
 }
 .ear-left{
     width: 0;
@@ -60,7 +60,7 @@ a{
     transform: rotate(-22deg);
     margin-top: -1045px;
     margin-left: 395px;
-    border-bottom: 100px solid rgb(103, 99, 96);
+    border-bottom: 100px solid rgb(46, 25, 14);
 }
 .ear-right{
     width: 0;
@@ -80,7 +80,7 @@ a{
     transform: rotate(26deg);
     margin-top: -1041px;
     margin-left: 524px;
-    border-bottom: 100px solid rgb(103, 99, 96);
+    border-bottom: 100px solid rgb(46, 25, 14);
 }
 .circle-eye-left{
     position: absolute;
@@ -91,12 +91,14 @@ a{
     margin: 100px 300px 100px;
     bottom: 381px;
     left: 140px;
-    transition-property: background;
+    transition-property: background,width,height;
     transition-timing-function: ease-in-out;
     transition-duration: 5s;
 }
 #cat:target .circle-eye-left{
     background: rgb(27, 186, 16);
+    width: 40px;
+    height: 40px;
 }
 .circle-eye-right{
     position: absolute;
@@ -107,12 +109,14 @@ a{
     margin: 100px 300px 100px;
     bottom: 381px;
     left: 223px;
-    transition-property: background;
+    transition-property: background,width,height;
     transition-timing-function: ease-in-out;
     transition-duration: 5s;
 }
 #cat:target .circle-eye-right{
     background: rgb(27, 186, 16);
+    width: 40px;
+    height: 40px;
 }
 .pupil-left{
     position: absolute;
@@ -123,6 +127,14 @@ a{
     margin: 100px 300px 100px;
     bottom: 383px;
     left: 145px;
+    transition-property: background,width,height;
+    transition-timing-function: ease-in-out;
+    transition-duration: 5s;
+}
+#cat:target .pupil-left{
+    background: rgb(81, 81, 81);
+    width: 20px;
+    height: 20px;
 }
 .pupil-right{
     position: absolute;
@@ -133,6 +145,14 @@ a{
     margin: 100px 300px 100px;
     bottom: 384px;
     left: 227px;
+    transition-property: background,width,height;
+    transition-timing-function: ease-in-out;
+    transition-duration: 5s;
+}
+#cat:target .pupil-right{
+    background: rgb(81, 81, 81);
+    width: 20px;
+    height: 20px;
 }
 .nose{
     position: absolute;
@@ -273,12 +293,12 @@ a{
     transform: rotate(30deg);
     transition-property: background,width,height,transform;
     transition-timing-function: linear;
-    transition-duration: 3s;
+    transition-duration: 5s;
     }
 .cat:target .tail{
     width: 100px;
     height: 400px;
-    background: rgb(78, 78, 79);
+    background: rgb(46, 25, 14);
     transform:rotate(35deg)
     }
 .paw_1{
@@ -288,13 +308,14 @@ a{
     background: rgb(192, 182, 177);
     bottom: 17px;
     left: 448px;
-    transition-property: background,bottom;
+    transform:rotate(0deg);
+    transition-property: background,transform;
     transition-timing-function: ease-in;
     transition-duration: 5s;
     }
 .cat:target .paw_1{
-    background: rgb(78, 78, 79);
-    bottom: 23px;
+    background: rgb(46, 25, 14);
+    transform:rotate(-15deg);
     }
 .paw_2{
     position: absolute;
@@ -309,8 +330,8 @@ a{
     transition-duration: 5s;
     }
 .cat:target .paw_2{
-    background: rgb(78, 78, 79);
-    transform:rotate(25deg);
+    background: rgb(46, 25, 14);
+    transform:rotate(15deg);
     }
 .strip_1{
     position: absolute;
