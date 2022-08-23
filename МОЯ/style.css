@@ -1,0 +1,21 @@
+a{
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.side{
+    width: 200px;
+    margin: 20px;
+}
+.menu a{
+    background: hsl(0, 0%, 24%);
+    color: azure;
+    display: block;
+    padding: 10px;
+}
+.menu a:hover{
+    background: #666;
+}
