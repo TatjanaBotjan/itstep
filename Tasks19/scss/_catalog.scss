@@ -1,15 +1,9 @@
-header {
-    background: $bezh;
-}
-
 .main-menu {}
-
-.main-menu>ul>li {}
 
 .main-menu>ul {
     @include flex-none;
 
-    &_li>a {
+    &_>li>a {
         @include uppercase-none;
         display: flex;
         flex-direction: column;
@@ -18,39 +12,38 @@ header {
         padding: 7px 20px;
         font-size: 20px;
         border-bottom: 3px solid transparent;
-    }
-
-    &_li.has_submenu:hover>a {
-        border-bottom: 3px solid $red;
-    }
-
-    &_li>a>span {
-        color: $brown;
-        font-size: 14px;
-    }
-
-    &_>li>ul {
-        display: none;
-        position: absolute;
-        list-style: none;
-        padding: 20px;
-        background-color: $bezh;
-        z-index: 10000;
-        box-shadow: 0 5px 6.8px 0.2px rgb(0 0 0 / 16%);
-        width: 250px;
-    }
-
-    &_>li:hover>ul {
-        display: block;
-    }
-
-    &_>li>ul>li+li {
-        margin-top: 10px;
-    }
-
-    &_>li>ul>li>a {
-        @include uppercase-none;
-        color: $darkbrown;
-        font-weight: 600;
-    }
+        }
+            &_>li.has_submenu:hover>a {
+                border-bottom: 3px solid $red;
+            }
+                &_>li>a>span {
+                    color: $brown;
+                    font-size: 14px;
+                }
+                    &_>li>ul {
+                        display: none;
+                        position: absolute;
+                        list-style: none;
+                        padding: 20px;
+                        background-color: $lightbrown;
+                        z-index: 10000;
+                        box-shadow: 0 5px 6.8px 0.2px rgb(0 0 0 / 16%);
+                        width: 250px;
+                    }
+                
+                            &_>li:hover>ul {
+                                display: block;
+                            }
+                
+                                &_>li>ul>li+li {
+                                    margin-top: 10px;
+                                }
+                
+                                    &_>li>ul>li>a {
+                                    @include uppercase-none;
+                                    color: $darkbrown;
+                                    font-weight: 600;
+                                }
 }
+
+.main-menu>ul>li {}
