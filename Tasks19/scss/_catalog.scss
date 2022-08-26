@@ -1,9 +1,9 @@
 .main-menu {}
 
-.main-menu>ul {
+.main-menu > ul {
     @include flex-none;
 
-    &_>li>a {
+    & > li > a {
         @include uppercase-none;
         display: flex;
         flex-direction: column;
@@ -13,14 +13,14 @@
         font-size: 20px;
         border-bottom: 3px solid transparent;
         }
-            &_>li.has_submenu:hover>a {
+            & > li.has_submenu:hover > a {
                 border-bottom: 3px solid $red;
             }
-                &_>li>a>span {
+                & > li > a > span {
                     color: $brown;
                     font-size: 14px;
                 }
-                    &_>li>ul {
+                    & > li > ul {
                         display: none;
                         position: absolute;
                         list-style: none;
@@ -31,19 +31,19 @@
                         width: 250px;
                     }
                 
-                            &_>li:hover>ul {
+                            & > li:hover > ul {
                                 display: block;
                             }
                 
-                                &_>li>ul>li+li {
+                                & > li > ul > li+li {
                                     margin-top: 10px;
                                 }
                 
-                                    &_>li>ul>li>a {
+                                    & > li > ul > li > a {
                                     @include uppercase-none;
                                     color: $darkbrown;
                                     font-weight: 600;
                                 }
 }
 
-.main-menu>ul>li {}
+.main-menu > ul > li {}
