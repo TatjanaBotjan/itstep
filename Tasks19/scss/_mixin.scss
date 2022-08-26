@@ -1,0 +1,9 @@
+@mixin flex-none {
+    display: flex;
+    list-style: none;
+}
+
+@mixin uppercase-none {
+    text-transform: uppercase;
+    text-decoration: none;
+}
