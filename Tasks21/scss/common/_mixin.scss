@@ -1,0 +1,8 @@
+@mixin none-white {
+    text-decoration: none;
+    color: $white;
+}
+@mixin size-weight {
+    font-size: 18px;
+    font-weight: 500;
+}
