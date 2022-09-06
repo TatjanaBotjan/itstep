@@ -1,0 +1,61 @@
+.basic__info {
+    width: 526px;
+    margin-top: 80px;
+    background-color: $darkgreen;
+    height: 350px;
+    
+
+    &__innovation{
+        position: relative;
+        width: 95px;
+        height: 21px;
+        background-color: $lightgreen;
+        padding: 9px 15px 10px 15px;
+        top: 35px;
+        margin-left: 40px;
+        float: left;
+       
+        
+        a{
+            text-decoration: none;
+            color: $white;
+            font-family: Gilroy;
+            @include size-weight;
+            justify-content: center;
+        }
+    }
+
+    &__text {
+        color: $white;
+        width: 485px;
+        height: 135px;
+        font-family: Gilroy;
+        float: left;
+        margin: 105px 1px 110px 40px;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 45px;
+        
+       
+    }
+
+    &__arrow {
+            
+        float: left;
+        border: 2pxs solid red;
+        a{
+            background-image: url(../img/rarrow.png);
+            width: 50px;
+            height: 40px;
+            display: block;
+        }
+    }
+
+    &__details {
+        text-decoration: none;
+        color: red;
+        float: left;
+        
+       
+    }
+}

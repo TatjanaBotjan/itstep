@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Gilroy";
-  src: url(../../font/Gilroy-Light.otf);
+  src: url(../font/Gilroy-Light.otf);
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url(../../font/Gilroy-ExtraBold.otf);
+  src: url(../font/Gilroy-ExtraBold.otf);
   font-weight: bold;
   font-style: normal;
 }
@@ -21,6 +21,8 @@ html, body {
 }
 
 .container-info {
+  position: relative;
+  margin: 0 auto;
   background: #4FBFA5;
 }
 
@@ -123,17 +125,16 @@ html, body {
 }
 
 .info {
-  width: 1296px;
+  width: 1295px;
+  background: #4FBFA5;
   height: 700px;
   position: relative;
-  border: 2px solid red;
   margin: 0 auto;
 }
 
 .info-menu {
   height: 87px;
   display: flex;
-  float: left;
   align-items: center;
 }
 .info-menu__cosmetology a {
@@ -181,17 +182,24 @@ html, body {
   font-size: 18px;
   font-weight: 500;
   line-height: 16px;
-  padding: 10px 15px 8px 15px;
+  padding: 9px 15px 10px 15px;
   text-decoration: none;
   color: #000;
   background-color: #fff;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
-.info-content {
-  margin-top: 220px;
+.info-content__row {
+  margin-top: 163px;
+  float: left;
+}
+.info-content__image {
+  margin-left: 30px;
+  position: relative;
+  width: 766px;
   height: 533px;
+  float: left;
 }
 .info-content__cosmetology {
   font-family: Gilroy;
@@ -200,15 +208,17 @@ html, body {
   font-size: 48px;
   font-weight: 700;
   color: #fff;
+  margin-right: 0;
 }
 .info-content__text {
   padding-top: 20px;
-  width: 416px;
+  width: 400px;
   color: #fff;
   font-size: 14px;
   font-weight: 500;
   font-family: Gilroy;
   line-height: 21px;
+  margin-right: 0;
 }
 .info-content__details {
   width: 163px;
@@ -228,15 +238,97 @@ html, body {
   font-family: Gilroy;
   line-height: 21px;
 }
-.info-content__details__arrows a .arrow-left {
-  width: 20px;
-  height: 20px;
-  background-image: url(../img/larrow.png);
-  margin-top: 30px;
+.info-content__arrow a {
+  width: 120px;
+  height: 50px;
+  display: block;
+  margin-left: 370px;
 }
-.info-content__details__content__image {
-  position: absolute;
-  width: 746px;
-  height: 533px;
-  float: right;
+.info-content__arrow a.arrows {
+  background-image: url(../img/Group.png);
+}
+
+.info-sections {
+  display: flex;
+  float: left;
+}
+.info-sections__procedures {
+  width: 635px;
+  height: 80px;
+  background-color: #00868A;
+  display: flex;
+  justify-content: center;
+}
+.info-sections a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.info-sections__training {
+  width: 316px;
+  height: 80px;
+  background-color: #4FBFA5;
+  display: flex;
+  justify-content: center;
+}
+.info-sections__vip {
+  width: 316px;
+  height: 80px;
+  background-color: #00868A;
+  display: flex;
+  justify-content: center;
+}
+
+.basic__info {
+  width: 526px;
+  margin-top: 80px;
+  background-color: #00868A;
+  height: 350px;
+}
+.basic__info__innovation {
+  position: relative;
+  width: 95px;
+  height: 21px;
+  background-color: #4FBFA5;
+  padding: 9px 15px 10px 15px;
+  top: 35px;
+  margin-left: 40px;
+  float: left;
+}
+.basic__info__innovation a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 500;
+  justify-content: center;
+}
+.basic__info__text {
+  color: #fff;
+  width: 485px;
+  height: 135px;
+  font-family: Gilroy;
+  float: left;
+  margin: 105px 1px 110px 40px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px;
+}
+.basic__info__arrow {
+  float: left;
+  border: 2pxs solid red;
+}
+.basic__info__arrow a {
+  background-image: url(../img/rarrow.png);
+  width: 50px;
+  height: 40px;
+  display: block;
+}
+.basic__info__details {
+  text-decoration: none;
+  color: red;
+  float: left;
 }/*# sourceMappingURL=style.css.map */

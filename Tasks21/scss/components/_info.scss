@@ -1,14 +1,14 @@
 .info {
-    width: 1296px;
+    width: 1295px;
+    background: $lightgreen;
     height: 700px;  
     position: relative;
-    border: 2px solid red;
     margin: 0 auto;
 }
 .info-menu {
+    
     height: 87px;
     display: flex;
-    float: left;
     align-items: center;
 
 
@@ -56,19 +56,31 @@
             font-size: 18px;
             font-weight: 500;
             line-height: 16px;
-            padding: 10px 15px 8px 15px;
+            padding: 9px 15px 10px 15px;
             text-decoration: none;
             color: $black;
             background-color: $white;
             display: flex;
-            align-items: center;
+            justify-content: center;
         }
     }
    
 }
 .info-content{
-    margin-top: 220px;
-    height: 533px;
+   
+    &__row{
+        margin-top: 163px;
+        float: left;
+    }
+    
+    &__image {
+        margin-left: 30px;
+        position: relative;
+        width: 766px;
+        height: 533px;
+        float: left;
+    }
+    
 
     &__cosmetology{
         font-family: Gilroy;
@@ -77,15 +89,17 @@
         font-size: 48px;
         font-weight: 700;
         color: $white;
+        margin-right: 0;
     }
     &__text{
         padding-top: 20px;
-        width: 416px;
+        width: 400px;
         color: $white;
         font-size: 14px;
         font-weight: 500;
         font-family: Gilroy;
         line-height: 21px;
+        margin-right: 0;
     }
     &__details{
         width: 163px;
@@ -104,22 +118,59 @@
             font-family: Gilroy;
             line-height: 21px;
         } 
-
-        }
-                
-        &__arrows {
+    }
+    &__arrow {
+            
             a {
-                .arrow-left {
-                    width: 20px;
-                            height: 20px;
-                            background-image: url(../img/larrow.png);
-                            margin-top: 30px;
-        }
-        &__content__image{
-            width: 20px;
-            height: 20px;
-        }
+                width: 120px;
+                height: 50px;
+                display: block;
+                margin-left: 370px;            
         
+                &.arrows{
+                    background-image: url(../img/Group.png);
+                }
+            }         
+    }
+}
+
+.info-sections{
+    display: flex;
+    float: left;
+
+    &__procedures {
+        width: 635px;
+        height: 80px;
+        background-color: $darkgreen;
+        display: flex;
+        justify-content: center;
+    }
+        a {
+            text-decoration: none;
+            color: $white;
+            font-size: 21px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+        }
+    &__training {
+        width: 316px;
+        height: 80px;
+        background-color: $lightgreen;
+        display: flex;
+        justify-content: center;
+        
+    }
+            
+    &__vip {
+        width: 316px;
+        height: 80px;
+        background-color: $darkgreen;
+        display: flex;
+        justify-content: center;
     }
     
 }
+     
+                
+     
