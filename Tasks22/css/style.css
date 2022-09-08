@@ -115,4 +115,56 @@ html, body {
   font-size: 600;
   font-size: 16px;
   line-height: 24px;
+}
+
+.mission {
+  width: 1000px;
+  height: 103px;
+  position: relative;
+  color: #FFFFFF;
+  margin: 136px 322px 160px 118px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.fertilizers {
+  width: 1528px;
+  height: 646px;
+}
+.fertilizers__title {
+  width: 194px;
+  height: 51px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: #FFFFFF;
+  margin: 160px 1129px 50px 117px;
+  position: relative;
+}
+.fertilizers__types {
+  display: flex;
+  float: left;
+  position: relative;
+}
+.fertilizers__types__potassium {
+  width: 393px;
+  height: 499px;
+  background-color: #FFFFFF;
+  margin: 50px 11px 46px 120px;
+  position: absolute;
+}
+.fertilizers__potassium__square {
+  background-image: url(../img/square.png);
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.container-fertilizers {
+  width: 1437px;
+  height: 392px;
+  background-color: #FFCD42;
+  position: relative;
+  margin-top: 445px;
 }/*# sourceMappingURL=style.css.map */
