@@ -1,0 +1,49 @@
+.content{
+    height: 930px;
+    background-image: url(../img/image.jpg);
+    width: 1437px;
+    height: 500px;
+    margin: 150px 3px 0 0;
+
+    &__info{
+        width: 1320px;
+        height: 590px;
+        background-color: $white;
+        position: relative;
+        float: left;
+        margin: 229px 3px 0 117px;
+
+        &__logo {
+            width: 242px;
+            height: 85px;
+            margin: 68px 1038px 78px 40px;
+        }
+
+        &__goal {
+            width: 1169px;
+            height: 98px;
+            margin: 0 98px 42.43px 53px;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 33px;
+            color: $darkgrey;
+
+        }
+
+        .line {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            margin: 0 609.94px 25.53px 53.2px;
+            width: 656.85px;
+        }
+
+        &__cooperation{
+            width: 696px;
+            height: 81px;
+            margin: 0 571px 105px 53px;
+            color: $darkgrey;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}

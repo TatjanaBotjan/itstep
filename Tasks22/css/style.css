@@ -132,7 +132,7 @@ html, body {
   width: 1528px;
   height: 646px;
 }
-.fertilizers__title {
+.fertilizers__title h2 {
   width: 194px;
   height: 51px;
   font-weight: 600;
@@ -143,28 +143,225 @@ html, body {
   position: relative;
 }
 .fertilizers__types {
-  display: flex;
-  float: left;
-  position: relative;
+  display: inline;
 }
 .fertilizers__types__potassium {
   width: 393px;
   height: 499px;
   background-color: #FFFFFF;
-  margin: 50px 11px 46px 120px;
-  position: absolute;
+  margin: 0 11px 0 120px;
+  position: relative;
+  float: left;
 }
-.fertilizers__potassium__square {
+.fertilizers__types__potassium__titli h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+  width: 309px;
+  height: 23px;
+  margin: 25px 44px 36px 40px;
+}
+.fertilizers__types__potassium__square {
   background-image: url(../img/square.png);
   width: 24px;
   height: 24px;
   position: relative;
+  margin: 39px 330px 16px 39px;
+}
+.fertilizers__types__potassium__potassium__image {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.fertilizers__types__potassium__info {
+  width: 313px;
+  height: 84px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  margin: 36px 39px 31px 41px;
+}
+.fertilizers__types__potassium__inquiry button {
+  width: 202px;
+  height: 52px;
+  margin: 0px 152px 44px 39px;
+  background-color: #333333;
+  text-transform: uppercase;
+  font-size: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.fertilizers__types__potassium__inquiry button a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.fertilizers__types__urea {
+  width: 393px;
+  height: 499px;
+  background-color: #FFFFFF;
+  margin: 0 11px 0 0;
+  position: relative;
+  float: left;
+}
+.fertilizers__types__urea__square {
+  background-image: url(../img/square.png);
+  width: 24px;
+  height: 24px;
+  position: relative;
+  margin: 39px 330px 16px 39px;
+}
+.fertilizers__types__urea__potassium__image {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.fertilizers__types__urea__titli h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+  width: 309px;
+  height: 23px;
+  margin: 25px 44px 36px 40px;
+}
+.fertilizers__types__urea__info {
+  width: 313px;
+  height: 84px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  margin: 36px 39px 31px 41px;
+}
+.fertilizers__types__urea__inquiry button {
+  width: 202px;
+  height: 52px;
+  margin: 0px 152px 44px 39px;
+  background-color: #333333;
+  text-transform: uppercase;
+  font-size: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.fertilizers__types__urea__inquiry button a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.fertilizers__types__ammonium {
+  width: 393px;
+  height: 499px;
+  background-color: #FFFFFF;
+  margin: 0 11px 0 0;
+  position: relative;
+  float: left;
+}
+.fertilizers__types__ammonium__square {
+  background-image: url(../img/square.png);
+  width: 24px;
+  height: 24px;
+  position: relative;
+  margin: 39px 330px 16px 39px;
+}
+.fertilizers__types__ammonium__potassium__image {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.fertilizers__types__ammonium__titli h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+  width: 309px;
+  height: 23px;
+  margin: 25px 44px 36px 40px;
+}
+.fertilizers__types__ammonium__info {
+  width: 313px;
+  height: 84px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  margin: 36px 39px 31px 41px;
+}
+.fertilizers__types__ammonium__inquiry button {
+  width: 202px;
+  height: 52px;
+  margin: 0px 152px 44px 39px;
+  background-color: #333333;
+  text-transform: uppercase;
+  font-size: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.fertilizers__types__ammonium__inquiry button a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
 }
 
-.container-fertilizers {
+.content {
+  height: 930px;
+  background-image: url(../img/image.jpg);
   width: 1437px;
-  height: 392px;
-  background-color: #FFCD42;
+  height: 500px;
+  margin: 150px 3px 0 0;
+}
+.content__info {
+  width: 1320px;
+  height: 590px;
+  background-color: #FFFFFF;
   position: relative;
-  margin-top: 445px;
+  float: left;
+  margin: 229px 3px 0 117px;
+}
+.content__info__logo {
+  width: 242px;
+  height: 85px;
+  margin: 68px 1038px 78px 40px;
+}
+.content__info__goal {
+  width: 1169px;
+  height: 98px;
+  margin: 0 98px 42.43px 53px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #333333;
+}
+.content__info .line {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0 609.94px 25.53px 53.2px;
+  width: 656.85px;
+}
+.content__info__cooperation {
+  width: 696px;
+  height: 81px;
+  margin: 0 571px 105px 53px;
+  color: #333333;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.footer {
+  width: 1437px;
+}
+.footer__client-info {
+  margin-top: 110px;
+}
+.footer__image {
+  height: 378px;
+  background-image: url(../../img/Background\ image.jpg);
 }/*# sourceMappingURL=style.css.map */

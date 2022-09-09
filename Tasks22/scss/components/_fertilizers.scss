@@ -1,8 +1,8 @@
 .fertilizers {
     width: 1528px;
     height: 646px;
-
-    &__title {
+    
+    &__title h2 {
             width: 194px;
             height: 51px;
             font-weight: 600;
@@ -14,34 +14,164 @@
         }
 
         &__types{
-            display: flex;
-            float: left;
-            position: relative;
+            display: inline;
 
-        }
-
-                &__types__potassium {
+            &__potassium {
                     width: 393px;
                     height: 499px;
                     background-color: $white;
-                    margin: 50px 11px 46px 120px;
-                    position: absolute;
-                }
-        
-                &__potassium__square {
-                    background-image: url(../img/square.png);
-                    width: 24px;
-                    height: 24px;
+                    margin: 0 11px 0 120px;
                     position: relative;
-                }
+                    float: left;
+            
+                    &__titli h2 {
+                        @include h2-white-size-line;
+                        width: 309px;
+                        height: 23px;
+                        margin: 25px 44px 36px 40px;
+                    }
+            
+                    &__square {
+                        background-image: url(../img/square.png);
+                        width: 24px;
+                        height: 24px;
+                        position: relative;
+                        margin: 39px 330px 16px 39px;
+                    }
+            
+                    &__potassium__image {
+                        width: 24px;
+                        height: 24px;
+                        position: relative;
+                    }
 
-       
-}
-.container-fertilizers{
-    width: 1437px;
-    height: 392px;
-    background-color: $yellow;
-    position: relative;
-    margin-top: 445px;
-    
-}
+                    &__info {
+                        width: 313px;
+                        height: 84px;
+                        @include text-white-size-line;
+                        margin: 36px 39px 31px 41px;
+                    }
+
+                    &__inquiry button {
+                        width: 202px;
+                        height: 52px;
+                        margin: 0px 152px 44px 39px;
+                        background-color: $darkgrey;
+                        text-transform: uppercase;
+                        @include white-size-line;
+
+                        a {
+                            text-decoration: none;
+                            @include button-white-size-line
+                        }
+                        }
+                    }
+                    &__urea {
+                        width: 393px;
+                        height: 499px;
+                        background-color: $white;
+                        margin: 0 11px 0 0;
+                        position: relative;
+                        float: left;
+
+                        &__square {
+                            background-image: url(../img/square.png);
+                            width: 24px;
+                            height: 24px;
+                            position: relative;
+                            margin: 39px 330px 16px 39px;
+                        }
+                        
+                            &__potassium__image {
+                                width: 24px;
+                                height: 24px;
+                                position: relative;
+                            }
+                            &__titli h2 {
+                                @include h2-white-size-line;
+                                width: 309px;
+                                height: 23px;
+                                margin: 25px 44px 36px 40px;
+                            }
+                        
+                            &__info {
+                                width: 313px;
+                                height: 84px;
+                                @include text-white-size-line;
+                                margin: 36px 39px 31px 41px;
+                            }
+                        
+                            &__inquiry button {
+                                width: 202px;
+                                height: 52px;
+                                margin: 0px 152px 44px 39px;
+                                background-color: $darkgrey;
+                                text-transform: uppercase;
+                                @include white-size-line;
+                        
+                                a {
+                                    text-decoration: none;
+                                    @include button-white-size-line
+                                }
+                            }
+                    }
+
+                    &__ammonium {
+                        width: 393px;
+                        height: 499px;
+                        background-color: $white;
+                        margin: 0 11px 0 0;
+                        position: relative;
+                        float: left;
+
+
+                        &__square {
+                            background-image: url(../img/square.png);
+                            width: 24px;
+                            height: 24px;
+                            position: relative;
+                            margin: 39px 330px 16px 39px;
+                        }
+                        
+                        &__potassium__image {
+                            width: 24px;
+                            height: 24px;
+                            position: relative;
+                        }
+                        
+                            &__titli h2 {
+                            @include h2-white-size-line;
+                            width: 309px;
+                            height: 23px;
+                            margin: 25px 44px 36px 40px;
+                        }
+                        
+                        &__info {
+                            width: 313px;
+                            height: 84px;
+                            @include text-white-size-line;
+                            margin: 36px 39px 31px 41px;
+                        }
+                        
+                        &__inquiry button {
+                            width: 202px;
+                            height: 52px;
+                            margin: 0px 152px 44px 39px;
+                            background-color: $darkgrey;
+                            text-transform: uppercase;
+                            @include white-size-line;
+                        
+                            a {
+                                text-decoration: none;
+                                @include button-white-size-line
+                            }
+                            }
+                    }
+
+                }
+        }
+                
+                
+
+
+
