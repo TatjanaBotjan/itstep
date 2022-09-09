@@ -1,13 +1,9 @@
 .footer {
-    width: 1437px;
+    margin-top: 300px;
+   background-color: $yellow;
+   background-image: url(../img/Background1.jpg);
+   background-size: 100% auto;
+   background-repeat: no-repeat;
+  
 
-    &__client-info{
-        margin-top: 110px;
-    }
-    
-
-    &__image {
-        height: 378px;
-        background-image: url(../../img/Background\ image.jpg);
-}
 }

@@ -1,28 +1,31 @@
+.products {
+    background-image: url(../img/Background.jpg);
+    background-repeat: repeat-x;
+    background-position: 0 310px;
+    
+  
+}
 .fertilizers {
-    width: 1528px;
-    height: 646px;
     
     &__title h2 {
-            width: 194px;
-            height: 51px;
-            font-weight: 600;
-            font-size: 40px;
-            line-height: 60px;
-            color: $white;
-            margin: 160px 1129px 50px 117px;
-            position: relative;
-        }
+        width: 194px;
+        height: 51px;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 60px;
+        color: $white;
+        margin: 160px 1129px 50px 117px;
+        position: relative;
+    }
 
         &__types{
-            display: inline;
+            display: flex;
 
             &__potassium {
-                    width: 393px;
-                    height: 499px;
-                    background-color: $white;
-                    margin: 0 11px 0 120px;
-                    position: relative;
-                    float: left;
+                width: 393px;
+                height: 499px;
+                background-color: $white;
+                margin: 0 11px 0 120px;
             
                     &__titli h2 {
                         @include h2-white-size-line;

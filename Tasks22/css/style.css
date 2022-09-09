@@ -12,61 +12,61 @@ html, body {
   width: 1440px;
 }
 
-.header {
-  width: 1451px;
+header {
   height: 757px;
   background-image: url(../img/Ear.jpg);
+  background-size: 100% auto;
 }
-.header a {
+header a {
   text-decoration: none;
   color: #333333;
 }
-.header a span {
+header a span {
   color: #FFCD42;
 }
-.header > div {
+header > div {
   display: flex;
   align-items: center;
 }
-.header__menu {
+header__menu {
   position: relative;
   margin: 9px 159px 0 71px;
   width: 1210px;
   height: 59px;
   display: inline-block;
 }
-.header__logo {
+header__logo {
   margin-top: 9px;
   font-size: 600;
   font-size: 16px;
   line-height: 24px;
 }
-.header__fertilizers {
+header__fertilizers {
   margin: 26px 0 0 547px;
   font-size: 600;
   font-size: 16px;
   line-height: 24px;
 }
-.header__company {
+header__company {
   margin: 26px 0 0 58px;
   font-size: 600;
   font-size: 16px;
   line-height: 24px;
 }
-.header__contakt {
+header__contakt {
   margin: 26px 0 0 58px;
   font-size: 600;
   font-size: 16px;
   line-height: 24px;
 }
-.header__language_pl {
+header__language_pl {
   margin: 26px 0 0 54px;
   text-transform: uppercase;
   font-size: 600;
   font-size: 16px;
   line-height: 24px;
 }
-.header__language_en {
+header__language_en {
   margin: 26px 0 0 10px;
   text-transform: uppercase;
   font-size: 54px;
@@ -74,14 +74,14 @@ html, body {
   font-size: 16px;
   line-height: 24px;
 }
-.header__invest {
+header__invest {
   width: 694px;
   height: 245px;
   background-color: #FFCD42;
   position: relative;
   margin: 173px 675px 26px 63px;
 }
-.header__invest__content {
+header__invest__content {
   margin: 64px 91px 34px 47px;
   text-transform: uppercase;
   color: #333333;
@@ -128,10 +128,12 @@ html, body {
   line-height: 36px;
 }
 
-.fertilizers {
-  width: 1528px;
-  height: 646px;
+.products {
+  background-image: url(../img/Background.jpg);
+  background-repeat: repeat-x;
+  background-position: 0 310px;
 }
+
 .fertilizers__title h2 {
   width: 194px;
   height: 51px;
@@ -143,15 +145,13 @@ html, body {
   position: relative;
 }
 .fertilizers__types {
-  display: inline;
+  display: flex;
 }
 .fertilizers__types__potassium {
   width: 393px;
   height: 499px;
   background-color: #FFFFFF;
   margin: 0 11px 0 120px;
-  position: relative;
-  float: left;
 }
 .fertilizers__types__potassium__titli h2 {
   font-weight: 600;
@@ -356,12 +356,9 @@ html, body {
 }
 
 .footer {
-  width: 1437px;
-}
-.footer__client-info {
-  margin-top: 110px;
-}
-.footer__image {
-  height: 378px;
-  background-image: url(../../img/Background\ image.jpg);
+  margin-top: 300px;
+  background-color: #FFCD42;
+  background-image: url(../img/Background1.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */
