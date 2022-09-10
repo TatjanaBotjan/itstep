@@ -8,96 +8,86 @@ html, body {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
-  width: 1440px;
-}
-
 header {
   height: 757px;
   background-image: url(../img/Ear.jpg);
   background-size: 100% auto;
 }
-header a {
+
+.header-menu {
+  width: 1210px;
+  height: 59px;
+  margin: 0 159px 173px 71px;
+  display: flex;
+}
+.header-menu a {
   text-decoration: none;
   color: #333333;
 }
-header a span {
+.header-menu a span {
   color: #FFCD42;
 }
-header > div {
-  display: flex;
-  align-items: center;
-}
-header__menu {
-  position: relative;
-  margin: 9px 159px 0 71px;
-  width: 1210px;
+.header-menu__logo {
+  width: 168px;
   height: 59px;
-  display: inline-block;
+  margin: 13px 547px 173px 0;
 }
-header__logo {
-  margin-top: 9px;
+.header-menu__fertilizers {
+  margin: 30px 58px 0 0;
   font-size: 600;
   font-size: 16px;
   line-height: 24px;
 }
-header__fertilizers {
-  margin: 26px 0 0 547px;
+.header-menu__company {
+  margin: 30px 58px 0 0;
   font-size: 600;
   font-size: 16px;
   line-height: 24px;
 }
-header__company {
-  margin: 26px 0 0 58px;
+.header-menu__contact {
+  margin: 30px 54px 0 0;
   font-size: 600;
   font-size: 16px;
   line-height: 24px;
 }
-header__contakt {
-  margin: 26px 0 0 58px;
-  font-size: 600;
-  font-size: 16px;
-  line-height: 24px;
-}
-header__language_pl {
-  margin: 26px 0 0 54px;
+.header-menu__language_pl {
+  margin: 30px 10px 0 0;
   text-transform: uppercase;
   font-size: 600;
   font-size: 16px;
   line-height: 24px;
 }
-header__language_en {
-  margin: 26px 0 0 10px;
+.header-menu__language_en {
+  margin: 30px 0 0 0;
   text-transform: uppercase;
-  font-size: 54px;
   font-size: 600;
   font-size: 16px;
   line-height: 24px;
 }
-header__invest {
+
+.header__invest {
   width: 694px;
-  height: 245px;
-  background-color: #FFCD42;
+  height: 357px;
   position: relative;
-  margin: 173px 675px 26px 63px;
+  margin: 0 683px 155px 63px;
 }
-header__invest__content {
-  margin: 64px 91px 34px 47px;
+.header__invest__content {
+  background-color: #FFCD42;
+  padding: 64px 91px 34px 47px;
   text-transform: uppercase;
   color: #333333;
   font-weight: 600;
   font-size: 40px;
   line-height: 49px;
 }
-
-.header__info {
+.header__invest__info {
   width: 694px;
   height: 85px;
   background-color: #333333;
-  position: relative;
-  margin: 0 683px 159px 63px;
+  display: flex;
+  margin: 27px 683px 155px 0;
 }
-.header__info .header__market {
+.header__invest__info__market {
   width: 354px;
   height: 48px;
   padding: 14px 61px 23px 39px;
@@ -106,12 +96,21 @@ header__invest__content {
   font-size: 16px;
   line-height: 24px;
 }
-.header__info .header__inquiry button {
+
+.header__invest__info__inquiry button {
   width: 230px;
   height: 63.75px;
   margin: 11px 10px 10.25px 0;
   background-color: #FFFFFF;
+  position: relative;
+  float: left;
+}
+.header__invest__info__inquiry button a {
+  width: 159px;
+  height: 21px;
+  text-decoration: none;
   text-transform: uppercase;
+  color: #333333;
   font-size: 600;
   font-size: 16px;
   line-height: 24px;
@@ -122,7 +121,7 @@ header__invest__content {
   height: 103px;
   position: relative;
   color: #FFFFFF;
-  margin: 136px 322px 160px 118px;
+  margin: 140px 322px 160px 118px;
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;

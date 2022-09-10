@@ -24,3 +24,10 @@
     line-height: 21px;
     color: $white;
 }
+
+@mixin content-white-size-line {
+    color: $darkgrey;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+}
