@@ -28,7 +28,8 @@
                 margin: 0 11px 0 120px;
             
                     &__titli h2 {
-                        @include h2-white-size-line;
+                        @include white-size-line;
+                        color: $darkgrey;
                         width: 309px;
                         height: 23px;
                         margin: 25px 44px 36px 40px;

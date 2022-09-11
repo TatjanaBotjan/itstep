@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,600;1,400&display=swap"
     rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&display=swap"
+    rel="stylesheet">
     <link rel="stylesheet" href="../common/normalize.css">
     <link rel="stylesheet" href="../Tasks22/css/style.css">
 </head>
@@ -156,5 +158,62 @@
         </div>
     </div>
 </section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="footer">
+                <div class="footer__contact-form">
+                    <form action="" method="post" name="contact-form">
+                        <div class="footer__contact-form__title">
+                            <h1>Contact form</h1>
+                        </div>
+                        <div class="footer__contact-form__name">
+                            <input type="text" name="name" id="name" placeholder="Mildred Carreck">
+                        </div>
+                        <div class="footer__contact-form__tel">
+                            <input type="tel" name="tel" id="tel" placeholder="+48 356 882 8252">
+                        </div>
+                        <div class="footer__contact-form__email">
+                            <input type="email" name="email" id="email" placeholder="mcarrecka@mac.com">
+                        </div>
+                        <div class="footer__contact-form__checkbox_potassium">
+                            <input type="checkbox" name="products[]" id="product_1" value="Sól Potasowa 60% NOD">
+                            <label for="product_1">Potassium Salt <br> 60% NOD</label>
+                        </div>
+                        <div class="footer__contact-form__checkbox_urea">
+                            <input type="checkbox" name="products[]" id="product_2" value="Urea 46% NOD">
+                            <label for="product_2">Urea <br> 46% NOD</label>
+                        </div>
+                        <div class="footer__contact-form__checkbox_ammonium">
+                            <input type="checkbox" name="products[]" id="product_3" value="Ammonium nitrate NOD">
+                            <label for="product_3">Ammonium <br> nitrate NOD</label>
+                        </div>
+                        <div class="footer__contact-form__message">
+                            <textarea name="message" id="message" placeholder="I want to order a large batch from you for my family farm and establish cooperation in the future"></textarea>
+                        </div>
+                        <div class="footer__contact-form__button">
+                            <button type="submit">send your inquiry</button>
+                        </div>
+                        <div class="footer__contact-form__error d-none">At least one field is incorrectly filled. Please check the entered content and try again.
+                        </div>
+                        <div class="footer__contact-form__success">Your message has been sent. You'll get an answer soon. Thank you!
+                        </div>    
+                    </form>
+                </div>
+                <div class="footer__info">
+                    <p>We deliver products both as part of regular contacts as well as individual orders. We approach each client and order
+                    individually.</p>
+                    <p>We offer convenient forms of cooperation in terms of transport and payment.</p>
+                </div>
+                <div class="footer__contact">
+                    <div class="footer__contact_email"></div>
+                    <div class="footer__contact_tel"></div>
+                </div>
+                <div class="footer__contact_firma"></div>
+                <div class="footer__contact_copyright"></div>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
