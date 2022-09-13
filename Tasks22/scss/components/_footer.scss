@@ -30,7 +30,7 @@ footer {
     margin-bottom: 12px;
     display: flex;
 
-    .input {
+    input [type="text"]{
             border: 1px solid $border;
             padding: 13px 10px 12px 10px;
             color: red;
@@ -44,11 +44,12 @@ footer {
     width: 640px;
     height: 55px;
     color: $white;
-        margin: 91px 120px 0 47px;
-    
-   
+    margin: 91px 120px 0 47px;
 
 }
 
+.footer__contact_copyright {
+    font-size: 200px;
+color: aqua;}
 
 
