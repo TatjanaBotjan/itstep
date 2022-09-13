@@ -29,15 +29,96 @@ footer {
 .footer__contact-form {
     margin-bottom: 12px;
     display: flex;
+    float: left;
+    
 
-    input [type="text"]{
-            border: 1px solid $border;
-            padding: 13px 10px 12px 10px;
-            color: red;
-            margin-left: 30px;
-            font-size: 12px;
-            line-height: 15px;
-            border-radius: 0;
+    input[type="text"]{
+        width: 404px;
+        border: 1px solid $border;
+        padding: 13px 0 12px 10px;
+        color: $black;
+        margin: 0 59px 12px 50px;
+        @include form-white-size-line;
+    }
+
+    input[type="tel"] {
+        width: 404px;
+        border: 1px solid $border;
+        padding: 13px 0 12px 10px;
+        color: $black;
+        margin: 0 59px 12px 50px;
+        @include form-white-size-line;
+    }
+
+    input[type="email"] {
+        width: 404px;
+        border: 1px solid $border;
+        padding: 13px 0 12px 10px;
+        color: $black;
+        margin: 0 59px 0 50px;
+        @include form-white-size-line;
+    }
+
+    &_checkbox {
+        margin-left: 50px;
+        display: inline-block;
+        padding-top: 50px;
+        position: relative;
+
+
+        input[type=checkbox] {
+            display: none;
+            position: absolute;
+            margin-top: 24px;
+                    
+            &:checked+label::after {
+                top: -21px;
+                left: 0;
+                position: absolute;
+                content: "";
+                width: 17px;
+                height: 17px;
+                background-image: url("../img/check.png");
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+        }
+        
+        label {
+            @include form-white-size-line;
+            cursor: pointer;
+            position: relative;
+            margin-top: 9px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 17px;
+                height: 17px;
+                border: 1px solid $border;
+                top: -21px;
+            }
+        }
+    }
+
+    textarea{
+        width: 404px;
+        height: 100px;
+        margin: 18px 59px 58px 50px;
+        @include form-white-size-line;
+        color: $black;
+    }
+
+        button {
+            width: 191px;
+            height: 52px;
+            color: $white;
+            background-color: $darkgrey;margin: 0 0 47px 73px;
+            text-transform: uppercase;
+            margin: 0 11px 50px 50px;
+            &:hover {
+                background-color: $yellow;
+                color: $white;
         }
 }
 .footer__info p {
@@ -45,11 +126,69 @@ footer {
     height: 55px;
     color: $white;
     margin: 91px 120px 0 47px;
-
+}
 }
 
-.footer__contact_copyright {
-    font-size: 200px;
-color: aqua;}
+.footer__contact-form-send {
+    position: relative;
+    display: flex;
+}
+.contact_form_error {
+    width: 171px;
+    height: 40px;
+    background: #F8F8F8;
+    border-left: 4px solid #FC7E7E;
+    padding: 6px 14px;
+    font-size: 9px;
+    line-height: 14px;
+    color: $black;
+    display: none;
+}
 
+.contact_form_success {
+    width: 171px;
+    height: 40px;
+    background: #F8F8F8;
+    border-left: 4px solid #BDFC7E;
+    padding: 6px 14px;
+    font-size: 9px;
+    line-height: 14px;
+    color: $black;
+}
 
+.footer__info {
+
+    &_text {
+        width: 640px;
+        color: $white;
+        margin: 91px 120px 155px 47px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        font-family: Poppins;
+    }
+}
+
+.footer__contact{
+ width: 461px;
+ height: 56px;
+ margin: 230px 313px 73px 20px;
+
+    &_head h3 {
+        color: $darkgrey;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 55px;
+    }
+
+    &_item{
+        justify-items: end;
+
+        a{
+            text-decoration: none;
+            color: $darkgrey;
+        }
+        
+    }
+}
