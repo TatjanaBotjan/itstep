@@ -180,15 +180,41 @@ footer {
         font-size: 12px;
         line-height: 18px;
         margin-top: 55px;
+        margin-bottom: 11px;
     }
 
     &_item{
-        justify-items: end;
+        margin-bottom: 73px;
 
         a{
             text-decoration: none;
             color: $darkgrey;
         }
-        
     }
+        &_firma {
+            margin-bottom: 58px;
+            p {
+                font-size: 12px;
+                line-height: 18px;
+                font-family: Poppins;
+                font-weight: 400;
+                color: $lightblack;
+                text-transform: uppercase;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+
+        &_copyright{
+            font-size: 10px;
+            line-height: 15px;
+            font-family: Poppins;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: $lightblack;
+            margin: 0 648px 24px -26px;
+        }
+}
+.mail {
+    margin-right: 40px;
 }

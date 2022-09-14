@@ -90,7 +90,11 @@ header {
     margin: 11px 10px 10.25px 0;
     background-color: $white;
     position: relative;
-    float: left;
+    float: left;  
+    &:hover {
+            background-color: $yellow;
+    }
+          
 
     a {
         width: 159px;
@@ -99,16 +103,7 @@ header {
         text-transform: uppercase;
         color: $darkgrey;
         @include white-size-line
-    }
-}
         
-
-
-
-    
-
-
-
-
-
+}
+}
 

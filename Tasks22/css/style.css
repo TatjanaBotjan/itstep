@@ -105,6 +105,9 @@ header {
   position: relative;
   float: left;
 }
+.header__invest__info__inquiry button:hover {
+  background-color: #FFCD42;
+}
 .header__invest__info__inquiry button a {
   width: 159px;
   height: 21px;
@@ -192,6 +195,9 @@ header {
   font-size: 16px;
   line-height: 24px;
 }
+.fertilizers__types__potassium__inquiry button:hover {
+  background-color: #FFCD42;
+}
 .fertilizers__types__potassium__inquiry button a {
   text-decoration: none;
   font-weight: 600;
@@ -246,6 +252,9 @@ header {
   font-size: 16px;
   line-height: 24px;
 }
+.fertilizers__types__urea__inquiry button:hover {
+  background-color: #FFCD42;
+}
 .fertilizers__types__urea__inquiry button a {
   text-decoration: none;
   font-weight: 600;
@@ -299,6 +308,9 @@ header {
   font-size: 600;
   font-size: 16px;
   line-height: 24px;
+}
+.fertilizers__types__ammonium__inquiry button:hover {
+  background-color: #FFCD42;
 }
 .fertilizers__types__ammonium__inquiry button a {
   text-decoration: none;
@@ -531,11 +543,38 @@ footer {
   font-size: 12px;
   line-height: 18px;
   margin-top: 55px;
+  margin-bottom: 11px;
 }
 .footer__contact_item {
-  justify-items: end;
+  margin-bottom: 73px;
 }
 .footer__contact_item a {
   text-decoration: none;
   color: #333333;
+}
+.footer__contact_firma {
+  margin-bottom: 58px;
+}
+.footer__contact_firma p {
+  font-size: 12px;
+  line-height: 18px;
+  font-family: Poppins;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.footer__contact_copyright {
+  font-size: 10px;
+  line-height: 15px;
+  font-family: Poppins;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0 648px 24px -26px;
+}
+
+.mail {
+  margin-right: 40px;
 }/*# sourceMappingURL=style.css.map */

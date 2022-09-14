@@ -63,6 +63,9 @@
                         background-color: $darkgrey;
                         text-transform: uppercase;
                         @include white-size-line;
+                        &:hover {
+                                background-color: $yellow;
+                            }
 
                         a {
                             text-decoration: none;
@@ -112,6 +115,9 @@
                                 background-color: $darkgrey;
                                 text-transform: uppercase;
                                 @include white-size-line;
+                                &:hover {
+                                    background-color: $yellow;
+                                }
                         
                                 a {
                                     text-decoration: none;
@@ -164,6 +170,9 @@
                             background-color: $darkgrey;
                             text-transform: uppercase;
                             @include white-size-line;
+                            &:hover {
+                                background-color: $yellow;
+                            }
                         
                             a {
                                 text-decoration: none;
