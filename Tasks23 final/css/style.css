@@ -1,0 +1,32 @@
+.container {
+  width: 440px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}
+@media (min-width: 1920px) {
+  .container {
+    width: 1920px;
+  }
+}
+
+.header {
+  height: 140px;
+}
+
+.header__hamburger {
+  margin-top: 50px;
+}
+.header__hamburger a {
+  width: 26.25px;
+  height: 20.42px;
+  background-image: url(../img/hamburger.png);
+  display: block;
+}/*# sourceMappingURL=style.css.map */
