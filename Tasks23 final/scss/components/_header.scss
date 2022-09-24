@@ -1,14 +1,63 @@
 .header {
     height: 140px;
-}
-.header__hamburger {
-    margin-top: 50px;
-    a {
-        width: 26.25px;
-        height: 20.42px;
-        background-image: url(../img/hamburger.png);
-        display: block;
+    display: flex;
 
+    &__hamburger {
+        margin-top: 50px;
+    
+            a {
+                width: 26.25px;
+                height: 20.42px;
+                background-image: url(../img/hamburger.png);
+                display: block;
+            }
+    }
+
+    &__logo {
+        margin: 47px 202px 48px 70px;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        width: 558px;
         
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        li:not(:last-child) {
+            margin-right: 50px;
+        }
+        li {
+            float: left;
+        }
+        a{
+            text-decoration: none;
+            @include a;
+        }
+    }
+    &__language{
+        display: flex;
+        margin: 59px 35px 58px 480px;
+        align-items: center;
+        ul {
+            list-style: none;
+        }
+
+        li{
+            float: left;
+        }
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+
+    &__connection{
+        margin: 37px 70px 36px;
+    }
+    &__hamburger{
+        display: none;
     }
 }
