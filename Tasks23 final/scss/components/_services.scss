@@ -1,0 +1,22 @@
+.services {
+    width: 1920px;
+}
+
+.services__info {
+    display: flex;
+    float: left;
+        
+        &_section{
+            width: 50%;
+            
+            &_text {
+            width: 820px;
+            
+            p {
+                margin-top: 0;
+                margin-bottom: 0;
+                line-height: 32px;
+            }
+            }
+    }
+}
