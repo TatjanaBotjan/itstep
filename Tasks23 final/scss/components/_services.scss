@@ -1,22 +1,45 @@
 .services {
     width: 1920px;
-}
+    margin: 0;
 
-.services__info {
-    display: flex;
-    float: left;
-        
-        &_section{
-            width: 50%;
+    &__title {
+        margin: 0 717.5px 40px 70.5px;
+    }
+
+    &__info {
+        display: flex;
+        float: left;
+    
+        &_section {
             
+    
             &_text {
-            width: 820px;
-            
-            p {
-                margin-top: 0;
-                margin-bottom: 0;
-                line-height: 32px;
+                width: 820px;
+                margin: 0 0 100px 70px;
+                margin-right: 0;
+                p {
+                    font-size: 20px;
+                    @include p;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
             }
+
+            &_menu{
+                li {
+                    list-style: none;
+                }
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
             }
+        }
+        &_image{
+            background-image: url(../img/m_chart.jpg);
+            width: 786px;
+            height: 564px;
+            margin: -2px 70px 70px 174px;
+        }
     }
 }

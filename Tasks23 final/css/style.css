@@ -10,9 +10,10 @@ h1 {
   color: #000000;
 }
 
-.container {
-  width: 1920px;
+body {
+  width: 100%;
 }
+
 @media (min-width: 768px) {
   .container {
     width: 768px;
@@ -33,6 +34,7 @@ h1 {
   height: 140px;
   display: flex;
   width: 1920px;
+  margin-bottom: 80px;
 }
 .header__hamburger {
   margin-top: 50px;
@@ -50,6 +52,7 @@ h1 {
 .header__menu {
   display: flex;
   align-items: center;
+  width: 558px;
 }
 .header__menu ul {
   list-style: none;
@@ -63,7 +66,7 @@ h1 {
 }
 .header__menu a {
   text-decoration: none;
-  font-size: Mulish;
+  font-family: Mulish;
   font-weight: 400;
   line-height: 25.1px;
   color: #000000;
@@ -71,7 +74,7 @@ h1 {
 }
 .header__language {
   display: flex;
-  margin: 59px 25px 58px 480px;
+  margin: 59px 25px 58px 490px;
   float: left;
   align-items: center;
   justify-content: space-between;
@@ -86,23 +89,23 @@ h1 {
 .header__language a {
   text-decoration: none;
   text-transform: uppercase;
-  font-size: Mulish;
+  font-family: Mulish;
   font-weight: 400;
   line-height: 25.1px;
   color: #000000;
   font-size: 18px;
-  margin-right: 5px;
+  margin-right: 3px;
 }
 .header__language a span {
   border-left: 2px solid #000000;
   text-decoration: underline;
-  padding-left: 5px;
+  padding-left: 3px;
 }
 .header__connection {
   width: 240px;
   height: 67px;
   background-color: #F6523C;
-  margin: 37px 0 36px 0px;
+  margin: 37px 70px 36px 0px;
   align-items: center;
   display: flex;
 }
@@ -118,20 +121,39 @@ h1 {
 
 .services {
   width: 1920px;
+  margin: 0;
 }
-
+.services__title {
+  margin: 0 717.5px 40px 70.5px;
+}
 .services__info {
   display: flex;
   float: left;
 }
-.services__info_section {
-  width: 50%;
-}
 .services__info_section_text {
   width: 820px;
+  margin: 0 0 100px 70px;
+  margin-right: 0;
 }
 .services__info_section_text p {
+  font-size: 20px;
+  font-family: Mulish;
+  font-weight: 300;
+  line-height: 32.5px;
+  color: #000000;
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 32px;
+}
+.services__info_section_menu li {
+  list-style: none;
+}
+.services__info_section_menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.services__info_image {
+  background-image: url(../img/m_chart.jpg);
+  width: 786px;
+  height: 564px;
+  margin: -2px 70px 70px 174px;
 }/*# sourceMappingURL=style.css.map */
