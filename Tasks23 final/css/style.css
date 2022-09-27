@@ -17,29 +17,17 @@ h3 {
 
 body {
   width: 100%;
-  height: 100%;
+  overflow-x: hidden;
 }
 
-@media (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-@media (min-width: 1280px) {
-  .container {
-    width: 1280px;
-  }
-}
-@media (min-width: 1920px) {
-  .container {
-    width: 1920px;
-  }
+.container {
+  width: 100%;
 }
 
 .header {
   height: 140px;
   display: flex;
-  width: 1920px;
+  width: 100%;
   margin-bottom: 80px;
 }
 .header__hamburger {
@@ -58,7 +46,6 @@ body {
 .header__menu {
   display: flex;
   align-items: center;
-  width: 558px;
 }
 .header__menu ul {
   list-style: none;
@@ -120,7 +107,8 @@ body {
   width: 240px;
   height: 67px;
   background-color: #F6523C;
-  margin: 37px 70px 36px 0px;
+  margin-top: 37px;
+  margin-right: 0;
   align-items: center;
   display: flex;
 }
@@ -142,15 +130,17 @@ body {
 }
 
 .services {
-  width: 1920px;
+  width: 100%;
   margin: 0;
 }
 .services__title {
-  margin: 0 717.5px 40px 70.5px;
+  width: 70%;
+  margin-left: 70px;
 }
 .services__info {
   display: flex;
   float: left;
+  position: relative;
 }
 .services__info_image {
   margin: -40px 70px 70px 174px;
@@ -171,7 +161,7 @@ body {
 }
 .services__info_section_menu {
   margin: 100px 0 191px 70px;
-  width: 183px;
+  width: 25%;
 }
 .services__info_section_menu > ul > li:hover .services__info_section_menu_block {
   display: block;
@@ -228,7 +218,30 @@ body {
 }
 
 .info {
-  width: 1920px;
+  width: 100%;
   height: 942px;
   background-color: #000000;
+  display: flex;
+}
+.info__text {
+  width: 100%;
+  margin: 220px 0 160px 70px;
+}
+.info__text p {
+  font-family: Mulish;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 64px;
+  color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.info__quality_communication {
+  width: 33, 3333333%;
+  flex-direction: column;
+}
+.info__quality_communication_image {
+  background-image: url(../img/chat.png);
+  width: 40px;
+  height: 38.23px;
 }/*# sourceMappingURL=style.css.map */

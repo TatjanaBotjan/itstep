@@ -1,17 +1,20 @@
 .services {
-    width: 1920px;
+    width: 100%;
     margin: 0;
 
     &__title {
-        margin: 0 717.5px 40px 70.5px;
+        width: 70%;
+        margin-left: 70px;
     }
 
     &__info {
         display: flex;
         float: left;
-
+        position: relative;
+        
         &_image {
             margin: -40px 70px 70px 174px;
+            
         }
     
         &_section {
@@ -20,6 +23,7 @@
                 width: 820px;
                 margin: 0 0 100px 70px;
                 margin-right: 0;
+                
                 p {
                     font-size: 20px;
                     @include p;
@@ -30,7 +34,7 @@
 
             &_menu {
                 margin: 100px 0 191px 70px;
-                width: 183px;
+                width: 25%;
                 & > ul > li:hover .services__info_section_menu_block {
                     display: block;
                 }
