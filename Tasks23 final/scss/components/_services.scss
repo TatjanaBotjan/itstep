@@ -26,17 +26,43 @@
             }
 
             &_menu{
+                margin: 0 135px 191px 70px;
+                position: relative;
+
+                & > ul {
+                    display: flex;
+                    flex-direction: column;
+
+                    & > li > ul {
+                        position: relative;
+                        display: flex;
+                        float: left;
+                    }
+                }
                 li {
                     list-style: none;
                 }
                 a {
                     text-decoration: none;
                     text-transform: uppercase;
+                    @include li-menu;
+                    font-size: 20px;
+                    &:hover {
+                        color: $red;
+                    }
+                }
+                li:not(:last-child) {
+                    margin-bottom: 33px;
+                }
+
+                &_image{
+                    background-image: url(../img/Files1.png);
+                    width: 103px;
+                    height: 73px;
                 }
             }
         }
         &_image{
-            background-image: url(../img/m_chart.jpg);
             width: 786px;
             height: 564px;
             margin: -2px 70px 70px 174px;
