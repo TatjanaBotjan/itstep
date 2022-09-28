@@ -1,7 +1,5 @@
 .services {
-    width: 100%;
-    margin: 0;
-
+  
     &__title {
         width: 70%;
         margin-left: 70px;
@@ -9,12 +7,9 @@
 
     &__info {
         display: flex;
-        float: left;
-        position: relative;
         
         &_image {
-            margin: -40px 70px 70px 174px;
-            
+            margin: -40px 70px 0 174px;  
         }
     
         &_section {
