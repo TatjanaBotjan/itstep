@@ -1,121 +1,109 @@
+
+.container {
+    display: flex;
+    max-width: 1920px;
+   
+}
+
 .header {
     height: 140px;
-    display: flex;
-    margin-bottom: 80px;
-    
-
-    &__hamburger {
-        margin-top: 50px;
-
-        a {
-            width: 26.25px;
-            height: 20.42px;
-            background-image: url(../img/hamburger.png);
-            display: block;
-            display: none;
-        }
-    }
-
-    &__logo {
-        margin: 47px 202px 48px 70px;
-    }
+    align-items: center;
+    margin-left: 70px;
+   
 
     &__menu {
         display: flex;
-        align-items: center;
-        width: 558px;
-        
+       margin: 0 490px 0 202px;
+       width: 558px;
+       float: left;
+
         ul {
             list-style: none;
             padding-left: 0;
         }
-
+        
         li:not(:last-child) {
             margin-right: 50px;
         }
-
+        
         li {
             float: left;
         }
-
+        
         a {
             text-decoration: none;
             @include a;
             font-size: 20px;
-
+            line-height: 25.1px;
+            transition: color 0.2s linear;
+           
             &:hover {
                 color: $red;
             }
         }
-
     }
 
-    &__language {
+    &__language{
         display: flex;
-        margin: 59px 25px 58px 490px;
-        float: left;
-        align-items: center;
-        justify-content: space-between;
+       margin-right: 25px;
+
+        .vertical-line {
+            width: 2px;
+            margin: 4px 4px 0 2px;
+            background-color: $black;
+            height: 15px;
+            float: left;
+        }
 
         ul {
             list-style: none;
             padding-left: 0;
-        }
+            display: flex;
 
-        li {
-            float: left;
-        }
-
-        a {
-            text-decoration: none;
-            text-transform: uppercase;
-            @include a;
-            font-size: 18px;
-            margin-right: 3px;
-
-            &:hover {
-                color: $red;
+            li {
+                float: left;
             }
-        }
-
-        a span {
-            border-left: 2px solid $black;
-            text-decoration: underline;
-            padding-left: 3px;
-
-            &:hover {
-                color: $red;
+            
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                @include a;
+                font-size: 18px;
+                line-height: 23.4px;
+                margin-right: 3px;
+                transition: color 0.2s linear;
+                
+                &:hover {
+                    color: $red;
+                    text-decoration: underline;
+                }
             }
         }
     }
 
-    &__connection {
-        width: 240px;
-        height: 67px;
-        background-color: $red;
-        margin-top: 37px;
-        
-        align-items: center;
-        display: flex;
-
-        &:hover {
-            background-color: $white;
-            border: 1px solid $black;
-
-            a {
+        &__connection {margin-left: 0;
+            .btn {
+                display: inline-block;
+                vertical-align: top;
+                padding: 22px 50px;
+                background-color: $red;
+                transition: color,background-color 0.3s linear;
+            }
+    
+                .btn:hover {
+                background-color: $white;
+                border: 1px solid $black;
                 color: $black;
             }
+    
+            a {
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 400;
+                font-size: Mulish;
+                color: $white;
+                line-height: 22.59px;
+                padding-left: 50px;
+            }
         }
-
-        a {
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: 400;
-            font-size: Mulish;
-            color: $white;
-            line-height: 22.59px;
-            padding-left: 43.5px;
-        }
-    }
-
 }
