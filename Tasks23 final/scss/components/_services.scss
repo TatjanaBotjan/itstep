@@ -1,0 +1,106 @@
+.services {
+    width: 100%;
+    margin: 0;
+
+    &__title {
+        width: 70%;
+        // margin: 0 717.5px 40px 70.5px;
+    }
+
+    &__info {
+        display: flex;
+
+        &_image {
+            background-image: url(../img/m_chart.jpg);
+            height: 564px;
+            width: 786px;
+            margin: -40px 0 70px 174px;
+           position: relative;
+        }
+
+        &_section {
+            
+
+            &_text {
+                width: 820px;
+                margin-bottom: 100px;
+              
+
+                p {
+                    font-size: 20px;
+                    @include p;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
+
+            &_menu {
+                margin: 100px 0 70px 0;
+                width: 25%;
+
+                &>ul>li:hover .services__info_section_menu_block {
+                    display: block;
+                }
+
+                &>ul {
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 0;
+
+                    li:not(:last-child) {
+                        margin-bottom: 33px;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        position: relative;
+                        font-family: Mulish;
+                        @include li-menu;
+                        font-size: 20px;
+                        text-transform: uppercase;
+
+                        &:hover {
+                            color: $red;
+                        }
+
+                    }
+
+                }
+
+                &_block {
+                    position: absolute;
+                    border-left: 2px solid $black;
+                    padding-left: 42px;
+                    margin-left: 360px;
+                    width: 438px;
+                    margin-top: -20px;
+                    display: none;
+
+
+                    &_image {
+                        background-image: url(../img/Files1.png);
+                        width: 103px;
+                        height: 73px;
+                        margin-bottom: 30px;
+                    }
+
+                    &_development {
+                        h3 {
+                            text-transform: uppercase;
+                            font-size: 22px;
+                            line-height: 27.61px;
+                        }
+
+                        p {
+                            line-height: 28px;
+                            font-size: 20px;
+                            @include family-weight-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

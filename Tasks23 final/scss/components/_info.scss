@@ -1,0 +1,105 @@
+.info {
+    width: 100%;
+    height: 942px;
+    background-image: url(../img/bg1.png);
+    background-repeat: repeat-x;
+    margin-top: 0;
+
+    &__inner {
+        margin-top: 30px;
+    }
+
+    &__text {
+            font-family: Mulish;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 64px;
+            color: $white;
+            margin-bottom: 160px;
+        }
+
+                &__quality {
+                    display: flex;
+        
+                    &_communication {
+                        width: 33, 3333333%;
+                        position: relative;
+                        margin-right: 140px;
+
+                        &_text h3 {
+                            color: $white;
+                            text-transform: uppercase;
+                            font-weight: 33.6px;
+                            font-size: 24px;
+                            margin-bottom: 20px;
+                        }
+                        &_text p {
+                            color: $white;
+                            font-weight: 30px;
+                            font-size: 20px;
+                        }
+        
+                        &_image {
+                            background-image: url(../img/chat.png);
+                            width: 40px;
+                            height: 38.23px;
+                            margin-bottom: 30px;
+                        }
+                    }
+
+                    &_individuality {
+                        width: 33, 3333333%;
+                        position: relative;
+                        margin-right: 140px;
+                    
+                            &_text h3 {
+                                color: $white;
+                                text-transform: uppercase;
+                                font-weight: 33.6px;
+                                font-size: 24px;
+                                margin-bottom: 20px;
+                            }
+                    
+                            &_text p {
+                                color: $white;
+                                font-weight: 30px;
+                                font-size: 20px;
+                            }
+                    
+                            &_image {
+                                background-image: url(../img/globe.png);
+                                width: 40px;
+                                height: 38.23px;
+                                margin-bottom: 30px;
+                            }
+                        }
+
+                    &_speed {
+                        width: 33, 3333333%;
+                        position: relative;
+                        margin-right: 140px;
+                    
+                        &_text h3 {
+                            color: $white;
+                            text-transform: uppercase;
+                            font-weight: 33.6px;
+                            font-size: 24px;
+                            margin-bottom: 20px;
+                        }
+                    
+                        &_text p {
+                            color: $white;
+                            font-weight: 30px;
+                            font-size: 20px;
+                        }
+                    
+                        &_image {
+                            background-image: url(../img/lightning.png);
+                            width: 40px;
+                            height: 38.23px;
+                            margin-bottom: 30px;
+                        }
+                    }
+                }                   
+            }
+        

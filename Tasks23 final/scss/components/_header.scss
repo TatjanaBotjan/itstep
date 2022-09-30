@@ -1,25 +1,26 @@
-
-.container {
-    display: flex;
-    max-width: 1920px;
-   
-}
-
 .header {
-    height: 140px;
+  
+    
+   &__inner {
+    display: flex;
     align-items: center;
-    margin-left: 70px;
-   
+    margin-top: 30px;
+    justify-content: space-between;
+   }
 
+   &__logo {
+    margin-right: -20px;
+   }
+   
     &__menu {
         display: flex;
-       margin: 0 490px 0 202px;
-       width: 558px;
        float: left;
-
+        align-items: center;
+        
         ul {
             list-style: none;
             padding-left: 0;
+            margin: 0;
         }
         
         li:not(:last-child) {
@@ -45,7 +46,7 @@
 
     &__language{
         display: flex;
-       margin-right: 25px;
+       margin-right: -150px;
 
         .vertical-line {
             width: 2px;
@@ -85,7 +86,7 @@
             .btn {
                 display: inline-block;
                 vertical-align: top;
-                padding: 22px 50px;
+                padding: 22px 40px;
                 background-color: $red;
                 transition: color,background-color 0.3s linear;
             }
