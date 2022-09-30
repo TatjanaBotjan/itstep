@@ -4,26 +4,29 @@
 
     &__title {
         width: 70%;
-        // margin: 0 717.5px 40px 70.5px;
+        
     }
 
     &__info {
         display: flex;
+        justify-content: space-between;
 
         &_image {
             background-image: url(../img/m_chart.jpg);
-            height: 564px;
-            width: 786px;
-            margin: -40px 0 70px 174px;
-           position: relative;
+            width: 50%;
+            position: relative;
+            background-repeat: no-repeat;
+            margin-bottom: 64px;
+            margin-right: -70px;
         }
 
         &_section {
-            
+            width: 50%;
 
             &_text {
                 width: 820px;
                 margin-bottom: 100px;
+                margin-top: 40px;
               
 
                 p {
@@ -35,7 +38,7 @@
             }
 
             &_menu {
-                margin: 100px 0 70px 0;
+                margin: 100px 0 160px 0;
                 width: 25%;
 
                 &>ul>li:hover .services__info_section_menu_block {

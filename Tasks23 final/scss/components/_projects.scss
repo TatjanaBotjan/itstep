@@ -1,0 +1,156 @@
+.projects {
+    width: 100%;
+    
+    &__inner {
+        display: flex;
+        margin-top: 160px;
+        margin-bottom: 160px;
+
+        &_examples {
+            width: 27%;
+            margin-right: 97px;
+
+            h2 {
+               font-weight: 700; 
+               font-size: 40px;
+               line-height: 52px;
+               font-family: Mulish, sans-serif;
+               text-transform: uppercase;
+               margin-top: 0;
+            }
+
+            h2 span {
+                color: red;
+            }
+
+            &_text {
+                font-weight: 400;
+                font-family: Mulish, sans-serif;
+                color: $black;
+                font-size: 24px;
+                line-height: 36px;
+                margin-bottom: 45px;
+            }
+
+            &_button {
+                
+                .btn {
+                        text-align: center;
+                        background-color: $white;
+                        border: 1px solid $black;
+                        color: $black;
+                        padding: 15px 0 15px 40px;
+                        box-sizing: border-box;
+                        transition: color, background-color 0.3s linear;
+
+                        .arrow {
+                            background-image: url(../img/arrow.png);
+                            width: 17px;
+                            height: 16px;
+                            display: inline-block;
+                            margin-left: 53px;
+                            margin-right: 30px;
+                        }
+                    }
+                
+                    .btn:hover {
+                        background-color: $red;
+                        color: $white;
+                         
+                    }
+                    .arrow:hover {
+                        background-image: url(../img/arrow2.png);
+                        width: 17px;
+                        height: 16px;
+                        display: inline-block;
+                        margin-left: 53px;
+                        margin-right: 30px;
+                    }
+
+                
+                    a {
+                        text-decoration: none;
+                        font-size: 20px;
+                        font-weight: 400;
+                        font-size: Mulish;
+                        color: $white;
+                        line-height: 26px;
+                        padding-left: 50px;
+                    }
+            }
+        }
+
+        &_tracker {
+            width: 25%;
+            margin-right: 20px;
+
+            &_image {
+                background-image: url(../img/treker.png);
+                height: 500px;
+                margin-bottom: 40px;
+
+            }
+                & h3 {
+                    font-size: 24px;
+                    font-weight: 36px;
+                    font-family: Mulish, sans-serif;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: $black;
+                }
+
+                &_text {
+                    @include text;
+                }
+        }
+
+        &_univer {
+            width: 24%;
+            margin-right: 20px;
+        
+                &_image {
+                    background-image: url(../img/comp.png);
+                    height: 500px;
+                    margin-bottom: 40px;
+        
+                }
+        
+                & h3 {
+                    font-size: 24px;
+                    font-weight: 36px;
+                    font-family: Mulish, sans-serif;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: $black;
+                }
+        
+                &_text {
+                    @include text;
+                }
+                }
+
+        &_blog {
+            width: 24%;
+                
+                &_image {
+                    background-image: url(../img/blog.png);
+                    height: 500px;
+                    margin-bottom: 40px;
+                
+                }
+                
+                & h3 {
+                    font-size: 24px;
+                        font-weight: 36px;
+                        font-family: Mulish, sans-serif;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        color: $black;
+                }
+                
+                &_text {
+                    @include text;
+                }
+        }
+    }
+}

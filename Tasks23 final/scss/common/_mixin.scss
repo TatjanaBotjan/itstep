@@ -22,3 +22,10 @@
     font-weight: 400;
     color: $black;
 }
+
+@mixin text {
+    font-family: Mulish, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 37px;
+}
