@@ -1,0 +1,193 @@
+.footer {
+    width: 100%;
+    height: 655px;
+    background-image: url(../img/bg1.png);
+    background-repeat: repeat-x;
+    margin-top: 0;
+
+    h3 {
+            font-family: Open+Sans;
+            font-weight: 400;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: $white;
+            line-height: 32.6px;
+            margin-top: 0;
+            margin-bottom: 11px;
+        }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__logo {
+        width: 20%;
+        margin-top: 70px;
+
+        &_img {
+        background-image: url(../img/SparkIT2.png);
+        width: 112px;
+        height: 40px;
+        background-repeat: no-repeat;
+    }
+}
+
+    &__company {
+        width: 20%;
+        margin-top: 70px;
+
+        li {
+            list-style: none;
+            margin-top: 33px;
+        }
+
+        a {
+            font-family: Mulish;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22.59px;
+            text-decoration: none;
+            color: $white;
+            
+        }
+    }
+
+    &__services {
+        width: 20%;
+        margin-top: 70px;
+        
+        li {
+            list-style: none;
+            margin-top: 33px;
+        }
+        
+        a {
+            font-family: Mulish;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22.59px;
+            text-decoration: none;
+            color: $white;
+            text-transform: uppercase;
+        
+        }
+    }
+
+    &__contacts {
+        width: 40%;
+        margin: 70px 0 44px 262px;
+
+        &_phone {
+            display: flex;
+            margin-top: 33px;
+            margin-bottom: 18px;
+        
+            &_image {
+                background-image: url(../img/phonew.png);
+                width: 30px;
+                height: 30px;
+                background-repeat: no-repeat;
+                margin-right: 30px;
+            }
+        
+                a {
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 30.12px;
+                    font-family: Mulish;
+                    color: $white;
+                   
+                }
+            }
+        
+            &_address {
+                display: flex;
+                margin-bottom: 18px;
+        
+                &_image {
+                    background-image: url(../img/pinw.png);
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 30px;
+                }
+        
+                p {
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 33.6px;
+                    font-family: Mulish;
+                    color: $white;
+                    margin: 0;
+                }
+            }
+        
+            &_email {
+                display: flex;
+                margin-bottom: 18px;
+        
+                &_image {
+                    background-image: url(../img/emailw.png);
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 30px;
+                }
+        
+                a {
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 30.12px;
+                    font-family: Mulish;
+                    color: $white;
+                    margin: 0;
+                }
+            }
+
+            &_icons {
+                display: flex;
+
+                ul {
+                    padding-left: 0;
+                }
+                
+                li {
+                    text-decoration: none;
+                    float: left;
+                    margin-top: 57px;
+                    
+                    a {
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        background-position: center center;
+
+                        &.tg {
+                            background-image: url(../img/telegram.png);
+                            margin-right: 24px;
+                        }
+                        &.globe {
+                           background-image: url(../img/dribbble.png); 
+                           margin-right: 24px;
+                        }
+                        &.be {
+                            background-image: url(../img/behance.png);
+                            margin-right: 24px;
+                        }
+                        &.in {
+                            background-image: url(../img/linkedin.png);
+                        }
+                    }
+                }
+            }
+
+            &_copyright{
+                font-family: Open+Sans;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 24.51px;
+                text-transform: uppercase;
+                color: $white;
+                margin-top: 40px;
+                text-align: center;
+            }
+    }
+}
