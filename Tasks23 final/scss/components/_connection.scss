@@ -1,0 +1,141 @@
+.connection {
+    width: 100%;
+
+    &__inner {
+        display: flex;
+
+        &_contacts {
+            width: 35%;
+
+            h2 {
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 56px;
+                font-family: Mulish;
+                text-transform: uppercase;
+                color: $black;
+                margin: 174px 0 0 0;            
+            }
+
+            h2 span {
+                color: $red;
+            }
+
+            &_phone {
+                display: flex;
+
+                &_image {
+                    background-image: url(../img/phone.png);
+                    width: 30px;
+                    height: 30px;
+                    margin: 30px 30px 18px 0;
+                }
+
+                a {
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 30.12px;
+                    font-family: Mulish;
+                    color: $black;
+                    margin-top: 30px;
+                }
+            } 
+
+            &_address {
+                display: flex;
+                
+                    &_image {
+                        background-image: url(../img/pin.png);
+                        width: 30px;
+                        height: 30px;
+                        margin: 30px 30px 18px 0;
+                    }
+                
+                    p {
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 33.6px;
+                        font-family: Mulish;
+                        color: $black;
+                        margin-top: 18px;
+                    }
+            }
+
+            &_email {
+                display: flex;
+            
+                &_image {
+                    background-image: url(../img/email.png);
+                    width: 30px;
+                    height: 30px;
+                    margin: 30px 30px 18px 0;
+                }
+            
+                a {
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 30.12px;
+                    font-family: Mulish;
+                    color: $black;
+                    margin-top: 18px;
+                }
+            }
+
+        }
+
+        &_form {
+            width: 75%;
+            padding: 90px 120px 0;
+            border: 1px solid $border;
+            display: flex;
+            justify-content: center;
+            margin-top: 160px;
+            text-transform: uppercase;
+            height: 660px;
+            @include form;
+
+            ::placeholder {
+                color: $form;
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20.8;
+            }
+            
+
+            &_agreement {
+                text-transform:none;
+            }
+
+            &_group {
+                position: relative;
+                margin-bottom: 60px;
+
+            
+            
+            &_input {
+                width: 400px;
+                padding-bottom: 10px;
+                border: none;
+                border-bottom: 1px solid $form;
+                background-color: transparent;
+                outline: none;
+                color: $black;
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: 16px;
+                
+
+                &:focus {
+                    border-bottom: 1px solid $black;
+                }
+            }
+            }
+
+            &_item1 {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
