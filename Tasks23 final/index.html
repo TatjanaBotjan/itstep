@@ -247,28 +247,30 @@
                 </div>
                 <div class="connection__inner_form">
                     <form action="" method="post" name="contact-form">
-                        <div class="connection__inner_form_item1">
+                        <div class="connection__inner_form_name">
                             <div class="connection__inner_form_group">
                                 <input class="connection__inner_form_group_input" type="text" name="name" id="name" value="" placeholder="Имя">
                             </div>
                             <div class="connection__inner_form_group">
-                                <input class="connection__inner_form_group_input" type="tel" name="tel" id="tel" value="" placeholder="Номер телефона">
+                                <input class="connection__inner_form_group_input" type="text" name="surname" id="surname" value="" placeholder="Фамилия">
                             </div>
                         </div>
-                        <div class="connection__inner_form_item2">
+                        <div class="connection__inner_form_contact">
                             <div class="connection__inner_form_group">
-                                <input class="connection__inner_form_group_input" type="text" name="surname" id="surname" value="" placeholder="Фамилия">
+                                <input class="connection__inner_form_group_input" type="tel" name="tel" id="tel" value=""
+                                    placeholder="Номер телефона">
                             </div>
                             <div class="connection__inner_form_group">
                                 <input class="connection__inner_form_group_input" type="email" name="email" id="email" value="" placeholder="Email">
                             </div>
                         </div>
-                        <div class="connection__inner_form_item3">
-                            <input class="connection__inner_form_group_input" type="text" name="message" id="message" value="" placeholder="ваше сообщение">
-                        </div>
-                        <div class="connection__inner_form_agreement">
+                        <div class="connection__inner_form_message">
+                            <input class="connection__inner_form_group_input mess" type="text" name="message" id="message" value=""
+                                placeholder="Ваше сообщение">
+                        </div>                       
+                        <div class="connection__inner_agreement">
                             <input type="checkbox" name="[]" id="agreement" value="1"><label for="agreement"></label>
-                            <div>Я согласен с Политикой конфиденциальности и даю разрешение на обработку моих персональных данных для целей, указанных в
+                            <div class="connection__inner_agreement_text">Я согласен с Политикой конфиденциальности и даю разрешение на обработку моих персональных данных для целей, указанных в
                             <span> Политике конфиденциальности.</span></div>
                         </div>
                         <button class="connection__inner_form_btn">Отправить</button>
@@ -328,6 +330,5 @@
         <hr>
         <div class="footer__contacts_copyright">© 2007-2022 sparkit. All Rights Reserved. Privacy Policy.</div>
     </footer>
-    
 </body>
 </html>

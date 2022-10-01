@@ -657,9 +657,10 @@ p {
 }
 .connection__inner {
   display: flex;
+  justify-content: space-between;
 }
 .connection__inner_contacts {
-  width: 35%;
+  width: 30%;
 }
 .connection__inner_contacts h2 {
   font-weight: 600;
@@ -725,7 +726,7 @@ p {
   margin-top: 18px;
 }
 .connection__inner_form {
-  width: 75%;
+  width: 43%;
   padding: 90px 120px 0;
   border: 1px solid #DFDFDF;
   display: flex;
@@ -760,7 +761,26 @@ p {
   font-size: 16px;
   line-height: 20.8;
 }
+.connection__inner_form_name {
+  display: flex;
+  justify-content: space-between;
+}
+.connection__inner_form_contact {
+  display: flex;
+  justify-content: space-between;
+}
+.connection__inner_form_message {
+  margin-bottom: 60px;
+}
+.connection__inner_form .mess {
+  width: 100%;
+}
 .connection__inner_form_agreement {
+  text-transform: none;
+  display: flex;
+  float: left;
+}
+.connection__inner_form_agreement_text {
   text-transform: none;
 }
 .connection__inner_form_group {
@@ -768,7 +788,7 @@ p {
   margin-bottom: 60px;
 }
 .connection__inner_form_group_input {
-  width: 400px;
+  width: 310px;
   padding-bottom: 10px;
   border: none;
   border-bottom: 1px solid #929292;
@@ -781,10 +801,6 @@ p {
 }
 .connection__inner_form_group_input:focus {
   border-bottom: 1px solid #000000;
-}
-.connection__inner_form_item1 {
-  display: flex;
-  justify-content: space-between;
 }
 
 .footer {
