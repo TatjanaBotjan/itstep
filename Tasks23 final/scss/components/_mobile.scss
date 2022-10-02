@@ -1,0 +1,39 @@
+.mobile {
+    padding: 30px 21px;
+    position: fixed;
+    width: 100%;
+    max-width: 440px;
+    background: $white;
+    top: 0;
+    left: -440px;
+    transition: left .5s;
+
+    &.open {
+        left: 0;
+    }
+
+    &_head {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_logo {
+        a {
+            text-decoration: none;
+
+            img {
+                width: 124px;
+            }
+        }
+    }
+
+    &_close {
+        display: flex;
+
+        a {
+            width: 39px;
+            height: 39px;
+            background: url("../img/x.svg");
+        }
+    }
+}

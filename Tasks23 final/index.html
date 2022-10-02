@@ -249,7 +249,8 @@
                     <form action="" method="post" name="contact-form">
                         <div class="connection__inner_form_name">
                             <div class="connection__inner_form_group">
-                                <input class="connection__inner_form_group_input" type="text" name="name" id="name" value="" placeholder="Имя">
+                                <input class="connection__inner_form_group_input" type="text" name="name" id="name" value="" placeholder="Имя" required>
+                                <span class="connection__inner_form_group">Обязательно для заполнения</span>
                             </div>
                             <div class="connection__inner_form_group">
                                 <input class="connection__inner_form_group_input" type="text" name="surname" id="surname" value="" placeholder="Фамилия">
@@ -268,13 +269,12 @@
                             <input class="connection__inner_form_group_input mess" type="text" name="message" id="message" value=""
                                 placeholder="Ваше сообщение">
                         </div>                       
-                        <div class="connection__inner_agreement">
+                        <div class="connection__inner_form_agreement">
                             <input type="checkbox" name="[]" id="agreement" value="1"><label for="agreement"></label>
-                            <div class="connection__inner_agreement_text">Я согласен с Политикой конфиденциальности и даю разрешение на обработку моих персональных данных для целей, указанных в
-                            <span> Политике конфиденциальности.</span></div>
+                            <div class="connection__inner_form_agreement_text">Я согласен с Политикой конфиденциальности и даю разрешение на обработку моих персональных данных для целей, указанных в
+                            <span>Политике конфиденциальности.</span></div>
                         </div>
                         <button class="connection__inner_form_btn">Отправить</button>
-                        
                     </form>
                 </div>
             </div>
@@ -330,5 +330,17 @@
         <hr>
         <div class="footer__contacts_copyright">© 2007-2022 sparkit. All Rights Reserved. Privacy Policy.</div>
     </footer>
+    <div class="mobile" id="mobile">
+        <div class="mobile_head">
+            <div class="mobile_logo">
+                <a href="#">
+                    <img src="./img/SparkIT2.png" alt="SparkIT" title="SparkIT">
+                </a>
+            </div>
+            <div class="mobile_close">
+                <a href="#" id="close_mobile"></a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

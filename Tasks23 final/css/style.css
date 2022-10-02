@@ -727,6 +727,7 @@ p {
 }
 .connection__inner_form {
   width: 43%;
+  height: 660px;
   padding: 90px 120px 0;
   border: 1px solid #DFDFDF;
   display: flex;
@@ -761,6 +762,13 @@ p {
   font-size: 16px;
   line-height: 20.8;
 }
+.connection__inner_form :required {
+  border: none;
+  border-bottom: 1px solid #929292;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #F6523C;
+}
 .connection__inner_form_name {
   display: flex;
   justify-content: space-between;
@@ -776,12 +784,25 @@ p {
   width: 100%;
 }
 .connection__inner_form_agreement {
-  text-transform: none;
   display: flex;
   float: left;
 }
 .connection__inner_form_agreement_text {
+  margin-left: 18px;
   text-transform: none;
+  color: #929292;
+  font-weight: 400;
+  font-family: OpenSans;
+  font-size: 14px;
+  line-height: 18.2px;
+  margin-bottom: 60px;
+}
+.connection__inner_form_agreement_text span {
+  color: #F6523C;
+}
+.connection__inner_form_agreement input[type=checkbox] {
+  width: 18px;
+  height: 18px;
 }
 .connection__inner_form_group {
   position: relative;
@@ -801,6 +822,28 @@ p {
 }
 .connection__inner_form_group_input:focus {
   border-bottom: 1px solid #000000;
+}
+.connection__inner_form_btn {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  width: 224px;
+  height: 57px;
+  background-color: #F6523C;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  font-size: Mulish;
+  color: #FFFFFF;
+  line-height: 22.59px;
+  padding-left: 60px;
+  border: none;
+  transition: color, background-color 0.3s linear;
+}
+.connection__inner_form_btn:hover {
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  color: #000000;
 }
 
 .footer {
@@ -966,4 +1009,36 @@ p {
   color: #FFFFFF;
   margin-top: 40px;
   text-align: center;
+}
+
+.mobile {
+  padding: 30px 21px;
+  position: fixed;
+  width: 100%;
+  max-width: 440px;
+  background: #FFFFFF;
+  top: 0;
+  left: -440px;
+  transition: left 0.5s;
+}
+.mobile.open {
+  left: 0;
+}
+.mobile_head {
+  display: flex;
+  justify-content: space-between;
+}
+.mobile_logo a {
+  text-decoration: none;
+}
+.mobile_logo a img {
+  width: 124px;
+}
+.mobile_close {
+  display: flex;
+}
+.mobile_close a {
+  width: 39px;
+  height: 39px;
+  background: url("../img/x.svg");
 }/*# sourceMappingURL=style.css.map */

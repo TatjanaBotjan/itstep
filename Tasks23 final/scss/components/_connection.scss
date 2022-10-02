@@ -4,6 +4,7 @@
     &__inner {
         display: flex;
         justify-content: space-between;
+     
 
         &_contacts {
             width: 30%;
@@ -86,6 +87,7 @@
 
         &_form {
             width: 43%;
+            height: 660px;
             padding: 90px 120px 0;
             border: 1px solid $border;
             display: flex;
@@ -101,6 +103,14 @@
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 20.8;
+            }
+
+            :required {
+                border: none;
+                    border-bottom: 1px solid $form;
+                    background-color: transparent;
+                    outline: none;
+                border: 1px solid $red;
             }
 
             &_name {
@@ -120,16 +130,29 @@
             .mess {
                 width: 100%;
             }
-            
-
+        
             &_agreement {
-                text-transform: none;
                 display: flex;
                 float: left;
 
-              &_text {
-                text-transform: none;
-              }
+                &_text {
+                    margin-left: 18px;
+                    text-transform: none;
+                    color: $form;
+                    font-weight: 400;
+                    font-family: Open+Sans;
+                    font-size: 14px;
+                    line-height: 18.2px;
+                    margin-bottom: 60px;
+                }
+                &_text span {
+                    color: $red;
+                }
+
+                input[type="checkbox"] {
+                    width: 18px;
+                    height: 18px;
+                }
             }
 
             &_group {
@@ -154,6 +177,33 @@
                 }
             }
             }
+
+            &_btn {
+                display: flex;
+                margin-left: auto;
+                align-items: center;
+                width: 224px;
+                height: 57px;
+                background-color: $red;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 400;
+                font-size: Mulish;
+                color: $white;
+                line-height: 22.59px;
+                padding-left: 60px;
+                border: none;
+                transition: color, background-color 0.3s linear;
+            }
+            
+                &_btn:hover {
+                    background-color: $white;
+                    border: 1px solid $black;
+                    color: $black;
+                }
+            
+                
         }
     }
 }
+    
