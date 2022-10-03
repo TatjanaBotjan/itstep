@@ -3,12 +3,6 @@
     font-weight: 400;
     color: $black;
 }
-@mixin p {
-    font-family: Mulish;
-    font-weight: 300;
-    line-height: 32.5px;
-    color: $black;
-}
 
 @mixin li-menu {
     font-family: Mulish;
