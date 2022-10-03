@@ -1,110 +1,197 @@
 .info {
     width: 100%;
-    height: 942px;
-    background-image: url(../img/bg1.png);
+    background-image: url(../img/blfone.png);
     background-repeat: repeat-x;
     margin-top: 0;
-
+    
+    @media (min-width: 768px) {
+            height: 599px;
+    }
+    @media (min-width: 1280px) {
+        height: 916px;
+    }
+    @media (min-width: 1920px) {
+        height: 942px;
+    }
+    
     
     &__text {
-            font-family: Mulish;
-            font-weight: 600;
+        width: 100%;
+
+        @media (min-width: 1280px) {
             font-size: 40px;
             line-height: 64px;
             color: $white;
+        }
 
             p {
-                padding-top: 220px;
-                font-weight: 900;
-                margin-bottom: 160px;
+                padding-top: 80px;
+                margin-bottom: 60px;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 38.4px;
+                color: $white;
+                font-family: Mulish, sans-serif;
+
+                @media (min-width: 1280px) {
+                    padding-top: 160px;
+                    margin-bottom: 160px;
+                    font-size: 40px;
+                    line-height: 64px;
+                }
+
+                @media (min-width: 1920px) {
+                    padding-top: 220px;
+                }
             }
         }
 
                 &__quality {
-                    display: flex;
+                    width: 100%;
+
+                    @media (min-width: 768px) {
+                        display: flex;
+                        float: left;
+                        margin-bottom: 70.45px;
+                    }
+                    @media (min-width: 1280px) {
+                        margin-bottom: 160px;
+                    }
+                    @media (min-width: 1920px) {
+                        margin-bottom: 220px;
+                    }
+                    
         
                     &_communication {
-                        width: 33, 3333333%;
-                        position: relative;
-                        margin-right: 140px;
+                        margin-bottom: 60px;
+                        @media (min-width: 1920px) {
+                            width: 33, 3333333%;
+                            position: relative;
+                            margin-right: 140px;
+                        }
+                        
 
                         &_text h3 {
                             color: $white;
                             text-transform: uppercase;
-                            font-weight: 33.6px;
-                            font-size: 24px;
+                            font-size: 18px;
                             margin-bottom: 20px;
+                            font-weight: 500;
+                            line-height: 25.2px;
+
+                            @media (min-width: 1280px) {
+                                font-weight: 33.6px;
+                                font-size: 24px;
+                                margin-bottom: 20px;
+                            }
                         }
                         &_text p {
                             color: $white;
                             font-weight: 500;
-                            font-size: 20px;
-                            line-height: 30px;
+                            font-size: 16px;
+                            line-height: 24px;
+
+                            @media (min-width: 1280px) {
+                                font-size: 20px;
+                                line-height: 30px;
+                            }
                         }
         
                         &_image {
                             background-image: url(../img/chat.png);
                             width: 40px;
-                            height: 38.23px;
+                            height: 40px;
                             margin-bottom: 30px;
                         }
+
                     }
 
                     &_individuality {
-                        width: 33, 3333333%;
-                        position: relative;
-                        margin-right: 140px;
-                    
-                            &_text h3 {
-                                color: $white;
-                                text-transform: uppercase;
+                        @media (min-width: 1920px) {
+                            width: 33, 3333333%;
+                            position: relative;
+                            margin-right: 140px;
+                        }
+                        
+                        
+                        &_text h3 {
+                            color: $white;
+                            text-transform: uppercase;
+                            font-size: 18px;
+                            margin-bottom: 20px;
+                            font-weight: 500;
+                            line-height: 25.2px;
+                        
+                            @media (min-width: 1280px) {
+                                font-weight: 33.6px;
+                                font-size: 24px;
+                                margin-bottom: 20px;
+                                }
+                            }
+                        
+                        &_text p {
+                            color: $white;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                            
+                            @media (min-width: 1280px) {
+                                font-size: 20px;
+                                line-height: 30px;
+                            }
+                        }
+                        
+                        &_image {
+                            background-image: url(../img/globe.png);
+                            width: 40px;
+                            height: 40px;
+                             margin-bottom: 30px;
+                        }
+                        }
+
+                    &_speed {
+                        padding-bottom: 40px;
+                        @media (min-width: 1920px) {
+                            width: 33, 3333333%;
+                            position: relative;
+                            margin-right: 140px;
+                        }
+                        
+                        &_text h3 {
+                            color: $white;
+                            text-transform: uppercase;
+                            font-size: 18px;
+                            margin-bottom: 20px;
+                            font-weight: 500;
+                            line-height: 25.2px;
+                        
+                            @media (min-width: 1280px) {
                                 font-weight: 33.6px;
                                 font-size: 24px;
                                 margin-bottom: 20px;
                             }
-                    
-                            &_text p {
-                                color: $white;
-                                font-weight: 500;
-                                font-size: 20px;
-                                line-height: 30px;
-                            }
-                    
-                            &_image {
-                                background-image: url(../img/globe.png);
-                                width: 40px;
-                                height: 38.23px;
-                                margin-bottom: 30px;
-                            }
                         }
-
-                    &_speed {
-                        width: 33, 3333333%;
-                        position: relative;
-                        margin-right: 140px;
-                    
-                        &_text h3 {
-                            color: $white;
-                            text-transform: uppercase;
-                            font-weight: 33.6px;
-                            font-size: 24px;
-                            margin-bottom: 20px;
-                        }
-                    
+                        
                         &_text p {
                             color: $white;
                             font-weight: 500;
-                            font-size: 20px;
-                            line-height: 30px;
+                            font-size: 16px;
+                            line-height: 24px;
+                            
+                            @media (min-width: 1280px) {
+                                font-size: 20px;
+                                line-height: 30px;
+                            }
                         }
-                    
+                        
                         &_image {
                             background-image: url(../img/lightning.png);
                             width: 40px;
-                            height: 38.23px;
+                            height: 40px;
                             margin-bottom: 30px;
                         }
                     }
                 }                   
             }
+        
         

@@ -11,19 +11,26 @@
 
    &__logo {
     margin-right: -20px;
+
+    @media (min-width: 1280px) {
+        margin-right: 100px;
+        width: 180px;
+    }
     }
    
-   
     &__menu {
-        align-items: center;
-        padding-right: 325px;
-        margin-left: 56px;
         display: none;
 
         @media (min-width: 1280px) {
             display: flex;
             float: left;
+            align-items: center;
+            padding-right: 0;
         }
+             @media (min-width: 1920px) {
+                padding-right: 325px;
+                margin-left: 56px;
+            }
        
         
         
@@ -34,8 +41,10 @@
         }
         
         li:not(:last-child) {
-            margin-right: 50px;
-            
+            margin-right: 36px;
+            @media (min-width: 1920px) {
+                margin-right: 50px;
+            }
         }
         
         li {
@@ -45,9 +54,14 @@
         a {
             text-decoration: none;
             @include a;
-            font-size: 20px;
-            line-height: 25.1px;
+            font-size: 18px;
+            line-height: 22.59px;
             transition: color 0.2s linear;
+            
+            @media (min-width: 1920px) {
+                font-size: 20px;
+                line-height: 25.1px;
+            }
            
             &:hover {
                 color: $red;
@@ -66,6 +80,7 @@
     &_language{
         display: flex;
         padding-right: 25px;
+        align-items: center;
 
         .vertical-line {
             width: 2px;
@@ -88,10 +103,15 @@
                 text-decoration: none;
                 text-transform: uppercase;
                 @include a;
-                font-size: 18px;
-                line-height: 23.4px;
+                font-size: 16px;
+                line-height: 20.8px;
                 margin-right: 3px;
                 transition: color 0.2s linear;
+
+                @media (min-width: 1920px) {
+                    font-size: 18px;
+                    line-height: 23.4px;
+                }
                 
                 &:hover {
                     color: $red;
@@ -121,7 +141,7 @@
                 text-decoration: none;
                 font-size: 18px;
                 font-weight: 400;
-                font-size: Mulish;
+                font-family: Mulish;
                 color: $white;
                 line-height: 22.59px;
                 padding-left: 50px;
