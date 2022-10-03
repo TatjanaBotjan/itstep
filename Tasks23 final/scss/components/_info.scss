@@ -3,6 +3,7 @@
     background-image: url(../img/blfone.png);
     background-repeat: repeat-x;
     margin-top: 0;
+    height: 1037px;
     
     @media (min-width: 768px) {
             height: 599px;
@@ -33,6 +34,10 @@
                 color: $white;
                 font-family: Mulish, sans-serif;
 
+                @media (min-width: 768px) {
+                    margin-bottom: 86.48px;
+                    }
+
                 @media (min-width: 1280px) {
                     padding-top: 160px;
                     margin-bottom: 160px;
@@ -48,6 +53,7 @@
 
                 &__quality {
                     width: 100%;
+                    margin-bottom: 60px;
 
                     @media (min-width: 768px) {
                         display: flex;
@@ -63,10 +69,16 @@
                     
         
                     &_communication {
-                        margin-bottom: 60px;
-                        @media (min-width: 1920px) {
-                            width: 33, 3333333%;
+                        
+                        @media (min-width: 768px) {
+                            width: 100%;
                             position: relative;
+                            margin-right: 20px;
+                        }
+                        @media (min-width: 1920px) {
+                            margin-right: 50px;
+                        }
+                        @media (min-width: 1920px) {
                             margin-right: 140px;
                         }
                         
@@ -107,9 +119,17 @@
                     }
 
                     &_individuality {
-                        @media (min-width: 1920px) {
-                            width: 33, 3333333%;
+                        @media (min-width: 768px) {
+                            width: 100%;
                             position: relative;
+                            margin-right: 20px;
+                        }
+                        
+                        @media (min-width: 1920px) {
+                            margin-right: 50px;
+                        }
+                        
+                        @media (min-width: 1920px) {
                             margin-right: 140px;
                         }
                         
@@ -150,10 +170,18 @@
                         }
 
                     &_speed {
-                        padding-bottom: 40px;
-                        @media (min-width: 1920px) {
-                            width: 33, 3333333%;
+                        margin-bottom: 60px;
+                        @media (min-width: 768px) {
+                            width: 100%;
                             position: relative;
+                            
+                        }
+                        
+                        @media (min-width: 1920px) {
+                            margin-right: 50px;
+                        }
+                        
+                        @media (min-width: 1920px) {
                             margin-right: 140px;
                         }
                         

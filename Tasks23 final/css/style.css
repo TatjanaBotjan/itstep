@@ -366,6 +366,7 @@ p {
   background-image: url(../img/blfone.png);
   background-repeat: repeat-x;
   margin-top: 0;
+  height: 1037px;
 }
 @media (min-width: 768px) {
   .info {
@@ -401,6 +402,11 @@ p {
   color: #FFFFFF;
   font-family: Mulish, sans-serif;
 }
+@media (min-width: 768px) {
+  .info__text p {
+    margin-bottom: 86.48px;
+  }
+}
 @media (min-width: 1280px) {
   .info__text p {
     padding-top: 160px;
@@ -416,6 +422,7 @@ p {
 }
 .info__quality {
   width: 100%;
+  margin-bottom: 60px;
 }
 @media (min-width: 768px) {
   .info__quality {
@@ -434,13 +441,20 @@ p {
     margin-bottom: 220px;
   }
 }
-.info__quality_communication {
-  margin-bottom: 60px;
+@media (min-width: 768px) {
+  .info__quality_communication {
+    width: 100%;
+    position: relative;
+    margin-right: 20px;
+  }
 }
 @media (min-width: 1920px) {
   .info__quality_communication {
-    width: 33, 3333333%;
-    position: relative;
+    margin-right: 50px;
+  }
+}
+@media (min-width: 1920px) {
+  .info__quality_communication {
     margin-right: 140px;
   }
 }
@@ -477,10 +491,20 @@ p {
   height: 40px;
   margin-bottom: 30px;
 }
+@media (min-width: 768px) {
+  .info__quality_individuality {
+    width: 100%;
+    position: relative;
+    margin-right: 20px;
+  }
+}
 @media (min-width: 1920px) {
   .info__quality_individuality {
-    width: 33, 3333333%;
-    position: relative;
+    margin-right: 50px;
+  }
+}
+@media (min-width: 1920px) {
+  .info__quality_individuality {
     margin-right: 140px;
   }
 }
@@ -518,12 +542,21 @@ p {
   margin-bottom: 30px;
 }
 .info__quality_speed {
-  padding-bottom: 40px;
+  margin-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .info__quality_speed {
+    width: 100%;
+    position: relative;
+  }
 }
 @media (min-width: 1920px) {
   .info__quality_speed {
-    width: 33, 3333333%;
-    position: relative;
+    margin-right: 50px;
+  }
+}
+@media (min-width: 1920px) {
+  .info__quality_speed {
     margin-right: 140px;
   }
 }
