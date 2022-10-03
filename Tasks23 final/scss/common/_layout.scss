@@ -1,5 +1,21 @@
 .container {
-    margin: 0 70px;
+   
+        
+    @media (min-width: 440px) {
+        width: 100%;
+        margin: 0 20px;
+    }
+    @media (min-width: 768px) {
+        width: 700px;
+    }
+    @media (min-width: 1280px) {
+        width: 1180px;
+        margin: 0 50px;
+    }
+    @media (min-width: 1920px) {
+        width: 1759px;
+        margin: 0 70px;
+}
 }
 
 
