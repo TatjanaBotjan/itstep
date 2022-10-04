@@ -2,34 +2,68 @@
     width: 100%;
     
     &__inner {
-        display: flex;
-        margin-top: 160px;
-        margin-bottom: 160px;
+        margin-top: 80px;
+
+        @media (min-width: 1280px) {
+                display: flex;
+                margin-top: 160px;
+                margin-bottom: 160px;
+            }
+
+        &_images {
+            @media (min-width: 768px) {
+                display: flex;
+                float: left;
+            }
+
+        }
 
         &_examples {
-            width: 27%;
-            margin-right: 97px;
+                width: 100%;
+            @media (min-width: 768px) {
+                width: 60%;
+            }
+
+            @media (min-width: 1280px) {
+                width: 25%;
+            }
+            
 
             h2 {
                font-weight: 700; 
-               font-size: 40px;
-               line-height: 52px;
-               font-family: Mulish, sans-serif;
+               font-size: 24px;
+               line-height: 31.2px;
                text-transform: uppercase;
-               margin-top: 0;
+               margin-bottom: 15px;
+
+            @media (min-width: 1280px) {
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 52px;
+                font-family: Mulish, sans-serif;
+                text-transform: uppercase;
+                margin-top: 0;
+                }
             }
 
             h2 span {
                 color: red;
+                font-weight: 700;
             }
 
             &_text {
                 font-weight: 400;
                 font-family: Mulish, sans-serif;
                 color: $black;
-                font-size: 24px;
-                line-height: 36px;
-                margin-bottom: 45px;
+                font-size: 18px;
+                line-height: 27px;
+                margin-bottom: 15px;
+
+                @media (min-width: 1280px) {
+                    font-size: 24px;
+                    line-height: 36px;
+                    margin-bottom: 30px;
+                }
             }
 
             &_button {
@@ -45,13 +79,25 @@
 
                         .arrow {
                             background-image: url(../img/arrow.png);
-                            width: 17px;
-                            height: 16px;
+                            width: 13.6px;
+                            height: 13.6px;
                             display: inline-block;
-                            margin-left: 53px;
+                            margin-left: 33px;
                             margin-right: 30px;
                             background-repeat: no-repeat;
                             transition: background-image 0.3s linear;
+
+                            @media (min-width: 768px) {
+                                margin-left: 35px;
+                            }
+                            @media (min-width: 1280px) {
+                                margin-left: 62px;
+                            }
+                            @media (min-width: 1920px) {
+                                margin-left: 53px;
+                                width: 17px;
+                                height: 16px;
+                            }
                         }
                     }
                 
@@ -71,20 +117,33 @@
 
                 
                     a {
-                        text-decoration: none;
-                        font-size: 20px;
+                        font-size: Open+Sans;
                         font-weight: 400;
-                        font-size: Mulish;
+                        font-size: 16px;
+                        line-height: 20.8px;
                         color: $white;
-                        line-height: 26px;
-                        padding-left: 50px;
+                        text-decoration: none;
+
+                        @media (min-width: 1280px) {
+                            font-size: 20px;
+                            line-height: 26px;
+                            }
                     }
             }
         }
 
         &_tracker {
-            width: 25%;
-            margin-right: 20px;
+
+            @media (min-width: 1280px) {
+                width: 240px;
+                margin-right: 20px;
+                }
+
+            @media (min-width: 1280px) {
+                width: 410px;
+                margin-right: 73px;
+                }
+            
 
             &_image {
                 background-image: url(../img/treker.png);
@@ -107,8 +166,15 @@
         }
 
         &_univer {
-            width: 24%;
-            margin-right: 20px;
+            @media (min-width: 1280px) {
+                width: 240px;
+                margin-right: 20px;
+            }
+            
+            @media (min-width: 1280px) {
+                width: 410px;
+                margin-right: 73px;
+            }
         
                 &_image {
                     background-image: url(../img/comp.png);
@@ -132,7 +198,13 @@
                 }
 
         &_blog {
-            width: 24%;
+            @media (min-width: 1280px) {
+                width: 240px;
+            }
+        
+            @media (min-width: 1280px) {
+                width: 410px;
+            }
                 
                 &_image {
                     background-image: url(../img/blog.png);
