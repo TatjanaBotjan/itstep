@@ -615,6 +615,7 @@ p {
 }
 .projects__inner_examples {
   width: 100%;
+  margin-bottom: 60px;
 }
 @media (min-width: 768px) {
   .projects__inner_examples {
@@ -662,11 +663,21 @@ p {
     margin-bottom: 30px;
   }
 }
+.projects__inner_examples_button {
+  margin-top: 15px;
+}
+@media (min-width: 1280px) {
+  .projects__inner_examples_button {
+    margin-top: 30px;
+  }
+}
 .projects__inner_examples_button .btn {
   text-align: center;
   background-color: #FFFFFF;
   border: 1px solid #000000;
   color: #000000;
+  margin-top: 15px;
+  position: relative;
   padding: 15px 0 15px 30px;
   box-sizing: border-box;
   transition: color, background-color 0.3s linear;
@@ -785,6 +796,9 @@ p {
   font-weight: 300;
   font-size: 18px;
   line-height: 37px;
+}
+.projects__inner_blog {
+  margin-bottom: 80px;
 }
 @media (min-width: 1280px) {
   .projects__inner_blog {
@@ -1383,34 +1397,10 @@ p {
   text-align: center;
 }
 
-.mobile {
-  padding: 30px 21px;
-  position: fixed;
+.mob {
   width: 100%;
-  max-width: 440px;
-  background: #FFFFFF;
-  top: 0;
-  left: -440px;
-  transition: left 0.5s;
 }
-.mobile.open {
-  left: 0;
-}
-.mobile_head {
-  display: flex;
-  justify-content: space-between;
-}
-.mobile_logo a {
-  text-decoration: none;
-}
-.mobile_logo a img {
-  width: 124px;
-}
-.mobile_close {
-  display: flex;
-}
-.mobile_close a {
-  width: 39px;
-  height: 39px;
-  background: url("../img/x.svg");
+.mob_mobile {
+  top: 20px;
+  height: 300px;
 }/*# sourceMappingURL=style.css.map */
