@@ -38,11 +38,9 @@
 
         &_image {
             background-image: url(../img/m_chart.jpg);
-            width: 50%;
+            width: 786px;
             position: relative;
             background-repeat: no-repeat;
-            margin-bottom: 64px;
-            margin-right: -70px;
             display: none;
 
             @media (min-width: 1920px) {

@@ -124,98 +124,138 @@
                     background-image: url(../img/arrow2.png);
                 }
             }
-                       
         }
 
 
         &_img {
             @media (min-width: 768px) {
                 display: flex;
+                margin-bottom: 90px;
             }
 
-            &_tracker {
-            @media (min-width: 768px) {
-                    width: 220px;
-                    height: 301px;
-                }
-               
-                
-                &_image {
-                    background-image: url(../img/tel.jpg);
-                    height: 500px;
-                    margin-bottom: 40px;
-                    background-repeat: no-repeat;
-                    background-size: cover;
+                &_tracker {
+                    width: 100%;
 
-                    @media (min-width: 768px) {
-                        width: 220px;
-                        height: 301px;
-                    }
-                   
-                }
-                    
-                & h3 {
-                    font-size: 24px;
-                    font-weight: 36px;
-                    font-family: Mulish, sans-serif;
-                    font-weight: 600;
-                    text-transform: uppercase;
-                    color: $black;
-                }
-                &_text {
-                    font-weight: 300;
-                    font-size: 18px;
-                    line-height: 27px;
-                }
-            }
-                
-            &_univer {
-                @media (min-width: 768px) {
-                    margin-right: 20px;
-                    width: 220px;
-                }
-                @media (min-width: 1920px) {
-                    width: 240px;
-                }
-                @media (min-width: 1920px) {
-                    margin-right: 73px;
-                    width: 410px;
-                }
-                
                     &_image {
-                        background-image: url(../img/comp.png);
+                        background-image: url(../img/telefon.jpg);
+                        background-size: 400px;
                         height: 500px;
                         margin-bottom: 40px;
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                    
-                        @media (min-width: 768px) {
-                            background-size: 220px;
-                            height: 301px;
-                        }
-                    
-                        @media (min-width: 1280px) {
-                            background-size: 240px;
-                        }
-                    
-                        @media (min-width: 1920px) {
-                            width: 410px;
-                            height: 500px;
-                        }
-                    & h3 {
-                        font-size: 24px;
-                        font-weight: 36px;
-                        font-family: Mulish, sans-serif;
+
+                            @media (min-width: 768px) {
+                                height: 301px;
+                                background-size: 220px;
+                                margin-right: 18px;
+                                background-repeat: no-repeat;
+                            }
+                    }
+
+                    h3 {
                         font-weight: 600;
+                        font-size: 24px;
+                        line-height: 36px;
                         text-transform: uppercase;
                         color: $black;
+                        margin: 0 0 18px 0;
+
+                        @media (min-width: 768px) {
+                            margin-bottom: 90px;
+                        }
                     }
-                
+
                     &_text {
-                        @include text;
+                        font-weight: 300;
+                        font-size: 18px;
+                        line-height: 27px;
+                        color: $black;
+                        margin-bottom: 60px;
+
+                        @media (min-width: 768px) {
+                            display: none;
+                        }
                     }
+                }
+
+                &_univer {
+                    width: 100%;
+
+                    &_image {
+                        background-image: url(../img/comp.jpg);
+                        background-size: 400px;
+                        height: 500px;
+                        margin-bottom: 40px;
+
+                            @media (min-width: 768px) {
+                                height: 301px;
+                                background-size: 220px;
+                                margin-right: 18px;
+                                background-repeat: no-repeat;
+                            }
+                    }
+
+                    h3 {
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 36px;
+                        text-transform: uppercase;
+                        color: $black;
+                        margin: 0 0 18px 0;
+                    }
+
+                    &_text {
+                        font-weight: 300;
+                        font-size: 18px;
+                        line-height: 27px;
+                        color: $black;
+                        margin-bottom: 60px;
+
+                        @media (min-width: 768px) {
+                            display: none;
+                        }
+                    }
+                }
+
+                &_blog {
+                    width: 100%;
+
+                    &_image {
+                        background-image: url(../img/blog.jpg);
+                        background-size: 400px;
+                        height: 500px;
+                        margin-bottom: 40px;
+
+                            @media (min-width: 768px) {
+                                height: 301px;
+                                background-size: 220px;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                    
+                    h3 {
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 36px;
+                        text-transform: uppercase;
+                        color: $black;
+                        margin: 0 0 18px 0;
+                    }
+                    
+                    &_text {
+                        font-weight: 300;
+                        font-size: 18px;
+                        line-height: 27px;
+                        color: $black;
+                        margin-bottom: 80px;
+
+                        @media (min-width: 768px) {
+                            display: none;
+                        }
+                    }
+                }
             }
-        }
+
+
+        
                 
             &_blog {
                 margin-bottom: 80px;
@@ -266,7 +306,7 @@
      
     }            
  
-}
+
        
         
 
