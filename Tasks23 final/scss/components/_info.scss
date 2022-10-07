@@ -69,6 +69,7 @@
                     
         
                     &_communication {
+                        margin-bottom: 60px;
                         
                         @media (min-width: 768px) {
                             width: 100%;
@@ -102,6 +103,7 @@
                             font-weight: 500;
                             font-size: 16px;
                             line-height: 24px;
+                            margin: 0;
 
                             @media (min-width: 1280px) {
                                 font-size: 20px;
@@ -119,6 +121,7 @@
                     }
 
                     &_individuality {
+                        margin-bottom: 60px;
                         @media (min-width: 768px) {
                             width: 100%;
                             position: relative;
@@ -154,6 +157,7 @@
                             font-weight: 500;
                             font-size: 16px;
                             line-height: 24px;
+                            margin: 0;
                             
                             @media (min-width: 1280px) {
                                 font-size: 20px;
@@ -205,6 +209,7 @@
                             font-weight: 500;
                             font-size: 16px;
                             line-height: 24px;
+                            margin: 0;
                             
                             @media (min-width: 1280px) {
                                 font-size: 20px;
