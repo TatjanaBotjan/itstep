@@ -16,10 +16,15 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <div class="header__logo">
-                    <a href="#">
-                        <img src="../Tasks23 final/img/logo.png" alt="SparkIT" title="SparkIT">
-                    </a>
+                <div class="header__row">
+                    <div class="header__row_logo">
+                        <a href="#">
+                            <img src="../Tasks23 final/img/logo.png" alt="SparkIT" title="SparkIT">
+                        </a>
+                    </div>
+                    <div class="header__row_open_mobile_menu">
+                        <a href="#" id="open_menu"></a>
+                    </div>
                 </div>
                 <div class="header__menu">
                     <ul>
@@ -42,7 +47,6 @@
                         <a class="btn" href="#">Связаться с нами</a>
                     </div>
                 </div>
-                
             </div>
         </div>
     </header>
@@ -260,7 +264,8 @@
                                 <input class="connection__inner_form_group_input" type="text" name="name" id="name" value="" placeholder="Имя">
                             </div>
                             <div class="connection__inner_form_group">
-                                <input class="connection__inner_form_group_input" type="text" name="surname" id="surname" value="" placeholder="Фамилия">
+                                <input class="connection__inner_form_group_input error"  type="text" name="surname" id="surname" value="" placeholder="Фамилия">
+                                <span>Please enter your name</span>
                             </div>
                         </div>
                         <div class="connection__inner_form_contact">
@@ -339,13 +344,37 @@
         <hr>
         <div class="footer__contacts_copyright">© 2007-2022 sparkit. All Rights Reserved. Privacy Policy.</div>
     </footer>
-
-    
-
-
-   
-</body>
-
-   </div>
+    <section class="mobile">
+        <div class="container">
+            <div class="mobile__head">
+                <div class="mobile__head_logo">
+                    <a href="#">
+                        <img src="../Tasks23 final/img/SparkITmob.png" alt="SparkIT" title="SparkIT">
+                    </a>
+                </div>
+                <div class="mobile__head_close">
+                    <a href="#" id="close_mobile"></a>
+                </div>
+            </div>
+            <div class="mobile__menu">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Портфолио</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Блог</a></li>
+                </ul>
+            </div>
+            <div class="mobile__button">
+                <a href="#">Связаться с нами<span class="arrow"></span></a>
+            </div>
+            <div class="mobile__language">
+                <ul>
+                    <li><a href="#">en</a></li>
+                    <li><a href="#"> <span>ru</span></a></li>
+                </ul>
+            </div> 
+        </div>
+    </section>
 </body>
 </html>

@@ -9,161 +9,170 @@
     justify-content: space-between;
    }
 
-   &__logo {
-    margin-right: -20px;
-
-    @media (min-width: 1280px) {
-        margin-right: 100px;
-        width: 180px;
-    }
-    }
-   
-    &__menu {
-        display: none;
-
-        @media (min-width: 1280px) {
+        &__row {
+            width: 100%;
             display: flex;
-            float: left;
-            align-items: center;
-            padding-right: 0;
-        }
-             @media (min-width: 1920px) {
-                padding-right: 325px;
-                margin-left: 56px;
-            }
-       
-        
-        
-        ul {
-            list-style: none;
-            padding-left: 0;
-            margin: 0;
-        }
-        
-        li:not(:last-child) {
-            margin-right: 36px;
-            @media (min-width: 1920px) {
-                margin-right: 50px;
-            }
-        }
-        
-        li {
-            float: left;
-        }
-        
-        a {
-            text-decoration: none;
-            @include a;
-            font-size: 18px;
-            line-height: 22.59px;
-            transition: color 0.2s linear;
+            justify-content: space-between;
+
+            &_logo {
+                    margin-right: -20px;
             
-            @media (min-width: 1920px) {
-                font-size: 20px;
-                line-height: 25.1px;
+                    @media (min-width: 1280px) {
+                        margin-right: 100px;
+                        width: 180px;
+                    }
             }
-           
-            &:hover {
-                color: $red;
+
+            &_open_mobile_menu {
+                display: flex;
+            
+                @media (min-width: 1280px) {
+                    display: none;
+                }
+            
+                a {
+                    background-image: url(../img/hamburger.png);
+                    width: 35px;
+                    height: 35px;
+                    margin-top: 10px;
+                    background-repeat: no-repeat;
+                }
             }
         }
-    }
+   
+        &__menu {
+            display: none;
 
-     &__block {
-        display: none;
+            @media (min-width: 1280px) {
+                display: flex;
+                float: left;
+                align-items: center;
+                padding-right: 0;
+            }
+                @media (min-width: 1920px) {
+                    padding-right: 325px;
+                    margin-left: 56px;
+                }
         
-        @media (min-width: 1280px) {
-            display: flex;
-            float: left;
-        }
-
-    &_language{
-        display: flex;
-        padding-right: 25px;
-        align-items: center;
-
-        .vertical-line {
-            width: 2px;
-            margin: 4px 4px 0 2px;
-            background-color: $black;
-            height: 15px;
-            float: left;
-        }
-
-        ul {
-            list-style: none;
-            padding-left: 0;
-            display: flex;
-
+        
+        
+            ul {
+                list-style: none;
+                padding-left: 0;
+                margin: 0;
+            }
+            
+            li:not(:last-child) {
+                margin-right: 36px;
+                @media (min-width: 1920px) {
+                    margin-right: 50px;
+                }
+            }
+            
             li {
                 float: left;
             }
             
             a {
                 text-decoration: none;
-                text-transform: uppercase;
                 @include a;
-                font-size: 16px;
-                line-height: 20.8px;
-                margin-right: 3px;
+                font-size: 18px;
+                line-height: 22.59px;
                 transition: color 0.2s linear;
-
-                @media (min-width: 1920px) {
-                    font-size: 18px;
-                    line-height: 23.4px;
-                }
                 
+                @media (min-width: 1920px) {
+                    font-size: 20px;
+                    line-height: 25.1px;
+                }
+            
                 &:hover {
                     color: $red;
-                    text-decoration: underline;
                 }
             }
         }
-     }
 
-        &_connection {
-            margin-left: 0;
-            .btn {
-                display: inline-block;
-                vertical-align: top;
-                padding: 22px 40px;
-                background-color: $red;
-                transition: color,background-color 0.3s linear;
-            }
-    
-                .btn:hover {
-                background-color: $white;
-                border: 1px solid $black;
-                color: $black;
-            }
-    
-            a {
-                text-decoration: none;
-                font-size: 18px;
-                font-weight: 400;
-                font-family: Mulish;
-                color: $white;
-                line-height: 22.59px;
-                padding-left: 50px;
-            }
-        }
-    }
-
-    &__open_mobile_menu {
-        display: flex;
-        
-        
-        @media (min-width: 1280px) {
+        &__block {
             display: none;
+            
+            @media (min-width: 1280px) {
+                display: flex;
+                float: left;
+            }
+
+        &_language{
+            display: flex;
+            padding-right: 25px;
+            align-items: center;
+
+            .vertical-line {
+                width: 2px;
+                margin: 4px 4px 0 2px;
+                background-color: $black;
+                height: 15px;
+                float: left;
+            }
+
+            ul {
+                list-style: none;
+                padding-left: 0;
+                display: flex;
+
+                li {
+                    float: left;
+                }
+                
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    @include a;
+                    font-size: 16px;
+                    line-height: 20.8px;
+                    margin-right: 3px;
+                   
+
+                    @media (min-width: 1920px) {
+                        font-size: 18px;
+                        line-height: 23.4px;
+                    }
+                    
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
         }
+
+            &_connection {
+                margin-left: 0;
+                .btn {
+                    display: inline-block;
+                    vertical-align: top;
+                    padding: 22px 40px;
+                    background-color: $red;
+                    transition: color,background-color 0.3s linear;
+                }
         
-        a {
-            width: 35px;
-            height: 35px;
-            background: url("../img/hamburger.png") no-repeat;
+                    .btn:hover {
+                    background-color: $white;
+                    border: 1px solid $black;
+                    color: $black;
+                }
         
+                a {
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: 400;
+                    font-family: Mulish;
+                    color: $white;
+                    line-height: 22.59px;
+                    padding-left: 50px;
+                }
+            }
         }
+
     }
-}
+
+
+
 
 

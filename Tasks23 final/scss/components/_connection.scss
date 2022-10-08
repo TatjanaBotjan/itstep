@@ -258,4 +258,15 @@
         }
     }
 }
+
+.error {
+    border-bottom: 1px solid $red;
+}
+
+span {
+    color: $red;
+    font-size: 12px;
+    line-height: 15.6px;
+    text-transform: none;
+}
     
