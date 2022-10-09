@@ -19,6 +19,8 @@
             font-weight: 800;
             font-size: 40px;
             line-height: 60px;
+            margin-bottom: 20px;
+            margin-top: 0;
 
             @media (min-width: 768px) {
                 line-height: 48px;
@@ -27,9 +29,9 @@
                 font-weight: 800;
                 font-size: 80px;
                 line-height: 96px;
+                margin-bottom: 40px;
             }
-        }
-        
+        } 
     }
 
     &__info {
@@ -39,9 +41,11 @@
         &_image {
             background-image: url(../img/m_chart.jpg);
             width: 786px;
+            height: 564px;
             position: relative;
             background-repeat: no-repeat;
             display: none;
+            padding-bottom: 70px;
 
             @media (min-width: 1920px) {
                     display: block;
@@ -57,14 +61,11 @@
 
             &_text {
                 width: 100%;
-                margin-bottom: 100px;
-                margin-top: 40px;
+                margin-bottom: 50px;
 
-                @media (min-width: 768px) {
-                        width: 700px;
-                    }
                 @media (min-width: 1280px) {
                     width: 820px;
+                    margin-bottom: 100px;
                     }
                 
                 p {
@@ -83,16 +84,15 @@
             }
 
             &_menu {
-                margin: 50px 0 80px 0;
+                margin-bottom: 80px;
                 width: 25%;
 
                 @media (min-width: 768px) {
-                        margin: 49.62px 0 84.42px 0;
-                    }
-
+                    width: 185px;
+                }
                 @media (min-width: 1280px) {
-                        margin: 100px 0 160px 0;
-                    }
+                    margin: 100px 0 160px 0;
+                }
 
                 &>ul>li:hover .services__info_section_menu_block {
                     display: block;
@@ -118,29 +118,23 @@
                         &:hover {
                             color: $red;
                         }
-
                     }
-
                 }
 
                 &_block {
-                    position: relative;
                     border-left: 2px solid $black;
                     padding-left: 30px;
                     width: 370px;
                     margin-top: 20px;
-                    display: none;
-                    
+                    display: none; 
 
                     @media (min-width: 768px) {
                         position: absolute;
-                        margin-left: 360px;
+                        margin-left: 225px;
                         margin-top: -20px;
                         padding-left: 42px;
                         width: 438px;
-                        
                     }
-
 
                     &_image {
                         background-image: url(../img/Files1.png);
@@ -166,5 +160,4 @@
             }
         }
     }
-
 }

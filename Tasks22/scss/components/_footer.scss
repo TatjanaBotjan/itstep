@@ -70,36 +70,36 @@ footer {
             display: none;
             position: absolute;
             margin-top: 24px;
-                    
-            &:checked+label::after {
-                top: -21px;
-                left: 0;
-                position: absolute;
-                content: "";
-                width: 17px;
-                height: 17px;
-                background-image: url("../img/check.png");
-                background-position: center center;
-                background-repeat: no-repeat;
-            }
         }
-        
-        label {
-            @include form-white-size-line;
-            cursor: pointer;
-            position: relative;
-            margin-top: 9px;
-
-            &::before {
-                content: "";
-                position: absolute;
-                width: 17px;
-                height: 17px;
-                border: 1px solid $border;
-                top: -21px;
-            }
+           &:checked+label::after {
+               top: -21px;
+               left: 0;
+               position: absolute;
+               content: "";
+               width: 17px;
+               height: 17px;
+               background-image: url("../img/check.png");
+               background-position: center center;
+               background-repeat: no-repeat;
+           }
+           
+    
+           label {
+               @include form-white-size-line;
+               cursor: pointer;
+               position: relative;
+               margin-top: 9px;
+    
+               &::before {
+                   content: "";
+                   position: absolute;
+                   width: 17px;
+                   height: 17px;
+                   border: 1px solid $border;
+                   top: -21px;
+               }
         }
-    }
+}
 
     textarea{
         width: 404px;

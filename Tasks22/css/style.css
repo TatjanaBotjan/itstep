@@ -438,7 +438,7 @@ footer {
   position: absolute;
   margin-top: 24px;
 }
-.footer__contact-form_checkbox input[type=checkbox]:checked + label::after {
+.footer__contact-form_checkbox:checked + label::after {
   top: -21px;
   left: 0;
   position: absolute;

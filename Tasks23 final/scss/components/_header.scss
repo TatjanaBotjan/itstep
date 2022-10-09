@@ -1,5 +1,5 @@
 .header {
-  
+ 
     
    &__inner {
     display: flex;
@@ -7,20 +7,39 @@
     margin-top: 30px;
     margin-bottom: 80px;
     justify-content: space-between;
-   }
+
+        @media (min-width: 768px) {
+            margin-bottom: 68px;
+        }
+        @media (min-width: 1280px) {
+            margin-bottom: 128px;
+        }
+        @media (min-width: 1920px) {
+            margin-bottom: 137px;
+        }
+    }
 
         &__row {
             width: 100%;
             display: flex;
             justify-content: space-between;
 
+            @media (min-width: 1280px) {
+                width: 100px;
+            }
+
             &_logo {
-                    margin-right: -20px;
-            
-                    @media (min-width: 1280px) {
-                        margin-right: 100px;
-                        width: 180px;
+                margin-right: -20px;
+
+                img {
+                    width: 180px;
+                    height: 40px;
+
+                    @media (min-width: 1920px) {
+                        width: 200px;
+                        height: 45px;
                     }
+                }
             }
 
             &_open_mobile_menu {
@@ -48,14 +67,13 @@
                 float: left;
                 align-items: center;
                 padding-right: 0;
+                margin-left: 100px;
             }
                 @media (min-width: 1920px) {
                     padding-right: 325px;
                     margin-left: 56px;
                 }
-        
-        
-        
+    
             ul {
                 list-style: none;
                 padding-left: 0;
@@ -104,12 +122,9 @@
             padding-right: 25px;
             align-items: center;
 
-            .vertical-line {
-                width: 2px;
-                margin: 4px 4px 0 2px;
-                background-color: $black;
-                height: 15px;
-                float: left;
+            span {
+                border-left: 2px solid $black;
+                padding-left: 3px;
             }
 
             ul {

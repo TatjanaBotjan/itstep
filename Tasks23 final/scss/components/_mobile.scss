@@ -5,10 +5,14 @@
     margin-top: 0;
     height: 785px;
     margin-top: 50px;
+
+    @media (min-width: 768px) {
+        height: 785px;
+    }
     
-        @media (min-width: 1280px) {
-            display: none;
-        }
+    @media (min-width: 1280px) {
+        display: none;
+    }
         &__head{
             width: 100%;
             display: flex;
@@ -19,13 +23,7 @@
             &_logo {
                 margin-right: -20px;
                 width: 180px;
-                    height: 40px;
-                
-            
-                @media (min-width: 1280px) {
-                    margin-right: 100px;
-                    width: 180px;
-                }
+                height: 40px;
             }
 
             &_close {
@@ -66,53 +64,51 @@
                     line-height: 35.14px;
                     text-decoration: none;
                     color: $white;
-                
-                    @media (min-width: 1920px) {
-                        font-size: 18px;
-                        line-height: 22.59px;
-                    }
-                
                 }
         }
 
-            &__button {
-                border: 1px solid $white;
-                width: 250px;
-                height: 66px;
+        &__button {
+            border: 1px solid $white;
+            width: 250px;
+            height: 66px;
+            margin-bottom: 131px;
+
+            @media (min-width: 768px) {
                 margin-bottom: 131px;
+            }
             
-                a {
-                    font-family: OpenSans;
-                    font-weight: 400;
-                    font-size: 20px;
-                    line-height: 26px;
-                    color: $white;
-                    text-decoration: none;
-                    padding: 20px 0 20px 40px;
-                    background-color: $black;
-                    display: flex;
-                    align-items: center;
-                    transition: color, background-color 0.3s linear;
+            a {
+                font-family: OpenSans;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 26px;
+                color: $white;
+                text-decoration: none;
+                padding: 20px 0 20px 40px;
+                background-color: $black;
+                display: flex;
+                align-items: center;
+                transition: color, background-color 0.3s linear;
             
-                    .arrow {
-                        width: 13.6px;
-                        height: 13.6px;
-                        display: inline-block;
-                        margin-left: 25px;
-                        background-image: url(../img/arrow2.png);
-                        background-repeat: no-repeat;
-                        transition: background-image 0.3s linear;
-                    }
+                .arrow {
+                    width: 13.6px;
+                    height: 13.6px;
+                    display: inline-block;
+                    margin-left: 25px;
+                    background-image: url(../img/arrow2.png);
+                    background-repeat: no-repeat;
+                    transition: background-image 0.3s linear;
+                }
+            }
+            
+                a:hover {
+                    background-color: $white;
+                    color: $black;
                 }
             
-                        a:hover {
-                            background-color: $red;
-                            color: $white;
-                        }
-            
-                        a:hover span {
-                             background-image: url(../img/arrow2.png);
-                        }
+                a:hover span {
+                    background-image: url(../img/arrow.png);
+                }
             }
 
         &__language {
@@ -151,7 +147,6 @@
                     font-size: 18px;
                     line-height: 23.4px;
                     margin-right: 6px;
-            
             
                     &:hover {
                         text-decoration: underline;

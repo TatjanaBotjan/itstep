@@ -32,10 +32,10 @@
                 font-size: 24px;
                 line-height: 38.4px;
                 color: $white;
-                font-family: Mulish, sans-serif;
+                
 
                 @media (min-width: 768px) {
-                    margin-bottom: 86.48px;
+                    margin: 0 0 86.48px 0;
                     }
 
                 @media (min-width: 1280px) {
@@ -53,21 +53,13 @@
 
                 &__quality {
                     width: 100%;
-                    margin-bottom: 60px;
 
                     @media (min-width: 768px) {
                         display: flex;
                         float: left;
-                        margin-bottom: 70.45px;
                     }
-                    @media (min-width: 1280px) {
-                        margin-bottom: 160px;
-                    }
-                    @media (min-width: 1920px) {
-                        margin-bottom: 220px;
-                    }
+                   
                     
-        
                     &_communication {
                         margin-bottom: 60px;
                         
@@ -76,7 +68,7 @@
                             position: relative;
                             margin-right: 20px;
                         }
-                        @media (min-width: 1920px) {
+                        @media (min-width: 1280px) {
                             margin-right: 50px;
                         }
                         @media (min-width: 1920px) {
@@ -113,9 +105,15 @@
         
                         &_image {
                             background-image: url(../img/chat.png);
-                            width: 40px;
-                            height: 40px;
+                            background-repeat: no-repeat;
+                            background-size: 30px;
+                            height: 30px;
                             margin-bottom: 30px;
+
+                            @media (min-width: 1280px) {
+                                background-size: 40px;
+                                height: 40px;
+                            }
                         }
 
                     }
@@ -128,7 +126,7 @@
                             margin-right: 20px;
                         }
                         
-                        @media (min-width: 1920px) {
+                        @media (min-width: 1280px) {
                             margin-right: 50px;
                         }
                         
@@ -167,11 +165,17 @@
                         
                         &_image {
                             background-image: url(../img/globe.png);
-                            width: 40px;
-                            height: 40px;
-                             margin-bottom: 30px;
+                            background-repeat: no-repeat;
+                            background-size: 30px;
+                            height: 30px;
+                            margin-bottom: 30px;
+
+                            @media (min-width: 1280px) {
+                                background-size: 40px;
+                                height: 40px;
+                            }
                         }
-                        }
+                    }
 
                     &_speed {
                         margin-bottom: 60px;
@@ -219,9 +223,15 @@
                         
                         &_image {
                             background-image: url(../img/lightning.png);
-                            width: 40px;
-                            height: 40px;
+                            background-repeat: no-repeat;
+                            background-size: 30px;
+                            height: 30px;
                             margin-bottom: 30px;
+
+                            @media (min-width: 1280px) {
+                                background-size: 40px;
+                                height: 40px;
+                            }
                         }
                     }
                 }                   

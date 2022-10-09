@@ -169,6 +169,7 @@
             &_agreement {
                 display: flex;
                 float: left;
+                position: relative;
 
                 &_text {
                     width: 364px;
@@ -185,12 +186,37 @@
                     color: $red;
                 }
 
-                input[type="checkbox"] {
-                    width: 18px;
-                    height: 18px;
+                    input[type=checkbox] {
+                        cursor: pointer;
+                        width: 18px;
+                        height: 18px;
+                        position: relative;
+                    }
                 
-                }
+                    input[type=checkbox]:after {
+                        position: absolute;
+                        width: 18px;
+                        height: 18px;
+                        top: 0;
+                        content: " ";
+                        display: inline-block;
+                        visibility: visible;
+                    }
+                
+                    input[type=checkbox]:checked:after {
+                        content: "";
+                        width: 18px;
+                        height: 18px;
+                        background-color: $red;
+                        color: $white;
+                        background-image: url(../img/checkbox.png);
+                        background-repeat: no-repeat;
+                        background-position: 4px;
+                    }
             }
+
+                
+            
 
             &_group {
                 position: relative;
@@ -200,30 +226,41 @@
                     margin-bottom: 60px;
                 }
             
-            &_input {
-                width: 100%;
-                padding-bottom: 10px;
-                padding-left: 0;
-                border: none;
-                border-bottom: 1px solid $form;
-                background-color: transparent;
-                outline: none;
-                color: $black;
-                text-transform: uppercase;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 18.2px;
+                &_input {
+                    width: 100%;
+                    padding-bottom: 10px;
+                    padding-left: 0;
+                    border: none;
+                    border-bottom: 1px solid $form;
+                    background-color: transparent;
+                    outline: none;
+                    color: $black;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18.2px;
 
-                @media (min-width: 1920px) {
-                    width: 310px;
-                    font-size: 16px;
+                    @media (min-width: 1920px) {
+                        width: 310px;
+                        font-size: 16px;
+                    }
+                    
+
+                    &:focus {
+                        border-bottom: 1px solid $black;
+                    }
                 }
+
+                                .error {
+                                    border-bottom: 1px solid $red;
+                                }
                 
-
-                &:focus {
-                    border-bottom: 1px solid $black;
-                }
-            }
+                                span {
+                                    color: $red;
+                                    font-size: 12px;
+                                    line-height: 15.6px;
+                                    text-transform: none;
+                                }
             }
 
             &_btn {
@@ -242,31 +279,20 @@
                 border: none;
                 transition: color, background-color 0.3s linear;
 
-                @media (min-width: 1920px) {
-                        width: 224px;
-                        height: 57px;
-                    }
+                    @media (min-width: 1920px) {
+                            width: 224px;
+                            height: 57px;
+                        }
             }
-            
+                
                 &_btn:hover {
                     background-color: $white;
                     border: 1px solid $black;
                     color: $black;
                 }
-            
-                
         }
     }
 }
 
-.error {
-    border-bottom: 1px solid $red;
-}
 
-span {
-    color: $red;
-    font-size: 12px;
-    line-height: 15.6px;
-    text-transform: none;
-}
     
