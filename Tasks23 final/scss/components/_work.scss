@@ -5,8 +5,13 @@
     background-repeat: repeat-x;
     padding-top: 1px;
 
+    @media (min-width: 768px) {
+        height: 930px;
+    }
+
     &__inner {
-display: block;
+        display: block;
+
         @media (min-width: 1280px) {
             display: flex;
         }
@@ -27,11 +32,16 @@ display: block;
                 line-height: 31px;
                 padding-top: 80px;
                 margin-bottom: 0;
-                margin-top: -15px;
+                margin-top: 0;
+
+                @media (min-width: 768px) {
+                    padding-top: 95px;
+                }
 
                 @media (min-width: 1280px) {
                     font-size: 40px;
                     line-height: 52px;
+                    padding-top: 160px;
                 }
             }
 
@@ -43,6 +53,10 @@ display: block;
                 margin-top: 0;
                 padding-top: 20px;
                 margin-bottom: 0;
+
+                @media (min-width: 768px) {
+                    width: 306px;
+                    }
 
                 @media (min-width: 1280px) {
                     font-size: 24px;
@@ -57,21 +71,23 @@ display: block;
             padding-top: 60px;
 
             @media (min-width: 1280px) {
-                margin-left: 317px;
+                margin-left: 91px;
                 width: 70%;
                 padding-top: 160px;
+            }
+            @media (min-width: 1920px) {
+                margin-left: 317px;
             }
 
             &_numbers {
                 display: flex;
                 border-top: 1px solid $white;
-                
             }
+
             .border {
                 border-bottom: 1px solid $white;
             }
             
-
             .number {
                 text-transform: uppercase;
                 color: $red;
@@ -97,10 +113,7 @@ display: block;
                 line-height: 25.2px;
                 margin-top: 0;
                 margin-bottom: 0;
-
-                
             }
         }
     }
-
 }

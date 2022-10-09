@@ -213,7 +213,7 @@
                 <div class="news__inner_blog">
                     <h2>Блог</h2>
                     <div class="news__inner_blog_text">Все новости компании можно узнать в нашем блоге</div>
-                    <div class="projects__inner_examples_button">
+                    <div class="news__inner_blog_button">
                         <a href="#">Смотреть еще<span class="arrow"></span></a>
                     </div>
                 </div>
@@ -257,14 +257,14 @@
                     </div>
                 </div>
                 <div class="connection__inner_form">
-                    <form action="" method="post" name="contact-form">
+                    <form class="connection__inner_form_section" action="" method="post" name="contact-form">
                         <div class="connection__inner_form_name">
                             <div class="connection__inner_form_group">
                                 <input class="connection__inner_form_group_input" type="text" name="name" id="name" value="" placeholder="Имя">
                             </div>
                             <div class="connection__inner_form_group">
                                 <input class="connection__inner_form_group_input error"  type="text" name="surname" id="surname" value="" placeholder="Фамилия">
-                                <span>Please enter your name</span>
+                                <div class="connection__inner_form_group_text-error"><span>Please enter your name</span></div>
                             </div>
                         </div>
                         <div class="connection__inner_form_contact">
@@ -285,7 +285,10 @@
                             <div class="connection__inner_form_agreement_text">Я согласен с Политикой конфиденциальности и даю разрешение на обработку моих персональных данных для целей, указанных в
                             <span>Политике конфиденциальности.</span></div>
                         </div>
-                        <button class="connection__inner_form_btn">Отправить</button>
+                        <div class="button">
+                            <button class="connection__inner_form_btn">Отправить</button>
+                        </div>
+                        
                     </form>
                 </div>
             </div>
