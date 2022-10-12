@@ -64,7 +64,12 @@
                     line-height: 35.14px;
                     text-decoration: none;
                     color: $white;
+
+                    &:hover {
+                        color: $red;
+                    }
                 }
+                        
         }
 
         &__button {
@@ -102,12 +107,12 @@
             }
             
                 a:hover {
-                    background-color: $white;
-                    color: $black;
+                    background-color: $red;
+                    color: $white;
                 }
             
                 a:hover span {
-                    background-image: url(../img/arrow.png);
+                    background-image: url(../img/arrow2.png);
                 }
             }
 
