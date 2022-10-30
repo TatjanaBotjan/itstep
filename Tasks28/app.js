@@ -110,7 +110,44 @@ if ((distanceBetweenCircleCenters > r1 - r2) && (distanceBetweenCircleCenters < 
     console.log("Окружности касаются изнутри");
 }
 
+// Задача 11
 
+a = 15;
+b = 5;
+var sum, diff, mul, div;
+
+sum = a + b;
+diff = a - b;
+mul = a * b;
+
+console.log(sum, diff, mul);
+
+if (a == 0 || b == 0) {
+    console.log("На 0 делить нельзя");
+} else {
+    console.log(div = a / b); 
+}
+
+// Задача 12
+
+sum = 0;
+
+for (let i = 1; i <= 20; i++) {
+    if (i % 5 == 0) {
+        sum += i;
+    }
+}
+console.log(sum);
+
+// Задача 13
+
+
+
+for (let i = 10; i <= 20; i++) {
+    a == i*i;
+}
+
+console.log(a);
 
 
 
