@@ -141,13 +141,21 @@ console.log(sum);
 
 // Задача 13
 
-
-
 for (let i = 10; i <= 20; i++) {
-    a == i*i;
+    console.log(i * i);
 }
 
-console.log(a);
+// Задача 15
+
+var n = 99;
+mul = 1;
+
+for (let i = 10; i <= n; i++) {
+    if (i % 2 == 1 && i % 13 == 0) {
+        mul = mul * i;
+    }
+}
+console.log(mul);
 
 
 
