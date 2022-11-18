@@ -32,11 +32,19 @@ for (let i = 0; i < a.length; i++) {
 }
 console.log(sum);
 
-// Задача 5
+// Задача 5.1
 
 let d = ["a", "b", "c", "d"];
 
 console.log(d[0], "+", d[1], "+", d[2], "+", d[3]);
+
+// Задача 5.2
+
+let str = a[0];
+for (let i = 0; i < a.length; i++) {
+    str += "+" + a[i];
+}
+console.log(str);
 
 // Задача 6
 
