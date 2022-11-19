@@ -79,6 +79,11 @@ function searchElement(a, x) {
             return -1;
     }
 }
-
-
+let num = 30;
+let result = [];
+for (let i = 1; i <= num; i++) {
+    if (num % i == 0) {
+        
+    }console.log(i);
+}
 

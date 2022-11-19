@@ -37,8 +37,9 @@ function equalityCheckNumbers(a, b) {
         if (a == b) {
             return true; 
         }
+        return false;
     }
-    return false;
+    
 
 // 5. Сделайте функцию, которая параметрами принимает 2 числа. Если их сумма больше 10 - пусть функция вернет true, а если нет - false
 
@@ -46,8 +47,9 @@ function summa(a, b) {
     if (a + b > 10) {
         return true;
     }
+    return false;
 }
-return false;
+
 
 //6. Сделайте функцию, которая параметром принимает число и проверяет - отрицательное оно или нет.Если отрицательное - пусть функция вернет true, а если нет - false
 
@@ -55,29 +57,32 @@ function checkPositiveOrNegativeNumber(a) {
     if (a < 0) {
         return true;
     }
+    return false;
 }
-return false;
+
 
 //7. Сделайте функцию, которая параметром принимает целое число и проверяет: четное оно или нет. Если четное - пусть функция возвращает true, если нечетное - false
 
 function checkEvenOrOddNumber(a) {
     if (a % 2 == 0) {
         return true;
-    }
+    } 
+    return false;
 }
-return false;
+
 
 // 8. Сделайте функцию, которая параметром принимает число и возвращает массив его делителей
 
 function arrayOfDivisorsNumber(num) {
     let result = [];
+    let j = 0;
 
     for (let i = 1; i <= num; i++) {
         if (num % i == 0) {
-            result = i;
+            result[j] = i;
+            j++;
         }
-    }
-
+    } 
     return result;
 }
 
@@ -101,7 +106,8 @@ console.log(summa(9, 7));
 console.log(checkPositiveOrNegativeNumber(-6));
 
 //7
-console.log(checkEvenOrOddNumber(6));
+console.log(checkEvenOrOddNumber(7));
 
 //8
-console.log(arrayOfDivisorsNumber(30));
+console.log(arrayOfDivisorsNumber(44));
+
