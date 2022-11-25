@@ -89,7 +89,22 @@ console.log(q);
 // 13. Дан массив [3, 4, 1, 2, 7]. Отсортируйте его (sort)
 
 let r = [3, 4, 1, 2, 7];
-r.sort();
+r.sort(function(a,b){ // для объектов
+    if(a == b) {
+        return 0;
+    }
+    if (a > b){
+        return 1;
+    }
+    if (a < b) {
+        return -1;
+    }
+});
+
+console.log(r);
+
+r = [3, 4, 1, 2, 7]; // можно для цифр просто так
+r.sort ((a, b => a-b));
 
 console.log(r);
 
@@ -229,3 +244,54 @@ newArr.forEach(function (item, i, array) {
     array[i] = item **0.5;
 });
 console.log(newArr);
+
+// 25. Дан массив. Найти сумму положительных элементов, возведенных в квадрат
+
+let t = [3, 5, 6, -5, -8];
+
+sum = t.filter(function(item) {
+    return item > 0;
+}).map(function (item) {
+    return item ** 2;
+}).reduce(function (sum, item) {
+    return sum + item;
+}, 0);
+
+console.log(sum);
+
+
+// 26
+
+// [1, 3, 4, 6, 2, 2, 1, 3] => [1, 3, 4, 6, 2]
+
+t = [1, 3, 4, 6, 2, 2, 1, 3];
+
+t.includes(function searchElementInArray(t, x) {
+
+    for (let i = 0; i < a.length; i++) {
+        if (t[i] == x) {
+            return true;
+        }
+    }
+
+    return false; 
+})
+
+
+
+h = [], unique = [];
+let j = 0; 
+
+fillRandomArray(a, 10);
+
+for (let i = 0; i < a.length; i++) {
+    if (!searchElementInArray(unique, a[i])) {
+        unique[j] = a[i];
+        j++;
+    }
+}
+console.log(a, unique);
+a = unique;
+console.log(a, unique);
+
+
