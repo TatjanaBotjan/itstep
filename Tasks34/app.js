@@ -4,7 +4,7 @@ console.log("Task 1:");
 let a = [2, -1, 5, 1, -2, 4];
 
 let b = a.filter(function (item) {
-    return item > 0;
+    return item >= 0;
 }).map(function (item) {
     return item * -1;
 });
@@ -108,6 +108,7 @@ function difference(max, min) {
 };
 
 console.log(difference(max, min));
+
 
 
 
