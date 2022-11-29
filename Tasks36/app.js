@@ -35,16 +35,16 @@ console.log(c);
 console.log("Task 4:");
 // 4. Даны 2 слова. Проверить, состоят ли они из одних и тех же букв
 
-a = 'дом';
-b = 'корм';
+a = 'кот';
+b = 'ток';
 
 let x = a.split("");
 let y = b.split("");
 
-function checkWord(a, b) {
-for (let i = 0; i < a.length; i++) {
-    for (let j = 0; j < b.length; j++) {
-        if (a[i] == b[j]) {
+function checkWord(x, y) {
+for (let i = 0; i < x.length; i++) {
+    for (let j = 0; j < y.length; j++) {
+        if (x[i] == y[j]) {
             return true;
         }  
         return false;
@@ -52,7 +52,7 @@ for (let i = 0; i < a.length; i++) {
 }
 }
 
-console.log(checkWord(a, b));
+console.log(checkWord(x, y));
 
 
 console.log("Task 5:");
