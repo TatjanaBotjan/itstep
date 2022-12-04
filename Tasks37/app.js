@@ -112,13 +112,98 @@ console.log(num)
 console.log("Task 9");
 // 9. Дан массив и число A.Переставить элементы в массиве так, чтобы сначала стояли элементы меньшие числа A, а потом большие
 
-array = [1, 5, 9, 2, 3, 7, 15, 25];
-num = 9;
+array = [1, 5, 25, 2, 3, 7, 15, 26];
+num = 8;
 
 
-let array1 = array.filter((item) => item <= num).sort((a, b) => a - b);
-let array2 = array.filter((item) => item > num).sort((a, b) => a - b);
+let array1 = array.filter((item) => item <= num);
+let array2 = array.filter((item) => item > num);
 
 newArray = array1.concat(array2);
 
 console.log(array1, array2, newArray);
+
+
+console.log("Task 11");
+// 11. Дана строка. Подсчитать количество слогов в слове
+
+let vowels = ["а", "у", "о", "и", "э", "ы", "я", "ю", "е", "ё"];
+let word = "человечество";
+
+let newWord = word.split("");
+
+console.log(newWord);
+
+function numberOfSyllables(newWord) {
+    let vowels = ["а", "у", "о", "и", "э", "ы", "я", "ю", "е", "ё"];
+    let vcount = 0;
+
+    for (let x = 0; x < newWord.length; x++) {
+        if (vowels.indexOf(newWord[x]) !== -1) {
+            vcount += 1;
+        }
+    }
+    return vcount;
+}
+
+console.log(numberOfSyllables(newWord));
+
+
+console.log("Task 13");
+// 13. Дано полный путь к файлу (например, "D:\ITStep\itstep2\Tasks\Task 37. Practice\task.txt"). Вывести все названия папок, которые входят в заданный путь
+
+str = "D:\\ITStep\\itstep2\\Tasks\\Task 37. Practice\\task.txt";
+
+let folderName = str.split("\\");
+
+console.log(folderName);
+
+
+console.log("Task 15");
+// 15. Дано слово. Проверить, является ли данное слово палиндромом
+
+word = "топот ";
+
+let palindro = word.split('').reverse().join('');
+
+console.log(word);
+console.log(palindro);
+
+
+console.log("Task 20");
+// 20. Дана строка, состоящее из слов между которыми может быть больше одного пробела. Удалить все лишние пробелы, т.е. оставить по 1 пробелу между словами
+
+str = "Листья     берез       пожелтели."
+
+str = str.replace(/\s+/g, ' ');
+
+console.log(str);
+
+
+console.log("Task 12");
+// 12. Дано слово.Получить строку из данного слова, где нечетные буквы будут заглавными, а четные - строчными
+
+word = "Книга";
+
+newWord = word.toLowerCase().split("").map((item, i) => {
+    if (i % 2 == 0){
+        return item.toUpperCase();
+    } else 
+        return item;
+}).join("");
+
+console.log(newWord);
+
+
+console.log("Task 21");
+// 21. Дано 2 массива и число k. Найти числа по одному из каждого массива, сумма которых будет равно k
+
+a = [3, 6, 8, 5, 4, 8];
+b = [7, 9, 10, 12, 2];
+let k = 15;
+
+a.forEach(function(item){
+    if(b.includes(k - item)){
+        console.log(item, k - item);
+    }
+});
