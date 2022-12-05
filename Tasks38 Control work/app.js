@@ -65,18 +65,78 @@ console.log("Task 5");
 
 a = [5, 6, 2, 9, 4];
 
-max = a.reduce((maximum, item) => {
-    if (item > maximum)
-        return item;
-    return maximum;
-});
+let maxIndex = 0;
+for (let i = 1; i < a.length; i++) {
+    if (a[i] > a[maxIndex]) {
+        maxIndex = i;
+    }
+}
 
-let min = a.reduce((minimum, item) => {
-    if (item < minimum)
-        return item;
-    return minimum;
-});
+let minIndex = 0;
+for (let i = 1; i < a.length; i++) {
+    if (a[i] < a[minIndex]) {
+        minIndex = i;
+    }
+}
+console.log(a);
 
-a[0] = max;
+let temp;
+
+temp = a[maxIndex];
+a[maxIndex] = a[minIndex];
+a[minIndex] = temp;
 
 console.log(a);
+
+console.log("Task 6");
+
+a = [5, 6, 2, 9, 4, 8];
+b = [];
+
+a.forEach(function (item, i) {
+    if (a[i] > a[i - 1])
+        b.push(item);
+})
+console.log(b);
+
+console.log("Task 7");
+
+a = [5, 6, 2, 9, 4, 8];
+b = [];
+
+N = 3;
+let M = 7;
+
+a.forEach(function (item, i) {
+    if (a[i] >= N && a[i] <= M)
+        b.push(item)
+});
+
+console.log(b);
+
+console.log("Task 8");
+
+let num = "539762";
+
+let newNum = + num.split("").sort((a, b) => b - a).join("");
+
+console.log(newNum);
+
+
+console.log("Task 18");
+
+a = [5, 2, 6, -9, 11];
+
+for (let i = 1; i < a.length; i++) {
+    if (i % 2 == 1) {
+        a[i] = 0;
+    } 
+}
+
+console.log(a);
+
+
+console.log("Task 12");
+
+let word1 = "Машина";
+let word2 = "Маша";
