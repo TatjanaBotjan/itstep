@@ -156,21 +156,15 @@ console.log(strConcordant.toLowerCase(), strVowels.toUpperCase());
 console.log("Task 11");
 
 let str = "К нам пришла холодная зима.";
-let strArray = str.split(' ');
 
-function findShortestWord(strArray) {
-    
-    let shortestWord = strArray[0].length;
+let shortWord = str.split(" ").reduce(function (word, item) {
+    if (item.length < word.length) {
+        return item;
+    }    
+    return word;
+});
 
-    for (let i = 0; i < strArray.length; i++) {
-        if (strArray[i].length < shortestWord) {
-            shortestWord = strArray[i].length;
-        }
-    }
-    return shortestWord;
-}
-
-console.log(findShortestWord(str));
+console.log(shortWord.length);
 
 
 console.log("Task 9");
@@ -191,25 +185,22 @@ console.log("Task 13");
 str = "Пришла холодная зима";
 strArray = str.toLowerCase().split(" ").sort().reverse().join(" ");
 
+
 console.log(strArray);
 
 
 console.log("Task 20");
 
-a = [7, -5, 1, 6, 4, 2, 9];
+a = [7, -5, 1, 9];
 
-function getMinEvenElement(a) { 
+let minEvenElement = a.reduce(function (min, item) {
+    if (item < min && item % 2 == 0) {
+        return item;
+    }
+    return min;
+});
 
-    let minEvenElement = a[0];
-
-    for (let i = 1; i < a.length; i++) {
-        if (a[i] % 2 == 0 && a[i] < minEvenElement) {
-           return minEvenElement = a[i];            
-        }
-    } return a[0];
-}
-
-console.log(getMinEvenElement(a));
+console.log(minEvenElement);
 
 
 console.log("Task 17");
@@ -222,7 +213,18 @@ let duplicates = newStr.filter((item, index, array) => {
     return array.indexOf(item) !== index;
 });
 
-
 console.log(duplicates);
+
+
+console.log("Task 16");
+
+let sentence1 = "Мама мыла раму 5 раз";
+num = "0123456789";
+let array1Words = sentence1.split(" ");
+let numArray = num.split(" ");
+
+count = array1Words.filter((item) => num.includes(item)).length;
+
+console.log(count);
 
 
