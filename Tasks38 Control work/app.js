@@ -136,7 +136,93 @@ for (let i = 1; i < a.length; i++) {
 console.log(a);
 
 
-console.log("Task 12");
+console.log("Task 15");
 
-let word1 = "Машина";
-let word2 = "Маша";
+word = "электросоковыжималка";
+let vowels = "уеыаоэяиюё";
+let concordant = "бвгджзйклмнпрстфхцчшщьъ";
+
+let strConcordant = word.split("").filter(function (item) {
+    return vowels.indexOf(item) == -1; 
+}).join("");
+
+let strVowels = word.split("").filter(function (item) {
+    return concordant.indexOf(item) == -1;
+}).join("");
+
+console.log(strConcordant.toLowerCase(), strVowels.toUpperCase());
+
+
+console.log("Task 11");
+
+let str = "К нам пришла холодная зима.";
+let strArray = str.split(' ');
+
+function findShortestWord(strArray) {
+    
+    let shortestWord = strArray[0].length;
+
+    for (let i = 0; i < strArray.length; i++) {
+        if (strArray[i].length < shortestWord) {
+            shortestWord = strArray[i].length;
+        }
+    }
+    return shortestWord;
+}
+
+console.log(findShortestWord(str));
+
+
+console.log("Task 9");
+
+b = [7, 2, 0, 4, 0, -5, 1, 0];
+let A = 0;
+
+a = b.filter((item) => item == A);
+c = b.filter((item) => item > A || item < A);
+
+a = a.concat(c);
+
+console.log(a);
+
+
+console.log("Task 13");
+
+str = "Пришла холодная зима";
+strArray = str.toLowerCase().split(" ").sort().reverse().join(" ");
+
+console.log(strArray);
+
+
+console.log("Task 20");
+
+a = [7, -5, 1, 6, 4, 2, 9];
+
+function getMinEvenElement(a) { 
+
+    let minEvenElement = a[0];
+
+    for (let i = 1; i < a.length; i++) {
+        if (a[i] % 2 == 0 && a[i] < minEvenElement) {
+           return minEvenElement = a[i];            
+        }
+    } return a[0];
+}
+
+console.log(getMinEvenElement(a));
+
+
+console.log("Task 17");
+
+str = "Пришла холодная зима";
+newStr = str.toLowerCase().split("");
+
+let duplicates = newStr.filter((item, index, array) => {
+   
+    return array.indexOf(item) !== index;
+});
+
+
+console.log(duplicates);
+
+
