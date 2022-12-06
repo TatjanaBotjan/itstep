@@ -194,7 +194,7 @@ console.log("Task 20");
 a = [7, -5, 1, 9];
 
 let minEvenElement = a.reduce(function (min, item) {
-    if (item < min && item % 2 == 0) {
+    if (item % 2 == 0 && item < min) {
         return item;
     }
     return min;
