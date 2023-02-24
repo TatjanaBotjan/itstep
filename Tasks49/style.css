@@ -1,0 +1,38 @@
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: 2px solid rgb(9, 9, 9);
+    background-color: rgb(193, 248, 193);
+    margin-top: 10px;
+}
+th{
+    width: 205px;
+    height: 30px;
+    font-size: 25px;
+    border: 2px solid rgb(9, 9, 9);
+    text-align: center;
+    background-color: rgb(107, 247, 109);
+}
+
+td{
+    width: 205px;
+    height: 30px;
+    font-size: 20px;
+    border: 2px solid rgb(9, 9, 9);
+    text-align: center;
+}
+
+input{
+    width: 200px;
+    height: 23px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(216, 237, 247);
+}
+
+button{
+    height: 21px;
+    background-color: rgb(241, 184, 184);
+    border-radius: 5px;
+    margin-right: 2px;
+}
