@@ -1,4 +1,4 @@
-console.log("Task 1:");
+dconsole.log("Task 1:");
 
 // 1. Посчитать количество слов в строке
 

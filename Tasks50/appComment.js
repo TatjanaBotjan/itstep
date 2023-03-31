@@ -5,6 +5,11 @@ form.addEventListener("submit", function (event) {
 
     // <span class="error-text">Заполните поле</span>
 
+    /*let data = new FormData(this);
+    data.forEach(function (item, index) {
+        console.log(index, item)
+    }); */
+
     let errors = document.querySelectorAll(".error-text"); // находим, есть ли ошибки
 
     if (errors.length) {

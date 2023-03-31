@@ -1,0 +1,1 @@
+<a href="/" onclick="event.preventDefault()">Ссылка</a>
