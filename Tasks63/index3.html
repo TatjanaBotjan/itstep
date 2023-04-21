@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        function MaxNumber(){
+            const[number1, setNumber1] = React.useState();
+            const[number2, setNumber2] = React.useState();
+
+            function increase(){
+                let number1 = document.getElementById("number1").value;
+                let number2 = document.getElementById("number2").value;
+                setNumber1(+number1);
+                setNumber2(+number2);
+
+            }
+
+            return (
+                <div>
+                    <input type="text" name="number1" id="number1" />
+                    <input type="text" name="number2" id="number2" />
+                    <button onClick={increase}>Вывести</button>
+                    <div>
+                        {number1 > number2 &&
+                            <span>Большее значение: {number1}</span>
+                        }
+                        {number1 < number2 &&  
+                        <span>Большее значение: {number2}</span>
+                        }
+                    </div>
+                </div>
+
+            );
+        }
+
+        ReactDOM.createRoot(document.getElementById("app"))
+                .render(
+                    <MaxNumber />
+                );
+    </script>
+
+</body>
+
+</html>

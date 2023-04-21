@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+
+        function Value() {
+
+            function changeValue(event) {
+                let input1 = document.querySelector("#number1");
+                let a = number1.value;
+
+                let input2 = document.querySelector("#number2");
+                let b = number2.value;
+
+                number1.value = b;
+                number2.value = a;
+            }
+
+            return (<div>
+                <button onClick={changeValue}>Поменять значение местами</button>
+                <input type="text" name="number1" id="number1" value="1" />
+                <input type="text" name="number2" id="number2" value="2" />
+            </div>);
+        }
+
+        ReactDOM.createRoot(document.getElementById("app"))
+            .render(
+                <Value />
+            )
+    </script>
+</body>
+</html>

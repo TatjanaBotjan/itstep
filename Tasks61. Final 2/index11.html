@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../Tasks15/grid.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <form action="" method="post" name="reg_form" class="reg-form" id="reg_form">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-label">
+                                <label for="code">Код товара:</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-control">
+                                <input type="text" name="code" id="code" value="" placeholder="Код товара">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-label">
+                                <label for="name">Название товара:</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-control">
+                                <select name="name" id="name">
+                                    <option value="">Товар</option>
+                                    <option value="Авокадо">Авокадо</option>
+                                    <option value="Батон">Батон</option>
+                                    <option value="Варенье">Варенье</option>
+                                    <option value="Говядина">Говядина</option>
+                                    <option value="Дыня">Дыня</option>
+                                    <option value="Ежевика">Ежевика</option>
+                                    <option value="Желе">Желе</option>
+                                    <option value="Земляника">Земляника</option>
+                                    <option value="Икра">Икра</option>
+                                    <option value="Колбаса">Колбаса</option>
+                                    <option value="Лимон">Лимон</option>
+                                    <option value="Молоко">Молоко</option>
+                                    <option value="Нут">Нут</option>
+                                    <option value="Орехи">Орехи</option>
+                                    <option value="Перец">Перец</option>
+                                    <option value="Рис">Рис</option>
+                                    <option value="Сахар">Сахар</option>
+                                    <option value="Торт">Торт</option>
+                                    <option value="Укроп">Укроп</option>
+                                    <option value="Фасоль">Фасоль</option>
+                                    <option value="Хек">Хек</option>
+                                    <option value="Цукини">Цукини</option>
+                                    <option value="Чай">Чай</option>
+                                    <option value="Шпинат">Шпинат</option>
+                                    <option value="Щавель">Щавель</option>
+                                    <option value="Яблоко">Яблоко</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-label">
+                                <label for="price">Стоимость товара:</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-control">
+                                <input type="text" name="price" id="price" value="" placeholder="Стоимость">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-label">
+                                <label for="name">Количество товара:</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-control">
+                                <input type="number" step="1" min="1" max="100" id="quantity" name="quantity" value="1" title="Qty">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-control">
+                                <button class="btn" type="submit">Добавить</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Код товара</th>
+                <th>Название товара</th>
+                <th>Стоимость товара</th>
+                <th>Количество товара</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <div class="sum">Стоимость продуктов:</div>
+
+    <script src="./app11.js"></script>
+</body>
+
+</html>

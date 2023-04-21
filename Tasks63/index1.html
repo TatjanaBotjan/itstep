@@ -1,0 +1,34 @@
+<body>
+    <div id="app"></div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+
+        function Counter(){
+            const [count1, setCount1] = React.useState(0);
+            const [count2, setCount2] = React.useState(0);
+
+            function increase(){
+                setCount()
+            }
+        
+            return (
+                <div>
+                    <input type="text" value={count1} onChange={handleNameChange} />
+                    <input type="text" value={count2} onChange={handleNameChange} />
+                    <button onClick={increase}>Изменить</button>
+                    <div></div>
+                </div>
+            );
+        }
+
+        ReactDOM.createRoot(
+            document.getElementById("app")
+        )
+            .render(
+                <Counter />
+            )
+    </script>
+</body>
