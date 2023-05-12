@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="app"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel"> 
+
+    function Game(){
+
+        let [color, setColor] = React.useState();
+        const [td, setTd] = React.useState();
+        let [count, setCount] = React.useState(0);
+
+        function handleColorClick(event){
+            td.className.toggle("black");
+
+            if (td.nextElementSibling) {
+                td.nextElementSibling.className.toggle("black");
+            }
+            if (td.previousElementSibling) {
+                td.previousElementSibling.className.toggle("black");
+            }
+
+            let number = td.cellIndex;
+
+            if (td.parentElement.nextElementSibling) {
+                td.parentElement.nextElementSibling.children[number].className.toggle("black");
+            }
+            if (td.parentElement.previousElementSibling) {
+                td.parentElement.previousElementSibling.children[number].className.toggle("black");
+            }
+
+        }
+
+
+        function handleCountChange(event) {
+        count = +document.querySelector("caption b").innerText;
+
+        count++;
+            document.querySelector("caption b").innerText = count;
+
+            if (document.querySelectorAll("tbody td:not(.black)").length == 0) {
+                document.querySelector("tfoot td").innerHTML = "Победа!";
+            }
+        }
+
+        return <>
+            <table>
+                <caption onChange={handleCountChange}>Количество ходов - <b>0</b></caption>
+                <tbody>
+                    <tr>
+                        <td onClick={handleColorClick}></td>
+                        <td onClick={handleColorClick}></td>
+                        <td onClick={handleColorClick}></td>
+                        <td onClick={handleColorClick}></td>
+                        <td onClick={handleColorClick}></td>
+                    </tr>
+                    <tr>
+                        <td onClick={handleColorClick}></td>
+                        <td onClick={handleColorClick}></td>
+                        <td onClick={handleColorClick}></td>
+                        <td onClick={handleColorClick}></td>
+                        <td onClick={handleColorClick}></td>
+                    </tr>
+                    <tr>
+                        <td onClick={handleColorClick}></td>
+                        <td onClick={handleColorClick}></td>
+                        <td onClick={handleColorClick}></td>
+                        <td onClick={handleColorClick}></td>
+                        <td onClick={handleColorClick}></td>
+                    </tr>
+                    <tr>
+                        <td onClick={handleColorClick}></td>
+                        <td onClick={handleColorClick}></td>
+                        <td onClick={handleColorClick}></td>
+                        <td onClick={handleColorClick}></td>
+                        <td onClick={handleColorClick}></td>
+                    </tr>
+                    <tr>
+                        <td onClick={handleColorClick}></td>
+                        <td onClick={handleColorClick}></td>
+                        <td onClick={handleColorClick}></td>
+                        <td onClick={handleColorClick}></td>
+                        <td onClick={handleColorClick}></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">
+                            Игра в процессе
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </>
+
+
+    }
+
+    ReactDOM.createRoot(
+            document.getElementById("app")
+        )
+            .render(
+                <Game />
+            )
+    
+    
+    
+    </script>

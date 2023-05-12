@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        function Calculator() {
+            const [data, setData] = React.useState({
+                x: 0, // значение по умолчанию в поле ввода
+                y: 0,
+                operation: "+", // значение по умолчанию в select
+                result: ""
+            })
+
+            function handleChangeX(event) {
+                setData({ ...data, x: +event.target.value, result: calculate(+event.target.value, data.y, data.operation) });
+            }
+
+            function handleChangeY(event) {
+                setData({ ...data, y: +event.target.value, result: calculate(data.x, +event.target.value, data.operation) });
+            }
+
+            function handleChangeOperation(event) {
+                setData({ ...data, operation: event.target.value, result: calculate(data.x, data.y, event.target.value) });
+            }
+
+            function calculate(x, y, operation) {
+                switch (operation) {
+                    case "+":
+                        return `Сумма: ${x}+${y}=${x + y}`;
+                        break;
+                    case "-":
+                        return `Разность: ${x}-${y}=${x - y}`;
+                        break;
+                    case "*":
+                        return `Произведение: ${x}*${y}=${x * y}`;
+                        break;
+                    case "/":
+                        if (y == 0) {
+                            return "Деление на ноль";
+                        } else {
+                            return `Частное: ${x}:${y}=${x / y}`;
+                        }
+                }
+            }
+
+            return (
+                <div>
+                    <input type="text" name="x" id="x" value={data.x} onChange={handleChangeX} />
+                    <input type="text" name="y" id="y" value={data.y} onChange={handleChangeY} />
+
+                    <select name="operation" id="operation" value={data.operation} onChange={handleChangeOperation}>
+                        <option value="+">Сумма</option>
+                        <option value="-">Разность</option>
+                        <option value="*">Произведение</option>
+                        <option value="/">Частное</option>
+                    </select>
+                    <div>
+                        {data.result}
+                    </div>
+                </div>
+
+            );
+        }
+
+        ReactDOM.createRoot(document.getElementById("app"))
+            .render(
+                <Calculator />
+            );
+    </script>
+</body>
+
+</html>

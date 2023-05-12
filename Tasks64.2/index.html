@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+
+        function App(){
+            const [post, setPost] = React.useState(
+                {
+                    picture: "",
+                    title: "",
+                    text: ""
+                }
+            );
+
+            const [newpost, setNewpost] = React.useState([]);
+
+            const [editIndex, setEditIndex] = React.useState(-1);
+
+            function handleFormSubmit(event) {
+                event.preventDefault();
+                if (editIndex == - 1) {
+                    setNewpost([...newpost, post]);
+                    setNewpost([...newpost, {
+                        picture: post.picture,
+                        title: post.title,
+                        text: post.text,
+                        date: new Date()
+                    }])
+                } else {
+                    newpost[editIndex] = post;
+                    setNewpost([...newpost]);
+                    setPost({
+                        picture: "",
+                        title: "",
+                        text: ""
+                    });
+                    setEditIndex(-1);
+                }
+            }
+
+            function handlePictureChange(event){
+                setPost({...post, picture: event.target.value })
+            }
+
+            function handleTitleChange(event) {
+                setPost({ ...post, title: event.target.value })
+            }
+
+            function handleTextChange(event) {
+                setPost({ ...post, text: event.target.value })
+            }
+
+             function handlePostDelete(event) {
+                let index = +event.target.dataset.id;
+                newpost.splice(index, 1);
+                setNewpost([...newpost]);
+            }
+
+            function handlePostEdit(event) {
+                let index = +event.target.dataset.id; 
+                let editPost = newpost[index]; 
+                setPost({
+                    picture: editPost.picture,
+                    title: editPost.title,
+                    text: editPost.text
+                });
+                setEditIndex(index);
+            }
+
+
+            return <>
+            <div>
+                <form action="" onSubmit={handleFormSubmit}>
+                    <div>
+                        <label for="picture">Картинка</label>
+                        <input type="text" value={post.picture} name="picture" id="picture" onChange={handlePictureChange}/>
+                    </div>
+                    <div>
+                        <label for="title">Название</label>
+                        <input type="title" value={post.title} name="title" id="title" onChange={handleTitleChange} />
+                    </div>
+                    <div>
+                        <label for="text">Описание</label>
+                        <textarea name="text" id="text" value={post.text} onChange={handleTextChange} />
+                    </div>
+                    <div>
+                        <button type="submit">{editIndex > -1 ? <>Сохранить</> : <>Добавить</>}</button>    
+                    </div>
+                </form>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th>Номер</th>
+                        <th>Картинка</th>
+                        <th>Название</th>
+                        <th>Описание</th>
+                        <th>Дата</th>
+                        <th>Действия</th>
+                    </tr>
+                    {
+                        newpost.map(function(item, index){
+                            return <tr>
+                                        <td>{index + 1}</td>
+                                        <td><img src={"./img/"+item.picture} alt=""/></td>
+                                        <td>{item.title}</td>
+                                        <td>{item.text}</td>
+                                        <td>{item.date.toLocaleDateString()}</td>
+                                        <td>
+                                            <button onClick={handlePostEdit} data-id={index}>Редактировать</button>
+                                            <button onClick={handlePostDelete} data-id={index}>Удалить</button>
+                                        </td>
+                                   </tr>
+                        })       
+                    }
+                </table>
+            </div>
+            </>;
+        }
+        ReactDOM.createRoot(
+                document.getElementById("app")
+            )
+                .render(
+                    <App />
+            )
+    </script>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Example</title>
+</head>
+
+<body>
+    <div id="app"></div> <!--корневой компонент, куда вставляется приложение--> 
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+
+        function User() {
+            const [name, setName] = React.useState("Tom"); // name - переменная состояния, setName - как будет меняться
+            const [age, setAge] = React.useState(36);
+
+            function handleNameChange(event) { // ф-ция для обработкти изменения имени
+                setName(event.target.value); // Свойство target интерфейса Event является ссылкой на объект, который был инициатором события, value - значение
+            }
+
+            function handleAgeChange(event) { // ф-ция для обработкти изменения возраста
+                setAge(event.target.value);
+            }
+            return (
+                <div>
+                    <h3>Имя: {name}</h3>
+                    <h3>Возраст: {age}</h3>
+
+                    <div>
+                        <p>Имя: <input type="text" value={name} onChange={handleNameChange} /></p> <!-- onChange - обрабатывает изменение значения ввода-->
+                        <p>Возраст: <input type="number" min="0" max="110" value={age} onChange={handleAgeChange} /></p>
+                    </div>
+                </div>
+            );
+        }
+
+        ReactDOM.createRoot(
+            document.getElementById("app") 
+        )
+            .render(
+                <User />// корневой элемент, который надо запустить
+            );
+    </script>
+</body>
+
+</html>
