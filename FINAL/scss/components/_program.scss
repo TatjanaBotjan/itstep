@@ -1,0 +1,223 @@
+.program{
+   
+
+    &_h2{
+        text-align: center;
+        font-weight: 800;
+        font-size: 55px;
+        color: rgb(3, 63, 3);
+        padding: 50px 0 50px 0;
+    }
+    
+    &__row{
+        display: flex;
+        float: left;
+        justify-content: space-between;
+
+        &_consultation{
+            width: 30%;
+            border: 2px solid #d6b77a;
+            background-color: rgb(255, 255, 255);
+
+            &_h2{
+                background-color: #d6b77a;
+                padding: 15px;
+                font-size: 30px;
+                text-align: center;
+                margin-bottom: 0;
+            }
+
+            &_hr{
+                width: 374px;
+                border: none;
+                background-color: #d6b77a;
+                height: 2px;
+                margin: 0;
+            }
+
+            &_price{
+                text-transform: uppercase;
+                font-size: 35px;
+                text-align: center;
+                margin-bottom: 0;
+                padding: 20px;
+            }
+
+            &_objective{
+                font-size: 20px;
+                text-align: center;
+                padding: 40px 18px 130px;
+                margin-bottom: 0;
+            }
+
+            &_btn{
+                width: 190px;
+                border-radius: 5px;
+                display: flex;
+                vertical-align: top;
+                background-color: #d6b77a;
+                transition: color, background-color 0.5s linear;
+                position: relative;
+                left: 24%;
+                
+                :hover {
+                    border-radius: 5px;
+                    background-color: #c29c4f;
+                    color: rgb(255, 255, 255);
+                }
+                
+                a {
+                    width: 190px;
+                    padding: 10px;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: 400;
+                    font-family: Roboto Slab;
+                    line-height: 22.59px;
+                    color: white;
+                    text-transform: uppercase;
+                }
+            }
+            
+        }
+
+        &_individual{
+            width: 30%;
+            border: 2px solid #d6b77a;
+            background-color: rgb(255, 255, 255);
+            
+            &_h2 {
+                background-color: #d6b77a;
+                padding: 15px;
+                font-size: 30px;
+                text-align: center;
+                margin-bottom: 0;
+            }
+            
+            &_hr {
+                width: 374px;
+                border: none;
+                background-color: #d6b77a;
+                height: 2px;
+                margin: 0;
+            }
+
+            &_price {
+                text-transform: uppercase;
+                font-size: 35px;
+                text-align: center;
+                margin-bottom: 0;
+                padding: 20px;
+            }
+
+            &_objective {
+                font-size: 20px;
+                text-align: center;
+                padding: 40px 18px 100px;
+                margin-bottom: 0;
+            }
+
+            &_btn {
+                width: 190px;
+                border-radius: 5px;
+               
+                display: flex;
+                vertical-align: top;
+                background-color: #d6b77a;
+                transition: color, background-color 0.5s linear;
+                position: relative;
+                left: 24%;
+            
+                :hover {
+                    border-radius: 5px;
+                    background-color: #c29c4f;
+                    color: rgb(255, 255, 255);
+                }
+            
+                a {
+                    width: 190px;
+                    padding: 10px;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: 400;
+                    font-family: Roboto Slab;
+                    line-height: 22.59px;
+                    color: white;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        &_personal{
+            width: 30%;
+            border: 2px solid #d6b77a;
+            background-color: rgb(255, 255, 255);
+        
+            &_h2 {
+                background-color: #d6b77a;
+                padding: 15px;
+                font-size: 30px;
+                text-align: center;
+                margin-bottom: 0;
+            }
+        
+            &_hr {
+                width: 374px;
+                border: none;
+                background-color: #d6b77a;
+                height: 2px;
+                margin: 0;
+            }
+
+            &_price {
+                text-transform: uppercase;
+                font-size: 35px;
+                text-align: center;
+                margin-bottom: 0;
+                padding: 20px;
+            }
+
+            &_objective {
+                font-size: 20px;
+                text-align: center;
+                padding: 40px 18px 40px;
+                margin-bottom: 0;
+            }
+
+            &_btn {
+                width: 190px;
+                border-radius: 5px;
+                margin-bottom: 30px;
+                display: flex;
+                vertical-align: top;
+                background-color: #d6b77a;
+                transition: color, background-color 0.5s linear;
+                position: relative;
+                left: 24%;
+            
+                :hover {
+                    border-radius: 5px;
+                    background-color: #c29c4f;
+                    color: rgb(255, 255, 255);
+                }
+            
+                a {
+                    width: 190px;
+                    padding: 10px;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: 400;
+                    font-family: Roboto Slab;
+                    line-height: 22.59px;
+                    color: white;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+        

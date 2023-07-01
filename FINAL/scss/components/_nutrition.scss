@@ -1,0 +1,35 @@
+.nutrition{
+    background-color: #F0FFF0;
+    margin-top: 550px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+
+    &__row{
+        
+        &_top{
+            position: relative;
+            width: 150px;
+            left: 555px;
+            border: none;
+            background-color: #d5ad5d;
+            height: 3px;   
+        }
+
+        &_bottom {
+            position: relative;
+            width: 150px;
+            left: 555px;
+            border: none;
+            background-color: #d5ad5d;
+            height: 2px;
+        }
+
+        &_p{
+            color: rgb(72, 71, 71);
+            font-size: 22px;
+            text-align: center;
+        }
+    }
+
+}

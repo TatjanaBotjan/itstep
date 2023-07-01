@@ -1641,13 +1641,6 @@ p {
   font-size: 16px;
   line-height: 20.8;
 }
-.connection__inner_form :-ms-input-placeholder {
-  color: #929292;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20.8;
-}
 .connection__inner_form ::placeholder {
   color: #929292;
   text-transform: uppercase;

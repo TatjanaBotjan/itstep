@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+#app {
+    width: 800px;
+}
+
+.blog_posts {
+    margin-top: 50px;
+}
+
+.button_trash, .button_favorite, .button_unfavorite {
+    cursor: pointer;
+    border: 0;
+    background-color: #fff;
+}
+
+.img{
+    width: 10px;
+    
+}
+
+.error{
+ color: red;
+}
+
+.erropInput{
+    border: 1px solid red;
+}

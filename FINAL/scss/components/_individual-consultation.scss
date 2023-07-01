@@ -1,0 +1,238 @@
+.individual-consultation{
+    background-image: url(../img/fonAbout.svg);
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100%;
+    position: relative;
+    top: 600px;
+
+    &__row {
+        position: relative;
+    
+        &_details {
+            display: flex;
+    
+            &_img {
+                float: left;
+                width: 255px;
+                height: 200px;
+                margin-top: 20px;
+                margin-left: -1287px;
+                margin-right: 50px;
+            }
+    
+            &_h2 {
+                text-align: center;
+                font-weight: 800;
+                font-size: 55px;
+                color: rgb(3, 63, 3);
+                padding-top: 60px;
+            }
+        }
+
+        &_price{
+            
+            &_h2 {
+                font-size: 50px;
+                font-weight: 500;
+                text-align: center;
+                padding-bottom: 30px;
+                width: 60%;
+                position: relative;
+                top: -210px;
+                margin-left: 250px;
+            }
+
+            &_a{
+                color: #d6b77a; 
+            }
+
+            a:hover{
+                color: #c29c4f;
+            }
+
+            &_p{
+                font-size: 25px;
+                text-align: justify;
+                position: relative;
+                top: -210px;
+                margin-left: 310px;
+            }
+
+            &_btn {
+                border-radius: 5px;
+                border: none;
+                margin: -190px 0 20px 478px;
+                display: inline-block;
+                vertical-align: top;
+                padding: 9px 0px;
+                background-color: #d6b77a;
+                transition: color, background-color 0.5s linear;
+            
+                :hover {
+                    border-radius: 5px;
+                    margin: 9px 0 20px 0;
+                    padding: 8px 20px 10px 20px;
+                    background-color: #c29c4f;
+                    color: rgb(255, 255, 255);
+                }
+            
+                a {
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: 400;
+                    font-family: Roboto Slab;
+                    line-height: 22.59px;
+                    padding: 0 20px 0 20px;
+                    color: white;
+                    text-transform: uppercase;
+                }
+            } 
+        }
+
+        &_services{
+            display: flex;
+            float: left;
+            justify-content: space-between;
+            position: relative;
+            top: -150px;
+           
+            &_individual{
+                width: 40%;
+                border: 2px solid #d6b77a;
+                background-color: rgb(255, 255, 255);
+
+                &_h2{
+                    background-color: #d6b77a;
+                    padding: 15px;
+                    font-size: 30px;
+                    text-align: center;
+                    margin-bottom: 0;
+                }
+
+                &_hr {
+                    width: 500px;
+                    border: none;
+                    background-color: #d6b77a;
+                    height: 2px;
+                    margin: 0;
+                }
+
+                &_objective{
+                    font-size: 20px;
+                    text-align: center;
+                    padding: 20px 35px 20px;
+                    margin-bottom: 0;
+                }
+
+                &_price{
+                    text-transform: uppercase;
+                    font-size: 27px;
+                    text-align: center;
+                    margin-bottom: 0;
+                    padding: 20px 20px 30px 20px;
+                }
+
+                &_btn {
+                    width: 250px;
+                    border-radius: 5px;
+                    display: flex;
+                    vertical-align: top;
+                    background-color: #d6b77a;
+                    transition: color, background-color 0.5s linear;
+                    position: relative;
+                    left: 24%;
+                    margin-bottom: 30px;
+                
+                    :hover {
+                        border-radius: 5px;
+                        background-color: #c29c4f;
+                        color: rgb(255, 255, 255);
+                    }
+                
+                    a {
+                        width: 250px;
+                        padding: 10px;
+                        text-align: center;
+                        text-decoration: none;
+                        font-size: 18px;
+                        font-weight: 400;
+                        font-family: Roboto Slab;
+                        line-height: 22.59px;
+                        color: white;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            &_personal{
+                width: 40%;
+                border: 2px solid #d6b77a;
+                background-color: rgb(255, 255, 255);
+
+                &_h2 {
+                        background-color: #d6b77a;
+                        padding: 30px;
+                        font-size: 30px;
+                        text-align: center;
+                        margin-bottom: 0;
+                        height: 103px;
+                    }
+                
+                    &_hr {
+                        width: 500px;
+                        border: none;
+                        background-color: #d6b77a;
+                        height: 2px;
+                        margin: 0;
+                    }
+                
+                    &_objective {
+                        font-size: 20px;
+                        text-align: center;
+                        padding: 20px 35px 48px;
+                        margin-bottom: 0;
+                    }
+                
+                    &_price {
+                        text-transform: uppercase;
+                        font-size: 27px;
+                        text-align: center;
+                        margin-bottom: 0;
+                        padding: 20px 20px 30px 20px;
+                    }
+                
+                    &_btn {
+                        width: 250px;
+                        border-radius: 5px;
+                        display: flex;
+                        vertical-align: top;
+                        background-color: #d6b77a;
+                        transition: color, background-color 0.5s linear;
+                        position: relative;
+                        left: 24%;
+                        margin-bottom: 30px;
+                
+                        :hover {
+                            border-radius: 5px;
+                            background-color: #c29c4f;
+                            color: rgb(255, 255, 255);
+                        }
+                
+                        a {
+                            width: 250px;
+                            padding: 10px;
+                            text-align: center;
+                            text-decoration: none;
+                            font-size: 18px;
+                            font-weight: 400;
+                            font-family: Roboto Slab;
+                            line-height: 22.59px;
+                            color: white;
+                            text-transform: uppercase;
+                        }
+                    }
+            }
+        }
+    }
+}

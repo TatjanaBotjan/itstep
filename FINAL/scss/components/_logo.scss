@@ -1,0 +1,29 @@
+.logo{
+    
+    &__row {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    
+        &_img {
+            float: left;
+        }
+    
+        &_text {
+            font-size: 60px;
+            text-shadow:
+                1px 1px rgb(219, 236, 195),
+                2px 2px #bfbabad8;
+                color: #0bad0d;
+                transition: all 1s;
+            }
+    
+        &_text:hover {
+            text-shadow:
+                1px 1px white,
+                2px 2px rgb(192, 112, 78);
+            color: rgb(159, 52, 38);
+            }
+        }   
+}
+

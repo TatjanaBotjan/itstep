@@ -1,0 +1,109 @@
+header {
+    width: 100%;
+    background-image: url(../img/fn.jpg);
+    height: 900px;
+    background-repeat: no-repeat;
+}
+
+.header {
+    &__row{
+        padding-top: 70px;
+        display: flex;
+        justify-content: space-between;
+    
+        &_menu{
+            display: flex;
+            background-color: azure;
+            opacity: 0.7;
+            height: 60px;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            float: left;
+            border-radius: 7px;
+           
+            ul {
+                list-style: none;
+                padding-left: 0;
+                margin: 0;
+            }
+
+                li {
+                    float: left;
+                    margin-left: 80px;
+                }
+                
+                    a{
+                        text-decoration: none;
+                        color: rgb(6, 68, 26);
+                        font-weight: 600;
+                        font-size: 23px;
+                        margin-top: 14px;
+                        transition: color 0.5s linear;
+                    }   
+
+                    a:hover {
+                        text-shadow:
+                        1px 1px white,
+                        1px 1px rgb(192, 112, 78);
+                        color: rgb(159, 52, 38);
+                        text-decoration: underline;
+                    }
+        }
+
+        &_connection{  
+            border-radius: 5px;       
+            margin:9px 0 20px 0;
+            display: inline-block;
+            vertical-align: top;
+            padding: 9px 0px;
+            background-color:#d6b77a;
+            transition: color, background-color 0.5s linear;
+           
+            :hover {
+                border-radius: 5px;
+                margin: 9px 0 20px 0;
+                padding: 8px 20px 10px 20px;
+                background-color: #c29c4f;
+                color: rgb(255, 255, 255);
+            }
+                
+                a {
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: 400;
+                    font-family: Roboto Slab;
+                    line-height: 22.59px;
+                    padding: 0 20px 0 20px;
+                    color: white;
+                    text-transform: uppercase;
+                }
+            }
+    }
+
+        &__text {
+            width: 56%;
+            margin-left: 620px;
+            margin-top: 170px;
+    
+    
+            &_h2 {
+                font-size: 55px;
+                text-shadow:
+                    1px 1px white,
+                    1px 1px rgb(192, 112, 78);
+                color: rgb(159, 52, 38);
+                transition: all 1s;
+                font-weight: 800;
+                line-height: 1.5;
+            }
+    
+            &_author {
+                font-size: 35px;
+                font-weight: 400;
+                margin-left: 340px;
+                color: rgb(72, 70, 70);
+            }
+        }
+}
+    

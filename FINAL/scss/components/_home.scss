@@ -1,0 +1,20 @@
+.home{
+    padding-bottom: 50px;
+   
+    &__row{
+       
+        &_h2{
+            font-size: 50px;
+            font-weight: 500;
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 30px;
+        }
+
+        &_p{
+            font-size: 27px;
+            text-align: center;
+            color: rgb(73, 72, 72);
+        }
+    }
+}

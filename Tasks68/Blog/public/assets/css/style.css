@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+#app {
+    width: 800px;
+}
+
+.blog_posts {
+    margin-top: 50px;
+}
+
+.details{
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid;
+    background-color: rgb(226, 188, 188);
+}
