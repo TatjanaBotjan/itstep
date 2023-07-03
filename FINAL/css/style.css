@@ -975,7 +975,7 @@ header {
 .individual-consultation {
   background-image: url(../img/fonAbout.svg);
   background-repeat: no-repeat;
-  height: 1000px;
+  height: 1170px;
 }
 .individual-consultation__row_details {
   display: flex;
@@ -1017,33 +1017,6 @@ header {
   text-align: justify;
   position: relative;
   margin-left: 310px;
-}
-.individual-consultation__row_price_btn {
-  border-radius: 5px;
-  border: none;
-  margin: -190px 0 20px 478px;
-  display: inline-block;
-  vertical-align: top;
-  padding: 9px 0px;
-  background-color: #d6b77a;
-  transition: color, background-color 0.5s linear;
-}
-.individual-consultation__row_price_btn :hover {
-  border-radius: 5px;
-  margin: 9px 0 20px 0;
-  padding: 8px 20px 10px 20px;
-  background-color: #c29c4f;
-  color: rgb(255, 255, 255);
-}
-.individual-consultation__row_price_btn a {
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 400;
-  font-family: Roboto Slab;
-  line-height: 22.59px;
-  padding: 0 20px 0 20px;
-  color: white;
-  text-transform: uppercase;
 }
 .individual-consultation__row_services {
   display: flex;
@@ -1227,7 +1200,7 @@ header {
   width: 100%;
   position: absolute;
   height: 725px;
-  top: 5820px;
+  top: 5640px;
 }
 .form-individual__row {
   width: 572px;
@@ -1368,7 +1341,7 @@ header {
   width: 100%;
   position: absolute;
   height: 725px;
-  top: 5820px;
+  top: 5640px;
 }
 .form-escort__row {
   width: 572px;
