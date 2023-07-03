@@ -285,7 +285,6 @@ header {
 .about {
   background-image: url(../img/fonAbout.svg);
   background-repeat: no-repeat;
-  height: 350px;
   width: 100%;
 }
 .about__row {
@@ -295,7 +294,6 @@ header {
   display: flex;
 }
 .about__row_greetings_img {
-  float: left;
   width: 255px;
   height: 200px;
   margin-top: 10px;
@@ -405,7 +403,6 @@ header {
 
 .nutrition {
   background-color: #F0FFF0;
-  margin-top: 550px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -659,51 +656,55 @@ header {
   display: block;
 }
 
-.program_h2 {
+.program {
+  height: 700px;
+}
+.program__row_h2 {
   text-align: center;
   font-weight: 800;
   font-size: 55px;
   color: rgb(3, 63, 3);
-  padding: 50px 0 50px 0;
+  padding-bottom: 50px;
+  margin-bottom: 0;
 }
-.program__row {
+.program__row_block {
   display: flex;
   float: left;
   justify-content: space-between;
 }
-.program__row_consultation {
+.program__row_block_consultation {
   width: 30%;
   border: 2px solid #d6b77a;
   background-color: rgb(255, 255, 255);
 }
-.program__row_consultation_h2 {
+.program__row_block_consultation_h2 {
   background-color: #d6b77a;
   padding: 15px;
   font-size: 30px;
   text-align: center;
   margin-bottom: 0;
 }
-.program__row_consultation_hr {
+.program__row_block_consultation_hr {
   width: 374px;
   border: none;
   background-color: #d6b77a;
   height: 2px;
   margin: 0;
 }
-.program__row_consultation_price {
+.program__row_block_consultation_price {
   text-transform: uppercase;
   font-size: 35px;
   text-align: center;
   margin-bottom: 0;
   padding: 20px;
 }
-.program__row_consultation_objective {
+.program__row_block_consultation_objective {
   font-size: 20px;
   text-align: center;
   padding: 40px 18px 130px;
   margin-bottom: 0;
 }
-.program__row_consultation_btn {
+.program__row_block_consultation_btn {
   width: 190px;
   border-radius: 5px;
   display: flex;
@@ -713,12 +714,12 @@ header {
   position: relative;
   left: 24%;
 }
-.program__row_consultation_btn :hover {
+.program__row_block_consultation_btn :hover {
   border-radius: 5px;
   background-color: #c29c4f;
   color: rgb(255, 255, 255);
 }
-.program__row_consultation_btn a {
+.program__row_block_consultation_btn a {
   width: 190px;
   padding: 10px;
   text-align: center;
@@ -730,39 +731,39 @@ header {
   color: white;
   text-transform: uppercase;
 }
-.program__row_individual {
+.program__row_block_individual {
   width: 30%;
   border: 2px solid #d6b77a;
   background-color: rgb(255, 255, 255);
 }
-.program__row_individual_h2 {
+.program__row_block_individual_h2 {
   background-color: #d6b77a;
   padding: 15px;
   font-size: 30px;
   text-align: center;
   margin-bottom: 0;
 }
-.program__row_individual_hr {
+.program__row_block_individual_hr {
   width: 374px;
   border: none;
   background-color: #d6b77a;
   height: 2px;
   margin: 0;
 }
-.program__row_individual_price {
+.program__row_block_individual_price {
   text-transform: uppercase;
   font-size: 35px;
   text-align: center;
   margin-bottom: 0;
   padding: 20px;
 }
-.program__row_individual_objective {
+.program__row_block_individual_objective {
   font-size: 20px;
   text-align: center;
   padding: 40px 18px 100px;
   margin-bottom: 0;
 }
-.program__row_individual_btn {
+.program__row_block_individual_btn {
   width: 190px;
   border-radius: 5px;
   display: flex;
@@ -772,12 +773,12 @@ header {
   position: relative;
   left: 24%;
 }
-.program__row_individual_btn :hover {
+.program__row_block_individual_btn :hover {
   border-radius: 5px;
   background-color: #c29c4f;
   color: rgb(255, 255, 255);
 }
-.program__row_individual_btn a {
+.program__row_block_individual_btn a {
   width: 190px;
   padding: 10px;
   text-align: center;
@@ -789,39 +790,39 @@ header {
   color: white;
   text-transform: uppercase;
 }
-.program__row_personal {
+.program__row_block_personal {
   width: 30%;
   border: 2px solid #d6b77a;
   background-color: rgb(255, 255, 255);
 }
-.program__row_personal_h2 {
+.program__row_block_personal_h2 {
   background-color: #d6b77a;
   padding: 15px;
   font-size: 30px;
   text-align: center;
   margin-bottom: 0;
 }
-.program__row_personal_hr {
+.program__row_block_personal_hr {
   width: 374px;
   border: none;
   background-color: #d6b77a;
   height: 2px;
   margin: 0;
 }
-.program__row_personal_price {
+.program__row_block_personal_price {
   text-transform: uppercase;
   font-size: 35px;
   text-align: center;
   margin-bottom: 0;
   padding: 20px;
 }
-.program__row_personal_objective {
+.program__row_block_personal_objective {
   font-size: 20px;
   text-align: center;
   padding: 40px 18px 40px;
   margin-bottom: 0;
 }
-.program__row_personal_btn {
+.program__row_block_personal_btn {
   width: 190px;
   border-radius: 5px;
   margin-bottom: 30px;
@@ -832,12 +833,12 @@ header {
   position: relative;
   left: 24%;
 }
-.program__row_personal_btn :hover {
+.program__row_block_personal_btn :hover {
   border-radius: 5px;
   background-color: #c29c4f;
   color: rgb(255, 255, 255);
 }
-.program__row_personal_btn a {
+.program__row_block_personal_btn a {
   width: 190px;
   padding: 10px;
   text-align: center;
@@ -855,7 +856,7 @@ header {
   width: 100%;
   position: absolute;
   height: 725px;
-  top: 4600px;
+  top: 4517px;
 }
 .initial-consultation__row {
   width: 572px;
@@ -974,23 +975,16 @@ header {
 .individual-consultation {
   background-image: url(../img/fonAbout.svg);
   background-repeat: no-repeat;
-  height: 350px;
-  width: 100%;
-  position: relative;
-  top: 600px;
-}
-.individual-consultation__row {
-  position: relative;
+  height: 1000px;
 }
 .individual-consultation__row_details {
   display: flex;
+  padding-bottom: 100px;
 }
 .individual-consultation__row_details_img {
-  float: left;
   width: 255px;
   height: 200px;
   margin-top: 20px;
-  margin-left: -1287px;
   margin-right: 50px;
 }
 .individual-consultation__row_details_h2 {
@@ -1000,6 +994,9 @@ header {
   color: rgb(3, 63, 3);
   padding-top: 60px;
 }
+.individual-consultation__row_price {
+  padding-bottom: 50px;
+}
 .individual-consultation__row_price_h2 {
   font-size: 50px;
   font-weight: 500;
@@ -1007,8 +1004,7 @@ header {
   padding-bottom: 30px;
   width: 60%;
   position: relative;
-  top: -210px;
-  margin-left: 250px;
+  margin: 0 0 0 250px;
 }
 .individual-consultation__row_price_a {
   color: #d6b77a;
@@ -1020,7 +1016,6 @@ header {
   font-size: 25px;
   text-align: justify;
   position: relative;
-  top: -210px;
   margin-left: 310px;
 }
 .individual-consultation__row_price_btn {
@@ -1055,7 +1050,7 @@ header {
   float: left;
   justify-content: space-between;
   position: relative;
-  top: -150px;
+  margin: 0 0 50px 50px;
 }
 .individual-consultation__row_services_individual {
   width: 40%;
@@ -1070,7 +1065,7 @@ header {
   margin-bottom: 0;
 }
 .individual-consultation__row_services_individual_hr {
-  width: 500px;
+  width: 481px;
   border: none;
   background-color: #d6b77a;
   height: 2px;
@@ -1119,6 +1114,7 @@ header {
 }
 .individual-consultation__row_services_personal {
   width: 40%;
+  margin-right: 50px;
   border: 2px solid #d6b77a;
   background-color: rgb(255, 255, 255);
 }
@@ -1131,7 +1127,7 @@ header {
   height: 103px;
 }
 .individual-consultation__row_services_personal_hr {
-  width: 500px;
+  width: 481px;
   border: none;
   background-color: #d6b77a;
   height: 2px;
@@ -1184,7 +1180,7 @@ header {
   width: 100%;
   position: absolute;
   height: 805px;
-  top: 5540px;
+  top: 5530px;
 }
 .analyzes__row {
   width: 900px;
@@ -1224,4 +1220,311 @@ header {
 
 .unhidden {
   display: block;
+}
+
+.form-individual {
+  background: url(../img/fongrey.png);
+  width: 100%;
+  position: absolute;
+  height: 725px;
+  top: 5820px;
+}
+.form-individual__row {
+  width: 572px;
+  margin: 50px auto 0;
+  background-color: #ffffff;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  box-shadow: 0px 0px 10px 0px rgb(230, 230, 230);
+  padding: 25px 40px 30px 40px;
+}
+.form-individual__row_hr {
+  width: 500px;
+}
+.form-individual__row_info {
+  display: flex;
+  justify-content: space-between;
+}
+.form-individual__row_info_h3 {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+.form-individual__row_info_p {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+.form-individual__row_h2 {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 15px;
+  padding-bottom: 25px;
+}
+.form-individual__row_h2_span {
+  color: rgb(3, 63, 3);
+  font-weight: 600;
+  font-size: 35px;
+}
+.form-individual__row_p {
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.form-individual__row_form_section {
+  text-align: center;
+}
+.form-individual__row_form_section_input {
+  font-size: 20px;
+}
+.form-individual__row_form_section_input_name {
+  width: 500px;
+  height: 40px;
+  margin-bottom: 25px;
+  border: 1px solid #d6b77a;
+  border-radius: 5px;
+  padding: 20px;
+}
+.form-individual__row_form_section_input_surname {
+  width: 500px;
+  height: 40px;
+  margin-bottom: 25px;
+  border: 1px solid #d6b77a;
+  border-radius: 5px;
+  padding: 20px;
+}
+.form-individual__row_form_section_input_tel {
+  width: 500px;
+  height: 40px;
+  margin-bottom: 25px;
+  border: 1px solid #d6b77a;
+  border-radius: 5px;
+  padding: 20px;
+}
+.form-individual__row_form_section_input_email {
+  width: 500px;
+  height: 40px;
+  margin-bottom: 35px;
+  border: 1px solid #d6b77a;
+  border-radius: 5px;
+  padding: 20px;
+}
+.form-individual__row_button {
+  border-radius: 5px;
+  border: rgb(255, 255, 255);
+  margin: 0 auto 30px;
+  background-color: #d6b77a;
+  transition: color, background-color;
+  width: 500px;
+  height: 40px;
+}
+.form-individual__row_button_a {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 190px;
+  top: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.59px;
+}
+.form-individual__row_button:hover {
+  background-color: #c29c4f;
+}
+.form-individual__row_agreement {
+  font-size: 15px;
+  padding: 0;
+  text-align: justify;
+  color: rgb(73, 72, 72);
+  margin-bottom: 0;
+}
+.form-individual_close_btn {
+  width: 40px;
+  height: 40px;
+  top: 12px;
+  border: 3px solid #d6b77a;
+  position: absolute;
+  margin-left: 1446px;
+  display: flex;
+  background: url(../img/x.svg);
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.vs {
+  display: none;
+}
+
+.invs {
+  display: block;
+}
+
+.form-escort {
+  background: url(../img/fongrey.png);
+  width: 100%;
+  position: absolute;
+  height: 725px;
+  top: 5820px;
+}
+.form-escort__row {
+  width: 572px;
+  margin: 50px auto 0;
+  background-color: #ffffff;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  box-shadow: 0px 0px 10px 0px rgb(230, 230, 230);
+  padding: 25px 40px 30px 40px;
+}
+.form-escort__row_hr {
+  width: 500px;
+}
+.form-escort__row_info {
+  display: flex;
+  justify-content: space-between;
+}
+.form-escort__row_info_h3 {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+.form-escort__row_info_p {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+.form-escort__row_h2 {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 15px;
+  padding-bottom: 25px;
+}
+.form-escort__row_h2_span {
+  color: rgb(3, 63, 3);
+  font-weight: 600;
+  font-size: 35px;
+}
+.form-escort__row_p {
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.form-escort__row_form_section {
+  text-align: center;
+}
+.form-escort__row_form_section_input {
+  font-size: 20px;
+}
+.form-escort__row_form_section_input_name {
+  width: 500px;
+  height: 40px;
+  margin-bottom: 25px;
+  border: 1px solid #d6b77a;
+  border-radius: 5px;
+  padding: 20px;
+}
+.form-escort__row_form_section_input_surname {
+  width: 500px;
+  height: 40px;
+  margin-bottom: 25px;
+  border: 1px solid #d6b77a;
+  border-radius: 5px;
+  padding: 20px;
+}
+.form-escort__row_form_section_input_tel {
+  width: 500px;
+  height: 40px;
+  margin-bottom: 25px;
+  border: 1px solid #d6b77a;
+  border-radius: 5px;
+  padding: 20px;
+}
+.form-escort__row_form_section_input_email {
+  width: 500px;
+  height: 40px;
+  margin-bottom: 35px;
+  border: 1px solid #d6b77a;
+  border-radius: 5px;
+  padding: 20px;
+}
+.form-escort__row_button {
+  border-radius: 5px;
+  border: rgb(255, 255, 255);
+  margin: 0 auto 30px;
+  background-color: #d6b77a;
+  transition: color, background-color;
+  width: 500px;
+  height: 40px;
+}
+.form-escort__row_button_a {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 190px;
+  top: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.59px;
+}
+.form-escort__row_button:hover {
+  background-color: #c29c4f;
+}
+.form-escort__row_agreement {
+  font-size: 15px;
+  padding: 0;
+  text-align: justify;
+  color: rgb(73, 72, 72);
+  margin-bottom: 0;
+}
+.form-escort_close_btn {
+  width: 40px;
+  height: 40px;
+  top: 12px;
+  border: 3px solid #d6b77a;
+  position: absolute;
+  margin-left: 1446px;
+  display: flex;
+  background: url(../img/x.svg);
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.escort-vs {
+  display: none;
+}
+
+.escort-invs {
+  display: block;
+}
+
+.purpose {
+  position: relative;
+}
+.purpose__row {
+  text-align: center;
+}
+.purpose__row_h2 {
+  font-size: 50px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+.purpose__row_one_number {
+  display: inline-block;
+  font-size: 50px;
+  color: white;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background-color: #d6b77a;
+}
+.purpose__row_one_block {
+  padding-top: 30px;
 }/*# sourceMappingURL=style.css.map */

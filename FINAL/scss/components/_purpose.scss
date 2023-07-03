@@ -1,0 +1,32 @@
+.purpose{
+
+    position: relative;
+
+    &__row{
+        text-align: center;
+
+        &_h2{
+            font-size: 50px;
+            font-weight: 500;
+            padding-bottom: 30px;
+        }
+
+        &_one{
+
+            &_number{
+                display: inline-block;
+                font-size: 50px;
+                color: white;
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                padding: 10px;
+                background-color: #d6b77a;
+            }
+
+            &_block{
+                padding-top: 30px;
+            }
+        }
+    }
+}

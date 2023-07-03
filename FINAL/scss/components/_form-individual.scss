@@ -1,9 +1,9 @@
-.initial-consultation {
+.form-individual {
     background: url(../img/fongrey.png);
     width: 100%;
     position: absolute;
     height: 725px;
-    top: 4517px;
+    top: 5820px;
 
     &__row {
         width: 572px;
@@ -15,10 +15,34 @@
         box-shadow: 0px 0px 10px 0px rgba(230, 230, 230, 1);
         padding: 25px 40px 30px 40px;
 
+        &_hr{
+            width: 500px;
+        }
+
+        &_info{
+            display: flex;
+            justify-content: space-between;
+
+            &_h3{
+                margin-left: 20px;
+                font-size: 20px;
+                font-weight: 600;
+                padding: 10px 0;
+            }
+
+            &_p {
+                margin-right: 20px;
+                font-size: 18px;
+                font-weight: 600;
+                padding: 10px 0;
+            }
+        }
+
         &_h2 {
             font-size: 35px;
             text-align: center;
             margin-bottom: 15px;
+            padding-bottom: 25px;
 
             &_span {
                 color: rgb(3, 63, 3);
@@ -124,10 +148,10 @@
     }
 }
 
-.hide {
+.vs {
     display: none;
 }
 
-.unhide {
+.invs {
     display: block;
 }

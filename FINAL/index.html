@@ -244,34 +244,36 @@
     </section>
     <section class="program">
         <div class="container">
-            <h2 class="program_h2">Консультации</h2>
             <div class="program__row">
-                <div class="program__row_consultation">
-                    <h2 class="program__row_consultation_h2">Первоначальная консультация</h2>
-                    <p class="program__row_consultation_price">Бесплатно</p>
-                    <hr class="program__row_consultation_hr">
-                    <p class="program__row_consultation_objective">Я смогу больше узнать о ваших целях и поделиться информацией</p>
-                    <div class="program__row_consultation_btn">
-                        <a class="program__row_consultation_btn_a" href="#">Заказать</a>
+                <h2 class="program__row_h2">Консультации</h2>
+                <div class="program__row_block">
+                    <div class="program__row_block_consultation">
+                        <h2 class="program__row_block_consultation_h2">Первоначальная консультация</h2>
+                        <p class="program__row_block_consultation_price">Бесплатно</p>
+                        <hr class="program__row_block_consultation_hr">
+                        <p class="program__row_block_consultation_objective">Я смогу больше узнать о ваших целях и поделиться информацией</p>
+                        <div class="program__row_block_consultation_btn">
+                            <a class="program__row_block_consultation_btn_a" href="#">Заказать</a>
+                        </div>
                     </div>
-                </div>
-                <div class="program__row_individual">
-                    <h2 class="program__row_individual_h2">Индивидуальная консультация</h2>
-                    <p class="program__row_individual_price">5500 ₽</p>
-                    <hr class="program__row_individual_hr">
-                    <p class="program__row_individual_objective">Программа построена на результатах анализов, выявленных дефицитах и поставленной цели вами цели</p>
-                    <div class="program__row_individual_btn">
-                        <a class="program__row_individual_btn_a" href="#">Подробнее</a>
+                    <div class="program__row_block_individual">
+                        <h2 class="program__row_block_individual_h2">Индивидуальная консультация</h2>
+                        <p class="program__row_block_individual_price">5500 ₽</p>
+                        <hr class="program__row_block_individual_hr">
+                        <p class="program__row_block_individual_objective">Программа построена на результатах анализов, выявленных дефицитах и поставленной цели вами цели</p>
+                        <div class="program__row_block_individual_btn">
+                            <a class="program__row_block_individual_btn_a" href="#">Подробнее</a>
+                        </div>
                     </div>
-                </div>
-                <div class="program__row_personal">
-                    <h2 class="program__row_personal_h2">Персональное ведение 2 месяца</h2>
-                    <p class="program__row_personal_price">10000 ₽</p>
-                    <hr class="program__row_personal_hr">
-                    <p class="program__row_personal_objective">Программа состоит из первоначальной консультации, индивидуального руководства и инструментов,
-                    ориентированных на общее оздоровление</p>
-                    <div class="program__row_personal_btn">
-                        <a class="program__row_personal_btn_a" href="#">Подробнее</a>
+                    <div class="program__row_block_personal">
+                        <h2 class="program__row_block_personal_h2">Персональное ведение 2 месяца</h2>
+                        <p class="program__row_block_personal_price">10000 ₽</p>
+                        <hr class="program__row_block_personal_hr">
+                        <p class="program__row_block_personal_objective">Программа состоит из первоначальной консультации, индивидуального руководства и инструментов,
+                        ориентированных на общее оздоровление</p>
+                        <div class="program__row_block_personal_btn">
+                            <a class="program__row_block_personal_btn_a" href="#">Подробнее</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -323,8 +325,7 @@
                 </div>
                 <div class="individual-consultation__row_price">
                     <h2 class="individual-consultation__row_price_h2">Стоимость индивидуальной консультации</h2>
-                    <p class="individual-consultation__row_price_p">Перед консультацией рекомендую сдать <a class="individual-consultation__row_price_a" href="#">анализы</a></p>
-                    
+                    <p class="individual-consultation__row_price_p">Перед консультацией рекомендую сдать <a class="individual-consultation__row_price_a" href="#">анализы</a></p> 
                 </div>
                 <div class="individual-consultation__row_services">
                     <div class="individual-consultation__row_services_individual">
@@ -346,7 +347,6 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
     </section>
@@ -382,6 +382,122 @@
             </div>
         </div>
         <button class="analyzes_close_btn"></button>
+    </section>
+    <section class="form-individual vs">
+        <div class="container">
+            <div class="form-individual__row">
+                <h2 class="form-individual__row_h2">Ваш заказ:</h2>
+                <hr class="form-individual__row_hr">
+                <div class="form-individual__row_info">
+                    <h3 class="form-individual__row_info_h3">Индивидуальная консультация</h3>
+                    <p class="form-individual__row_info_p">5500 ₽</p>
+                </div>
+                <div class="form-individual__row_form">
+                    <form class="form-individual__row_form_section" action="" method="post" name="contact-form">
+                        <div class="form-individual__row_form_section_input">
+                            <input class="form-individual__row_form_section_input_name" type="text" name="name"
+                                id="name" value="" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-individual__row_form_section_input">
+                            <input class="form-individual__row_form_section_input_surname" type="text" name="name"
+                                id="name" value="" placeholder="Ваша фамилия">
+                        </div>
+                        <div class="form-individual__row_form_section_input">
+                            <input class="form-individual__row_form_section_input_tel" type="tel" name="tel" id="tel"
+                                value="" placeholder="Номер телефона">
+                        </div>
+                        <div class="form-individual__row_form_section_input">
+                            <input class="form-individual__row_form_section_input_email" type="email" name="email"
+                                id="email" value="" placeholder="Email">
+                        </div>
+                    </form>
+                    <div class="form-individual__row_button">
+                        <a class="form-individual__row_button_a" href="#">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="form-individual_close_btn"></button>
+    </section>
+    <section class="form-escort escort-vs">
+        <div class="container">
+            <div class="form-escort__row">
+                <h2 class="form-escort__row_h2">Ваш заказ:</h2>
+                <hr class="form-escort__row_hr">
+                <div class="form-escort__row_info">
+                    <h3 class="form-escort__row_info_h3">Сопровождение</h3>
+                    <p class="form-escort__row_info_p">5000 ₽</p>
+                </div>
+                <div class="form-escort__row_form">
+                    <form class="form-escort__row_form_section" action="" method="post" name="contact-form">
+                        <div class="form-escort__row_form_section_input">
+                            <input class="form-escort__row_form_section_input_name" type="text" name="name" id="name"
+                                value="" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-escort__row_form_section_input">
+                            <input class="form-escort__row_form_section_input_surname" type="text" name="name" id="name"
+                                value="" placeholder="Ваша фамилия">
+                        </div>
+                        <div class="form-escort__row_form_section_input">
+                            <input class="form-escort__row_form_section_input_tel" type="tel" name="tel" id="tel"
+                                value="" placeholder="Номер телефона">
+                        </div>
+                        <div class="form-escort__row_form_section_input">
+                            <input class="form-escort__row_form_section_input_email" type="email" name="email"
+                                id="email" value="" placeholder="Email">
+                        </div>
+                    </form>
+                    <div class="form-escort__row_button">
+                        <a class="form-escort__row_button_a" href="#">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="form-escort_close_btn"></button>
+    </section>
+    <section class="purpose">
+        <div class="container">
+            <div class="purpose__row">
+                <h2 class="purpose__row_h2">Для кого?</h2>
+                    <div class="purpose__row_one">
+                        <div class="purpose__row_one_number">1</div>
+                        <div class="purpose__row_one_block">
+                            <h3 class="purpose__row_one_block_h3">Для людей с лишним весом</h3>
+                            <div class="purpose__row_one_block_text">
+                                <p class="purpose__row_one_block_text_one">Для тех кто хочет снизить вес или привести его в норму без негативных последствий для организма и без изнуряющих диет</p>
+                                <p class="purpose__row_one_block_text_two">Для тех кто пытался снизить вес, но снова и снова его возвращал</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="purpose__row_two">
+                        <div class="purpose__row_two_number">2</div>
+                        <h3 class="purpose__row_two_h3">Для офисных сотрудников</h3>
+                        <div class="purpose__row_two_text">
+                            <p class="purpose__row_one_text_one">Для сотрудников офисов работающих в нон-стоп режиме
+                            под давлением дед-лайнов, которым необходимо повысить уровень энергии</p>
+                            <p class="purpose__row_one_text_two">Для тех кто в стрессе хочет повысить работоспособность и концентрацию, а также проживание стрессов без последствий</p>
+                        </div>
+                    </div>
+                    <div class="purpose__row_three">
+                        <h2></h2>
+                        <div></div>
+                        <h3></h3>
+                        <div>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="purpose__row_four">
+                        <h2></h2>
+                        <div></div>
+                        <h3></h3>
+                        <div>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+            </div>
+        </div>
     </section>
 
 
