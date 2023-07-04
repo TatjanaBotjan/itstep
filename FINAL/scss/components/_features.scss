@@ -1,0 +1,82 @@
+.features {
+    background-color: $lightgreen;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+
+
+    &__row {
+
+        &_top {
+            position: relative;
+            width: 150px;
+            left: 550px;
+            border: none;
+            background-color: #d5ad5d;
+            height: 3px;
+        }
+
+        &_bottom {
+            position: relative;
+            width: 150px;
+            left: 550px;
+            border: none;
+            background-color: #d5ad5d;
+            height: 2px;
+            margin-bottom: 40px;
+        }
+
+        &_p {
+            text-align: center;
+            font-weight: 800;
+            font-size: 55px;
+            color: $darkgreen;
+        }
+
+        &_block{
+            display: flex;
+            justify-content: space-around;
+
+            &_one{
+                &_image{
+                    background-image: url(../img/base.svg);
+                    height: 120px;
+                    background-repeat: no-repeat;
+                    margin-left: 64px;
+                    
+                }
+
+                &_p{
+                    font-size: 25px;
+                }
+            }
+
+            &_two {
+                &_image {
+                    background-image: url(../img/puzzle.svg);
+                    height: 120px;
+                    background-repeat: no-repeat;
+                    margin-left: 84px;
+                }
+            
+                &_p {
+                    font-size: 25px;
+                }
+            }
+
+            &_three {
+                &_image {
+                background-image: url(../img/exp.svg);
+                height: 120px;
+                background-repeat: no-repeat;
+                margin-left: 68px;
+            }
+            
+                &_p {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+}

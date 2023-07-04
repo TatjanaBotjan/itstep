@@ -1,0 +1,95 @@
+.help{
+    &__row{
+        &_info{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+
+            &_block-one{
+                width: 53%;
+
+                &_h2{
+                    font-size: 50px;
+                    margin-bottom: 30px;
+                }
+
+                &_ul{
+                    font-size: 20px;
+                    list-style: none;
+                    padding-left: 0;
+                    margin-bottom: 20px;
+
+                    &_li{
+                        text-align: left;
+                        margin-bottom: 15px;
+                    }
+
+                    &_li:before {
+                            content: '✓';
+                            border: 1px solid $darkgreen;
+                            padding-left: 9px;
+                            display: inline-block;
+                            border-radius: 50%;
+                            width: 35px;
+                            margin-right: 20px;
+                    }   
+                }
+
+                &_image{
+                    height: 615px;
+                    width: 55%;
+                    padding-top: 25px;
+                }
+            }
+        }
+
+        &_work{
+            display: flex;
+            justify-content: space-between;
+
+            &_block-one {
+                width: 53%;
+                padding-top: 50px;
+            
+                &_h2 {
+                    font-size: 50px;
+                    margin-bottom: 30px;
+                }
+
+                &_p{
+                    font-size: 20px;
+                    line-height: 1.5;
+                    margin-bottom: 30px;
+                    text-align: justify;
+                }
+            
+                &_ul {
+                    font-size: 20px;
+                    list-style: none;
+                    padding-left: 0;
+                    margin-bottom: 20px;
+            
+                    &_li {
+                        text-align: left;
+                        margin-bottom: 15px;
+                    }
+            
+                    &_li:before {
+                        content: '✓';
+                        border: 1px solid $darkgreen;
+                        padding-left: 9px;
+                        display: inline-block;
+                        border-radius: 50%;
+                        width: 35px;
+                        margin-right: 20px;
+                    }
+                }
+            
+                &_image {
+                    height: 560px;
+                    width: 43%;
+                }
+            }
+        }
+    }
+}

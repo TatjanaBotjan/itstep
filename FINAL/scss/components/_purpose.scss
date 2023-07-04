@@ -16,17 +16,165 @@
             &_number{
                 display: inline-block;
                 font-size: 50px;
-                color: white;
+                color: $white;
                 border-radius: 50%;
                 width: 100px;
                 height: 100px;
                 padding: 10px;
-                background-color: #d6b77a;
+                background-color: $gold;
             }
 
             &_block{
-                padding-top: 30px;
+                padding-top: 40px;
+
+                &_h3{
+                    font-size: 30px;
+                    padding-bottom: 20px;
+                }
+
+                &_text{
+                    color: $textgrey;
+                    width: 63%;
+                    margin-left: 220px;
+                    font-size: 20px;
+
+                    &_one{
+                        margin-bottom: 5px;
+                    }
+
+                    &_two {
+                        margin-bottom: 0;
+                        padding-bottom: 50px;
+                    }
+                }
+            }
+        }
+
+        &_two{
+            &_number {
+                display: inline-block;
+                font-size: 50px;
+                color: $white;
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                padding: 10px;
+                background-color: $gold;
+            }
+            
+            &_block {
+                padding-top: 40px;
+            
+                &_h3 {
+                    font-size: 30px;
+                    padding-bottom: 20px;
+                }
+            
+                &_text {
+                    color: $textgrey;
+                    width: 63%;
+                    margin-left: 220px;
+                    font-size: 20px;
+            
+                    &_one {
+                        margin-bottom: 5px;
+                    }
+
+                    &_two {
+                        margin-bottom: 0;
+                        padding-bottom: 50px;
+                    }
+                }
+            }
+        }
+
+        &_three{
+            &_number {
+                display: inline-block;
+                font-size: 50px;
+                color: $white;
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                padding: 10px;
+                background-color: $gold;
+            }
+            
+            &_block {
+                padding-top: 40px;
+            
+                &_h3 {
+                    font-size: 30px;
+                    padding-bottom: 20px;
+                }
+            
+                &_text {
+                    color: $textgrey;
+                    width: 63%;
+                    margin-left: 220px;
+                    font-size: 20px;
+            
+                    &_one {
+                        margin-bottom: 5px;
+                    }
+            
+                    &_two {
+                        margin-bottom: 0;
+                        padding-bottom: 50px;
+                    }
+                }
+            }
+        }
+
+        &_four{
+            &_number {
+                display: inline-block;
+                font-size: 50px;
+                color: $white;
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                padding: 10px;
+                background-color: $gold;
+            }
+            
+            &_block {
+                padding-top: 40px;
+            
+                &_h3 {
+                    font-size: 30px;
+                    padding-bottom: 20px;
+                }
+            
+                &_text {
+                    color: $textgrey;
+                    width: 63%;
+                    margin-left: 220px;
+                    font-size: 20px;
+            
+                    &_one {
+                        margin-bottom: 5px;
+                    }
+            
+                    &_two {
+                        margin-bottom: 5px;
+                    }
+
+                    &_three{
+                        margin-bottom: 5px;
+                    }
+
+                    &_four{
+                        margin-bottom: 5px;
+                    }
+
+                    &_five{
+                        margin-bottom: 0;
+                        padding-bottom: 50px;
+                    }
+                }
             }
         }
     }
 }
+
