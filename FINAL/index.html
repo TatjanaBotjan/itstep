@@ -26,27 +26,25 @@
         </div>
     </section>
     <header>
-        <div class="container">
             <div class="header__row"> 
                 <div class="header__row_menu">
                     <ul>
                         <li><a href="#">Главная</a></li>
                         <li><a href="#">Обо мне</a></li>
-                        <li><a href="#">Полезная информация</a></li>
                         <li><a href="#">Услуги</a></li>
-                    </ul> 
-                </div>
-                <div class="header__row_connection">
-                    <a class="header__row_connection_a" href="#">Задать вопрос</a>
+                    </ul>
+                    <div class="header__row_connection">
+                        <a class="header__row_connection_a" href="#">Задать вопрос</a>
+                    </div>
                 </div>
             </div>
-            <div class="header__text">
-                <h2 class="header__text_h2">«Единственная красота, которую я знаю, - это здоровье»</h2>
-                <p class="header__text_author">Генрих Гейне</p>
-            </div>
-        </div>
     </header>
     <section class="home">
+        <div class="home_img"></div>
+        <div class="home__text">
+            <h2 class="home__text_h2">«Единственная красота, которую я знаю, - это здоровье»</h2>
+            <p class="home__text_author">Генрих Гейне</p>
+        </div>
         <div class="container">
             <div class="home__row">
                 <h2 class="home__row_h2">Добро пожаловать на сайт с полезными советами для Вашей красоты и здоровья!</h2>
@@ -241,7 +239,7 @@
         </div>
         <button class="consultation_close_btn"></button>
     </section>
-    <section class="program">
+    <section id="#menu" class="program">
         <div class="container">
             <div class="program__row">
                 <h2 class="program__row_h2">Консультации</h2>
@@ -695,29 +693,37 @@
             <div class="footer__row">
                 <div class="footer__row_contacts">
                     <div class="footer__row_contacts_logo">
-                        <div class="footer__row_contacts_logo_img"></div>
-                        <div class="footer__row_contacts_logo_text"></div>
+                        <img class="footer__row_contacts_logo_img" src="./img/logo.png" alt="С заботой о здоровье!" title="С заботой о здоровье!">
+                        <div class="footer__row_contacts_logo_text">С заботой о здоровье!</div>
+                    </div>
+                    <div class="footer__row_contacts_services">
+                        <h2 class="footer__row_contacts_services_h2">Услуги</h2>
+                        <ul class="footer__row_contacts_services_ul">
+                            <li class="footer__row_contacts_services_ul_li"><a href="#menu">Первоначальная консультация</a></li>
+                            <li class="footer__row_contacts_services_ul_li"><a href="#">Индивидуальная консультация</a></li>
+                            <li class="footer__row_contacts_services_ul_li"><a href="#">Персональная программа</a></li>
+                        </ul>
                     </div>
                     <div class="footer__row_contacts_info">
+                        <h2 class="footer__row_contacts_info_h2">Контакты</h2>
                         <div class="footer__row_contacts_info_phone">
-                            <div class="footer__row_contacts_info_phone_image"></div>
+                            <img class="footer__row_contacts_info_phone_image" src="../FINAL/img/phone.webp" alt="phone">
                             <a class="footer__row_contacts_info_phone_numbers" href="tel:+7 920 314 55 55"> +7 920 314 55 55</a>
                         </div>
-                        <div class="footer__contacts_address">
-                            <div class="footer__contacts_address_image"></div>
-                            <p>2118 Thornridge Cir. Syracuse, Connecticut 35624</p>
+                        <div class="footer__row_contacts_info_email">
+                            <img class="footer__row_contacts_info_email_image" src="../FINAL/img/email.png" alt="phone">
+                            <a class="footer__row_contacts_info_email_mail" href="seliuk.natalya@gmail.com">seliuk.natalya@gmail.com</a>
                         </div>
-                        <div class="footer__contacts_email">
-                            <div class="footer__contacts_email_image"></div>
-                            <a class="mail" href="mailto:metall.sv.p@gmail.com">SpakIT@gmail.com</a>
+                        <div class="footer__row_contacts_info_whatsapp">
+                            <img class="footer__row_contacts_info_whatsapp_image" src="../FINAL/img/whatsapp.png" alt="phone">
+                            <a class="footer__row_contacts_info_whatsapp_numbers" href="tel:+7 920 314 55 55"> +7 920 314 55 55</a>
                         </div>
                     </div>
                 </div>
-                <div></div>
-                <div></div>
             </div>
         </div>
-
+        <hr class="footer_recommendation_hr">
+        <div class="footer_recommendation">*Консультации нутрициолога проводятся с образовательной целью и не заменяют обращение к врачу</div>
     </footer>
 
 

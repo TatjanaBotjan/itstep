@@ -1,6 +1,36 @@
 .home{
     padding-bottom: 50px;
-   
+   &_img{
+        width: 100%;
+        background-image: url(../img/fn.jpg);
+        height: 900px;
+        background-repeat: no-repeat;
+   }
+
+   &__text{
+        width: 45%;
+        margin-left: 730px;
+        margin-top: -620px;
+        margin-bottom: 320px;
+
+        &_h2 {
+            font-size: 55px;
+            text-shadow:
+                1px 1px white,
+                1px 1px rgb(192, 112, 78);
+            color: rgb(159, 52, 38);
+            transition: all 1s;
+            font-weight: 800;
+            line-height: 1.5;
+        }
+        
+        &_author {
+            font-size: 35px;
+            font-weight: 400;
+            margin-left: 340px;
+            color: rgb(72, 70, 70);
+        }
+   }
     &__row{
        
         &_h2{

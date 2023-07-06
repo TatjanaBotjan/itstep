@@ -1,3 +1,160 @@
 footer{
     background-color: $lightgreen;
+
+}
+
+.footer__row{
+    &_contacts{
+        padding: 40px 0 20px 0;
+        display: flex;
+        justify-content: space-between;
+
+        &_logo{
+            text-align: center;
+
+            &_img{
+                width: 160px;
+                height: 120px;
+            }
+
+            &_text{
+                font-size: 25px;
+                text-shadow: 1px 1px rgb(219, 236, 195), 2px 2px rgba(191, 186, 186, 0.8470588235);
+                color: $green;
+                transition: all 1s;
+            }
+
+            &_text:hover {
+                text-shadow:
+                1px 1px $white,
+                2px 2px $brown;
+                color: $darkgold;
+            }
+        }
+
+        &_services{
+            text-align: left;
+
+            &_h2{
+                color: $darkgreen;
+                margin-bottom: 20px;
+                font-weight: 500;
+                font-size: 35px;
+            }
+
+            &_ul{
+                list-style: none;
+                padding-left: 0;
+                margin-bottom: 0;
+
+                &_li{
+                    margin-bottom: 10px;
+                    a{
+                       color: $gold;
+                       text-decoration: none;
+                       font-size: 20px;
+                       font-weight: 500;
+                       
+                    }
+
+                    a:hover {
+                        color: $darkgold;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        &_info{
+            text-align: left;
+
+            &_h2{
+                color: $darkgreen;
+                margin-bottom: 20px;
+                font-weight: 500;
+                font-size: 35px;
+            }
+
+            &_phone{
+                display: flex;
+                margin-bottom: 10px;
+
+                &_image{
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 15px;
+                }
+
+                &_numbers{
+                   
+                    color: $gold;
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-weight: 500;
+                    
+                    &:hover {
+                        color: $darkgold;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            &_email {
+                display: flex;
+                margin-bottom: 10px;
+                        
+                &_image {
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 15px;
+                }
+
+                &_mail {
+                    color: $gold;
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-weight: 500;
+                
+                    &:hover {
+                        color: $darkgold;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            &_whatsapp{
+                display: flex;
+
+                &_image {
+                    width: 40px;
+                    height: 40px;
+                    margin-left: -4px;
+                    margin-right: 7px;
+                }
+
+                &_numbers {
+                    color: $gold;
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-weight: 500;
+                
+                    &:hover {
+                        color: $darkgold;
+                        text-decoration: underline;
+                    }
+                }
+            } 
+        }
+    }
+}
+
+.footer_recommendation_hr{
+    color: $darkgold;
+}
+
+.footer_recommendation{
+    color: $lightgrey;
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 10px;
 }

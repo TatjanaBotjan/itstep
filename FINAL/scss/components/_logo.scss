@@ -20,9 +20,9 @@
     
         &_text:hover {
             text-shadow:
-                1px 1px white,
-                2px 2px rgb(192, 112, 78);
-            color: rgb(159, 52, 38);
+                1px 1px $white,
+                2px 2px $brown;
+            color: $darkgold;
             }
         }   
 }
