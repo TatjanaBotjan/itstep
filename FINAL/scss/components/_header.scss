@@ -1,4 +1,12 @@
-.header {
+header{
+    display: none;
+
+    @media (min-width: 1280px) {
+            display: block;
+        }
+}
+.header {  
+
     &__row{
         padding: 10px 0 0 0;
         display: flex;
@@ -20,8 +28,7 @@
                 list-style: none;
                 padding-left: 0;
                 margin: 0 50px 0 130px;
-            }
-
+            
                 li {
                     float: left;
                     margin-left: 125px;
@@ -40,44 +47,38 @@
                         color: $darkgold;
                         text-decoration: underline;
                     }
-        }
-
-        &_connection{  
-            border-radius: 5px;       
-            display: inline-block;
-            vertical-align: top;
-            padding: 9px 0px;
-            background-color:$gold;
-            transition: background-color 0.3s linear;
-           
-            :hover {
-               border-radius: 5px;
-               margin: 9px 0 20px 0;
-               padding: 8px 20px 10px 20px;
-               background-color: #c29c4f;
-                    
-            }
-                
-                a {
-                    text-decoration: none;
-                    font-size: 20px;
-                    font-weight: 400;
-                    font-family: Roboto Slab;
-                    line-height: 22.59px;
-                    padding: 0 20px 0 20px;
-                    color: white;
-                    text-transform: uppercase;
-
-                    :hover{
-                        color: red;
-                    }
-
-
                 }
 
-            }
-    }
+        }
 
+                &_connection {
+                    border-radius: 5px;
+                    margin: 20px 0 20px 0;
+                    display: inline-block;
+                    vertical-align: top;
+                    padding: 9px 0px;
+                    background-color: #d6b77a;
+                    transition: color, background-color 0.5s linear;
+        
+                    :hover {
+                        border-radius: 5px;
+                        background-color: #c29c4f;
+                        color: rgb(255, 255, 255);
+                    }
+        
+                    a {
+                        text-decoration: none;
+                        font-size: 18px;
+                        font-weight: 400;
+                        font-family: Roboto Slab;
+                        line-height: 22.59px;
+                        padding: 8px 20px 10px 20px;
+                        color: white;
+                        text-transform: uppercase;
+                    }
+                }
+    }
+    
         
 }
     

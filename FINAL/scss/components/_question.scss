@@ -1,0 +1,158 @@
+.question {
+    background: url(../img/fongrey.png);
+    width: 100%;
+    position: absolute;
+    height: 760px;
+    top: 145px;
+
+    &__row {
+        width: 572px;
+        margin: 50px auto 0;
+        background-color: #ffffff;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+        box-shadow: 0px 0px 10px 0px rgba(230, 230, 230, 1);
+        padding: 25px 40px 30px 40px;
+
+        &_h2 {
+            font-size: 35px;
+            text-align: center;
+            margin-bottom: 15px;
+
+            &_span {
+                color: rgb(3, 63, 3);
+                font-weight: 600;
+                font-size: 35px;
+            }
+        }
+
+        &_p {
+            font-size: 18px;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        &_form {
+
+            &_section {
+                text-align: center;
+
+                &_input {
+                    font-size: 20px;
+
+                    &_name {
+                        width: 500px;
+                        height: 40px;
+                        margin-bottom: 25px;
+                        border: 1px solid#d6b77a;
+                        border-radius: 5px;
+                        padding: 20px;
+                    }
+
+                    &_surname {
+                        width: 500px;
+                        height: 40px;
+                        margin-bottom: 25px;
+                        border: 1px solid#d6b77a;
+                        border-radius: 5px;
+                        padding: 20px;
+                    }
+
+                    &_tel {
+                        width: 500px;
+                        height: 40px;
+                        margin-bottom: 25px;
+                        border: 1px solid#d6b77a;
+                        border-radius: 5px;
+                        padding: 20px;
+                    }
+
+                    &_email {
+                        width: 500px;
+                        height: 40px;
+                        margin-bottom: 35px;
+                        border: 1px solid#d6b77a;
+                        border-radius: 5px;
+                        padding: 20px;
+                    }
+                }
+
+                &_textarea{
+                    font-size: 20px;
+
+                    &_comment {
+                        width: 500px;
+                        margin-bottom: 35px;
+                        border: 1px solid#d6b77a;
+                        border-radius: 5px;
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+
+        &_button {
+            border-radius: 5px;
+            border: rgb(255, 255, 255);
+            margin: 0 auto 30px;
+            background-color: #d6b77a;
+            transition: color, background-color;
+            width: 500px;
+            height: 40px;
+
+            &_a {
+                @include btn;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 22.59px;
+            }
+        }
+
+        &_button:hover {
+            background-color: #c29c4f;
+        }
+
+        &_agreement {
+            font-size: 15px;
+            padding: 0;
+            text-align: justify;
+            color: rgb(73, 72, 72);
+            margin-bottom: 0;
+        }
+    }
+
+    &_close_btn {
+        width: 40px;
+        height: 40px;
+        top: 12px;
+        border: 3px solid #d6b77a;
+        position: absolute;
+        margin-left: 1446px;
+        display: flex;
+        background: url(../img/x.svg);
+        background-repeat: no-repeat;
+        border-radius: 5px;
+    }
+
+    &_close-btn{
+        width: 40px;
+        height: 40px;
+        top: 12px;
+        border: 3px solid #d6b77a;
+        position: absolute;
+        margin-left: 1446px;
+        display: flex;
+        background: url(../img/x.svg);
+        background-repeat: no-repeat;
+        border-radius: 5px;
+    }
+}
+
+.question-invis {
+    display: none;
+}
+
+.question-vis {
+    display: block;
+}

@@ -1,0 +1,116 @@
+.mobile {
+    width: 100%;
+    background: $lightgreen;
+    margin-top: 0;
+    height: 585px;
+    margin-top: 50px;
+
+    @media (min-width: 768px) {
+        height: 785px;
+    }
+
+    @media (min-width: 1280px) {
+        display: none;
+    }
+
+    &__row{
+        padding-top: 50px;
+        margin-bottom: 35px;
+        
+
+        &_header{
+            display: flex;
+            justify-content: space-between;
+
+            &_logo{
+                text-align: center;
+
+                &_image{
+
+                   &_img{
+                        width: 125px;
+                        height: 95px;
+                    } 
+                }
+
+                &_text{
+                    font-size: 23px;
+                    text-shadow:
+                        1px 1px rgb(219, 236, 195),
+                        2px 2px #bfbabad8;
+                    color: $green;
+                    transition: all 1s;
+                }  
+                &_text:hover {
+                    text-shadow:
+                        1px 1px $white,
+                        2px 2px $brown;
+                    color: $darkgold;
+                }
+            }
+
+
+            &_close-mobile{
+                width: 42px;
+                height: 40px;
+                margin: 10px -10px 0 0;
+                border: 3px solid $gold;
+                background: url(../img/x.svg);
+                background-repeat: no-repeat;
+                border-radius: 5px;
+            }
+        }
+
+        &_menu{
+            margin-bottom: 50px;
+
+            &_ul{
+                list-style: none;
+                padding-left: 0;
+                margin-bottom: 0;
+
+                &_li{
+                    margin-bottom: 15px;
+                    
+                    &_a{
+                        text-decoration: none;
+                        color: $darkgold;
+                        font-size: 30px; 
+                    }
+
+                    a:hover {
+                        color: $darkgold;
+                        text-decoration: underline;
+                    } 
+                }
+            }
+        }
+
+        &_connection {
+            border-radius: 5px;
+            margin: 20px 0 20px 0;
+            display: inline-block;
+            vertical-align: top;
+            padding: 9px 0px;
+            background-color: $gold;
+            transition: color, background-color 0.5s linear;
+        
+            :hover {
+                border-radius: 5px;
+                background-color: $darkgold;
+                color: $white;
+            }
+        
+            a {
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 400;
+                font-family: Roboto Slab;
+                line-height: 22.59px;
+                padding: 8px 20px 10px 20px;
+                color: $white;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

@@ -1,29 +1,93 @@
 .logo{
+    text-align: center;
     
     &__row {
-        align-items: center;
         display: flex;
-        justify-content: center;
-    
-        &_img {
-            float: left;
+        justify-content: space-between;
+        margin: 0 25px 20px 25px;
+
+        @media (min-width: 1280px) {
+            margin: 0 70px 20px 210px;
         }
-    
-        &_text {
-            font-size: 60px;
-            text-shadow:
-                1px 1px rgb(219, 236, 195),
-                2px 2px #bfbabad8;
-                color: #0bad0d;
+
+        @media (min-width: 1920px) {
+            margin: 0 70px 20px 320px;
+        }
+
+        &_block{
+            width: 70%;
+            text-align: center;
+            padding: 20px 0 10px 0;
+            display: flex;
+
+            @media (min-width: 768px) {
+                width: 100%;
+            }
+            
+        &_img {
+           
+            &_image {
+                width: 130px;
+                height: 100px;
+            
+                @media (min-width: 768px) {
+                    width: 160px;
+                    height: 115px;
+                }
+            
+                @media (min-width: 1280px) {
+                    width: 190px;
+                    height: 145px;
+                }
+            }
+        }
+            
+            &_text {
+                width: 46%;
+                display: flex;
+                align-items: center;
+                font-size: 22px;
+                text-shadow:
+                    1px 1px rgb(219, 236, 195),
+                    2px 2px #bfbabad8;
+                color: $green;
                 transition: all 1s;
+            
+                @media (min-width: 768px) {
+                    font-size: 30px;
+                    width: 50%;
+                }
+            
+                @media (min-width: 1280px) {
+                    font-size: 60px;
+                    width: 100%;
+                }
             }
-    
-        &_text:hover {
-            text-shadow:
-                1px 1px $white,
-                2px 2px $brown;
-            color: $darkgold;
+            
+            &_text:hover {
+                text-shadow:
+                    1px 1px $white,
+                    2px 2px $brown;
+                color: $darkgold;
             }
-        }   
-}
+
+            &_open-mobile {
+                @media (min-width: 1280px) {
+                    display: none;
+                }
+                                      
+                &_a{
+                    background-image: url(../img/burger.png);
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    margin-top: 45px;
+                    background-repeat: no-repeat;
+                }
+                                            
+            }
+        }
+    }
+}  
+
 

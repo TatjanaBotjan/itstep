@@ -14,31 +14,68 @@
 </head>
 <body>
     <section class="logo">
-        <div class="container">
+        
             <div class="logo__row">
-                <div class="logo__row_img">
-                    <a href="#">
-                        <img src="./img/logo.png" alt="С заботой о здоровье!" title="С заботой о здоровье!">
-                    </a>
+                <div class="logo__row_block">
+                    <div class="logo__row_block_img">
+                        <a href="#">
+                            <img class="logo__row_block_img_image" src="./img/logo.png" alt="С заботой о здоровье!" title="С заботой о здоровье!">
+                        </a>
+                    </div>
+                    <div class="logo__row_block_text">С заботой о здоровье!</div>
                 </div>
-                <div class="logo__row_text">С заботой о здоровье!</div>
+                <div class="logo__row_block_open-mobile">
+                    <a class="logo__row_block_open-mobile_a" href="#" id="open_menu"></a>
+                </div>
             </div>
-        </div>
+
     </section>
     <header>
-            <div class="header__row"> 
-                <div class="header__row_menu">
-                    <ul>
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="#">Обо мне</a></li>
-                        <li><a href="#">Услуги</a></li>
-                    </ul>
-                    <div class="header__row_connection">
-                        <a class="header__row_connection_a" href="#">Задать вопрос</a>
-                    </div>
+        <div class="header__row"> 
+            <div class="header__row_menu">
+                <ul class="header__row_menu_ul">
+                    <li class="header__row_menu_ul_li"><a class="header__row_menu_ul_li_a" href="#">Главная</a></li>
+                    <li class="header__row_menu_ul_li"><a class="header__row_menu_ul_li_a" href="#">Обо мне</a></li>
+                    <li class="header__row_menu_ul_li"><a class="header__row_menu_ul_li_a" href="#">Услуги</a></li>
+                </ul>
+                <div class="header__row_connection">
+                    <a class="header__row_connection_a" href="#">Задать вопрос</a>
                 </div>
             </div>
+        </div>
     </header>
+    <section class="question question-invis">
+        <div class="container">
+            <div class="consultation__row">
+                <h2 class="question__row_h2">Вы можете задать мне вопрос через форму ниже</h2>
+                <div class="question__row_form">
+                    <form class="question__row_form_section" action="" method="post" name="contact-form">
+                        <div class="question__row_form_section_input">
+                            <input class="question__row_form_section_input_name" type="text" name="name" id="name" value=""
+                                placeholder="Ваше имя">
+                        </div>
+                        <div class="question__row_form_section_input">
+                            <input class="question__row_form_section_input_tel" type="tel" name="tel" id="tel" value=""
+                                placeholder="Номер телефона">
+                        </div>
+                        <div class="question__row_form_section_input">
+                            <input class="question__row_form_section_input_email" type="email" name="email" id="email"
+                                value="" placeholder="Email">
+                        </div>
+                        <div class="question__row_form_section_textarea">
+                            <textarea class="question__row_form_section_textarea_comment" name="comment" id="comment" cols="100" rows="3" placeholder="Ваш комментарий"></textarea>
+                        </div>
+                    </form>
+                    <div class="question__row_button">
+                        <a class="question__row_button_a" href="#">Записаться</a>
+                    </div>
+                    <p class="question__row_agreement">Отправляя свои персональные данные, Вы соглашаетесь с Положением о
+                        персональных данных</p>
+                </div>
+            </div>
+        </div>
+        <button class="question_close-btn"></button>
+    </section>
     <section class="home">
         <div class="home_img"></div>
         <div class="home__text">
@@ -725,6 +762,34 @@
         <hr class="footer_recommendation_hr">
         <div class="footer_recommendation">*Консультации нутрициолога проводятся с образовательной целью и не заменяют обращение к врачу</div>
     </footer>
+    <section class="mobile">
+        <div class="container">
+            <div class="mobile__row">
+                <div class="mobile__row_header">
+                    <div class="mobile__row_header_logo">
+                        <div class="mobile__row_header_logo_image">
+                            <img  class="mobile__row_header_logo_image_img" src="./img/logo.png" alt="С заботой о здоровье!" title="С заботой о здоровье!">
+                        </div>
+                        <div class="mobile__row_header_logo_text">С заботой <br> о здоровье!</div>
+                    </div>
+                    <div class="mobile__row_header_close-mobile">
+                        <a href="#" id="close_mobile"></a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="mobile__row_menu">
+                <ul class="mobile__row_menu_ul">
+                    <li class="mobile__row_menu_ul_li"><a class="mobile__row_menu_ul_li_a" href="#">Главная</a></li>
+                    <li class="mobile__row_menu_ul_li"><a class="mobile__row_menu_ul_li_a" href="#">Обо мне</a></li>
+                    <li class="mobile__row_menu_ul_li"><a class="mobile__row_menu_ul_li_a" href="#">Услуги</a></li>
+                </ul>
+            </div>
+            <div class="mobile__row_connection">
+                <a class="mobile__row_connection_a" href="#">Задать вопрос</a>
+            </div>
+        </div>
+    </section>
 
 
 
