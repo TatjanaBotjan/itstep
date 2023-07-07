@@ -94,3 +94,53 @@ escortvsBtn.addEventListener("click", function (event) {
         escortConsultation.classList.add("escort-vs");
     }
 });
+
+//*задать вопрос*//
+
+let questionBtn = document.querySelector(".header__row_connection");
+let question = document.querySelector(".question-invis");
+
+questionBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    if (question.classList.contains("question-invis")) {
+        question.classList.remove("question-invis");
+    } else {
+        question.classList.add("question-vis");
+    }
+});
+
+let closeQuestionBtn = document.querySelector(".question_close-btn");
+
+closeQuestionBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    if (question.classList.contains("question-vis")) {
+        question.classList.remove("question-vis");
+    } else {
+        question.classList.add("question-invis");
+    }
+});
+
+//* моб задать вопрос*//
+
+let questionBtnMob = document.querySelector(".mobile__row_connection");
+let questionMob = document.querySelector(".question-invis");
+
+questionBtnMob.addEventListener("click", function (event) {
+    event.preventDefault();
+    if (questionMob.classList.contains("question-invis")) {
+        questionMob.classList.remove("question-invis");
+    } else {
+        questionMob.classList.add("question-vis");
+    }
+});
+
+let closeQuestionBtnMob = document.querySelector(".question_close-btn");
+
+closeQuestionBtnMob.addEventListener("click", function (event) {
+    event.preventDefault();
+    if (questionMob.classList.contains("question-vis")) {
+        questionMob.classList.remove("question-vis");
+    } else {
+        questionMob.classList.add("question-invis");
+    }
+});

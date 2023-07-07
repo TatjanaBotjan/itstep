@@ -2,8 +2,7 @@
     text-align: center;
     
     &__row {
-        display: flex;
-        justify-content: space-between;
+        @include flexbetween;
         margin: 0 25px 20px 25px;
 
         @media (min-width: 1280px) {
@@ -47,15 +46,16 @@
                 display: flex;
                 align-items: center;
                 font-size: 22px;
+                text-align: left;
                 text-shadow:
                     1px 1px rgb(219, 236, 195),
                     2px 2px #bfbabad8;
                 color: $green;
                 transition: all 1s;
-            
+
                 @media (min-width: 768px) {
-                    font-size: 30px;
                     width: 50%;
+                    font-size: 30px;
                 }
             
                 @media (min-width: 1280px) {
@@ -81,7 +81,7 @@
                     width: 40px;
                     height: 40px;
                     display: flex;
-                    margin-top: 45px;
+                    margin: 45px 20px 0 0;
                     background-repeat: no-repeat;
                 }
                                             

@@ -6,23 +6,33 @@
     top: 145px;
 
     &__row {
-        width: 572px;
+        width: 100%;
         margin: 50px auto 0;
-        background-color: #ffffff;
+        background-color: $white;
         background-position: center center;
         border-color: transparent;
         border-style: solid;
         box-shadow: 0px 0px 10px 0px rgba(230, 230, 230, 1);
         padding: 25px 40px 30px 40px;
 
-        &_h2 {
-            font-size: 35px;
-            text-align: center;
-            margin-bottom: 15px;
+        @media (min-width: 768px) {
+            width: 500px;
+        }
 
-            &_span {
-                color: rgb(3, 63, 3);
-                font-weight: 600;
+        @media (min-width: 1280px) {
+            width: 572px;
+        }
+
+        &_h2 {
+            font-size: 21px;
+            text-align: center;
+            margin-bottom: 25px;
+
+            @media (min-width: 768px) {
+                font-size: 30px;
+            }
+
+            @media (min-width: 1280px) {
                 font-size: 35px;
             }
         }
@@ -42,39 +52,59 @@
                     font-size: 20px;
 
                     &_name {
-                        width: 500px;
+                        width: 100%;
                         height: 40px;
                         margin-bottom: 25px;
-                        border: 1px solid#d6b77a;
+                        border: 1px solid $gold;
                         border-radius: 5px;
                         padding: 20px;
+                        font-size: 18px;
+
+                        @media (min-width: 768px) {
+                            font-size: 20px;
+                        }  
                     }
 
                     &_surname {
-                        width: 500px;
+                        width: 100%;
                         height: 40px;
                         margin-bottom: 25px;
-                        border: 1px solid#d6b77a;
+                        border: 1px solid $gold;
                         border-radius: 5px;
                         padding: 20px;
+                        font-size: 18px;
+                        
+                        @media (min-width: 768px) {
+                            font-size: 20px;
+                        }
                     }
 
                     &_tel {
-                        width: 500px;
+                        width: 100%;
                         height: 40px;
                         margin-bottom: 25px;
-                        border: 1px solid#d6b77a;
+                        border: 1px solid $gold;
                         border-radius: 5px;
                         padding: 20px;
+                        font-size: 18px;
+                        
+                        @media (min-width: 768px) {
+                            font-size: 20px;
+                        }
                     }
 
                     &_email {
-                        width: 500px;
+                        width: 100%;
                         height: 40px;
                         margin-bottom: 35px;
-                        border: 1px solid#d6b77a;
+                        border: 1px solid $gold;
                         border-radius: 5px;
                         padding: 20px;
+                        font-size: 18px;
+                        
+                        @media (min-width: 768px) {
+                            font-size: 20px;
+                        }
                     }
                 }
 
@@ -82,11 +112,16 @@
                     font-size: 20px;
 
                     &_comment {
-                        width: 500px;
+                        width: 100%;
                         margin-bottom: 35px;
-                        border: 1px solid#d6b77a;
+                        border: 1px solid $gold;
                         border-radius: 5px;
-                        padding: 20px;
+                        padding: 10px 20px 20px 20px;
+                        font-size: 18px;
+                        
+                        @media (min-width: 768px) {
+                            font-size: 20px;
+                        }
                     }
                 }
             }
@@ -94,59 +129,71 @@
 
         &_button {
             border-radius: 5px;
-            border: rgb(255, 255, 255);
+            border: $white;
             margin: 0 auto 30px;
-            background-color: #d6b77a;
+            background-color: $gold;
             transition: color, background-color;
-            width: 500px;
+            width: 100%;
             height: 40px;
 
             &_a {
-                @include btn;
+                color: $white;
+                text-transform: uppercase;
+                position: relative;
+                top: 8px;
+                text-decoration: none;
                 font-size: 18px;
                 font-weight: 400;
                 line-height: 22.59px;
+                text-align: center;
+                display: flow-root;
             }
         }
 
         &_button:hover {
-            background-color: #c29c4f;
+            background-color: $darkgold;
         }
 
         &_agreement {
-            font-size: 15px;
+            font-size: 14px;
             padding: 0;
             text-align: justify;
-            color: rgb(73, 72, 72);
+            color: $textgrey;
             margin-bottom: 0;
+
+            @media (min-width: 1280px) {
+                font-size: 15px;
+            }
         }
     }
 
-    &_close_btn {
-        width: 40px;
-        height: 40px;
-        top: 12px;
-        border: 3px solid #d6b77a;
-        position: absolute;
-        margin-left: 1446px;
-        display: flex;
-        background: url(../img/x.svg);
-        background-repeat: no-repeat;
-        border-radius: 5px;
-    }
-
     &_close-btn{
-        width: 40px;
-        height: 40px;
-        top: 12px;
-        border: 3px solid #d6b77a;
+        width: 42px;
+        height: 41px;
+        top: 11px;
+        border: 3px solid $gold;
         position: absolute;
-        margin-left: 1446px;
+        margin-left: 427px;
         display: flex;
         background: url(../img/x.svg);
         background-repeat: no-repeat;
         border-radius: 5px;
-    }
+
+        @media (min-width: 768px) {
+            top: 10px;
+            margin-left: 625px;
+        }
+
+        @media (min-width: 1280px) {
+            top: 10px;
+            margin-left: 919px;
+        }
+        
+        @media (min-width: 1300px) {
+            top: 10px;
+            margin-left: 1044px;
+        }
+    } 
 }
 
 .question-invis {

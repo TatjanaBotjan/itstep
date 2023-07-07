@@ -1,5 +1,6 @@
-@mixin white {
-    color: white;
+@mixin flexbetween {
+    display: flex;
+    justify-content: space-between;
 }
 
 @mixin btn {

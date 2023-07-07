@@ -51,13 +51,18 @@
 
 
             &_close-mobile{
-                width: 42px;
-                height: 40px;
                 margin: 10px -10px 0 0;
                 border: 3px solid $gold;
-                background: url(../img/x.svg);
-                background-repeat: no-repeat;
+                height: 42px;
                 border-radius: 5px;
+
+                &_a{
+                    background: url(../img/x.svg);
+                    background-repeat: no-repeat;
+                    width: 42px;
+                    height: 41px;
+                    display: flex;
+                }
             }
         }
 
@@ -113,4 +118,12 @@
             }
         }
     }
+}
+
+.question-invis{
+    display: none;
+}
+
+.question-vis {
+    display: block;
 }

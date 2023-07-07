@@ -2,15 +2,14 @@ header{
     display: none;
 
     @media (min-width: 1280px) {
-            display: block;
-        }
+        display: block;
+    }
 }
 .header {  
 
     &__row{
+        @include flexbetween;
         padding: 10px 0 0 0;
-        display: flex;
-        justify-content: space-between;
         margin: 0 1px;
     
         &_menu{
@@ -47,38 +46,36 @@ header{
                         color: $darkgold;
                         text-decoration: underline;
                     }
-                }
+            }
 
         }
 
-                &_connection {
-                    border-radius: 5px;
-                    margin: 20px 0 20px 0;
-                    display: inline-block;
-                    vertical-align: top;
-                    padding: 9px 0px;
-                    background-color: #d6b77a;
-                    transition: color, background-color 0.5s linear;
+        &_connection {
+            border-radius: 5px;
+            margin: 20px 0 20px 0;
+            display: inline-block;
+            vertical-align: top;
+            padding: 9px 0px;
+            background-color: $gold;
+            transition: color, background-color 0.5s linear;
         
-                    :hover {
-                        border-radius: 5px;
-                        background-color: #c29c4f;
-                        color: rgb(255, 255, 255);
-                    }
+            :hover {
+                border-radius: 5px;
+                background-color: $darkgold;
+                color: $white;
+            }
         
-                    a {
-                        text-decoration: none;
-                        font-size: 18px;
-                        font-weight: 400;
-                        font-family: Roboto Slab;
-                        line-height: 22.59px;
-                        padding: 8px 20px 10px 20px;
-                        color: white;
-                        text-transform: uppercase;
-                    }
-                }
-    }
-    
-        
+            a {
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 400;
+                font-family: Roboto Slab;
+                line-height: 22.59px;
+                padding: 8px 20px 10px 20px;
+                color: $white;
+                text-transform: uppercase;
+            }
+        }
+    }   
 }
     
