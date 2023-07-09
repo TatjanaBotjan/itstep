@@ -1,50 +1,103 @@
 .home{
-    padding-bottom: 50px;
-   &_img{
+    padding-bottom: 40px;
+
+    &_img{
         width: 100%;
         background-image: url(../img/fn.jpg);
         height: 700px;
         background-repeat: no-repeat;
-   }
+        display: none;
 
-   &__text{
-        width: 45%;
-        margin-left: 730px;
-        margin-top: -560px;
-        margin-bottom: 260px;
+        @media (min-width: 1280px) {
+            display: block;
+        }
+    }
+
+    &__text{
+        display: none;
+
+        @media (min-width: 1280px) {
+            display: block;
+            width: 45%;
+            margin-left: 695px;
+            margin-top: -470px;
+            margin-bottom: 200px;
+        }
+
+        @media (min-width: 1510px) {
+            margin-left: 785px;
+            margin-top: -520px;
+            margin-bottom: 220px;
+        }
 
         &_h2 {
-            font-size: 55px;
+            font-size: 43px;
             text-shadow:
-                1px 1px white,
-                1px 1px rgb(192, 112, 78);
-            color: rgb(159, 52, 38);
+                1px 1px $white,
+                1px 1px $brown;
+            color: $darkbrown;
             transition: all 1s;
             font-weight: 800;
             line-height: 1.5;
+            margin-bottom: 25px;
+
+            @media (min-width: 1510px) {
+                font-size: 50px;
+            }
         }
         
         &_author {
             font-size: 35px;
             font-weight: 400;
-            margin-left: 340px;
+            margin-left: 288px;
             color: rgb(72, 70, 70);
+
+            @media (min-width: 1510px) {
+                margin-left: 365px;
+            }
         }
-   }
+    }
+
     &__row{
        
         &_h2{
-            font-size: 50px;
+            font-size: 30px;
             font-weight: 500;
             text-align: center;
-            padding-top: 50px;
-            padding-bottom: 30px;
+            padding-bottom: 20px;
+
+            @media (min-width: 768px) {
+                font-size: 35px;
+            }
+
+            @media (min-width: 1280px) {
+                font-size: 45px;
+                padding-bottom: 30px;
+                padding-top: 50px;
+            }
+
+            @media (min-width: 1510px) {
+                font-size: 50px;
+            }
         }
 
         &_p{
-            font-size: 27px;
+            font-size: 18px;
             text-align: center;
-            color: rgb(73, 72, 72);
+            color: $textgrey;
+            margin-bottom: 0;
+
+            @media (min-width: 768px) {
+                font-size: 22px;
+            }
+
+            @media (min-width: 1280px) {
+                font-size: 25px;
+            }
+            
+            @media (min-width: 1510px) {
+                font-size: 27px;
+            }
         }
     }
 }

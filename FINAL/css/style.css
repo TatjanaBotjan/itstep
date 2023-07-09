@@ -40,9 +40,9 @@ html, body {
     margin: 0 70px 20px 210px;
   }
 }
-@media (min-width: 1920px) {
+@media (min-width: 1510px) {
   .logo__row {
-    margin: 0 70px 20px 320px;
+    margin: 0 70px 20px 315px;
   }
 }
 .logo__row_block {
@@ -143,6 +143,11 @@ header {
   padding-left: 0;
   margin: 0 50px 0 130px;
 }
+@media (min-width: 1280px) {
+  .header__row_menu ul {
+    margin: 0 50px 0 25px;
+  }
+}
 .header__row_menu ul li {
   float: left;
   margin-left: 125px;
@@ -177,7 +182,6 @@ header {
   text-decoration: none;
   font-size: 18px;
   font-weight: 400;
-  font-family: Roboto Slab;
   line-height: 22.59px;
   padding: 8px 20px 10px 20px;
   color: white;
@@ -185,45 +189,107 @@ header {
 }
 
 .home {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 .home_img {
   width: 100%;
   background-image: url(../img/fn.jpg);
   height: 700px;
   background-repeat: no-repeat;
+  display: none;
+}
+@media (min-width: 1280px) {
+  .home_img {
+    display: block;
+  }
 }
 .home__text {
-  width: 45%;
-  margin-left: 730px;
-  margin-top: -560px;
-  margin-bottom: 260px;
+  display: none;
+}
+@media (min-width: 1280px) {
+  .home__text {
+    display: block;
+    width: 45%;
+    margin-left: 695px;
+    margin-top: -470px;
+    margin-bottom: 200px;
+  }
+}
+@media (min-width: 1510px) {
+  .home__text {
+    margin-left: 785px;
+    margin-top: -520px;
+    margin-bottom: 220px;
+  }
 }
 .home__text_h2 {
-  font-size: 55px;
+  font-size: 43px;
   text-shadow: 1px 1px white, 1px 1px rgb(192, 112, 78);
   color: rgb(159, 52, 38);
   transition: all 1s;
   font-weight: 800;
   line-height: 1.5;
+  margin-bottom: 25px;
+}
+@media (min-width: 1510px) {
+  .home__text_h2 {
+    font-size: 50px;
+  }
 }
 .home__text_author {
   font-size: 35px;
   font-weight: 400;
-  margin-left: 340px;
+  margin-left: 288px;
   color: rgb(72, 70, 70);
 }
+@media (min-width: 1510px) {
+  .home__text_author {
+    margin-left: 365px;
+  }
+}
 .home__row_h2 {
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 500;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .home__row_h2 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1280px) {
+  .home__row_h2 {
+    font-size: 45px;
+    padding-bottom: 30px;
+    padding-top: 50px;
+  }
+}
+@media (min-width: 1510px) {
+  .home__row_h2 {
+    font-size: 50px;
+  }
 }
 .home__row_p {
-  font-size: 27px;
+  font-size: 18px;
   text-align: center;
   color: rgb(73, 72, 72);
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .home__row_p {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1280px) {
+  .home__row_p {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1510px) {
+  .home__row_p {
+    font-size: 27px;
+  }
 }
 
 .info {
@@ -288,72 +354,320 @@ header {
 }
 .important__row_text {
   text-align: center;
-  font-size: 50px;
-  color: black;
-  padding: 30px 0 40px 0;
-}
-.important__row_info {
+  font-size: 40px;
+  color: rgb(3, 63, 3);
+  padding-top: 30px;
+  margin: 0 auto 30px auto;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  line-height: 1.2;
+}
+@media (min-width: 768px) {
+  .important__row_text {
+    font-size: 45px;
+    width: 70%;
+  }
+}
+@media (min-width: 1280px) {
+  .important__row_text {
+    font-size: 50px;
+    margin-left: 285px;
+    width: 100%;
+    padding-top: 30px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1510px) {
+  .important__row_text {
+    margin-left: 290px;
+  }
+}
+@media (min-width: 1280px) {
+  .important__row_info {
+    display: flex;
+  }
 }
 .important__row_info_nutrition {
-  width: 30%;
+  width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: 1280px) {
+  .important__row_info_nutrition {
+    margin-right: 50px;
+  }
+}
+@media (min-width: 1510px) {
+  .important__row_info_nutrition {
+    margin-right: 70px;
+  }
 }
 .important__row_info_nutrition_img {
   width: 100%;
-  height: 250px;
-  padding-bottom: 20px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .important__row_info_nutrition_img {
+    width: 80%;
+    height: 325px;
+  }
+}
+@media (min-width: 1280px) {
+  .important__row_info_nutrition_img {
+    height: 230px;
+    width: 100%;
+  }
+}
+@media (min-width: 1510px) {
+  .important__row_info_nutrition_img {
+    height: 250px;
+  }
 }
 .important__row_info_nutrition_text {
-  padding: 10px;
+  padding: 25px 5px 10px 5px;
   box-sizing: border-box;
-  text-align: justify;
+  text-align: center;
   margin: 5px;
+}
+@media (min-width: 1280px) {
+  .important__row_info_nutrition_text {
+    text-align: justify;
+    padding: 25px 10px 10px 10px;
+    margin: 0;
+  }
 }
 .important__row_info_nutrition_text_h2 {
   text-align: center;
+  color: rgb(3, 63, 3);
+  font-size: 33px;
+}
+@media (min-width: 768px) {
+  .important__row_info_nutrition_text_h2 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1280px) {
+  .important__row_info_nutrition_text_h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1510px) {
+  .important__row_info_nutrition_text_h2 {
+    font-size: 33px;
+  }
 }
 .important__row_info_nutrition_text_p {
-  font-size: 18px;
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .important__row_info_nutrition_text_p {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto 30px auto;
+    font-size: 17px;
+  }
+}
+@media (min-width: 1280px) {
+  .important__row_info_nutrition_text_p {
+    font-size: 18px;
+    width: 100%;
+  }
+}
+@media (min-width: 1510px) {
+  .important__row_info_nutrition_text_p {
+    font-size: 18px;
+  }
 }
 .important__row_info_vitamins {
-  width: 30%;
-  padding-top: 60px;
+  width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: 1280px) {
+  .important__row_info_vitamins {
+    margin-right: 50px;
+    margin: 50px 50px 0 0;
+  }
+}
+@media (min-width: 1510px) {
+  .important__row_info_vitamins {
+    margin-right: 70px;
+  }
 }
 .important__row_info_vitamins_img {
   width: 100%;
-  height: 250px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .important__row_info_vitamins_img {
+    width: 80%;
+    height: 325px;
+  }
+}
+@media (min-width: 1280px) {
+  .important__row_info_vitamins_img {
+    height: 230px;
+    width: 100%;
+  }
+}
+@media (min-width: 1510px) {
+  .important__row_info_vitamins_img {
+    height: 250px;
+  }
 }
 .important__row_info_vitamins_text {
-  padding: 10px;
+  padding: 25px 5px 10px 5px;
   box-sizing: border-box;
-  text-align: justify;
+  text-align: center;
   margin: 5px;
+}
+@media (min-width: 1280px) {
+  .important__row_info_vitamins_text {
+    text-align: justify;
+    padding: 25px 10px 10px 10px;
+    margin: 0;
+  }
 }
 .important__row_info_vitamins_text_h2 {
   text-align: center;
+  color: rgb(3, 63, 3);
+  font-size: 33px;
+}
+@media (min-width: 768px) {
+  .important__row_info_vitamins_text_h2 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1280px) {
+  .important__row_info_vitamins_text_h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1510px) {
+  .important__row_info_vitamins_text_h2 {
+    font-size: 33px;
+  }
 }
 .important__row_info_vitamins_text_p {
-  font-size: 18px;
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .important__row_info_vitamins_text_p {
+    width: 80%;
+    margin: 0 auto 30px auto;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+  }
+}
+@media (min-width: 1280px) {
+  .important__row_info_vitamins_text_p {
+    font-size: 18px;
+    width: 100%;
+  }
+}
+@media (min-width: 1510px) {
+  .important__row_info_vitamins_text_p {
+    font-size: 18px;
+  }
 }
 .important__row_info_lifestyle {
-  width: 30%;
+  width: 90%;
+  margin: 0 auto;
 }
 .important__row_info_lifestyle_img {
   width: 100%;
-  height: 250px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .important__row_info_lifestyle_img {
+    width: 80%;
+    height: 325px;
+  }
+}
+@media (min-width: 1280px) {
+  .important__row_info_lifestyle_img {
+    height: 230px;
+    width: 100%;
+  }
+}
+@media (min-width: 1510px) {
+  .important__row_info_lifestyle_img {
+    height: 250px;
+  }
 }
 .important__row_info_lifestyle_text {
-  padding: 10px;
+  padding: 25px 5px 10px 5px;
   box-sizing: border-box;
+  text-align: center;
+  margin: 5px;
+}
+@media (min-width: 1280px) {
+  .important__row_info_lifestyle_text {
+    text-align: justify;
+    padding: 25px 10px 10px 10px;
+    margin: 0;
+  }
 }
 .important__row_info_lifestyle_text_h2 {
   text-align: center;
+  color: rgb(3, 63, 3);
+  font-size: 33px;
+}
+@media (min-width: 768px) {
+  .important__row_info_lifestyle_text_h2 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1280px) {
+  .important__row_info_lifestyle_text_h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1510px) {
+  .important__row_info_lifestyle_text_h2 {
+    font-size: 33px;
+  }
 }
 .important__row_info_lifestyle_text_p {
-  font-size: 18px;
+  font-size: 16px;
   text-align: justify;
-  margin: 5px;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .important__row_info_lifestyle_text_p {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto 30px auto;
+    font-size: 17px;
+  }
+}
+@media (min-width: 1280px) {
+  .important__row_info_lifestyle_text_p {
+    font-size: 18px;
+    width: 100%;
+  }
+}
+@media (min-width: 1510px) {
+  .important__row_info_lifestyle_text_p {
+    font-size: 18px;
+  }
 }
 
 .about {
@@ -2443,12 +2757,6 @@ footer {
   .question_close-btn {
     top: 10px;
     margin-left: 919px;
-  }
-}
-@media (min-width: 1300px) {
-  .question_close-btn {
-    top: 10px;
-    margin-left: 1044px;
   }
 }
 

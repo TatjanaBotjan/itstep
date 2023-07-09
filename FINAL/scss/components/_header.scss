@@ -27,7 +27,11 @@ header{
                 list-style: none;
                 padding-left: 0;
                 margin: 0 50px 0 130px;
-            
+
+                @media (min-width: 1280px) {
+                    margin: 0 50px 0 25px;
+                }
+                    
                 li {
                     float: left;
                     margin-left: 125px;
@@ -47,7 +51,6 @@ header{
                         text-decoration: underline;
                     }
             }
-
         }
 
         &_connection {
@@ -69,7 +72,6 @@ header{
                 text-decoration: none;
                 font-size: 18px;
                 font-weight: 400;
-                font-family: Roboto Slab;
                 line-height: 22.59px;
                 padding: 8px 20px 10px 20px;
                 color: $white;

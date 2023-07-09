@@ -3,11 +3,11 @@
 @import "./common/mixin";
 
 
-@import "./components/logo";
-@import "./components/header";
-@import "./components/home";
+@import "./components/logo"; //+//
+@import "./components/header"; //+//
+@import "./components/home"; //+//
 @import "./components/info";
-@import "./components/important";
+@import "./components/important"; //+//
 @import "./components/about";
 @import "./components/nutrition";
 @import "./components/services";
@@ -23,6 +23,6 @@
 @import "./components/features";
 @import "./components/help";
 @import "./components/footer";
-@import "./components/question";
+@import "./components/question"; //+//
 @import "./components/mobile";
 
