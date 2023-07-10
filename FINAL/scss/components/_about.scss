@@ -12,11 +12,11 @@
             &_img {
                 width: 120px;
                 height: 90px;
-                margin-top: 10px;
                 margin-left: -50px;
                 margin-right: 18px;
 
                 @media (min-width: 768px) {
+                    margin-top: 10px;
                     width: 150px;
                     height: 120px;
                     margin-right: 40px;
@@ -38,9 +38,9 @@
                 margin-bottom: 260px;
                 text-align: center;
                 font-weight: 600;
-                font-size: 25px;
+                font-size: 22px;
                 color: $darkgreen;
-                padding-top: 5px;
+                padding-top: 15px;
 
                 @media (min-width: 768px) {
                     font-weight: 800;

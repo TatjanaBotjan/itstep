@@ -11,6 +11,7 @@
             margin: 0 auto 30px auto;
             @include flexcenter;
             line-height: 1.2;
+            font-weight: 600;
 
             @media (min-width: 768px) {
                 font-size: 40px;
