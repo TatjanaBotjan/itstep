@@ -1,28 +1,73 @@
 .individual-consultation{
     background-image: url(../img/fonAbout.svg);
     background-repeat: no-repeat;
-    height: 1170px;
     
-
     &__row {
+        display: inline-block;
     
         &_details {
-          display: flex;
-          padding-bottom: 100px;
+            display: flex;
+            padding-bottom: 40px;
+
+            @media (min-width: 768px) {
+                padding-bottom: 60px;
+            }
+        
+            @media (min-width: 1280px) {
+                padding-bottom: 100px;
+            }
+        
+            @media (min-width: 1510px) {
+                padding-bottom: 100px;
+            }
     
             &_img {
-                width: 255px;
-                height: 200px;
-                margin-top: 20px;
-                margin-right: 50px;
+                width: 120px;
+                height: 90px;
+                margin-left: -50px;
+                margin-right: 18px;
+
+                @media (min-width: 768px) {
+                    width: 150px;
+                    height: 120px;
+                    margin-top: 10px;
+                }
+                
+                @media (min-width: 1280px) {
+                    width: 225px;
+                    height: 170px;
+                    margin-top: 12px;
+                    margin-right: 60px;
+                }
+                
+                @media (min-width: 1510px) {
+                    width: 255px;
+                    height: 200px;
+                    margin-top: 20px;
+                    margin-right: 50px;
+                }
             }
     
             &_h2 {
                 text-align: center;
                 font-weight: 800;
-                font-size: 55px;
-                color: rgb(3, 63, 3);
-                padding-top: 60px;
+                font-size: 22px;
+                color: $darkgreen;
+                padding-top: 6px;
+
+                @media (min-width: 768px) {
+                    font-size: 34px;
+                    padding-top: 28px;
+                }
+                
+                @media (min-width: 1280px) {
+                    font-size: 50px;
+                    padding-top: 47px;
+                }
+                
+                @media (min-width: 1510px) {
+                    padding-top: 60px;
+                }
             }
         }
 
@@ -30,91 +75,171 @@
             padding-bottom: 50px; 
             
             &_h2 {
-                font-size: 50px;
+                @include flexrelative;
+                font-size: 35px;
                 font-weight: 500;
                 text-align: center;
                 padding-bottom: 30px;
-                width: 60%;
-                position: relative;
-                margin: 0 0 0 250px;
+                color: $darkgreen;
+                font-weight: 800;
+                margin: 0 auto;
+                align-items: center;
+
+                @media (min-width: 768px) {
+                    font-size: 40px;
+                }
+                
+                @media (min-width: 1280px) {
+                    font-size: 50px;
+                    width: 99%;
+                }
+                
+                @media (min-width: 1510px) {
+                    font-size: 50px;
+                    width: 60%;
+                    margin: 0 0 0 250px;
+                }
             }
 
             &_a{
-                color: #d6b77a; 
+                color: $gold; 
             }
 
             a:hover{
-                color: #c29c4f;
+                color: $darkgold;
             }
 
             &_p{
-                font-size: 25px;
-                text-align: justify;
+                font-size: 22px;
+                text-align: center;
                 position: relative;
-                margin-left: 310px;
+                margin: 0 auto;
+                
+                @media (min-width: 1280px) {
+                    font-size: 25px;
+                }
+                
+                @media (min-width: 1510px) {
+                    margin-left: 310px;
+                    text-align: justify;
+                }
             }
-
-            
         }
 
         &_services{
-            display: flex;
             float: left;
             justify-content: space-between;
             position: relative;
-            margin: 0 0 50px 50px;
+            
+            @media (min-width: 1280px) {
+                display: flex;
+                float: left;
+            }
+            
+            @media (min-width: 1510px) {
+                margin: 0 0 50px 50px;
+            }
            
             &_individual{
-                width: 40%;
-                border: 2px solid #d6b77a;
-                background-color: rgb(255, 255, 255);
+                width: 90%;
+                border: 2px solid $gold;
+                background-color: $white;
+                margin: 0 auto 50px;
+
+                @media (min-width: 768px) {
+                    width: 75%;
+                }
+                
+                @media (min-width: 1280px) {
+                    width: 45%;
+                }
+                
+                @media (min-width: 1510px) {
+                    width: 40%;
+                }
 
                 &_h2{
-                    background-color: #d6b77a;
+                    background-color: $gold;
                     padding: 15px;
                     font-size: 30px;
                     text-align: center;
                     margin-bottom: 0;
+
+                    @media (min-width: 1510px) {
+                        font-size: 30px;
+                        padding: 25px;
+                    }
                 }
 
                 &_hr {
-                    width: 481px;
+                    width: 335px;
                     border: none;
-                    background-color: #d6b77a;
+                    background-color: $gold;
                     height: 2px;
                     margin: 0;
+
+                    @media (min-width: 768px) {
+                        width: 505px;
+                    }
+                
+                    @media (min-width: 1280px) {
+                        width: 499px;
+                    }
+                
+                    @media (min-width: 1510px) {
+                        width: 481px;
+                    }
                 }
 
                 &_objective{
-                    font-size: 20px;
+                    font-size: 18px;
                     text-align: center;
                     padding: 20px 35px 20px;
                     margin-bottom: 0;
+                    
+                    @media (min-width: 1280px) {
+                        font-size: 20px;
+                    }
+                    
+                    @media (min-width: 1510px) {
+                        padding: 30px 35px 30px;
+                    }
                 }
 
                 &_price{
                     text-transform: uppercase;
-                    font-size: 27px;
+                    font-size: 24px;
                     text-align: center;
                     margin-bottom: 0;
                     padding: 20px 20px 30px 20px;
+
+                    @media (min-width: 768px) {
+                        font-size: 27px;
+                    }
                 }
 
                 &_btn {
+                    @include flexrelative;
                     width: 250px;
                     border-radius: 5px;
-                    display: flex;
                     vertical-align: top;
-                    background-color: #d6b77a;
+                    background-color: $gold;
                     transition: color, background-color 0.5s linear;
-                    position: relative;
-                    left: 24%;
+                    left: 13%;
                     margin-bottom: 30px;
+
+                    @media (min-width: 768px) {
+                        left: 25%;
+                    }
+                    
+                    @media (min-width: 1510px) {
+                        left: 24%;
+                    }
                 
                     :hover {
                         border-radius: 5px;
-                        background-color: #c29c4f;
-                        color: rgb(255, 255, 255);
+                        background-color: $darkgold;
+                        color: $white;
                     }
                 
                     a {
@@ -122,84 +247,145 @@
                         padding: 10px;
                         text-align: center;
                         text-decoration: none;
-                        font-size: 18px;
+                        font-size: 16px;
                         font-weight: 400;
-                        font-family: Roboto Slab;
                         line-height: 22.59px;
-                        color: white;
+                        color: $white;
                         text-transform: uppercase;
+
+                        @media (min-width: 768px) {
+                            font-size: 18px;
+                        }
                     }
                 }
             }
 
             &_personal{
-                width: 40%;
-                margin-right: 50px;
-                border: 2px solid #d6b77a;
-                background-color: rgb(255, 255, 255);
+                width: 90%;
+                margin: 0 auto 50px;
+                border: 2px solid $gold;
+                background-color: $white;
+
+                @media (min-width: 768px) {
+                    width: 75%;
+                }
+                
+                @media (min-width: 1280px) {
+                    width: 45%;
+                }
+                
+                @media (min-width: 1510px) {
+                    width: 40%;
+                }
 
                 &_h2 {
-                        background-color: #d6b77a;
-                        padding: 30px;
+                    background-color: $gold;
+                    padding: 15px 0 15px 45px;
+                    font-size: 30px;
+                    text-align: center;
+                    margin-bottom: 0;
+                    height: 103px;
+                    display: flex;
+                    align-items: center;
+
+                    @media (min-width: 768px) {
+                        padding: 15px 0 15px 133px;
+                    }
+                        
+                    @media (min-width: 1510px) {
                         font-size: 30px;
-                        text-align: center;
-                        margin-bottom: 0;
-                        height: 103px;
+                        padding: 25px 25px 25px 120px;
+                        height: 122px;
                     }
+                }
                 
-                    &_hr {
+                &_hr {
+                    width: 335px;
+                    border: none;
+                    background-color: $gold;
+                    height: 2px;
+                    margin: 0;
+
+                    @media (min-width: 768px) {
+                        width: 505px;
+                    }
+                        
+                    @media (min-width: 1280px) {
+                        width: 499px;
+                    }
+                        
+                    @media (min-width: 1510px) {
                         width: 481px;
-                        border: none;
-                        background-color: #d6b77a;
-                        height: 2px;
-                        margin: 0;
                     }
+                }
                 
-                    &_objective {
+                &_objective {
+                    font-size: 18px;
+                    text-align: center;
+                    padding: 20px 35px 48px;
+                    margin-bottom: 0;
+                        
+                    @media (min-width: 1280px) {
                         font-size: 20px;
-                        text-align: center;
-                        padding: 20px 35px 48px;
-                        margin-bottom: 0;
                     }
+                        
+                    @media (min-width: 1510px) {
+                        padding: 30px 35px 58px;
+                    }
+                }
                 
-                    &_price {
-                        text-transform: uppercase;
+                &_price {
+                    text-transform: uppercase;
+                    font-size: 24px;
+                    text-align: center;
+                    margin-bottom: 0;
+                    padding: 20px 20px 30px 20px;
+
+                    @media (min-width: 768px) {
                         font-size: 27px;
-                        text-align: center;
-                        margin-bottom: 0;
-                        padding: 20px 20px 30px 20px;
                     }
+                }
                 
-                    &_btn {
-                        width: 250px;
-                        border-radius: 5px;
-                        display: flex;
-                        vertical-align: top;
-                        background-color: #d6b77a;
-                        transition: color, background-color 0.5s linear;
-                        position: relative;
+                &_btn {
+                    @include flexrelative;
+                    width: 250px;
+                    border-radius: 5px;
+                    vertical-align: top;
+                    background-color: $gold;
+                    transition: color, background-color 0.5s linear;
+                    left: 13%;
+                    margin-bottom: 30px;
+
+                    @media (min-width: 768px) {
+                        left: 25%;
+                    }
+                        
+                    @media (min-width: 1510px) {
                         left: 24%;
-                        margin-bottom: 30px;
+                    }
                 
-                        :hover {
-                            border-radius: 5px;
-                            background-color: #c29c4f;
-                            color: rgb(255, 255, 255);
-                        }
+                    :hover {
+                        border-radius: 5px;
+                        background-color: $darkgold;
+                        color: $white;
+                    }
                 
-                        a {
-                            width: 250px;
-                            padding: 10px;
-                            text-align: center;
-                            text-decoration: none;
+                    a {
+                        width: 250px;
+                        padding: 10px;
+                        text-align: center;
+                        text-decoration: none;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 22.59px;
+                        color: $white;
+                        text-transform: uppercase;
+
+                        @media (min-width: 768px) {
                             font-size: 18px;
-                            font-weight: 400;
-                            font-family: Roboto Slab;
-                            line-height: 22.59px;
-                            color: white;
-                            text-transform: uppercase;
                         }
                     }
+                }
             }
         }
     }
