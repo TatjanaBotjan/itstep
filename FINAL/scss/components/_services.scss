@@ -1,93 +1,202 @@
 .services{
    
     &__row{
+    
         &_img {
-            height: 630px;
-            background-image: url(../img/foto11.png);
-            background-repeat: no-repeat;
-            margin: -45px 413px;
+
+            @media (min-width: 1280px) {
+                margin: 0 auto;
+                position: relative;
+            }
+
+            &_image{
+                display: none;
+
+                    @media (min-width: 1280px) {
+                        display: block;
+                        height: 520px;
+                        position: absolute;
+                        width: 43%;
+                        top: -85px;
+                        margin-left: 270px;
+                    }
+                
+                    @media (min-width: 1510px) {
+                        height: 523px;
+                        width: 37%;
+                        margin-left: 330px;
+                    }
+            }
+                @media (min-width: 1280px) {
+                    display: block;
+                    top: 50px;
+                    width: 85%;
+                }
         }
 
         &_blocks{
-            margin-bottom: 220px;
+            position: relative;
+            top: 50px;
+            margin-bottom: 100px;
+
+            @media (min-width: 1280px) {
+                top: 103px;
+            }
+            
             &_top{
-                display: flex;
-                margin-top: -465px;
-                padding-bottom: 60px;
+
+                @media (min-width: 1280px) {
+                    display: flex;
+                }
 
                 &_first{
-                    background-color: #ffffff;
                     background-position: center center;
                     border-color: transparent;
                     border-style: solid;
                     box-shadow: 0px 0px 10px 0px rgba(230, 230, 230, 1);
-                    background-color: #F0FFF0;
-                    width: 400px;
-                    margin-right: 465px;
+                    background-color: $lightgreen;
+                    width: 100%;
+                    
+                    @media (min-width: 768px) {
+                        margin: 0 auto 50px auto;
+                        position: relative;
+                        width: 90%;
+                    }
+                    
+                    @media (min-width: 1280px) {
+                        width: 355px;
+                        margin-right: 370px;
+                    }
+                           
+                    @media (min-width: 1510px) {
+                        width: 400px;
+                        margin-right: 450px;    
+                    }
                     
                     &_p {
-                        font-size: 20px;
+                        font-size: 18px;
                         padding: 20px;
                         text-align: center;
                         margin-bottom: 0;
+
+                        @media (min-width: 768px) {
+                            font-size: 20px;
+                        }
                     }
                 }
 
                 &_second{
-                    background-color: #ffffff;
                     background-position: center center;
                     border-color: transparent;
                     border-style: solid;
                     box-shadow: 0px 0px 10px 0px rgba(230, 230, 230, 1);
-                    background-color: #F0FFF0;
-                    width: 400px;
+                    background-color: $lightgreen;
+                    width: 100%;
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+
+                    @media (min-width: 768px) {
+                        margin: 0 auto 50px auto;
+                        position: relative;
+                        width: 90%;
+                    }
+                    
+                    @media (min-width: 1280px) {
+                        width: 355px;
+                    }
+                        
+                    @media (min-width: 1510px) {
+                        width: 400px;  
+                    }
 
                     &_p {
-                        font-size: 20px;
+                        font-size: 18px;
                         padding: 20px;
                         text-align: center;
                         margin-bottom: 0;
+
+                        @media (min-width: 768px) {
+                            font-size: 20px;
+                        }
                     }
                 }
             }
 
             &_bottom {
-                display: flex;
                 justify-content: space-between;
+                
+                @media (min-width: 1280px) {
+                    display: flex;
+                }
             
                 &_first {
-                    background-color: #ffffff;
                     background-position: center center;
                     border-color: transparent;
                     border-style: solid;
                     box-shadow: 0px 0px 10px 0px rgba(230, 230, 230, 1);
-                    background-color: #F0FFF0;
-                    width: 400px;
-                    margin-right: 465px;
+                    background-color: $lightgreen;
+                    width: 100%;
+                    margin-bottom: 50px;
+
+                    @media (min-width: 768px) {
+                        margin: 0 auto 50px auto;
+                        position: relative;
+                        width: 90%;
+                    }
+                    
+                    @media (min-width: 1280px) {
+                        width: 355px;
+                        margin-right: 370px;
+                    }
+                    
+                    @media (min-width: 1510px) {
+                        width: 400px;
+                        margin-right: 450px;
+                    }
 
                     &_p {
-                        font-size: 20px;
+                        font-size: 18px;
                         padding: 20px;
                         text-align: center;
                         margin-bottom: 0;
-                        
+
+                        @media (min-width: 768px) {
+                            font-size: 20px;
+                        } 
                     }
                 }
             
                 &_second {
-                    background-color: #ffffff;
                     background-position: center center;
                     border-color: transparent;
                     border-style: solid;
                     box-shadow: 0px 0px 10px 0px rgba(230, 230, 230, 1);
-                    background-color: #F0FFF0;
-                    width: 400px;
+                    background-color: $lightgreen;
+                    width: 100%;
+
+                    @media (min-width: 768px) {
+                        margin: 0 auto 50px auto;
+                        position: relative;
+                        width: 90%;
+                    }
+
+                    @media (min-width: 1280px) {
+                        width: 355px;
+                    }
+                    
+                    @media (min-width: 1510px) {
+                        width: 400px;
+                    }
 
                     &_p {
-                        font-size: 20px;
+                        font-size: 18px;
                         padding: 20px;
                         text-align: center;
                         margin-bottom: 0;
+
+                        @media (min-width: 768px) {
+                            font-size: 20px;
+                        }
                     }
                 }
             }
@@ -95,30 +204,45 @@
 
         &_btn {
             border-radius: 5px;
-            margin: -115px 0 20px 478px;
+            margin: 0px 0 50px 40px;
             display: inline-block;
             vertical-align: top;
             padding: 9px 0px;
-            background-color: #d6b77a;
+            background-color: $gold;
             transition: color, background-color 0.5s linear;
+
+            @media (min-width: 768px) {
+                margin: 20px 0 50px 175px;
+            }
+            
+            @media (min-width: 1280px) {
+                margin: 30px 0 50px 405px;;  
+            }
+            
+            @media (min-width: 1510px) {
+                margin: 30px 0 50px 470px;;
+            }
         
             :hover {
                 border-radius: 5px;
                 margin: 9px 0 20px 0;
                 padding: 8px 20px 10px 20px;
-                background-color: #c29c4f;
-                color: rgb(255, 255, 255);
+                background-color: $darkgold;
+                color: $white;
             }
         
             a {
                 text-decoration: none;
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 400;
-                font-family: Roboto Slab;
                 line-height: 22.59px;
                 padding: 0 20px 0 20px;
-                color: white;
+                color: $white;
                 text-transform: uppercase;
+
+                @media (min-width: 768px) {
+                    font-size: 18px;
+                }
             }
         }
     }

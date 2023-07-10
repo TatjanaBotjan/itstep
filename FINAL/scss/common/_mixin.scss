@@ -12,7 +12,12 @@
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     position: relative;
-    margin-left: 190px;
+    
     top: 8px;
     text-decoration: none;
+}
+
+@mixin flexrelative {
+    display: flex;
+    position: relative;
 }

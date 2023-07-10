@@ -3,35 +3,100 @@
     width: 100%;
     position: absolute;
     height: 725px;
-    top: 3824px;
+    top: 3665px;
+
+    @media (min-width: 768px) {
+        top: 3575px;
+        height: 705px;
+    }
+
+    @media (min-width: 1280px) {
+        top: 3520px;
+        height: 750px;
+    }
+
+    @media (min-width: 1510px) {
+            top: 3558px;
+            height: 760px;
+    }
 
     &__row{
-        width: 572px;
-        margin: 50px auto 0;
-        background-color: #ffffff;
+        width: 420px;
+        margin: 50px 0 0 -23px;
+        background-color: $formcolor;
         background-position: center center;
         border-color: transparent;
         border-style: solid;
         box-shadow: 0px 0px 10px 0px rgba(230, 230, 230, 1);
         padding: 25px 40px 30px 40px;
 
+        @media (min-width: 768px) {
+            width: 520px;
+            margin: 50px auto 0;
+        }
+        
+        @media (min-width: 1280px) {
+            width: 545px;
+        }
+        
+        @media (min-width: 1510px) {
+            width: 572px;
+        }
+
         &_h2{
-            font-size: 35px;
+            font-size: 24px;
             text-align: center;
             margin-bottom: 15px;
+
+            @media (min-width: 768px) {
+                font-size: 30px;
+            }
+            
+            @media (min-width: 1280px) {
+                font-size: 33px;
+            }
+            
+            @media (min-width: 1510px) {
+                font-size: 35px;
+            }
         
             &_span{
-                color: rgb(3, 63, 3);
+                color: $darkgreen;
                 font-weight: 600;
-                font-size: 35px;
+                font-size: 24px;
+
+                @media (min-width: 768px) {
+                    font-size: 30px;
+                }
+                
+                @media (min-width: 1280px) {
+                font-size: 33px;
+                }
+                
+                @media (min-width: 1510px) {
+                    font-size: 35px;
+                }
             }
         }
 
         &_p{
-            font-size: 18px;
+            font-size: 15px;
             text-align: justify;
             margin-bottom: 20px;
+
+            @media (min-width: 768px) {
+                font-size: 16px;
+            }
+            
+            @media (min-width: 1280px) {
+                font-size: 20px;
+            }
+            
+            @media (min-width: 1510px) {
+                font-size: 20px;
+            }
         }
+
         &_form{
             
             &_section{
@@ -41,39 +106,103 @@
                     font-size: 20px;
 
                     &_name{
-                        width: 500px;
+                        width: 335px;
                         height: 40px;
                         margin-bottom: 25px;
-                        border: 1px solid#d6b77a;
+                        border: 1px solid $gold;
                         border-radius: 5px;
                         padding: 20px;
+                        font-size: 16px;
+
+                        @media (min-width: 768px) {
+                            width: 435px;
+                            font-size: 18px;
+                        }
+                        
+                        @media (min-width: 1280px) {
+                            width: 460px;
+                            font-size: 20px;
+                        }
+                        
+                        @media (min-width: 1510px) {
+                            width: 500px;
+                            font-size: 20px;
+                        }
                     }
                                 
                     &_surname {
-                        width: 500px;
+                        width: 335px;
                         height: 40px;
                         margin-bottom: 25px;
-                        border: 1px solid#d6b77a;
+                        border: 1px solid $gold;
                         border-radius: 5px;
                         padding: 20px;
+                        font-size: 16px;
+
+                        @media (min-width: 768px) {
+                            width: 435px;
+                            font-size: 18px;
+                        }
+                        
+                        @media (min-width: 1280px) {
+                            width: 460px;
+                            font-size: 20px;
+                        }
+                        
+                        @media (min-width: 1510px) {
+                            width: 500px;
+                            font-size: 20px;
+                        }
                     }
 
                     &_tel {
-                        width: 500px;
+                        width: 335px;
                         height: 40px;
                         margin-bottom: 25px;
-                        border: 1px solid#d6b77a;
+                        border: 1px solid $gold;
                         border-radius: 5px;
                         padding: 20px;
+                        font-size: 16px;
+
+                        @media (min-width: 768px) {
+                            width: 435px;
+                            font-size: 18px;
+                        }
+                        
+                        @media (min-width: 1280px) {
+                            width: 460px;
+                            font-size: 20px;
+                        }
+                        
+                        @media (min-width: 1510px) {
+                            width: 500px;
+                            font-size: 20px;
+                        }
                     }
 
                     &_email {
-                        width: 500px;
+                        width: 335px;
                         height: 40px;
                         margin-bottom: 35px;
-                        border: 1px solid#d6b77a;
+                        border: 1px solid $gold;
                         border-radius: 5px;
                         padding: 20px;
+                        font-size: 16px;
+
+                        @media (min-width: 768px) {
+                            width: 435px;
+                            font-size: 18px;
+                        }
+                        
+                        @media (min-width: 1280px) {
+                            width: 460px;
+                            font-size: 20px;
+                        }
+                        
+                        @media (min-width: 1510px) {
+                            width: 500px;
+                            font-size: 20px;
+                        }
                     }
                 }
             }  
@@ -81,45 +210,99 @@
 
                 &_button {
                     border-radius: 5px;
-                    border: rgb(255, 255, 255);
+                    border: $white;
                     margin: 0 auto 30px;
-                    background-color: #d6b77a;
+                    background-color: $gold;
                     transition: color, background-color;
-                    width: 500px;
+                    width: 335px;
                     height: 40px;
+
+                    @media (min-width: 768px) {
+                        width: 435px;
+                    }
+                    
+                    @media (min-width: 1280px) {
+                        width: 460px;
+                    }
+                    
+                    @media (min-width: 1510px) {
+                        width: 500px;
+                    }
 
                     &_a{
                         @include btn;
-                        font-size: 18px;
+                        font-size: 16px;
                         font-weight: 400;
                         line-height: 22.59px;
+                        margin-left: 115px;
+
+                        @media (min-width: 768px) {
+                            font-size: 16px;
+                            margin-left: 160px;
+                        }
+                        
+                        @media (min-width: 1280px) {
+                            margin-left: 170px;
+                            font-size: 18px;
+                        }
+                        
+                        @media (min-width: 1510px) {
+                            margin-left: 190px;
+                            font-size: 18px;
+                        } 
                     }
                 }
 
                 &_button:hover {
-                    background-color: #c29c4f;
+                    background-color: $darkgold;
                 }
 
         &_agreement {
-            font-size: 15px;
+            font-size: 14px;
             padding: 0;
             text-align: justify;
-            color: rgb(73, 72, 72);
+            color: $textgrey;
             margin-bottom: 0;
+
+            @media (min-width: 768px) {
+                margin: 0 auto;
+                font-size: 14px;
+            }
+            
+            @media (min-width: 1280px) {
+                font-size: 15px;
+            }
+            
+            @media (min-width: 1510px) {
+                font-size: 15px;
+            }
         }
     }
 
     &_close_btn {
         width: 40px;
         height: 40px;
-        top: 12px;
-        border: 3px solid #d6b77a;
+        top: 55px;
+        border: 3px solid $gold;
         position: absolute;
-        margin-left: 1446px;
+        margin-left: 385px;
         display: flex;
         background: url(../img/x.svg);
         background-repeat: no-repeat;
         border-radius: 5px;
+
+        @media (min-width: 768px) {
+            margin-left: 685px;
+            top: 12px;
+        }
+        
+        @media (min-width: 1280px) {
+            margin-left: 1190px;
+        }
+        
+        @media (min-width: 1510px) {
+            margin-left: 1446px;
+        }
     }
 }
 .invis{

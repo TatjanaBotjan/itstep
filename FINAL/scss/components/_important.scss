@@ -13,7 +13,7 @@
             line-height: 1.2;
 
             @media (min-width: 768px) {
-                font-size: 45px;
+                font-size: 40px;
                 width: 70%;
             }
 
@@ -54,8 +54,8 @@
                     margin: 0 auto;
 
                     @media (min-width: 768px) {
-                        width: 80%;
-                        height: 325px;
+                        width: 70%;
+                        height: 290px;
                     }
 
                     @media (min-width: 1280px) {
@@ -87,7 +87,7 @@
                         font-size: 33px;
 
                         @media (min-width: 768px) {
-                            font-size: 35px;
+                            font-size: 30px;
                         }
 
                         @media (min-width: 1280px) {
@@ -107,9 +107,9 @@
 
                         @media (min-width: 768px) {
                             @include flexcenter;
-                            width: 80%;
+                            width: 70%;
                             margin: 0 auto 30px auto;
-                            font-size: 17px;
+                            font-size: 16px;
                         }
 
                         @media (min-width: 1280px) {
@@ -144,8 +144,8 @@
                     margin: 0 auto;
                 
                     @media (min-width: 768px) {
-                        width: 80%;
-                        height: 325px;
+                        width: 70%;
+                        height: 290px;
                     }
                 
                     @media (min-width: 1280px) {
@@ -177,7 +177,7 @@
                         font-size: 33px;
                                 
                         @media (min-width: 768px) {
-                            font-size: 35px;
+                            font-size: 30px;
                         }
                                 
                         @media (min-width: 1280px) {
@@ -196,10 +196,10 @@
                         margin-bottom: 30px;
                                 
                         @media (min-width: 768px) {
-                            width: 80%;
+                            width: 70%;
                             margin: 0 auto 30px auto;
                             @include flexcenter;;
-                            font-size: 17px;
+                            font-size: 16px;
                         }
                                 
                         @media (min-width: 1280px) {
@@ -225,8 +225,8 @@
                     margin: 0 auto;
                 
                     @media (min-width: 768px) {
-                        width: 80%;
-                        height: 325px;
+                        width: 70%;
+                        height: 290px;
                     }
                 
                     @media (min-width: 1280px) {
@@ -255,7 +255,7 @@
                     &_h2 {
                         text-align: center;
                         color: $darkgreen;
-                        font-size: 33px;
+                        font-size: 30px;
                                 
                         @media (min-width: 768px) {
                             font-size: 35px;
@@ -277,10 +277,10 @@
                         margin-bottom: 30px;
                                 
                         @media (min-width: 768px) {
-                            width: 80%;
+                            width: 70%;
                             @include flexcenter;
                             margin: 0 auto 30px auto;
-                            font-size: 17px;
+                            font-size: 16px;
                         }
                                 
                         @media (min-width: 1280px) {
