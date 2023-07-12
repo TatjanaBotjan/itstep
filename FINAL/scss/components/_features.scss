@@ -29,8 +29,20 @@
         &_p {
             text-align: center;
             font-weight: 800;
-            font-size: 55px;
+            font-size: 33px;
             color: $darkgreen;
+
+            @media (min-width: 768px) {
+                    
+                }
+            
+                @media (min-width: 1280px) {
+                   
+                }
+            
+                @media (min-width: 1920px) {
+                font-size: 55px;
+                }
         }
 
         &_block{

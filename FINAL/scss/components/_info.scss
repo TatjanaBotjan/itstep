@@ -48,14 +48,14 @@
                 margin: 140px 40px 40px 0;
             }
 
-            @media (min-width: 1510px) {
-                width: 55%;
+            @media (min-width: 1920px) {
+                width: 50%;
                 margin: 100px 40px 40px 0;
             }
 
             h2 {
                 text-align: center;
-                font-size: 35px;
+                font-size: 33px;
                 color: $darkgreen;
                 margin-bottom: 20px;
                 font-weight: 600;
@@ -72,7 +72,7 @@
                     width: 100%;
                 }
 
-                @media (min-width: 1510px) {
+                @media (min-width: 1920px) {
                     font-size: 48px;
                 }
             }
@@ -97,7 +97,7 @@
                     margin: 0 auto 30px auto;
                 }
 
-                @media (min-width: 1510px) {
+                @media (min-width: 1920px) {
                     margin-bottom: 50px;
                     font-size: 22px;
                 }

@@ -55,7 +55,8 @@
                     border-style: solid;
                     box-shadow: 0px 0px 10px 0px rgba(230, 230, 230, 1);
                     background-color: $lightgreen;
-                    width: 100%;
+                    width: 90%;
+                    margin: 0 auto;
                     
                     @media (min-width: 768px) {
                         margin: 0 auto 50px auto;
@@ -91,9 +92,8 @@
                     border-style: solid;
                     box-shadow: 0px 0px 10px 0px rgba(230, 230, 230, 1);
                     background-color: $lightgreen;
-                    width: 100%;
-                    margin-top: 50px;
-                    margin-bottom: 50px;
+                    width: 90%;
+                    margin: 50px auto;
 
                     @media (min-width: 768px) {
                         margin: 0 auto 50px auto;
@@ -135,8 +135,8 @@
                     border-style: solid;
                     box-shadow: 0px 0px 10px 0px rgba(230, 230, 230, 1);
                     background-color: $lightgreen;
-                    width: 100%;
-                    margin-bottom: 50px;
+                    width: 90%;
+                    margin: 0 auto 50px;
 
                     @media (min-width: 768px) {
                         margin: 0 auto 50px auto;
@@ -172,7 +172,8 @@
                     border-style: solid;
                     box-shadow: 0px 0px 10px 0px rgba(230, 230, 230, 1);
                     background-color: $lightgreen;
-                    width: 100%;
+                    width: 90%;
+                    margin: 0 auto;
 
                     @media (min-width: 768px) {
                         margin: 0 auto 50px auto;
@@ -204,7 +205,7 @@
 
         &_btn {
             border-radius: 5px;
-            margin: 0px 0 50px 40px;
+            margin: 0px 0 50px 45px;
             display: inline-block;
             vertical-align: top;
             padding: 9px 0px;

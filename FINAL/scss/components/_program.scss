@@ -10,9 +10,9 @@
         &_h2 {
             text-align: center;
             font-weight: 800;
-            font-size: 35px;
+            font-size: 33px;
             color: $darkgreen;
-            padding-bottom: 50px;
+            padding-bottom: 40px;
             margin-bottom: 0;
 
             @media (min-width: 768px) {
@@ -38,7 +38,7 @@
             }
 
             &_consultation{
-                width: 90%;
+                width: 85%;
                 border: 2px solid $gold;
                 background-color: $white;
                 margin: 0 auto 50px;
@@ -74,7 +74,7 @@
                 }
 
                 &_hr{
-                    width: 337px;
+                    width: 319px;
                     border: none;
                     background-color: $gold;
                     height: 2px;
@@ -113,7 +113,7 @@
                 &_objective{
                     font-size: 18px;
                     text-align: center;
-                    padding: 40px 18px 40px;
+                    padding: 30px 18px 30px;
                     margin-bottom: 0;
 
                     @media (min-width: 768px) {
@@ -137,7 +137,7 @@
                     vertical-align: top;
                     background-color: $gold;
                     transition: color, background-color 0.5s linear;
-                    left: 22%;
+                    left: 20%;
                     margin-bottom: 35px;
 
                     @media (min-width: 768px) {
@@ -179,10 +179,10 @@
             }
 
             &_individual{
-                width: 90%;
-                    border: 2px solid $gold;
-                    background-color: $white;
-                    margin: 0 auto 50px;
+                width: 85%;
+                border: 2px solid $gold;
+                background-color: $white;
+                margin: 0 auto 50px;
                 
                     @media (min-width: 768px) {
                         width: 75%;
@@ -215,7 +215,7 @@
                 }
             
                 &_hr {
-                    width: 337px;
+                    width: 319px;
                     border: none;
                     background-color: $gold;
                     height: 2px;
@@ -254,7 +254,7 @@
                 &_objective {
                     font-size: 18px;
                     text-align: center;
-                    padding: 40px 18px 40px;
+                    padding: 30px 18px 30px;
                     margin-bottom: 0;
                     
                     @media (min-width: 1280px) {
@@ -274,7 +274,7 @@
                     vertical-align: top;
                     background-color: $gold;
                     transition: color, background-color 0.5s linear;
-                    left: 22%;
+                    left: 20%;
                     margin-bottom: 35px;
                     
                     @media (min-width: 768px) {
@@ -315,7 +315,7 @@
             }
 
             &_personal{
-                width: 90%;
+                width: 85%;
                 border: 2px solid $gold;
                 background-color: $white;
                 margin: 0 auto 50px;
@@ -350,7 +350,7 @@
                 }
         
                 &_hr {
-                    width: 337px;
+                    width: 319px;
                     border: none;
                     background-color: $gold;
                     height: 2px;
@@ -389,7 +389,7 @@
                 &_objective {
                     font-size: 18px;
                     text-align: center;
-                    padding: 40px 18px 40px;
+                    padding: 30px 18px 30px;
                     margin-bottom: 0;
                     
                     @media (min-width: 1510px) {
@@ -405,7 +405,7 @@
                     vertical-align: top;
                     background-color: $gold;
                     transition: color, background-color 0.5s linear;
-                    left: 22%;
+                    left: 20%;
                     margin-bottom: 35px;
                     
                     @media (min-width: 768px) {
