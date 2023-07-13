@@ -43,7 +43,7 @@
                 font-weight: 600;
                 font-size: 22px;
                 color: $darkgreen;
-                padding-top: 15px;
+                
 
                 @media (min-width: 768px) {
                     font-weight: 800;
@@ -138,27 +138,29 @@
                 margin-top: -110px;
 
                 @media (min-width: 768px) {
-                    margin-left: -290px;
-                    margin-top: -75px;
+                        margin-left: -397px;
+                            margin-top: -94px;
                 }
 
                 @media (min-width: 1280px) {
-                    margin-left: -300px;
-                    margin-top: -75px;
+                    margin-left: -438px;
+                        margin-top: -90px;
                 }
 
                 @media (min-width: 1920px) {
-                    margin-left: -330px;
-                    margin-top: -40px;
+                        margin-left: -475px;
+                            margin-top: -88px;
                 }
                  
                 &_block{
-                    width: 520px;
-                    left: 43%;
-                    top: 50%;
+                    width: 450px;
+                    left: 59%;
+                        top: 17px;
 
                     @media (min-width: 768px) {
                         width: 680px;
+                        left: 59%;
+                            top: 17px;
                     }
 
                     @media (min-width: 1280px) {
@@ -170,7 +172,7 @@
                     }
                     
                     &_item{
-                        width: 520px;
+                        width: 450px;
 
                         @media (min-width: 768px) {
                             width: 680px;
@@ -186,7 +188,7 @@
                     }
                 
                     &_item2 {
-                        width: 520px;
+                        width: 450px;
 
                         @media (min-width: 768px) {
                             width: 680px;
@@ -207,25 +209,25 @@
                         width: 40px;
                         height: 40px;
                         background-color: $btngrey;
-                        margin-left: 265px;
+                        margin-left: 280px;
                         margin-top: 170px;
                 
                         @media (min-width: 768px) {
                             width: 40px;
                             height: 40px;
-                            margin-left: 247px;
+                            margin-left: 445px;
                             margin-top: 235px;
                         }
 
                         @media (min-width: 1280px) {
                             width: 45px;
                             height: 45px;
-                            margin-left: 256px;
+                            margin-left: 465px;
                             margin-top: 233px;
                         }
 
                         @media (min-width: 1920px) {
-                            margin-left: 270px;
+                            margin-left: 365px;
                                                                                                                      
                         }
                     }
@@ -234,24 +236,24 @@
                         width: 40px;
                         height: 40px;
                         background-color: $btngrey;
-                        margin-right: -175px;
+                        margin-right: -240px;
                         margin-top: 170px;
 
                         @media (min-width: 768px) {
                             width: 40px;
                             height: 40px;
-                            margin-right: -332px;
+                            margin-right: -356px;
                             margin-top: 233px;
                         }
                         
                         @media (min-width: 1280px) {
                             width: 45px;
                             height: 45px;
-                            margin-right: -345px;
+                            margin-right: -360px;
                         }
 
                         @media (min-width: 1920px) {
-                            margin-right: -375px;
+                            margin-right: -520px;
                         }
                     }
                 }
@@ -310,28 +312,28 @@
     &_btn_close {
         width: 40px;
         height: 40px;
-        top: -41px;
+        top: -25px;
         border: 2px solid $gold;
         position: absolute;
-        margin-left: 703px;
+        margin-left: 661px;
         display: flex;
         background: url(../img/x.svg);
         background-repeat: no-repeat;
         border-radius: 5px;
 
         @media (min-width: 768px) {
-            margin-left: 969px;
-            top: -45px;
+                margin-left: 1076px;
+                    top: -28px;
         }
 
         @media (min-width: 1280px) {
-            margin-left: 1005px;
-            top: -45px;
+            margin-left: 1113px;
+                top: -24px;
         }
 
         @media (min-width: 1920px) {
-            margin-left: 1080px;
-            top: -45px;
+                margin-left: 1195px;
+                    top: -23px;
         }
     }
 }

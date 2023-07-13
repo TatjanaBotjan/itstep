@@ -144,3 +144,28 @@ closeQuestionBtnMob.addEventListener("click", function (event) {
         questionMob.classList.add("question-invis");
     }
 });
+
+//*персональная*//
+
+let personalBtn = document.querySelector(".personal__row_services_btn");
+let personalConsultation = document.querySelector(".personal-vs");
+
+personalBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    if (personalConsultation.classList.contains("personal-vs")) {
+        personalConsultation.classList.remove("personal-vs");
+    } else {
+        personalConsultation.classList.add("personal-invs");
+    }
+});
+
+let personalvsBtn = document.querySelector(".form-personal_close_btn");
+
+personalvsBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    if (personalConsultation.classList.contains("personal-invs")) {
+        personalConsultation.classList.remove("personal-invs");
+    } else {
+        personalConsultation.classList.add("personal-vs");
+    }
+});

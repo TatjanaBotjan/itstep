@@ -1,9 +1,9 @@
-.form-escort {
+.form-personal {
     background: url(../img/fongrey.png);
     width: 100%;
     position: absolute;
-    height: 1551px;
-    top: 4398px;
+    height: 870px;
+        top: 7898px;
 
     @media (min-width: 768px) {
         top: 4156px;
@@ -24,7 +24,7 @@
 
     &__row {
         width: 350px;
-        margin: 950px auto 0;
+        margin: 279px auto 0;
         background-color: #ffffff;
         background-position: center center;
         border-color: transparent;
@@ -33,7 +33,7 @@
         padding: 25px 40px 30px 40px;
 
         @media (min-width: 768px) {
-            margin: 655px auto 0;
+            margin: 135px auto 0;
             width: 400px;
         }
 
@@ -69,41 +69,35 @@
 
             &_h3 {
                 margin-left: 0px;
-                margin-right: 65px;
                 font-size: 18px;
                 font-weight: 600;
                 padding: 10px 0;
 
-                @media (min-width: 768px) {
-                    margin-right: 90px;
-                }
+                @media (min-width: 768px) {}
 
                 @media (min-width: 1280px) {
                     font-size: 20px;
-                    margin-right: 105px;
                 }
 
                 @media (min-width: 1920px) {
                     font-size: 22px;
-                        margin-right: 231px;
+                    margin-right: 197px;
                 }
             }
 
             &_p {
-                margin-right: -55px;
+                margin-right: -32px;
                 font-size: 19px;
                 font-weight: 600;
-                padding: 8px 0px;
+                padding: 21px 0px;
                 width: 57%;
 
                 @media (min-width: 768px) {
-                    padding: 8px 19px;
+                    padding: 21px 35px;
                 }
 
                 @media (min-width: 1280px) {
                     font-size: 20px;
-                    width: 70%;
-                    padding-top: 8px;
                 }
 
                 @media (min-width: 1920px) {
@@ -286,17 +280,16 @@
 
                 @media (min-width: 768px) {
                     font-size: 18px;
-                    margin-left: 110px;
                 }
 
-                                @media (min-width: 1280px) {
-                                    margin-left: 135px;
-                                    font-size: 20px;
-                                }
-                
-                                @media (min-width: 1920px) {
-                                    margin-left: 195px;
-                                }
+                @media (min-width: 1280px) {
+                    margin-left: 135px;
+                    font-size: 20px;
+                }
+
+                @media (min-width: 1920px) {
+                    margin-left: 195px;
+                }
             }
         }
 
@@ -316,7 +309,7 @@
     &_close_btn {
         width: 42px;
         height: 40px;
-        top: 866px;
+        top: 238px;
         border: 3px solid #d6b77a;
         position: absolute;
         margin-left: 393px;
@@ -327,7 +320,7 @@
 
         @media (min-width: 768px) {
             margin-left: 583px;
-            top: 617px;
+            top: 97px;
         }
 
         @media (min-width: 1280px) {
@@ -341,10 +334,11 @@
         }
     }
 }
-.escort-vs {
+
+.personal-vs {
     display: none;
 }
 
-.escort-invs {
+.invs {
     display: block;
 }
