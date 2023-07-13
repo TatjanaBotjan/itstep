@@ -1,9 +1,9 @@
 .mobile {
     width: 100%;
     background: $lightgreen;
-    margin-top: 0;
-    height: 585px;
-    margin-top: 50px;
+    margin-top: 20px;
+   
+
 
     @media (min-width: 768px) {
        
@@ -14,8 +14,13 @@
     }
 
     &__row{
-        padding-top: 50px;
-        margin-bottom: 35px;
+        padding-top: 20px;
+        margin-bottom: 50px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 40px;
+        }
+     
         
 
         &_header{
@@ -24,22 +29,44 @@
 
             &_logo{
                 text-align: center;
+               display: flex;
+                   
 
                 &_image{
 
                    &_img{
-                        width: 125px;
-                        height: 95px;
+                        width: 120px;
+                        height: 90px;
+                        margin-left: -3px;
+
+                        @media (min-width: 768px) {
+                            width: 160px;
+                                height: 117px;
+                        }
+                        
+                            @media (min-width: 1280px) {
+                                display: none;
+                            }
                     } 
                 }
 
                 &_text{
-                    font-size: 23px;
+                    width: 46%;
+                    margin-top: 7px;
+                    text-align: left;
+                    font-size: 22px;
+                    margin-left: -3px;
                     text-shadow:
                         1px 1px rgb(219, 236, 195),
                         2px 2px #bfbabad8;
                     color: $green;
                     transition: all 1s;
+
+                    @media (min-width: 768px) {
+                            width: 100%;
+                            font-size: 30px;
+                            margin-top: 36px;
+                        }
                 }  
                 &_text:hover {
                     text-shadow:
@@ -51,23 +78,29 @@
 
 
             &_close-mobile{
-                margin: 10px -10px 0 0;
+                margin: 10px 12px 0 0;
                 border: 3px solid $gold;
                 height: 42px;
                 border-radius: 5px;
 
+                @media (min-width: 768px) {
+                        margin: 20px 12px 0 0;
+                    }
+
                 &_a{
                     background: url(../img/x.svg);
                     background-repeat: no-repeat;
-                    width: 42px;
-                    height: 41px;
+                    width: 37px;
+                    height: 35px;
                     display: flex;
+                    
                 }
             }
         }
 
         &_menu{
-            margin-bottom: 50px;
+            text-align: center;
+            position: relative;
 
             &_ul{
                 list-style: none;
@@ -75,12 +108,16 @@
                 margin-bottom: 0;
 
                 &_li{
-                    margin-bottom: 15px;
+                    margin-bottom: 10px;
                     
                     &_a{
                         text-decoration: none;
                         color: $darkgold;
-                        font-size: 30px; 
+                        font-size: 27px; 
+
+                        @media (min-width: 768px) {
+                                font-size: 33px;
+                            }
                     }
 
                     a:hover {
@@ -93,12 +130,16 @@
 
         &_connection {
             border-radius: 5px;
-            margin: 20px 0 20px 0;
+            margin: 50px 0 50px 100px;
             display: inline-block;
             vertical-align: top;
             padding: 9px 0px;
             background-color: $gold;
             transition: color, background-color 0.5s linear;
+
+            @media (min-width: 768px) {
+                    margin: 50px 0 50px 240px;
+                }
         
             :hover {
                 border-radius: 5px;
@@ -108,13 +149,17 @@
         
             a {
                 text-decoration: none;
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 400;
                 font-family: Roboto Slab;
                 line-height: 22.59px;
                 padding: 8px 20px 10px 20px;
                 color: $white;
                 text-transform: uppercase;
+
+                @media (min-width: 768px) {
+                        font-size: 18px;
+                    }
             }
         }
     }

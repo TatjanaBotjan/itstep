@@ -18,16 +18,18 @@
 
         @media (min-width: 1280px) {
             display: block;
-            width: 45%;
-            margin: -470px 0 220px 695px;
+            width: 70%;
+            margin: -519px auto 210px auto;
+                background-color: $backgroundfon;
         }
 
         @media (min-width: 1920px) {
-            margin: -435px 0 220px 940px;
+            margin: -435px auto 220px auto;
         }
 
         &_h2 {
-            font-size: 43px;
+            font-size: 50px;
+                padding: 30px;
             text-shadow:
                 1px 1px $white,
                 1px 1px $brown;
@@ -35,7 +37,7 @@
             transition: all 1s;
             font-weight: 800;
             line-height: 1.5;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
 
             @media (min-width: 1920px) {
                 font-size: 50px;
@@ -45,7 +47,8 @@
         &_author {
             font-size: 35px;
             font-weight: 400;
-            margin-left: 288px;
+            margin-left: 595px;
+            padding-bottom: 40px;
             color: $textgrey;
 
             @media (min-width: 1920px) {
@@ -67,7 +70,9 @@
             }
 
             @media (min-width: 1280px) {
-                font-size: 45px;
+                font-size: 43px;
+                margin: 0 auto;
+                width: 90%;
                 padding-bottom: 30px;
                 padding-top: 50px;
             }
@@ -88,7 +93,8 @@
             }
 
             @media (min-width: 1280px) {
-                font-size: 25px;
+                font-size: 24px;
+                margin-bottom: 10px;
             }
             
             @media (min-width: 1920px) {

@@ -15,7 +15,8 @@
         }
 
         @media (min-width: 1920px) {
-            margin: 0 auto;
+            margin-left: 415px;
+            width: 100%;
         }
 
         &_block{
@@ -36,13 +37,19 @@
             
                 @media (min-width: 768px) {
                     width: 160px;
-                    height: 115px;
+                    height: 117px;
                 }
             
                 @media (min-width: 1280px) {
-                    width: 190px;
-                    height: 145px;
+                    width: 180px;
+                    height: 135px;
                 }
+
+                                @media (min-width: 1920px) {
+                                    width: 190px;
+                                    height: 145px;
+                                    margin-right: 30px;
+                                }
             }
         }
             
@@ -64,9 +71,15 @@
                 }
             
                 @media (min-width: 1280px) {
-                    font-size: 60px;
+                    font-size: 50px;
                     width: 100%;
                 }
+
+                                @media (min-width: 1920px) {
+                                    font-size: 60px;
+                                    width: 62%;
+                                  
+                                }
             }
             
             &_text:hover {
