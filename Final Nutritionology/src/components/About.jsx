@@ -42,14 +42,14 @@ const About = () => {
     function handleCertificateClick(event) {
         let certificate = document.querySelector(".invisible");
         event.preventDefault();
-        certificate.classList.remove("invisible");
+        certificate.classList.toggle("visible");
     }
 
     function handleCertificateCloseClick(event) {
         let certificate = document.querySelector(".invisible");
         event.preventDefault();
 
-        certificate.classList.toggle("visible");
+        certificate.classList.remove("visible");
     }
 
 

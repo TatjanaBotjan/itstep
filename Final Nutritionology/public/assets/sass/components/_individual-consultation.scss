@@ -30,18 +30,20 @@
                     width: 150px;
                     height: 115px;
                     margin-top: 10px;
+                    margin-right: 67px;
+                        margin-left: -148px;
                 }
                 
                 @media (min-width: 1280px) {
                     width: 200px;
                     height: 155px;
                     margin-top: 30px;
-                    margin-right: 35px;
-                    margin-left: 0;
+                    margin-right: 14px;
+                    margin-left: -67px;
                 }
                 
                 @media (min-width: 1920px) {
-                    margin: 40px 180px 0 -130px;
+                    margin: 40px 129px 0 -251px;
                         width: 250px;
                         height: 195px;
                 }
