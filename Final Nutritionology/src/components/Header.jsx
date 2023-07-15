@@ -11,8 +11,12 @@ const Header = (props) => {
         comment: ""
     })
 
+   
+
+
     function handleFormSubmit(event) {
         event.preventDefault();
+        
         props.onQuestionAdd(form);
         setForm({
             name: "",
@@ -22,6 +26,7 @@ const Header = (props) => {
         });
        
     }
+
 
 
     function handleNameChange(event) {
@@ -53,9 +58,6 @@ const Header = (props) => {
         question.classList.remove("question-vis");
     }
 
-
-
-
     function handleMobileQuestionClick(event){
         let question = document.querySelector(".mobile-question-invis");
         event.preventDefault();
@@ -75,6 +77,26 @@ const Header = (props) => {
 
         mobile.classList.remove("mobile-vis");
     }
+
+    function handleGetQuestionClick(event) {
+        let getQuestion = document.querySelector(".gratitude-invis");
+        let question = document.querySelector(".question-invis");
+        let questionMob = document.querySelector(".mobile-question-invis");
+        event.preventDefault();
+        getQuestion.classList.toggle("gratitude-vis");
+        questionMob.classList.toggle("mobile-vis");
+        question.classList.toggle("question-vis");
+        
+    }
+
+    function handleCloseGetQuestionClick(event) {
+        let getQuestion = document.querySelector(".gratitude-invis");
+        event.preventDefault();
+
+        getQuestion.classList.remove("gratitude-vis");
+    }
+
+
 
     
     return <>
@@ -99,19 +121,19 @@ const Header = (props) => {
                     <div className="question__row_form">
                         <form className="question__row_form_section" action="" method="post" name="contact-form" onSubmit={handleFormSubmit}>
                             <div className="question__row_form_section_input">
-                                <input className="question__row_form_section_input_name" type="text" name="name" id="name" value={form.name} onChange={handleNameChange} placeholder="Ваше имя" />
+                                <input className="question__row_form_section_input_name" type="text" name="name" id="name" onChange={handleNameChange} placeholder="Ваше имя" />
                             </div>
                             <div className="question__row_form_section_input">
-                                <input className="question__row_form_section_input_tel" type="tel" name="tel" id="tel" value={form.tel} onChange={handleTelChange} placeholder="Номер телефона" />
+                                <input className="question__row_form_section_input_tel" type="tel" name="tel" id="tel" onChange={handleTelChange} placeholder="Номер телефона" />
                             </div>
                             <div className="question__row_form_section_input">
-                                <input className="question__row_form_section_input_email" type="email" name="email" id="email" value={form.email} onChange={handleEmailChange} placeholder="Email" />
+                                <input className="question__row_form_section_input_email" type="email" name="email" id="email" onChange={handleEmailChange} placeholder="Email" />
                             </div>
                             <div className="question__row_form_section_textarea">
-                                <textarea className="question__row_form_section_textarea_comment" name="comment" id="comment" value={form.comment} onChange={handleCommentChange} cols="100" rows="3" placeholder="Ваш комментарий"></textarea>
+                                <textarea className="question__row_form_section_textarea_comment" name="comment" id="comment" onChange={handleCommentChange} cols="100" rows="3" placeholder="Ваш комментарий"></textarea>
                             </div>
                         </form>
-                        <div className="question__row_button">
+                        <div className="question__row_button" onClick={handleGetQuestionClick}>
                             <a className="question__row_button_a" href="#">Записаться</a>
                         </div>
                         <p className="question__row_agreement">Отправляя свои персональные данные, Вы соглашаетесь с Положением о
@@ -168,7 +190,7 @@ const Header = (props) => {
                                 <textarea className="mobile-question__row_form_section_textarea_comment" name="comment" id="comment" value={form.comment} onChange={handleCommentChange} cols="100" rows="3" placeholder="Ваш комментарий"></textarea>
                             </div>
                         </form>
-                        <div className="mobile-question__row_button">
+                        <div className="mobile-question__row_button" onClick={handleGetQuestionClick}>
                             <a className="mobile-question__row_button_a" href="#">Записаться</a>
                         </div>
                         <p className="mobile-question__row_agreement">Отправляя свои персональные данные, Вы соглашаетесь с Положением о
@@ -177,6 +199,17 @@ const Header = (props) => {
                 </div>
             </div>
             <button className="mobile-question_close-btn" onClick={handleMobileCloseClick}></button>
+        </section>
+        <section className="gratitude gratitude-invis">
+            <div className="container">
+                <div className="gratitude__row">
+                    <hr className="gratitude__row_top" />
+                    <h2 className="gratitude__row_h2">Спасибо за Ваш вопрос!</h2>
+                    <hr className="gratitude__row_bottom" />
+                    <p className="gratitude__row_p">Ответ будет отправлен на электронную почту</p>
+                </div>
+            </div>
+            <button className="gratitude_close-btn" onClick={handleCloseGetQuestionClick}></button>
         </section>
 
     </>

@@ -6691,24 +6691,17 @@ footer {
   width: 100%;
   position: absolute;
   height: 1551px;
-  top: 4398px;
-}
-@media (min-width: 768px) {
-  .gratitude {
-    top: 4156px;
-    height: 1202px;
-  }
+  top: 0;
 }
 @media (min-width: 1280px) {
   .gratitude {
-    top: 4374px;
-    height: 827px;
+    height: 1015px;
   }
 }
 @media (min-width: 1920px) {
   .gratitude {
-    height: 955px;
-    top: 4784px;
+    height: 995px;
+    top: 13px;
   }
 }
 .gratitude__row {
@@ -6730,7 +6723,7 @@ footer {
 @media (min-width: 1280px) {
   .gratitude__row {
     margin: 141px auto 0;
-    width: 450px;
+    width: 470px;
     height: 566px;
   }
 }
@@ -6747,6 +6740,16 @@ footer {
   color: rgb(3, 63, 3);
   font-weight: 600;
 }
+@media (min-width: 1280px) {
+  .gratitude__row_h2 {
+    font-size: 39px;
+  }
+}
+@media (min-width: 1920px) {
+  .gratitude__row_h2 {
+    font-size: 40px;
+  }
+}
 .gratitude__row_top {
   position: relative;
   width: 150px;
@@ -6760,14 +6763,39 @@ footer {
   position: relative;
   width: 150px;
   display: flex;
-  margin: 20px auto 55px auto;
+  margin: 20px auto 90px auto;
   border: none;
   background-color: #d5ad5d;
   height: 2px;
 }
-.gratitude_close_btn {
-  width: 42px;
-  height: 40px;
+@media (min-width: 1280px) {
+  .gratitude__row_bottom {
+    margin: 20px auto 65px auto;
+  }
+}
+@media (min-width: 1920px) {
+  .gratitude__row_bottom {
+    margin: 20px auto 90px auto;
+  }
+}
+.gratitude__row_p {
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+@media (min-width: 1280px) {
+  .gratitude__row_p {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1920px) {
+  .gratitude__row_p {
+    font-size: 28px;
+  }
+}
+.gratitude_close-btn {
+  width: 43px;
+  height: 42px;
   top: 866px;
   border: 3px solid #d6b77a;
   position: absolute;
@@ -6778,29 +6806,29 @@ footer {
   border-radius: 5px;
 }
 @media (min-width: 768px) {
-  .gratitude_close_btn {
+  .gratitude_close-btn {
     margin-left: 583px;
     top: 617px;
   }
 }
 @media (min-width: 1280px) {
-  .gratitude_close_btn {
-    margin-left: 1223px;
-    top: 35px;
+  .gratitude_close-btn {
+    margin-left: 875px;
+    top: 101px;
   }
 }
 @media (min-width: 1920px) {
-  .gratitude_close_btn {
-    margin-left: 1848px;
-    top: 30px;
+  .gratitude_close-btn {
+    margin-left: 1249px;
+    top: 164px;
   }
 }
 
-.escort-vs {
+.gratitude-invis {
   display: none;
 }
 
-.escort-invs {
+.gratitude-vis {
   display: block;
 }
 
@@ -6814,7 +6842,7 @@ footer {
 @media (min-width: 768px) {
   .mobile-question {
     top: 0;
-    height: 735px;
+    height: 842px;
   }
 }
 .mobile-question__row {
@@ -6832,7 +6860,7 @@ footer {
 @media (min-width: 768px) {
   .mobile-question__row {
     width: 500px;
-    margin: 40px auto 0;
+    margin: 95px auto 0;
   }
 }
 .mobile-question__row_h2 {
@@ -6984,8 +7012,8 @@ footer {
 }
 @media (min-width: 768px) {
   .mobile-question_close-btn {
-    top: 41px;
-    margin-left: 696px;
+    top: 54px;
+    margin-left: 739px;
   }
 }
 

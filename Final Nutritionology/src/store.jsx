@@ -18,18 +18,14 @@ store.dispatch({
     type: "INIT",
     questions: [
         {
-            id: 1,
             name: "Ваше имя",
             tel: "Номер телефона",
             email: "Email",
-            image: "no-image.png",
             comment: "comment"
 
         }
-    ],
+    ]
 
-
-    lastIdQuestion: 1
 });
 
 module.exports = { store, history };
