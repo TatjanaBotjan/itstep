@@ -1,0 +1,103 @@
+.analyzes{
+    background: url(../img/fongrey.png);
+    width: 100%;
+    position: absolute;
+    height: 805px;
+    top: 345px;
+
+    @media (min-width: 768px) {
+            top: 345px;
+            height: 815px;
+        }
+    
+        @media (min-width: 1280px) {
+            top: 440px;
+            height: 876px;
+        }
+    
+    @media (min-width: 1920px) {
+        top: 626px;
+        height: 1003px;
+    }
+
+    &__row{
+        z-index: 100000;
+        position: relative;
+        width: 900px;
+        margin: 50px auto 0;
+        background-color: #ffffff;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+        box-shadow: 0px 0px 10px 0px rgb(230, 230, 230);
+        padding: 25px 40px 30px 40px;
+
+        @media (min-width: 768px) {
+                width: 710px;
+            }
+
+        @media (min-width: 1280px) {
+            margin: 82px auto 0;
+        }
+
+        @media (min-width: 1920px) {
+            margin: 157px auto 0;
+        }
+
+        &_h2{
+            text-align: center;
+            padding-bottom: 30px;
+            font-size: 25px;
+
+            @media (min-width: 768px) {
+                padding-bottom: 10px;
+            }
+
+            @media (min-width: 1280px) {
+                font-size: 30px;
+                margin: 82px auto 0;
+            }
+        }
+
+        &_list{
+            font-size: 20px;
+            margin-left: 60px;
+        }
+    }
+
+        &_close_btn {
+            width: 43px;
+            height: 43px;
+            top: 12px;
+            border: 3px solid #d6b77a;
+            position: absolute;
+            margin-left: 1446px;
+            display: flex;
+            background: url(../img/x.svg);
+            background-repeat: no-repeat;
+            border-radius: 5px;
+
+            @media (min-width: 768px) {
+                    margin-left: 861px;
+                    top: 9px;
+                }
+
+            @media (min-width: 1280px) {
+                    top: 40px;
+                    margin-left: 994px;
+                }
+
+            @media (min-width: 1920px) {
+                top: 115px;
+                margin-left: 1310px;
+            }
+        }
+}
+
+.individual-hidden{
+    display: none;
+}
+
+.individual-unhidden {
+    display: block;
+}

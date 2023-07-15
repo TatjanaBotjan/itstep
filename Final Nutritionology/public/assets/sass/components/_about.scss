@@ -1,0 +1,349 @@
+.about{
+    background-image: url(../img/fonAbout.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+
+    &__row{
+        position: relative;
+
+        &_greetings{
+            display: flex;
+
+            &_img {
+                width: 100px;
+                height: 75px;
+                margin-top: 2px;
+
+                @media (min-width: 768px) {
+                    margin-top: 10px;
+                    width: 150px;
+                    height: 115px;
+                    margin-right: 40px;
+                    margin-left: -30px;
+                }
+
+                @media (min-width: 1280px) {
+                    margin-top: 30px;
+                        margin-right: 125px;
+                        width: 200px;
+                        height: 155px;
+                        margin-left: 0px;
+                }
+
+                @media (min-width: 1920px) {
+                    margin: 40px 200px 0 -130px;
+                    width: 250px;
+                    height: 195px;
+                }
+            }
+
+            &_h2{
+                margin-bottom: 260px;
+                text-align: center;
+                font-weight: 600;
+                font-size: 22px;
+                color: $darkgreen;
+                
+
+                @media (min-width: 768px) {
+                    font-weight: 800;
+                    font-size: 37px;
+                    padding-top: 25px;
+                }
+
+                @media (min-width: 1280px) {
+                    font-size: 50px;
+                    margin-top: 30px;
+                }
+
+                @media (min-width: 1920px) {
+                    margin-top: 55px;
+                    font-size: 60px;
+                }
+            }
+        }
+
+
+        &_info{
+            display: flex;
+            margin-top: -90px;
+
+            @media (min-width: 768px) {
+                margin-top: -80px;
+            }
+
+            @media (min-width: 1280px) {
+                margin-top: 0;
+            }
+
+            &_img{
+                display: none;
+
+                @media (min-width: 768px) {
+                    display: block;
+                    border-radius: 60px;
+                    width: 35%;
+                    border-radius: 60px;
+                    margin-top: -60px;
+                    height: 320px;
+                }
+
+                @media (min-width: 1280px) {
+                    width: 37%;
+                    height: 539px;
+                    margin: -100px -15px 30px 0;
+                }
+
+                @media (min-width: 1920px) {
+                    width: 35%;
+                    height: 570px;
+                    margin-right: 20px;
+                }                               
+            }
+
+            &_p{
+                width: 90%;
+                margin: -100px auto 0;
+                line-height: 1.5;
+                font-size: 18px;
+                text-align: center;
+
+                @media (min-width: 768px) {
+                    width: 53%;
+                    margin: -37px auto 160px;
+                    line-height: 1.7;
+                    font-size: 16px;
+                    text-align: justify;
+                }
+                
+                @media (min-width: 1280px) {
+                    padding-top: 0;
+                    
+                    width: 50%;
+                        margin: 15px auto;
+                    font-size: 19px;
+                }
+
+                @media (min-width: 1920px) {
+                    padding-top: 50px;
+                    width: 45%;
+                    font-size: 20px;
+                    margin: -37px 160px 0 auto;
+                }
+            }
+
+            &_carousel{                               
+                position: absolute;
+                margin-left: -295px;
+                margin-top: -110px;
+
+                @media (min-width: 768px) {
+                        margin-left: -397px;
+                            margin-top: -94px;
+                }
+
+                @media (min-width: 1280px) {
+                    margin-left: -438px;
+                        margin-top: -90px;
+                }
+
+                @media (min-width: 1920px) {
+                        margin-left: -475px;
+                            margin-top: -88px;
+                }
+                 
+                &_block{
+                    width: 450px;
+                    left: 59%;
+                        top: 17px;
+
+                    @media (min-width: 768px) {
+                        width: 680px;
+                        left: 59%;
+                            top: 17px;
+                    }
+
+                    @media (min-width: 1280px) {
+                        width: 700px;
+                    }
+
+                    @media (min-width: 1920px) {
+                        width: 750px;
+                    }
+                    
+                    &_item{
+                        width: 450px;
+
+                        @media (min-width: 768px) {
+                            width: 680px;
+                        }
+                        
+                        @media (min-width: 1280px) {
+                            width: 700px;
+                        }
+
+                        @media (min-width: 1920px) {
+                             width: 750px;
+                        }
+                    }
+                
+                    &_item2 {
+                        width: 450px;
+
+                        @media (min-width: 768px) {
+                            width: 680px;
+                        }
+                        
+                        @media (min-width: 1280px) {
+                            width: 700px;
+                        }
+
+                        @media (min-width: 1920px) {
+                            width: 750px;
+                        }
+                    }
+                }
+
+                 &_button {
+                    &_left {
+                        width: 40px;
+                        height: 40px;
+                        background-color: $btngrey;
+                        margin-left: 280px;
+                        margin-top: 170px;
+                
+                        @media (min-width: 768px) {
+                            width: 40px;
+                            height: 40px;
+                            margin-left: 445px;
+                            margin-top: 235px;
+                        }
+
+                        @media (min-width: 1280px) {
+                            width: 45px;
+                            height: 45px;
+                            margin-left: 465px;
+                            margin-top: 233px;
+                        }
+
+                        @media (min-width: 1920px) {
+                            margin-left: 365px;
+                                                                                                                     
+                        }
+                    }
+                
+                    &_right {
+                        width: 40px;
+                        height: 40px;
+                        background-color: $btngrey;
+                        margin-right: -240px;
+                        margin-top: 170px;
+
+                        @media (min-width: 768px) {
+                            width: 40px;
+                            height: 40px;
+                            margin-right: -356px;
+                            margin-top: 233px;
+                        }
+                        
+                        @media (min-width: 1280px) {
+                            width: 45px;
+                            height: 45px;
+                            margin-right: -360px;
+                        }
+
+                        @media (min-width: 1920px) {
+                            margin-right: -520px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &_btn{
+            border-radius: 5px;
+            margin: 40px 0 45px 83px;
+            display: inline-block;
+            vertical-align: top;
+            padding: 9px 0px;
+            background-color: $gold;
+            transition: color, background-color 0.5s linear;
+
+            @media (min-width: 768px) {
+                margin: -100px 0 30px 42px;
+            }
+
+            @media (min-width: 1280px) {
+                margin: -115px 0 20px 78px;
+            }
+
+            @media (min-width: 1920px) {
+                margin: -150px 0 20px 78px;;
+            }
+
+            :hover {
+                border-radius: 5px;
+                margin: 9px 0 20px 0;
+                padding: 10px 20px 10px 20px;
+                background-color: $darkgold;
+                color: $white;
+
+                @media (min-width: 768px) {
+                    padding: 8px 20px 10px 20px;
+                }
+            }
+
+            &_a {
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22.59px;
+                padding: 0 20px 0 20px;
+                color: $white;
+                text-transform: uppercase;
+
+                @media (min-width: 768px) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    &_btn_close {
+        width: 40px;
+        height: 40px;
+        top: -25px;
+        border: 2px solid $gold;
+        position: absolute;
+        margin-left: 661px;
+        display: flex;
+        background: url(../img/x.svg);
+        background-repeat: no-repeat;
+        border-radius: 5px;
+
+        @media (min-width: 768px) {
+                margin-left: 1076px;
+                    top: -28px;
+        }
+
+        @media (min-width: 1280px) {
+            margin-left: 1113px;
+                top: -24px;
+        }
+
+        @media (min-width: 1920px) {
+                margin-left: 1195px;
+                    top: -23px;
+        }
+    }
+}
+
+.invisible{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+

@@ -1,0 +1,183 @@
+.mobile {
+    width: 100%;
+    background: $lightgreen;
+    margin-top: 20px;
+    display: none;
+   
+
+
+    @media (min-width: 768px) {
+       
+    }
+
+    @media (min-width: 1280px) {
+        display: none;
+    }
+
+    &__row{
+        padding-top: 20px;
+        margin-bottom: 50px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 40px;
+        }
+     
+        
+
+        &_header{
+            display: flex;
+            justify-content: space-between;
+
+            &_logo{
+                text-align: center;
+               display: flex;
+            margin-left: -145px;
+                   
+
+                &_image{
+
+                   &_img{
+                        width: 120px;
+                        height: 90px;
+                        margin-left: -3px;
+
+                        @media (min-width: 768px) {
+                            width: 160px;
+                                height: 117px;
+                        }
+                        
+                            @media (min-width: 1280px) {
+                                display: none;
+                            }
+                    } 
+                }
+
+                &_text{
+                    width: 46%;
+                    margin-top: 7px;
+                    text-align: left;
+                    font-size: 22px;
+                    margin-left: -3px;
+                    text-shadow:
+                        1px 1px rgb(219, 236, 195),
+                        2px 2px #bfbabad8;
+                    color: $green;
+                    transition: all 1s;
+
+                    @media (min-width: 768px) {
+                            width: 100%;
+                            font-size: 30px;
+                            margin-top: 36px;
+                        }
+                }  
+                &_text:hover {
+                    text-shadow:
+                        1px 1px $white,
+                        2px 2px $brown;
+                    color: $darkgold;
+                }
+            }
+
+
+            &_close-mobile{
+                margin: 25px -130px 0 0;
+                border: 3px solid $gold;
+                height: 42px;
+                border-radius: 5px;
+
+                @media (min-width: 768px) {
+                        
+                    }
+
+                &_a{
+                    background: url(../img/x.svg);
+                    background-repeat: no-repeat;
+                    width: 37px;
+                    height: 35px;
+                    display: flex;
+                    
+                }
+            }
+        }
+
+        &_menu{
+            text-align: center;
+            position: relative;
+
+            &_ul{
+                list-style: none;
+                padding-left: 0;
+                margin-bottom: 0;
+
+                &_li{
+                    margin-bottom: 10px;
+                    
+                    &_a{
+                        text-decoration: none;
+                        color: $darkgold;
+                        font-size: 27px; 
+
+                        @media (min-width: 768px) {
+                                font-size: 33px;
+                            }
+                    }
+
+                    a:hover {
+                        color: $darkgold;
+                        text-decoration: underline;
+                    } 
+                }
+            }
+        }
+
+        &_connection {
+            border-radius: 5px;
+            margin: 50px 0 50px 100px;
+            display: inline-block;
+            vertical-align: top;
+            padding: 9px 0px;
+            background-color: $gold;
+            transition: color, background-color 0.5s linear;
+
+            @media (min-width: 768px) {
+                    margin: 50px 0 50px 240px;
+                }
+        
+            :hover {
+                border-radius: 5px;
+                background-color: $darkgold;
+                color: $white;
+            }
+        
+            &_a {
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: Roboto Slab;
+                line-height: 22.59px;
+                padding: 8px 20px 10px 20px;
+                color: $white;
+                text-transform: uppercase;
+
+                @media (min-width: 768px) {
+                        font-size: 18px;
+                    }
+            }
+        }
+    }
+}
+
+.mobile-invis{
+
+    @media (min-width: 1280px) {
+            display: none;
+        }
+    
+}
+
+.mobile-vis {
+    display: block;
+    position: relative;
+    top: -167px;
+    margin-bottom: -115px;
+}

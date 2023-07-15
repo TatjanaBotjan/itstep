@@ -1,0 +1,39 @@
+.certificate{
+    display: none;
+ 
+    &__row{
+       
+        &_carousel{
+            width: 790px;
+            position: absolute;
+            left: 43%;
+            top: 50%;
+            margin-left: -61px;
+            margin-top: -573px;
+            
+
+            &_item2{
+                width: 766px;
+            }
+        }
+
+        &_button{
+            &_left{
+                width: 60px;
+                height: 60px;
+                background-color: rgb(181, 177, 177);
+                margin-left: 387px;
+                margin-top: -330px
+            }
+
+            &_right {
+                width: 60px;
+                height: 60px;
+                background-color: rgb(181, 177, 177);
+                margin-right: -80px;
+                margin-top: -330px
+            }
+        }
+    }
+}
+

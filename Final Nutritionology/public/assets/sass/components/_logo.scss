@@ -1,0 +1,107 @@
+.logo {
+    text-align: center;
+
+    &__row {
+        @include flexbetween;
+
+
+        @media (min-width: 768px) {}
+
+        @media (min-width: 1280px) {
+            display: inline-block;
+
+        }
+
+        @media (min-width: 1920px) {}
+
+        &_block {
+            width: 70%;
+            text-align: center;
+            padding: 20px 0 10px 0;
+            display: flex;
+
+            @media (min-width: 768px) {
+                width: 100%;
+            }
+
+            &_img {
+
+                &_image {
+                    width: 120px;
+                    height: 90px;
+
+                    @media (min-width: 768px) {
+                        width: 160px;
+                        height: 117px;
+                    }
+
+                    @media (min-width: 1280px) {
+                        width: 180px;
+                        height: 135px;
+                    }
+
+                    @media (min-width: 1920px) {
+                        width: 190px;
+                        height: 145px;
+                        margin-right: 30px;
+                    }
+                }
+            }
+
+            &_text {
+                width: 46%;
+                display: flex;
+                align-items: center;
+                font-size: 22px;
+                line-height: 1.2;
+                text-align: left;
+                text-shadow:
+                    1px 1px rgb(219, 236, 195),
+                    2px 2px #bfbabad8;
+                color: $green;
+                transition: all 1s;
+
+                @media (min-width: 768px) {
+                    width: 50%;
+                    font-size: 30px;
+                    padding-bottom: 10px;
+                }
+
+                @media (min-width: 1280px) {
+                    font-size: 50px;
+                    width: 100%;
+                }
+
+                @media (min-width: 1920px) {
+                    font-size: 60px;
+                    width: 100%;
+
+                }
+            }
+            
+            &_text:hover {
+                text-shadow:
+                    1px 1px $white,
+                    2px 2px $brown;
+                color: $darkgold;
+            }
+
+            &_open-mobile {
+                @media (min-width: 1280px) {
+                    display: none;
+                }
+                                      
+                &_a{
+                    background-image: url(../img/burger.png);
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    margin: 45px 20px 0 0;
+                    background-repeat: no-repeat;
+                }                               
+            }
+        }
+    }
+}  
+
+

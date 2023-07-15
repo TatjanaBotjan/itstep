@@ -1,30 +1,30 @@
+
 const React = require("react");
-
+const Mobile = require("./Mobile.jsx");
+const Logo = require("./Logo.jsx");
+const Header = require("./Header.jsx");
+const Main = require("./Main.jsx");
+const About= require("./About.jsx");
+const Services = require("./Services.jsx");
+const Personal = require("./Personal.jsx");
+const Individual = require("./Individual.jsx");
+const Footer = require("./Footer.jsx");
 const { Route, Switch } = require("react-router");
-const Logo = require("./common/Logo.jsx");
-const Header = require("./common/Header.jsx");
-const Footer = require("./common/Footer.jsx");
-/*8const MainView = require("./main/MainView.jsx");
-const SearchView = require("./search/SearchView.jsx");
-const SignUp = require("./auth/SignUp.jsx");
-const SignIn = require("./auth/SignIn.jsx");*/
-
 
 const AppView = () => {
-
-    return <>
+    return <div>
+        <Mobile/>
         <Logo />
         <Header />
         <Switch>
-            <Route exact path="/" component={MainView} />
-            <Route path="/search" component={SearchView} />
-            <Route path="/signup" component={SignUp} />
-            <Route path="/signin" component={SignIn} />
+            <Route exact path="/" component={Main} />
+            <Route path="/about" component={About} />
+            <Route path="/services" component={Services} />
+            <Route path="/personal" component={Personal} />
+            <Route path="/individual" component={Individual} />
         </Switch>
         <Footer />
-    </>;
-
+    </div>;
 }
-
 
 module.exports = AppView;

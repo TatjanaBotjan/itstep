@@ -27,7 +27,7 @@
             @media (min-width: 1280px) {
                 font-size: 45px;
                 margin-left: 285px;
-                width: 100%;
+                width: 50%;
                 padding-top: 30px;
                 margin-bottom: 40px;
             }
@@ -43,6 +43,7 @@
             
             @media (min-width: 1280px) {
                 display: flex;
+                justify-content: space-between;
             }
        
             &_nutrition{
@@ -50,7 +51,7 @@
                 margin: 0 auto;
 
                 @media (min-width: 1280px) {
-                    
+                    width: 30%;
                 }
 
                 @media (min-width: 1920px) {
@@ -139,7 +140,7 @@
                 margin: 0 auto;
             
                 @media (min-width: 1280px) {
-                
+                    width: 30%;
                     margin: 50px 0 0 0;
                 }
 
@@ -228,6 +229,19 @@
                 width: 85%;
                 margin: 0 auto;
 
+                @media (min-width: 768px) {
+                        
+                    }
+                
+                    @media (min-width: 1280px) {
+                       
+                        width: 30%;
+                    }
+                
+                    @media (min-width: 1920px) {
+                      
+                    }
+
                 &_img {
                     width: 90%;
                         height: 200px;
@@ -242,6 +256,7 @@
                     @media (min-width: 1280px) {
                         height: 230px;
                         width: 100%;
+                       
                     }
                 
                     @media (min-width: 1920px) {

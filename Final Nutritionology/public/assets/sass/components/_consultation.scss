@@ -1,0 +1,322 @@
+.consultation{
+    background-color: $backgroundfon;
+    width: 100%;
+    position: absolute;
+    height: 807px;
+    top: 1909px;
+    
+
+    @media (min-width: 768px) {
+        top: 1074px;
+        height: 761px;
+    }
+
+    @media (min-width: 1280px) {
+        top: 1292px;
+        height: 755px;
+    }
+
+    @media (min-width: 1920px) {
+            top: 1318px;
+                height: 935px;
+    }
+
+    &__row{
+        width: 350px;
+        margin: 90px auto -23px;
+        background-color: $formcolor;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+        box-shadow: 0px 0px 10px 0px rgba(230, 230, 230, 1);
+        padding: 25px 40px 30px 40px;
+
+        @media (min-width: 768px) {
+            width: 520px;
+            margin: 105px auto 0;
+        }
+        
+        @media (min-width: 1280px) {
+            width: 545px;
+            margin: 60px auto -23px;
+        }
+        
+        @media (min-width: 1920px) {
+            width: 572px;
+            margin: 130px auto 0;
+        }
+
+        &_h2{
+            font-size: 23px;
+            text-align: center;
+            margin-bottom: 15px;
+
+            @media (min-width: 768px) {
+                font-size: 30px;
+             
+            }
+            
+            @media (min-width: 1280px) {
+                font-size: 33px;
+            }
+            
+            @media (min-width: 1920px) {
+                font-size: 35px;
+            }
+        
+            &_span{
+                color: $darkgreen;
+                font-weight: 600;
+                font-size: 23px;
+
+                @media (min-width: 768px) {
+                    font-size: 30px;
+                }
+                
+                @media (min-width: 1280px) {
+                font-size: 33px;
+                }
+                
+                @media (min-width: 1920px) {
+                    font-size: 35px;
+                }
+            }
+        }
+
+        &_p{
+            font-size: 13px;
+            text-align: center;
+            margin-bottom: 20px;
+
+            @media (min-width: 768px) {
+                font-size: 16px;
+                text-align: justify;
+            }
+            
+            @media (min-width: 1280px) {
+                font-size: 20px;
+            }
+            
+            @media (min-width: 1920px) {
+                font-size: 20px;
+            }
+        }
+
+        &_form{
+            
+            &_section{
+                text-align: center;
+
+                &_input{
+                    font-size: 20px;
+
+                    &_name{
+                        width: 270px;
+                        height: 40px;
+                        margin-bottom: 20px;
+                        border: 1px solid $gold;
+                        border-radius: 5px;
+                        padding: 20px;
+                        font-size: 16px;
+
+                        @media (min-width: 768px) {
+                            width: 435px;
+                            font-size: 18px;
+                        }
+                        
+                        @media (min-width: 1280px) {
+                            width: 460px;
+                            font-size: 20px;
+                        }
+                        
+                        @media (min-width: 1920px) {
+                            width: 500px;
+                            font-size: 20px;
+                        }
+                    }
+                                
+                    &_surname {
+                    width: 270px;
+                        height: 40px;
+                        margin-bottom: 20px;
+                        border: 1px solid $gold;
+                        border-radius: 5px;
+                        padding: 20px;
+                        font-size: 16px;
+
+                        @media (min-width: 768px) {
+                            width: 435px;
+                            font-size: 18px;
+                        }
+                        
+                        @media (min-width: 1280px) {
+                            width: 460px;
+                            font-size: 20px;
+                        }
+                        
+                        @media (min-width: 1920px) {
+                            width: 500px;
+                            font-size: 20px;
+                        }
+                    }
+
+                    &_tel {
+                        width: 270px;
+                        height: 40px;
+                        margin-bottom: 20px;
+                        border: 1px solid $gold;
+                        border-radius: 5px;
+                        padding: 20px;
+                        font-size: 16px;
+
+                        @media (min-width: 768px) {
+                            width: 435px;
+                            font-size: 18px;
+                        }
+                        
+                        @media (min-width: 1280px) {
+                            width: 460px;
+                            font-size: 20px;
+                        }
+                        
+                        @media (min-width: 1920px) {
+                            width: 500px;
+                            font-size: 20px;
+                        }
+                    }
+
+                    &_email {
+                        width: 270px;
+                        height: 40px;
+                        margin-bottom: 30px;
+                        border: 1px solid $gold;
+                        border-radius: 5px;
+                        padding: 20px;
+                        font-size: 16px;
+
+                        @media (min-width: 768px) {
+                            width: 435px;
+                            font-size: 18px;
+                        }
+                        
+                        @media (min-width: 1280px) {
+                            width: 460px;
+                            font-size: 20px;
+                        }
+                        
+                        @media (min-width: 1920px) {
+                            width: 500px;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }  
+        } 
+
+                &_button {
+                    border-radius: 5px;
+                    border: $white;
+                    margin: 0 auto 20px;
+                    background-color: $gold;
+                    transition: color, background-color;
+                    width: 270px;
+                    height: 40px;
+
+                    @media (min-width: 768px) {
+                        width: 435px;
+                    }
+                    
+                    @media (min-width: 1280px) {
+                        width: 460px;
+                    }
+                    
+                    @media (min-width: 1920px) {
+                        width: 500px;
+                    }
+
+                    &_a{
+                        @include btn;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 22.59px;
+                        margin-left: 82px;
+
+                        @media (min-width: 768px) {
+                            font-size: 16px;
+                            margin-left: 160px;
+                        }
+                        
+                        @media (min-width: 1280px) {
+                            margin-left: 170px;
+                            font-size: 18px;
+                        }
+                        
+                        @media (min-width: 1920px) {
+                            margin-left: 185px;
+                            font-size: 18px;
+                        } 
+                    }
+                }
+
+                &_button:hover {
+                    background-color: $darkgold;
+                }
+
+        &_agreement {
+            font-size: 13px;
+            padding: 0;
+            text-align: justify;
+            color: $textgrey;
+            margin-bottom: 0;
+
+            @media (min-width: 768px) {
+                margin: 0 auto;
+                font-size: 14px;
+            }
+            
+            @media (min-width: 1280px) {
+                font-size: 15px;
+            }
+            
+            @media (min-width: 1920px) {
+                font-size: 15px;
+            }
+        }
+    }
+
+    &_close_btn {
+        width: 43px;
+            height: 42px;
+        top: 48px;
+        border: 3px solid $gold;
+        position: absolute;
+        margin-left: 394px;
+        display: flex;
+        background: url(../img/x.svg);
+        background-repeat: no-repeat;
+        border-radius: 5px;
+
+        @media (min-width: 768px) {
+            margin-left: 749px;
+                top: 65px;
+        }
+        
+        @media (min-width: 1280px) {
+            top: 18px;
+                margin-left: 910px;
+            
+        }
+        
+        @media (min-width: 1920px) {
+            margin-left: 1238px;
+                top: 89px;
+        }
+    }
+}
+.invis{
+    display: none;
+}
+
+.vis {
+    display: block;
+}

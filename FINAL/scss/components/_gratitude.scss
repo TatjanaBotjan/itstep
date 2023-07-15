@@ -1,0 +1,115 @@
+.gratitude {
+    background: $backgroundfon;
+    width: 100%;
+    position: absolute;
+    height: 1551px;
+    top: 4398px;
+
+    @media (min-width: 768px) {
+        top: 4156px;
+        height: 1202px;
+    }
+
+    @media (min-width: 1280px) {
+        top: 4374px;
+        height: 827px;
+    }
+
+    @media (min-width: 1920px) {
+        height: 955px;
+        top: 4784px;
+    }
+
+
+
+    &__row {
+        width: 350px;
+        margin: 950px auto 0;
+        background-color: #ffffff;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+        box-shadow: 0px 0px 10px 0px rgba(230, 230, 230, 1);
+        padding: 25px 40px 30px 40px;
+
+        @media (min-width: 768px) {
+            margin: 655px auto 0;
+            width: 400px;
+        }
+
+        @media (min-width: 1280px) {
+            margin: 141px auto 0;
+                width: 450px;
+                height: 566px;
+        }
+
+        @media (min-width: 1920px) {
+            margin: 205px auto 0;
+            width: 590px;
+        }
+
+        &_h2{
+                font-size: 40px;
+                    margin: 30px auto;
+                    text-align: center;
+                    color: rgb(3, 63, 3);
+                    font-weight: 600;
+        }
+
+                &_top{
+                    position: relative;
+                        width: 150px;
+                        display: flex;
+                        margin: 55px auto 20px auto;
+                        border: none;
+                        background-color: #d5ad5d;
+                        height: 3px;
+                }
+
+                                &_bottom {
+                                    position: relative;
+                                        width: 150px;
+                                        display: flex;
+                                        margin: 20px auto 55px auto;
+                                        border: none;
+                                        background-color: #d5ad5d;
+                                        height: 2px;
+                                }
+    }
+
+    &_close_btn {
+        width: 42px;
+        height: 40px;
+        top: 866px;
+        border: 3px solid #d6b77a;
+        position: absolute;
+        margin-left: 393px;
+        display: flex;
+        background: url(../img/x.svg);
+        background-repeat: no-repeat;
+        border-radius: 5px;
+
+        @media (min-width: 768px) {
+            margin-left: 583px;
+            top: 617px;
+        }
+
+        @media (min-width: 1280px) {
+            margin-left: 1223px;
+            top: 35px;
+        }
+
+        @media (min-width: 1920px) {
+            margin-left: 1848px;
+            top: 30px;
+        }
+    }
+}
+
+.escort-vs {
+    display: none;
+}
+
+.escort-invs {
+    display: block;
+}

@@ -1,0 +1,55 @@
+.nutrition{
+    background-color: $lightgreen;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__row{
+        
+        &_top{
+            position: relative;
+            width: 150px;
+            display: flex;
+            margin: 0 auto 20px auto;
+            border: none;
+            background-color: $hrgold;
+            height: 3px;        
+        }
+
+        &_bottom {
+            position: relative;
+            width: 150px;
+            display: flex;
+            margin: 20px auto 0 auto;
+            border: none;
+            background-color: $hrgold;
+            height: 2px;     
+        }
+
+        &_p{
+            color: $textgrey;
+            width: 90%;
+            margin: 0 auto;
+            font-size: 18px;
+            text-align: justify;
+
+            @media (min-width: 768px) {
+                margin: 0 auto;
+           
+                text-align: justify;
+                
+            }
+
+            @media (min-width: 1280px) {
+                font-size: 20px;
+                width: 90%;
+                text-align: center;
+            }
+
+            @media (min-width: 1510px) {
+                font-size: 22px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}

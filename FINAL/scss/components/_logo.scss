@@ -3,7 +3,7 @@
     
     &__row {
         @include flexbetween;
-        margin: 0 25px 20px 25px;
+        
 
         @media (min-width: 768px) {
             
@@ -11,12 +11,12 @@
 
         @media (min-width: 1280px) {
             display: inline-block;
-            margin: 0 auto;
+           
         }
 
         @media (min-width: 1920px) {
-            margin-left: 415px;
-            width: 100%;
+           
+          
         }
 
         &_block{
@@ -58,6 +58,7 @@
                 display: flex;
                 align-items: center;
                 font-size: 22px;
+                line-height: 1.2;
                 text-align: left;
                 text-shadow:
                     1px 1px rgb(219, 236, 195),
@@ -68,6 +69,7 @@
                 @media (min-width: 768px) {
                     width: 50%;
                     font-size: 30px;
+                    padding-bottom: 10px;
                 }
             
                 @media (min-width: 1280px) {
@@ -77,7 +79,7 @@
 
                                 @media (min-width: 1920px) {
                                     font-size: 60px;
-                                    width: 62%;
+                                    width: 100%;
                                   
                                 }
             }

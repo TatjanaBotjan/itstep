@@ -1,0 +1,328 @@
+.important{
+    background-color: $lightgreen;
+
+    .container{
+        padding: 0;
+    }
+   
+    &__row{
+        width: 100%;
+
+        &_text{
+            text-align: center;
+            font-size: 33px;
+            color: $darkgreen;
+            padding-top: 30px;
+            margin: 0 auto 30px auto;
+            @include flexcenter;
+            line-height: 1.2;
+            font-weight: 600;
+            width: 64%;
+
+            @media (min-width: 768px) {
+                font-size: 38px;
+                width: 70%;
+            }
+
+            @media (min-width: 1280px) {
+                font-size: 45px;
+                margin-left: 285px;
+                width: 50%;
+                padding-top: 30px;
+                margin-bottom: 40px;
+            }
+
+            @media (min-width: 1920px) {
+                width: 47%;
+                margin: 0 auto;
+                font-size: 50px;
+            }
+        }
+
+        &_info{
+            
+            @media (min-width: 1280px) {
+                display: flex;
+                justify-content: space-between;
+            }
+       
+            &_nutrition{
+                width: 85%;
+                margin: 0 auto;
+
+                @media (min-width: 1280px) {
+                    width: 30%;
+                }
+
+                @media (min-width: 1920px) {
+                   
+                }
+                
+                &_img{
+                    width: 90%;
+                    height: 280px;
+                    @include flexcenter;
+                    margin: 0 auto;
+
+                    @media (min-width: 768px) {
+                        width: 70%;
+                        height: 280px;
+                    }
+
+                    @media (min-width: 1280px) {
+                        height: 230px;
+                        width: 100%;
+                    }
+
+                    @media (min-width: 1920px) {
+                        height: 250px;
+                    }
+                    
+                }
+
+                &_text{
+                    padding: 25px 5px 10px 5px;
+                    box-sizing: border-box;
+                    text-align: center;
+                    
+
+                    @media (min-width: 1280px) {
+                        text-align: justify;
+                        padding: 25px 10px 10px 10px;
+                        margin: 0;
+                    }
+
+                    &_h2{
+                        text-align: center;
+                        color: $darkgreen;
+                        font-size: 30px;
+
+                        @media (min-width: 768px) {
+                            font-size: 30px;
+                        }
+
+                        @media (min-width: 1280px) {
+                            font-size: 33px;
+                            margin-bottom: 20px;
+                        }
+                        
+                        @media (min-width: 1920px) {
+                            
+                        }
+                    }
+
+                    &_p{
+                        font-size: 16px;
+                        text-align: justify;
+                        margin-bottom: 30px;
+
+                        @media (min-width: 768px) {
+                            @include flexcenter;
+                            width: 70%;
+                            margin: 0 auto 30px auto;
+                            font-size: 16px;
+                        }
+
+                        @media (min-width: 1280px) {
+                            font-size: 18px;
+                            width: 100%;
+                        }
+
+                        @media (min-width: 1920px) {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+
+            &_vitamins{
+                width: 85%;
+                margin: 0 auto;
+            
+                @media (min-width: 1280px) {
+                    width: 30%;
+                    margin: 50px 0 0 0;
+                }
+
+                @media (min-width: 1920px) {
+                   
+                }
+
+                &_img {
+                    width: 90%;
+                        height: 200px;
+                    @include flexcenter;
+                    margin: 0 auto;
+                    height: 280px;
+                
+                    @media (min-width: 768px) {
+                        width: 70%;
+                        height: 280px;
+                    }
+                
+                    @media (min-width: 1280px) {
+                        height: 230px;
+                        width: 100%;
+                    }
+                
+                    @media (min-width: 1920px) {
+                        height: 250px;
+                    }
+                
+                }
+
+                &_text {
+                    padding: 25px 5px 10px 5px;
+                    box-sizing: border-box;
+                    text-align: center;
+                    
+                                
+                    @media (min-width: 1280px) {
+                        text-align: justify;
+                        padding: 25px 10px 10px 10px;
+                        margin: 0;
+                    }
+                                
+                    &_h2 {
+                        text-align: center;
+                        color: $darkgreen;
+                        font-size: 30px;
+                                
+                        @media (min-width: 768px) {
+                            font-size: 30px;
+                        }
+                                
+                        @media (min-width: 1280px) {
+                            font-size: 33px;
+                            margin-bottom: 20px;
+                        }
+                                
+                        @media (min-width: 1920px) {
+                      
+                        }
+                    }
+                                
+                    &_p {
+                        font-size: 16px;
+                        text-align: justify;
+                        margin-bottom: 30px;
+                                
+                        @media (min-width: 768px) {
+                            width: 70%;
+                            margin: 0 auto 30px auto;
+                            @include flexcenter;;
+                            font-size: 16px;
+                        }
+                                
+                        @media (min-width: 1280px) {
+                            font-size: 18px;
+                            width: 100%;
+                        }
+                                
+                        @media (min-width: 1920px) {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+
+            &_lifestyle{
+                width: 85%;
+                margin: 0 auto;
+                
+
+                @media (min-width: 768px) {
+                        
+                    }
+                
+                    @media (min-width: 1280px) {
+                       
+                        width: 30%;
+                    }
+                
+                    @media (min-width: 1920px) {
+                      
+                    }
+
+                &_img {
+                    width: 90%;
+                        height: 280px;
+                    @include flexcenter;
+                    margin: 0 auto;
+                    height: 280px;
+                
+                    @media (min-width: 768px) {
+                        width: 70%;
+                        height: 280px;
+                    }
+                
+                    @media (min-width: 1280px) {
+                        height: 230px;
+                        width: 100%;
+                       
+                    }
+                
+                    @media (min-width: 1920px) {
+                        height: 250px;
+                    }
+                
+                }
+
+                &_text {
+                    padding: 25px 5px 30px 5px;
+                    box-sizing: border-box;
+                    text-align: center;
+                    
+                                
+                    @media (min-width: 1280px) {
+                        text-align: justify;
+                        padding: 25px 10px 10px 10px;
+                        margin: 0;
+                    }
+                                
+                    &_h2 {
+                        text-align: center;
+                        color: $darkgreen;
+                        font-size: 30px;
+                                
+                        @media (min-width: 768px) {
+                            font-size: 35px;
+                        }
+                                
+                        @media (min-width: 1280px) {
+                            font-size: 33px;
+                            margin-bottom: 20px;
+                        }
+                                
+                        @media (min-width: 1920px) {
+                            
+                        }
+                    }
+                                
+                    &_p {
+                        font-size: 16px;
+                        text-align: justify;
+                        margin-bottom: 30px;
+                                
+                        @media (min-width: 768px) {
+                            width: 70%;
+                            @include flexcenter;
+                            margin: 0 auto 30px auto;
+                            font-size: 16px;
+                        }
+                                
+                        @media (min-width: 1280px) {
+                            font-size: 18px;
+                            width: 100%;
+                        }
+                                
+                        @media (min-width: 1920px) {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+        

@@ -1,0 +1,23 @@
+@mixin flexbetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flexcenter {
+    display: flex;
+    align-items: center;
+}
+
+@mixin btn {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    position: relative;
+    
+    top: 8px;
+    text-decoration: none;
+}
+
+@mixin flexrelative {
+    display: flex;
+    position: relative;
+}

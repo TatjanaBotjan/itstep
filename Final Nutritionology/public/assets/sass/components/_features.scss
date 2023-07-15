@@ -1,0 +1,241 @@
+.features {
+    background-color: $lightgreen;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+
+    @media (min-width: 768px) {}
+    
+        @media (min-width: 1280px) {
+            margin-bottom: 50px;
+        }
+    
+        @media (min-width: 1920px) {}
+
+
+    &__row {
+
+        &_top {
+            position: relative;
+            width: 150px;
+            margin: 0 auto 20px;
+            border: none;
+            background-color: #d5ad5d;
+            height: 3px;
+
+            @media (min-width: 768px) {
+                    
+                }
+            
+                @media (min-width: 1280px) {
+                  
+                }
+            
+                @media (min-width: 1920px) {
+                    
+                }
+        }
+
+        &_bottom {
+            position: relative;
+            width: 150px;
+            margin: 20px auto 40px;
+            border: none;
+            background-color: #d5ad5d;
+            height: 2px;
+            
+
+            @media (min-width: 768px) {
+          
+            }
+            
+                @media (min-width: 1280px) {}
+            
+                @media (min-width: 1920px) {}
+        }
+
+        &_h2 {
+            text-align: center;
+            font-weight: 800;
+            font-size: 33px;
+            color: $darkgreen;
+
+            @media (min-width: 768px) {
+                    font-size: 38px;
+                }
+            
+                @media (min-width: 1280px) {
+                font-size: 45px;
+                }
+            
+                @media (min-width: 1920px) {
+                font-size: 55px;
+                }
+        }
+
+        &_block{
+    
+            @media (min-width: 768px) {}
+            
+                @media (min-width: 1280px) {
+                    display: flex;
+                        justify-content: space-around;
+                }
+            
+                @media (min-width: 1920px) {}
+
+            &_one{
+                text-align: center;
+                
+
+                @media (min-width: 768px) {}
+                
+                    @media (min-width: 1280px) {
+                       
+                    }
+                
+                    @media (min-width: 1920px) {}
+                &_image{
+                    background-image: url(../img/base.svg);
+                    height: 85px;
+                    background-repeat: no-repeat;
+                    margin-left: 142px;
+
+                    @media (min-width: 768px) {
+                        height: 110px;
+                        margin-left: 277px;
+                    }
+                    
+                        @media (min-width: 1280px) {
+                            margin-left: 64px;
+                            margin-top: 8px;
+                        }
+                    
+                        @media (min-width: 1920px) {
+                            margin-left: 80px;
+                        }
+                    
+                }
+
+                &_p{
+                    font-size: 18px;
+                    color: $textgrey;
+
+                    @media (min-width: 768px) {
+                        font-size: 20px;
+                        }
+                    
+                        @media (min-width: 1280px) {
+                            font-size: 23px;
+                                padding-top: 20px;
+                        }
+                    
+                        @media (min-width: 1920px) {
+                            font-size: 28px;
+                        }
+                }
+            }
+
+            &_two {
+                text-align: center;
+                
+                
+                    @media (min-width: 768px) {}
+                
+                    @media (min-width: 1280px) {}
+                
+                    @media (min-width: 1920px) {}
+                &_image {
+                    background-image: url(../img/puzzle.svg);
+                    height: 85px;
+                    background-repeat: no-repeat;
+                    margin-left: 142px;
+
+                    @media (min-width: 768px) {
+                        margin-left: 277px;
+                        height: 110px;
+                    }
+                    
+                        @media (min-width: 1280px) {
+                        height: 120px;
+                        margin-left: 84px;
+                        }
+                    
+                                                @media (min-width: 1920px) {
+                                                    font-size: 28px;
+                                                    margin-left: 105px;
+                                                }
+                }
+            
+                &_p {
+                    color: $textgrey;
+                    font-size: 18px;
+                    
+                        @media (min-width: 768px) {
+                            font-size: 20px;
+                        }
+                    
+                        @media (min-width: 1280px) {
+                            font-size: 23px;
+                            padding-top: 20px;
+                        }
+                    
+                        @media (min-width: 1920px) {
+                            font-size: 28px;
+                        }
+                }
+            }
+
+            &_three {
+                text-align: center;
+                
+                
+                    @media (min-width: 768px) {}
+                
+                    @media (min-width: 1280px) {}
+                
+                    @media (min-width: 1920px) {}
+                &_image {
+                background-image: url(../img/exp.svg);
+                height: 85px;
+                background-repeat: no-repeat;
+                margin-left: 142px;
+
+                @media (min-width: 768px) {
+                    margin-left: 277px;
+                    height: 110px;
+                }
+                
+                    @media (min-width: 1280px) {
+                        height: 120px;
+                        margin-left: 68px;
+
+                    }
+                
+                    @media (min-width: 1920px) {
+                        margin-left: 77px;
+                    }
+            }
+            
+                &_p {
+                    color: $textgrey;
+                    font-size: 18px;
+
+                    @media (min-width: 768px) {
+                        font-size: 20px;
+                    }
+                    
+                        @media (min-width: 1280px) {
+                            font-size: 23px;
+                                padding-top: 20px;
+                        }
+                    
+                                                @media (min-width: 1920px) {
+                                                    font-size: 28px;
+                                                }
+                }
+            }
+        }
+    }
+
+}

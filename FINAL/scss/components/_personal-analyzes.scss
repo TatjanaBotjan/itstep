@@ -1,0 +1,50 @@
+.analyzes {
+    background: url(../img/fongrey.png);
+    width: 100%;
+    position: absolute;
+    height: 805px;
+    top: 5530px;
+
+    &__row {
+        width: 900px;
+        margin: 50px auto 0;
+        background-color: #ffffff;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+        box-shadow: 0px 0px 10px 0px rgb(230, 230, 230);
+        padding: 25px 40px 30px 40px;
+
+        &_h2 {
+            text-align: center;
+            padding-bottom: 30px;
+            font-size: 30px;
+        }
+
+        &_list {
+            font-size: 20px;
+            margin-left: 60px;
+        }
+    }
+
+    &_close_btn {
+        width: 40px;
+        height: 40px;
+        top: 12px;
+        border: 3px solid #d6b77a;
+        position: absolute;
+        margin-left: 1446px;
+        display: flex;
+        background: url(../img/x.svg);
+        background-repeat: no-repeat;
+        border-radius: 5px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.unhidden {
+    display: block;
+}

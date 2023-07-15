@@ -19,12 +19,14 @@
         @media (min-width: 1280px) {
             display: block;
             width: 70%;
-            margin: -519px auto 210px auto;
+            margin: -519px auto 115px auto;
                
         }
 
         @media (min-width: 1920px) {
             margin: -435px auto 220px auto;
+            width: 49%;
+                margin: -435px auto 115px 822px;
         }
 
         &_h2 {
@@ -52,7 +54,7 @@
             color: $textgrey;
 
             @media (min-width: 1920px) {
-                margin-left: 960px;
+                margin-left: 629px;
             }
         }
     }
@@ -73,8 +75,8 @@
                 font-size: 43px;
                 margin: 0 auto;
                 width: 90%;
-                padding-bottom: 30px;
-                padding-top: 50px;
+                padding-bottom: 40px;
+                padding-top: 125px;
             }
 
             @media (min-width: 1920px) {
