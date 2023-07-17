@@ -7,7 +7,7 @@
 
     @media (min-width: 768px) {
         top: 1074px;
-            height: 761px;
+        height: 761px;
         
     }
 
@@ -54,15 +54,15 @@
         }
 
         &_h2{
-            font-size: 40px;
+            font-size: 35px;
             margin: 30px auto;
             text-align: center;
-            color: rgb(3, 63, 3);
+            color: $darkgreen;
             font-weight: 600;
 
             @media (min-width: 768px) {
-                    font-size: 38px;
-                }
+                font-size: 35px;
+            }
 
             @media (min-width: 1280px) {
                 font-size: 39px;
@@ -147,7 +147,7 @@
         }
 
         @media (min-width: 1920px) {
-            margin-left: 1249px;
+            margin-left: 1254px;
             top: 164px;
         }
     }

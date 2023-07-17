@@ -1654,7 +1654,7 @@ header {
   border: 1px solid #d6b77a;
   border-radius: 5px;
   padding: 20px;
-  font-size: 16px;
+  font-size: 18px;
 }
 @media (min-width: 768px) {
   .consultation__row_form_section_input_email {
@@ -1671,10 +1671,17 @@ header {
 @media (min-width: 1920px) {
   .consultation__row_form_section_input_email {
     width: 500px;
-    font-size: 20px;
   }
 }
 .consultation__row_button {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  position: relative;
+  top: 8px;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 22.59px;
+  margin-left: 82px;
   border-radius: 5px;
   border: white;
   margin: 0 auto 20px;
@@ -1682,6 +1689,7 @@ header {
   transition: color, background-color;
   width: 270px;
   height: 40px;
+  font-size: 16px;
 }
 @media (min-width: 768px) {
   .consultation__row_button {
@@ -1696,34 +1704,6 @@ header {
 @media (min-width: 1920px) {
   .consultation__row_button {
     width: 500px;
-  }
-}
-.consultation__row_button_a {
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  position: relative;
-  top: 8px;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22.59px;
-  margin-left: 82px;
-}
-@media (min-width: 768px) {
-  .consultation__row_button_a {
-    font-size: 16px;
-    margin-left: 160px;
-  }
-}
-@media (min-width: 1280px) {
-  .consultation__row_button_a {
-    margin-left: 170px;
-    font-size: 18px;
-  }
-}
-@media (min-width: 1920px) {
-  .consultation__row_button_a {
-    margin-left: 185px;
     font-size: 18px;
   }
 }
@@ -1779,7 +1759,7 @@ header {
 }
 @media (min-width: 1920px) {
   .consultation_close_btn {
-    margin-left: 1238px;
+    margin-left: 1245px;
     top: 89px;
   }
 }
@@ -1790,6 +1770,13 @@ header {
 
 .vis {
   display: block;
+}
+
+.form-error {
+  color: red;
+  margin-top: -25px;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
 .program__row {
@@ -6756,7 +6743,7 @@ footer {
   }
 }
 .gratitude__row_h2 {
-  font-size: 40px;
+  font-size: 35px;
   margin: 30px auto;
   text-align: center;
   color: rgb(3, 63, 3);
@@ -6764,7 +6751,7 @@ footer {
 }
 @media (min-width: 768px) {
   .gratitude__row_h2 {
-    font-size: 38px;
+    font-size: 35px;
   }
 }
 @media (min-width: 1280px) {
@@ -6852,7 +6839,7 @@ footer {
 }
 @media (min-width: 1920px) {
   .gratitude_close-btn {
-    margin-left: 1249px;
+    margin-left: 1254px;
     top: 164px;
   }
 }

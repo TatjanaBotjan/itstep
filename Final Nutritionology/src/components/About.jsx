@@ -14,51 +14,50 @@ const About = () => {
         surname: "",
         tel: "",
         email: ""
-    }); 
+    });
 
     function validate() {
         let isValid = true;
-        if (form.name == "") {
-            formError.name = "Поле не заполнено";
+        const errors = {};
+
+        if (form.name.trim() === "") {
+            errors.name = "Поле не заполнено";
             isValid = false;
-        } else {
-            formError.name = "";
         }
-        if (form.surname == "") {
-            formError.surname = "Поле не заполнено";
+
+        if (form.surname.trim() === "") {
+            errors.surname = "Поле не заполнено";
             isValid = false;
-        } else {
-            formError.surname = "";
         }
-        if (form.tel == "") {
-            formError.tel = "Поле не заполнено";
+
+        if (form.tel.trim() === "") {
+            errors.tel = "Поле не заполнено";
             isValid = false;
-        } else {
-            formError.tel = "";
         }
-        if (form.email == "") {
-            formError.email = "Поле не заполнено";
+
+        if (form.email.trim() === "") {
+            errors.email = "Поле не заполнено";
             isValid = false;
-        } else {
-            formError.email = "";
         }
-        setFormError({ ...formError });
+
+        setFormError(errors);
         return isValid;
     }
 
+
     function handleFormSubmit(event) {
+
         event.preventDefault();
-        if (!validate()) {
-            return false;
+        if (validate()) {
+            props.onQuestionAdd(form);
+            setForm({
+                name: "",
+                surname: "",
+                tel: "",
+                email: ""
+            });
         }
-        props.onQuestionAdd(form);
-        setForm({
-            name: "",
-            surname: "",
-            tel: "",
-            email: ""
-        });
-        
+
     }
 
 
@@ -78,6 +77,7 @@ const About = () => {
     function handleEmailChange(event) {
         setForm({ ...form, email: event.target.value });
     }
+
 
 
     function handleCertificateClick(event) {
@@ -115,10 +115,10 @@ const About = () => {
     function handleGetQuestionClick(event) {
         let getservices = document.querySelector(".gratitude-invis");
         let consultation = document.querySelector(".invis");
-        
+
         event.preventDefault();
         getservices.classList.toggle("gratitude-vis");
-        
+
         consultation.classList.toggle("vis");
 
     }
@@ -129,58 +129,58 @@ const About = () => {
             <div className="container">
                 <div className="about__row">
                     <div className="about__row_greetings">
-                        <img className="about__row_greetings_img" src="/public/assets/img/logo.png" alt="С заботой о здоровье!" title="С заботой о здоровье!"/>
+                        <img className="about__row_greetings_img" src="/public/assets/img/logo.png" alt="С заботой о здоровье!" title="С заботой о здоровье!" />
                         <h2 className="about__row_greetings_h2">Рада приветствовать вас!</h2>
                     </div>
-                        <div className="about__row_info">
-                            <p className="about__row_info_p">Меня зовут Наталья Селюк. Я сертифицированный нутрициолог - специалист по питанию и образу
+                    <div className="about__row_info">
+                        <p className="about__row_info_p">Меня зовут Наталья Селюк. Я сертифицированный нутрициолог - специалист по питанию и образу
                             жизни. Расскажу вам, как при помощи индивидуально подобранного питания и нутрицевтиков изменить
                             качество вашей жизни и жизнь вашей семьи. Мои знания - это результат долгого и познавательного обучения у профессионалов
                             в области нутрициологии и натуропатии</p>
-                        <img className="about__row_info_img" src="/public/assets/img/aboutImg.jpg" alt="foto"/>
-                            <div className="about__row_info_carousel carousel-invisible">
-                                <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
-                                    <div className="carousel-inner about__row_info_carousel_block">
-                                        <div className="carousel-item active about__row_info_carousel_block_item">
-                                            <img src="/public/assets/img/certificate1.png" className="d-block w-100" alt="..."/>
-                                            <div className="carousel-caption d-none d-md-block"></div>
-                                        </div>
-                                        <div className="carousel-item about__row_info_carousel_block_item2">
-                                        <img src="/public/assets/img/certificate2.jpg" className="d-block w-100" alt="..."/>
-                                        </div>
-                                        <div className="carousel-item about__row_info_carousel_block_item2">
-                                        <img src="/public/assets/img/certificate3.jpg" className="d-block w-100" alt="..."/>
-                                        </div>
-                                        <div className="carousel-item about__row_info_carousel_block_item2">
-                                        <img src="/public/assets/img/certificate4.jpg" className="d-block w-100" alt="..."/>
-                                        </div>
-                                        <div className="carousel-item about__row_info_carousel_block_item2">
-                                        <img src="/public/assets/img/certificate5.jpg" className="d-block w-100" alt="..."/>
-                                        </div>
-                                        <div className="carousel-item about__row_info_carousel_block_item2">
-                                        <img src="/public/assets/img/certificate6.jpg" className="d-block w-100" alt="..."/>
-                                        </div>
-                                        <div className="carousel-item about__row_info_carousel_block_item2">
-                                        <img src="/public/assets/img/certificate7.png" className="d-block w-100" alt="..."/>
-                                        </div>
-                                        <div className="carousel-item about__row_info_carousel_block_item2">
-                                        <img src="/public/assets/img/certificate8.png" className="d-block w-100" alt="..."/>
-                                        </div>
+                        <img className="about__row_info_img" src="/public/assets/img/aboutImg.jpg" alt="foto" />
+                        <div className="about__row_info_carousel carousel-invisible">
+                            <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
+                                <div className="carousel-inner about__row_info_carousel_block">
+                                    <div className="carousel-item active about__row_info_carousel_block_item">
+                                        <img src="/public/assets/img/certificate1.png" className="d-block w-100" alt="..." />
+                                        <div className="carousel-caption d-none d-md-block"></div>
                                     </div>
-                                    <button className="carousel-control-prev about__row_info_carousel_button_left" type="button"
-                                        data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span className="visually-hidden">Предыдущий</span>
-                                    </button>
-                                    <button className="carousel-control-next about__row_info_carousel_button_right" type="button"
-                                        data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span className="visually-hidden">Следующий</span>
-                                    </button>
+                                    <div className="carousel-item about__row_info_carousel_block_item2">
+                                        <img src="/public/assets/img/certificate2.jpg" className="d-block w-100" alt="..." />
+                                    </div>
+                                    <div className="carousel-item about__row_info_carousel_block_item2">
+                                        <img src="/public/assets/img/certificate3.jpg" className="d-block w-100" alt="..." />
+                                    </div>
+                                    <div className="carousel-item about__row_info_carousel_block_item2">
+                                        <img src="/public/assets/img/certificate4.jpg" className="d-block w-100" alt="..." />
+                                    </div>
+                                    <div className="carousel-item about__row_info_carousel_block_item2">
+                                        <img src="/public/assets/img/certificate5.jpg" className="d-block w-100" alt="..." />
+                                    </div>
+                                    <div className="carousel-item about__row_info_carousel_block_item2">
+                                        <img src="/public/assets/img/certificate6.jpg" className="d-block w-100" alt="..." />
+                                    </div>
+                                    <div className="carousel-item about__row_info_carousel_block_item2">
+                                        <img src="/public/assets/img/certificate7.png" className="d-block w-100" alt="..." />
+                                    </div>
+                                    <div className="carousel-item about__row_info_carousel_block_item2">
+                                        <img src="/public/assets/img/certificate8.png" className="d-block w-100" alt="..." />
+                                    </div>
                                 </div>
-                                <button className="about_btn_close" onClick={handleCertificateCloseClick}></button>
+                                <button className="carousel-control-prev about__row_info_carousel_button_left" type="button"
+                                    data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Предыдущий</span>
+                                </button>
+                                <button className="carousel-control-next about__row_info_carousel_button_right" type="button"
+                                    data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Следующий</span>
+                                </button>
                             </div>
+                            <button className="about_btn_close" onClick={handleCertificateCloseClick}></button>
                         </div>
+                    </div>
                     <div className="about__row_btn" onClick={handleCertificateClick}>
                         <span className="about__row_btn_a" href="#">Мои сертификаты</span>
                     </div>
@@ -190,11 +190,11 @@ const About = () => {
         <section className="nutrition">
             <div className="container">
                 <div className="nutrition__row">
-                    <hr className="nutrition__row_top"/>
-                        <p className="nutrition__row_p">Питание - это обыденный и рутинный процесс для каждого из нас, но именно в питании кроется ключ к вашему здоровью и
-                            здоровью вашей семьи. Это ключ к исцелению болезней и обретению прекрасного самочувствие, любви к себе и к своему
-                            отражению в зеркале.</p>
-                    <hr className="nutrition__row_bottom"/>
+                    <hr className="nutrition__row_top" />
+                    <p className="nutrition__row_p">Питание - это обыденный и рутинный процесс для каждого из нас, но именно в питании кроется ключ к вашему здоровью и
+                        здоровью вашей семьи. Это ключ к исцелению болезней и обретению прекрасного самочувствие, любви к себе и к своему
+                        отражению в зеркале.</p>
+                    <hr className="nutrition__row_bottom" />
                 </div>
             </div>
         </section>
@@ -202,7 +202,7 @@ const About = () => {
             <div className="container">
                 <div className="services__row">
                     <div className="services__row_img">
-                        <img className="services__row_img_image" src="/public/assets/img/foto11.png" alt="Фото"/>
+                        <img className="services__row_img_image" src="/public/assets/img/foto11.png" alt="Фото" />
                     </div>
                     <div className="services__row_blocks">
                         <div className="services__row_blocks_top">
@@ -237,29 +237,30 @@ const About = () => {
                         <form className="consultation__row_form_section" action="" method="post" name="contact-form" onSubmit={handleFormSubmit}>
                             <div className="consultation__row_form_section_input">
                                 <input className="consultation__row_form_section_input_name" type="text" name="name" id="name" value={form.name} onChange={handleNameChange}
-                                    placeholder="Ваше имя"/>
-                                    {formError.name != "" && <div>{formError.name}</div>}
+                                    placeholder="Ваше имя" />
+                                {formError.name && <div className="form-error">{formError.name}</div>}
                             </div>
                             <div className="consultation__row_form_section_input">
                                 <input className="consultation__row_form_section_input_surname" type="text" name="name" id="name" value={form.surname} onChange={handleSurnameChange}
-                                    placeholder="Ваша фамилия"/>
-                                 {formError.surname != "" && <div>{formError.surname}</div>}
+                                    placeholder="Ваша фамилия" />
+                                {formError.surname && <div className="form-error">{formError.surname}</div>}
                             </div>
                             <div className="consultation__row_form_section_input">
                                 <input className="consultation__row_form_section_input_tel" type="tel" name="tel" id="tel" value={form.tel} onChange={handleTelChange}
-                                    placeholder="Номер телефона"/>
-                                    {formError.tel != "" && <div>{formError.tel}</div>}
+                                    placeholder="Номер телефона" />
+                                {formError.tel && <div className="form-error">{formError.tel}</div>}
                             </div>
                             <div className="consultation__row_form_section_input">
-                                <input className="consultation__row_form_section_input_email" type="email" name="email" id="email" value={form.tel} onChange={handleEmailChange}
-                                    placeholder="Email"/>
-                                    {formError.email != "" && <div>{formError.email}</div>}
+                                <input className="consultation__row_form_section_input_email" type="email" name="email" id="email" value={form.email} onChange={handleEmailChange}
+                                    placeholder="Email" />
+                                {formError.email && <div className="form-error">{formError.email}</div>}
                             </div>
+                            <button className="consultation__row_button" type="submit" onClick={handleGetQuestionClick} >Отправить</button>
                         </form>
-                        <div className="consultation__row_button" onClick={handleGetQuestionClick} >
+                        {/* <div className="consultation__row_button" onClick={handleGetQuestionClick} >
                             <a className="consultation__row_button_a" href="#">Записаться</a>
-                        </div>
-                            <p className="consultation__row_agreement">Отправляя свои персональные данные, Вы соглашаетесь с Положением о
+                        </div> */}
+                        <p className="consultation__row_agreement">Отправляя свои персональные данные, Вы соглашаетесь с Положением о
                             персональных данных</p>
                     </div>
                 </div>
