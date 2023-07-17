@@ -3113,7 +3113,7 @@ header {
 }
 
 .form-individual {
-  background: url(../img/fongrey.png);
+  background-color: rgba(115, 110, 110, 0.2705882353);
   width: 100%;
   position: absolute;
   height: 1551px;
@@ -3464,7 +3464,7 @@ header {
 }
 
 .form-escort {
-  background: url(../img/fongrey.png);
+  background-color: rgba(115, 110, 110, 0.2705882353);
   width: 100%;
   position: absolute;
   height: 1551px;
@@ -6611,5 +6611,50 @@ footer {
 }
 
 .escort-invs {
+  display: block;
+}
+
+.carousel__row_top {
+  display: flex;
+}
+.carousel__row_top_img {
+  transition: 1s;
+}
+.carousel__row_top_img:hover {
+  transform: img(1.2);
+}
+.carousel__row_bottom {
+  display: flex;
+}
+.carousel__row_bottom_one {
+  width: 200px;
+  height: 150px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.carousel__row_bottom_two {
+  width: 200px;
+  height: 150px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.carousel__row_bottom_three {
+  width: 200px;
+  height: 150px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.carousel__row_bottom_four {
+  width: 200px;
+  height: 150px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.carousel-invisible {
+  display: none;
+}
+
+.carousel-visible {
   display: block;
 }/*# sourceMappingURL=style.css.map */

@@ -24,10 +24,10 @@
 
                 @media (min-width: 1280px) {
                     margin-top: 30px;
-                        margin-right: 125px;
-                        width: 200px;
-                        height: 155px;
-                        margin-left: 0px;
+                    margin-right: 125px;
+                    width: 200px;
+                    height: 155px;
+                    margin-left: 0px;
                 }
 
                 @media (min-width: 1920px) {
@@ -118,9 +118,8 @@
                 
                 @media (min-width: 1280px) {
                     padding-top: 0;
-                    
                     width: 50%;
-                        margin: 15px auto;
+                    margin: 15px auto;
                     font-size: 19px;
                 }
 
@@ -138,29 +137,29 @@
                 margin-top: -110px;
 
                 @media (min-width: 768px) {
-                        margin-left: -397px;
-                            margin-top: -94px;
+                    margin-left: -397px;
+                    margin-top: -94px;
                 }
 
                 @media (min-width: 1280px) {
                     margin-left: -438px;
-                        margin-top: -90px;
+                    margin-top: -90px;
                 }
 
                 @media (min-width: 1920px) {
-                        margin-left: -475px;
-                            margin-top: -88px;
+                    margin-left: -475px;
+                    margin-top: -88px;
                 }
                  
                 &_block{
                     width: 450px;
                     left: 59%;
-                        top: 17px;
+                    top: 17px;
 
                     @media (min-width: 768px) {
                         width: 680px;
                         left: 59%;
-                            top: 17px;
+                        top: 17px;
                     }
 
                     @media (min-width: 1280px) {
@@ -322,27 +321,27 @@
         border-radius: 5px;
 
         @media (min-width: 768px) {
-                margin-left: 1076px;
-                    top: -28px;
+            margin-left: 1076px;
+            top: -28px;
         }
 
         @media (min-width: 1280px) {
             margin-left: 1113px;
-                top: -24px;
+            top: -24px;
         }
 
         @media (min-width: 1920px) {
-                margin-left: 1195px;
-                    top: -23px;
+            margin-left: 1195px;
+            top: -23px;
         }
     }
 }
 
-.invisible{
+.carousel-invisible{
     display: none;
 }
 
-.visible{
+.carousel-visible{
     display: block;
 }
 

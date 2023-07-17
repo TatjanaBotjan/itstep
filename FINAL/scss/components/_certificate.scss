@@ -1,5 +1,5 @@
-.certificate{
-    display: none;
+.carousel{
+   
  
     &__row{
        
@@ -37,3 +37,10 @@
     }
 }
 
+.invisible{
+    display: none;
+}
+
+.visible {
+    display: block;
+}

@@ -6,22 +6,27 @@
     top: 0;
 
     @media (min-width: 768px) {
+        top: 1074px;
+            height: 761px;
         
     }
 
     @media (min-width: 1280px) {
         height: 1015px;
+        top: 1254px;
       
     }
 
     @media (min-width: 1920px) {
         height: 995px;
-        top: 13px;
+        top: 1242px;
     }
 
 
 
     &__row {
+        position: relative;
+        z-index: 1000000000;
         width: 350px;
         margin: 950px auto 0;
         background-color: #ffffff;
@@ -32,14 +37,14 @@
         padding: 25px 40px 30px 40px;
 
         @media (min-width: 768px) {
-            margin: 655px auto 0;
-            width: 400px;
+            margin: 133px auto 0;
+            width: 425px;
         }
 
         @media (min-width: 1280px) {
             margin: 141px auto 0;
-            width: 470px;
-            height: 566px;
+            width: 480px;
+            height: 550px;
         }
 
         @media (min-width: 1920px) {
@@ -55,12 +60,16 @@
             color: rgb(3, 63, 3);
             font-weight: 600;
 
+            @media (min-width: 768px) {
+                    font-size: 38px;
+                }
+
             @media (min-width: 1280px) {
                 font-size: 39px;
             }
 
             @media (min-width: 1920px) {
-                font-size: 40px;
+                font-size: 50px;
             }
         }
 
@@ -83,6 +92,10 @@
             background-color: #d5ad5d;
             height: 2px;
 
+            @media (min-width: 768px) {
+                    margin: 20px auto 45px auto;
+                }
+
             @media (min-width: 1280px) {
                 margin: 20px auto 65px auto;
             }
@@ -93,12 +106,15 @@
         }
 
         &_p{
-            font-size: 20px;
+            font-size: 21px;
             text-align: center;
-            margin: 0 auto;
+            margin: 0 auto 55px;
+
+            
 
             @media (min-width: 1280px) {
                     font-size: 24px;
+                    margin: 0 auto;
                 }
 
             @media (min-width: 1920px) {
@@ -121,8 +137,8 @@
         border-radius: 5px;
 
         @media (min-width: 768px) {
-            margin-left: 583px;
-            top: 617px;
+            margin-left: 703px;
+                top: 91px;
         }
 
         @media (min-width: 1280px) {

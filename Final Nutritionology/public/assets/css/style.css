@@ -1133,11 +1133,11 @@ header {
   }
 }
 
-.invisible {
+.carousel-invisible {
   display: none;
 }
 
-.visible {
+.carousel-visible {
   display: block;
 }
 
@@ -2294,13 +2294,13 @@ header {
   background-color: rgba(115, 110, 110, 0.2705882353);
   width: 100%;
   position: absolute;
-  height: 807px;
-  top: 2823px;
+  height: 818px;
+  top: 165px;
 }
 @media (min-width: 768px) {
   .initial-consultation {
     top: 165px;
-    height: 745px;
+    height: 818px;
   }
 }
 @media (min-width: 1280px) {
@@ -2317,7 +2317,7 @@ header {
 }
 .initial-consultation__row {
   width: 350px;
-  margin: 90px auto -23px;
+  margin: 103px auto -23px;
   background-color: #ffffff;
   background-position: center center;
   border-color: transparent;
@@ -2328,7 +2328,7 @@ header {
 @media (min-width: 768px) {
   .initial-consultation__row {
     width: 520px;
-    margin: 70px auto 0;
+    margin: 103px auto 0;
   }
 }
 @media (min-width: 1280px) {
@@ -2600,10 +2600,10 @@ header {
 .initial-consultation_close_btn {
   width: 43px;
   height: 42px;
-  top: 48px;
+  top: 62px;
   border: 3px solid #d6b77a;
   position: absolute;
-  margin-left: 394px;
+  margin-left: 748px;
   display: flex;
   background: url(../img/x.svg);
   background-repeat: no-repeat;
@@ -2611,8 +2611,8 @@ header {
 }
 @media (min-width: 768px) {
   .initial-consultation_close_btn {
-    margin-left: 746px;
-    top: 28px;
+    margin-left: 748px;
+    top: 62px;
   }
 }
 @media (min-width: 1280px) {
@@ -3141,7 +3141,7 @@ header {
 }
 @media (min-width: 1280px) {
   .analyzes__row {
-    margin: 82px auto 0;
+    margin: 65px auto 0;
   }
 }
 @media (min-width: 1920px) {
@@ -3162,7 +3162,7 @@ header {
 @media (min-width: 1280px) {
   .analyzes__row_h2 {
     font-size: 30px;
-    margin: 82px auto 0;
+    margin: 20px auto 0;
   }
 }
 .analyzes__row_list {
@@ -3189,7 +3189,7 @@ header {
 }
 @media (min-width: 1280px) {
   .analyzes_close_btn {
-    top: 40px;
+    top: 23px;
     margin-left: 994px;
   }
 }
@@ -3212,13 +3212,13 @@ header {
   background: url(../img/fongrey.png);
   width: 100%;
   position: absolute;
-  height: 1551px;
+  height: 732px;
   top: 342px;
 }
 @media (min-width: 768px) {
   .form-individual {
-    top: 342x;
-    height: 622px;
+    top: 342px;
+    height: 732px;
   }
 }
 @media (min-width: 1280px) {
@@ -3237,7 +3237,7 @@ header {
   position: relative;
   z-index: 100000;
   width: 350px;
-  margin: 950px auto 0;
+  margin: 103px auto 0;
   background-color: #ffffff;
   background-position: center center;
   border-color: transparent;
@@ -3247,7 +3247,7 @@ header {
 }
 @media (min-width: 768px) {
   .form-individual__row {
-    margin: 52px auto 0;
+    margin: 103px auto 0;
     width: 400px;
   }
 }
@@ -3535,7 +3535,7 @@ header {
 .form-individual_close_btn {
   width: 43px;
   height: 42px;
-  top: 866px;
+  top: 63px;
   border: 3px solid #d6b77a;
   position: absolute;
   margin-left: 393px;
@@ -3547,7 +3547,7 @@ header {
 @media (min-width: 768px) {
   .form-individual_close_btn {
     margin-left: 688px;
-    top: 12px;
+    top: 63px;
   }
 }
 @media (min-width: 1280px) {
@@ -3575,13 +3575,13 @@ header {
   background: url(../img/fongrey.png);
   width: 100%;
   position: absolute;
-  height: 1551px;
-  top: 4398px;
+  top: 776px;
+  height: 730px;
 }
 @media (min-width: 768px) {
   .form-escort {
-    top: 887px;
-    height: 622px;
+    top: 776px;
+    height: 730px;
   }
 }
 @media (min-width: 1280px) {
@@ -3600,7 +3600,7 @@ header {
   position: relative;
   z-index: 100000;
   width: 350px;
-  margin: 950px auto 0;
+  margin: 103px auto 0;
   background-color: #ffffff;
   background-position: center center;
   border-color: transparent;
@@ -3610,7 +3610,7 @@ header {
 }
 @media (min-width: 768px) {
   .form-escort__row {
-    margin: 52px auto 0;
+    margin: 103px auto 0;
     width: 400px;
   }
 }
@@ -3898,7 +3898,7 @@ header {
 .form-escort_close_btn {
   width: 43px;
   height: 42px;
-  top: 866px;
+  top: 63px;
   border: 3px solid #d6b77a;
   position: absolute;
   margin-left: 393px;
@@ -3910,7 +3910,7 @@ header {
 @media (min-width: 768px) {
   .form-escort_close_btn {
     margin-left: 688px;
-    top: 12px;
+    top: 63px;
   }
 }
 @media (min-width: 1280px) {
@@ -4726,6 +4726,14 @@ header {
 
 .width {
   margin-left: 20px;
+}
+
+.personal-vs {
+  display: none;
+}
+
+.personal-invs {
+  display: block;
 }
 
 .features {
@@ -6241,30 +6249,32 @@ footer {
   background: url(../img/fongrey.png);
   width: 100%;
   position: absolute;
-  height: 870px;
-  top: 7898px;
+  top: 343px;
+  height: 745px;
 }
 @media (min-width: 768px) {
   .form-personal {
-    top: 4156px;
-    height: 1202px;
+    top: 343px;
+    height: 745px;
   }
 }
 @media (min-width: 1280px) {
   .form-personal {
-    top: 4374px;
+    top: 490px;
     height: 827px;
   }
 }
 @media (min-width: 1920px) {
   .form-personal {
     height: 955px;
-    top: 4784px;
+    top: 626px;
   }
 }
 .form-personal__row {
+  position: relative;
+  z-index: 100000;
   width: 350px;
-  margin: 279px auto 0;
+  margin: 100px auto 0;
   background-color: #ffffff;
   background-position: center center;
   border-color: transparent;
@@ -6274,7 +6284,7 @@ footer {
 }
 @media (min-width: 768px) {
   .form-personal__row {
-    margin: 135px auto 0;
+    margin: 103px auto 0;
     width: 400px;
   }
 }
@@ -6326,7 +6336,7 @@ footer {
 @media (min-width: 1920px) {
   .form-personal__row_info_h3 {
     font-size: 22px;
-    margin-right: 197px;
+    margin-right: 107px;
   }
 }
 .form-personal__row_info_p {
@@ -6349,6 +6359,7 @@ footer {
 @media (min-width: 1920px) {
   .form-personal__row_info_p {
     font-size: 22px;
+    margin-right: -97px;
   }
 }
 .form-personal__row_h2 {
@@ -6551,8 +6562,8 @@ footer {
 }
 .form-personal_close_btn {
   width: 42px;
-  height: 40px;
-  top: 238px;
+  height: 42px;
+  top: 64px;
   border: 3px solid #d6b77a;
   position: absolute;
   margin-left: 393px;
@@ -6563,20 +6574,20 @@ footer {
 }
 @media (min-width: 768px) {
   .form-personal_close_btn {
-    margin-left: 583px;
-    top: 97px;
+    margin-left: 690px;
+    top: 64px;
   }
 }
 @media (min-width: 1280px) {
   .form-personal_close_btn {
-    margin-left: 1223px;
-    top: 35px;
+    margin-left: 865px;
+    top: 99px;
   }
 }
 @media (min-width: 1920px) {
   .form-personal_close_btn {
-    margin-left: 1848px;
-    top: 30px;
+    margin-left: 1249px;
+    top: 168px;
   }
 }
 
@@ -6584,7 +6595,7 @@ footer {
   display: none;
 }
 
-.invs {
+.personal-invs {
   display: block;
 }
 
@@ -6695,18 +6706,27 @@ footer {
   height: 1551px;
   top: 0;
 }
+@media (min-width: 768px) {
+  .gratitude {
+    top: 1074px;
+    height: 761px;
+  }
+}
 @media (min-width: 1280px) {
   .gratitude {
     height: 1015px;
+    top: 1254px;
   }
 }
 @media (min-width: 1920px) {
   .gratitude {
     height: 995px;
-    top: 13px;
+    top: 1242px;
   }
 }
 .gratitude__row {
+  position: relative;
+  z-index: 1000000000;
   width: 350px;
   margin: 950px auto 0;
   background-color: #ffffff;
@@ -6718,15 +6738,15 @@ footer {
 }
 @media (min-width: 768px) {
   .gratitude__row {
-    margin: 655px auto 0;
-    width: 400px;
+    margin: 133px auto 0;
+    width: 425px;
   }
 }
 @media (min-width: 1280px) {
   .gratitude__row {
     margin: 141px auto 0;
-    width: 470px;
-    height: 566px;
+    width: 480px;
+    height: 550px;
   }
 }
 @media (min-width: 1920px) {
@@ -6742,6 +6762,11 @@ footer {
   color: rgb(3, 63, 3);
   font-weight: 600;
 }
+@media (min-width: 768px) {
+  .gratitude__row_h2 {
+    font-size: 38px;
+  }
+}
 @media (min-width: 1280px) {
   .gratitude__row_h2 {
     font-size: 39px;
@@ -6749,7 +6774,7 @@ footer {
 }
 @media (min-width: 1920px) {
   .gratitude__row_h2 {
-    font-size: 40px;
+    font-size: 50px;
   }
 }
 .gratitude__row_top {
@@ -6770,6 +6795,11 @@ footer {
   background-color: #d5ad5d;
   height: 2px;
 }
+@media (min-width: 768px) {
+  .gratitude__row_bottom {
+    margin: 20px auto 45px auto;
+  }
+}
 @media (min-width: 1280px) {
   .gratitude__row_bottom {
     margin: 20px auto 65px auto;
@@ -6781,13 +6811,14 @@ footer {
   }
 }
 .gratitude__row_p {
-  font-size: 20px;
+  font-size: 21px;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 55px;
 }
 @media (min-width: 1280px) {
   .gratitude__row_p {
     font-size: 24px;
+    margin: 0 auto;
   }
 }
 @media (min-width: 1920px) {
@@ -6809,8 +6840,8 @@ footer {
 }
 @media (min-width: 768px) {
   .gratitude_close-btn {
-    margin-left: 583px;
-    top: 617px;
+    margin-left: 703px;
+    top: 91px;
   }
 }
 @media (min-width: 1280px) {

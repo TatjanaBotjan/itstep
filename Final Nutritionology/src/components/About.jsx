@@ -4,12 +4,53 @@ const About = () => {
 
     let [form, setForm] = React.useState({
         name: "",
+        surname: "",
         tel: "",
         email: ""
     })
 
+    const [formError, setFormError] = React.useState({
+        name: "",
+        surname: "",
+        tel: "",
+        email: ""
+    }); 
+
+    function validate() {
+        let isValid = true;
+        if (form.name == "") {
+            formError.name = "Поле не заполнено";
+            isValid = false;
+        } else {
+            formError.name = "";
+        }
+        if (form.surname == "") {
+            formError.surname = "Поле не заполнено";
+            isValid = false;
+        } else {
+            formError.surname = "";
+        }
+        if (form.tel == "") {
+            formError.tel = "Поле не заполнено";
+            isValid = false;
+        } else {
+            formError.tel = "";
+        }
+        if (form.email == "") {
+            formError.email = "Поле не заполнено";
+            isValid = false;
+        } else {
+            formError.email = "";
+        }
+        setFormError({ ...formError });
+        return isValid;
+    }
+
     function handleFormSubmit(event) {
         event.preventDefault();
+        if (!validate()) {
+            return false;
+        }
         props.onQuestionAdd(form);
         setForm({
             name: "",
@@ -40,16 +81,15 @@ const About = () => {
 
 
     function handleCertificateClick(event) {
-        let certificate = document.querySelector(".invisible");
+        let certificate = document.querySelector(".carousel-invisible");
         event.preventDefault();
-        certificate.classList.toggle("visible");
+        certificate.classList.toggle("carousel-visible");
     }
 
     function handleCertificateCloseClick(event) {
-        let certificate = document.querySelector(".invisible");
+        let certificate = document.querySelector(".carousel-invisible");
         event.preventDefault();
-
-        certificate.classList.remove("visible");
+        certificate.classList.remove("carousel-visible");
     }
 
 
@@ -62,8 +102,25 @@ const About = () => {
     function handleServicesCloseClick(event) {
         let services = document.querySelector(".invis");
         event.preventDefault();
-
         services.classList.remove("vis");
+    }
+
+    function handleCloseGetQuestionClick(event) {
+        let getQuestion = document.querySelector(".gratitude-invis");
+        event.preventDefault();
+
+        getQuestion.classList.remove("gratitude-vis");
+    }
+
+    function handleGetQuestionClick(event) {
+        let getservices = document.querySelector(".gratitude-invis");
+        let consultation = document.querySelector(".invis");
+        
+        event.preventDefault();
+        getservices.classList.toggle("gratitude-vis");
+        
+        consultation.classList.toggle("vis");
+
     }
 
 
@@ -81,7 +138,7 @@ const About = () => {
                             качество вашей жизни и жизнь вашей семьи. Мои знания - это результат долгого и познавательного обучения у профессионалов
                             в области нутрициологии и натуропатии</p>
                         <img className="about__row_info_img" src="/public/assets/img/aboutImg.jpg" alt="foto"/>
-                            <div className="about__row_info_carousel invisible">
+                            <div className="about__row_info_carousel carousel-invisible">
                                 <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
                                     <div className="carousel-inner about__row_info_carousel_block">
                                         <div className="carousel-item active about__row_info_carousel_block_item">
@@ -181,21 +238,25 @@ const About = () => {
                             <div className="consultation__row_form_section_input">
                                 <input className="consultation__row_form_section_input_name" type="text" name="name" id="name" value={form.name} onChange={handleNameChange}
                                     placeholder="Ваше имя"/>
+                                    {formError.name != "" && <div>{formError.name}</div>}
                             </div>
                             <div className="consultation__row_form_section_input">
                                 <input className="consultation__row_form_section_input_surname" type="text" name="name" id="name" value={form.surname} onChange={handleSurnameChange}
                                     placeholder="Ваша фамилия"/>
+                                 {formError.surname != "" && <div>{formError.surname}</div>}
                             </div>
                             <div className="consultation__row_form_section_input">
                                 <input className="consultation__row_form_section_input_tel" type="tel" name="tel" id="tel" value={form.tel} onChange={handleTelChange}
                                     placeholder="Номер телефона"/>
+                                    {formError.tel != "" && <div>{formError.tel}</div>}
                             </div>
                             <div className="consultation__row_form_section_input">
                                 <input className="consultation__row_form_section_input_email" type="email" name="email" id="email" value={form.tel} onChange={handleEmailChange}
                                     placeholder="Email"/>
+                                    {formError.email != "" && <div>{formError.email}</div>}
                             </div>
                         </form>
-                        <div className="consultation__row_button">
+                        <div className="consultation__row_button" onClick={handleGetQuestionClick} >
                             <a className="consultation__row_button_a" href="#">Записаться</a>
                         </div>
                             <p className="consultation__row_agreement">Отправляя свои персональные данные, Вы соглашаетесь с Положением о
@@ -204,6 +265,17 @@ const About = () => {
                 </div>
             </div>
             <button className="consultation_close_btn" onClick={handleServicesCloseClick}></button>
+        </section>
+        <section className="gratitude gratitude-invis">
+            <div className="container">
+                <div className="gratitude__row">
+                    <hr className="gratitude__row_top" />
+                    <h2 className="gratitude__row_h2">Спасибо за Ваш интерес!</h2>
+                    <hr className="gratitude__row_bottom" />
+                    <p className="gratitude__row_p">Я свяжусь с Вами в ближайшее время!</p>
+                </div>
+            </div>
+            <button className="gratitude_close-btn" onClick={handleCloseGetQuestionClick}></button>
         </section>
     </>
 }

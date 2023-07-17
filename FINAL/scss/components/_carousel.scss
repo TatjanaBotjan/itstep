@@ -1,0 +1,63 @@
+.carousel {
+
+
+    &__row {
+
+        &_top{
+            display: flex;
+
+            &_img{
+                transition: 1s;
+
+               
+            }
+
+                         &_img:hover {
+                             transform: img(1.2);
+                         }
+        }
+
+                &_bottom {
+                    display: flex;
+        
+                    &_one {
+                        width: 200px;
+                            height: 150px;
+                        overflow: hidden;
+                        margin: 0 auto;
+                    }
+        
+                    &_two {
+                        width: 200px;
+                            height: 150px;
+                        overflow: hidden;
+                        margin: 0 auto;
+                    }
+        
+                    &_three {
+                        width: 200px;
+                            height: 150px;
+                        overflow: hidden;
+                        margin: 0 auto;
+                    }
+        
+                    &_four {
+                        width: 200px;
+                            height: 150px;
+                        overflow: hidden;
+                        margin: 0 auto;
+                    }
+                }
+      
+
+
+    }
+}
+
+.carousel-invisible {
+    display: none;
+}
+
+.carousel-visible {
+    display: block;
+}

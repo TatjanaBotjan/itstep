@@ -15,6 +15,19 @@ const Personal = () => {
         personalAnalyzes.classList.remove("personal-unhidden");
     }
 
+    function handlePersonalConsultationClick(event) {
+        let personalconsultation = document.querySelector(".personal-vs");
+        event.preventDefault();
+        personalconsultation.classList.toggle("personal-invs");
+    }
+
+    function handlePersonalConsultationCloseClick(event) {
+        let personalconsultation = document.querySelector(".personal-vs");
+        event.preventDefault();
+
+        personalconsultation.classList.remove("personal-invs");
+    }
+
     return <>
         <section className="personal">
             <div className="container">
@@ -35,8 +48,8 @@ const Personal = () => {
                             поставленной цели (возможна оплата по частям)</p>
                         <hr className="personal__row_services_hr"/>
                             <p className="personal__row_services_price">Стоимость: 50000 ₽</p>
-                            <div className="personal__row_services_btn">
-                                <a className="personal__row_services_btn_a" href="#">Заказать</a>
+                            <div className="personal__row_services_btn" onClick={handlePersonalConsultationClick}>
+                                <a className="personal__row_services_btn_a" href="#" >Заказать</a>
                             </div>
                     </div>
                 </div>
@@ -110,7 +123,7 @@ const Personal = () => {
                         </div>
                 </div>
             </div>
-            <button className="form-personal_close_btn"></button>
+            <button className="form-personal_close_btn" onClick={handlePersonalConsultationCloseClick}></button>
         </section>
         <section className="features-info">
             <div className="container">
