@@ -6,20 +6,21 @@
     top: 0;
 
     @media (min-width: 768px) {
-        top: 1074px;
-        height: 761px;
+        top: 180px;
+            height: 677px;
         
     }
 
     @media (min-width: 1280px) {
-        height: 1015px;
-        top: 1254px;
+            height: 793px;
+                top: 177px;
+           
       
     }
 
     @media (min-width: 1920px) {
-        height: 995px;
-        top: 1242px;
+        height: 790px;
+        top: 242px;
     }
 
 
@@ -48,7 +49,7 @@
         }
 
         @media (min-width: 1920px) {
-            margin: 205px auto 0;
+            margin: 95px auto 0;
             width: 590px;
 
         }
@@ -148,7 +149,7 @@
 
         @media (min-width: 1920px) {
             margin-left: 1254px;
-            top: 164px;
+            top: 54px;
         }
     }
 }

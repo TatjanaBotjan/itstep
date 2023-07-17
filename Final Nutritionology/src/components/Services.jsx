@@ -17,6 +17,25 @@ const Services = (props) => {
         consultation.classList.remove("unhide");
     }
 
+    function handleCloseGetQuestionClick(event) {
+        let getQuestion = document.querySelector(".gratitude-invis");
+        event.preventDefault();
+
+        getQuestion.classList.remove("gratitude-vis");
+    }
+
+    function handleGetQuestionClick(event) {
+        let getservices = document.querySelector(".gratitude-invis");
+        let consultation = document.querySelector(".hide");
+
+        event.preventDefault();
+        getservices.classList.toggle("gratitude-vis");
+
+        consultation.classList.toggle("unhide");
+
+    }
+
+
 
     return <>
         <section className="program">
@@ -83,7 +102,7 @@ const Services = (props) => {
                             </div>
                         </form>
                         <div className="initial-consultation__row_button">
-                            <a className="initial-consultation__row_button_a" href="#">Записаться</a>
+                            <a className="initial-consultation__row_button_a" href="#" onClick={handleGetQuestionClick}>Записаться</a>
                         </div>
                         <p className="initial-consultation__row_agreement">Отправляя свои персональные данные, Вы соглашаетесь с Положением
                             о персональных данных</p>
@@ -91,6 +110,17 @@ const Services = (props) => {
                 </div>
             </div>
             <button className="initial-consultation_close_btn" onClick={handleConsultationCloseClick}></button>
+        </section>
+        <section className="gratitude gratitude-invis">
+            <div className="container">
+                <div className="gratitude__row">
+                    <hr className="gratitude__row_top" />
+                    <h2 className="gratitude__row_h2">Спасибо за Ваш интерес!</h2>
+                    <hr className="gratitude__row_bottom" />
+                    <p className="gratitude__row_p">Я свяжусь с Вами в ближайшее время!</p>
+                </div>
+            </div>
+            <button className="gratitude_close-btn" onClick={handleCloseGetQuestionClick}></button>
         </section>
     </>
 }

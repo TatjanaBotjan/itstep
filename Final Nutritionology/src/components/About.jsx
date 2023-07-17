@@ -255,7 +255,7 @@ const About = () => {
                                     placeholder="Email" />
                                 {formError.email && <div className="form-error">{formError.email}</div>}
                             </div>
-                            <button className="consultation__row_button" type="submit" onClick={handleGetQuestionClick} >Отправить</button>
+                            <button className="consultation__row_button" type="submit"  >Отправить</button>
                         </form>
                         {/* <div className="consultation__row_button" onClick={handleGetQuestionClick} >
                             <a className="consultation__row_button_a" href="#">Записаться</a>
