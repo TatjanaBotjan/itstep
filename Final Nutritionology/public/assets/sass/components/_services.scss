@@ -12,20 +12,20 @@
             &_image{
                 display: none;
 
-                    @media (min-width: 1280px) {
-                        display: block;
-                        height: 520px;
-                        position: absolute;
-                        width: 43%;
-                        top: -85px;
-                        margin-left: 270px;
+                @media (min-width: 1280px) {
+                    display: block;
+                    height: 520px;
+                    position: absolute;
+                    width: 43%;
+                    top: -85px;
+                    margin-left: 270px;
                     }
                 
-                    @media (min-width: 1920px) {
-                        height: 523px;
-                        width: 37%;
-                        margin-left: 330px;
-                    }
+                @media (min-width: 1920px) {
+                    height: 523px;
+                    width: 37%;
+                    margin-left: 330px;
+                }
             }
                 @media (min-width: 1280px) {
                     display: block;

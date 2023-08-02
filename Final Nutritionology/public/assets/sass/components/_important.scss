@@ -53,10 +53,6 @@
                 @media (min-width: 1280px) {
                     width: 30%;
                 }
-
-                @media (min-width: 1920px) {
-                   
-                }
                 
                 &_img{
                     width: 90%;
@@ -77,15 +73,13 @@
                     @media (min-width: 1920px) {
                         height: 250px;
                     }
-                    
                 }
 
                 &_text{
                     padding: 25px 5px 10px 5px;
                     box-sizing: border-box;
                     text-align: center;
-                    
-
+                
                     @media (min-width: 1280px) {
                         text-align: justify;
                         padding: 25px 10px 10px 10px;
@@ -104,10 +98,6 @@
                         @media (min-width: 1280px) {
                             font-size: 33px;
                             margin-bottom: 20px;
-                        }
-                        
-                        @media (min-width: 1920px) {
-                            
                         }
                     }
 
@@ -144,13 +134,9 @@
                     margin: 50px 0 0 0;
                 }
 
-                @media (min-width: 1920px) {
-                   
-                }
-
                 &_img {
                     width: 90%;
-                        height: 200px;
+                    height: 200px;
                     @include flexcenter;
                     margin: 0 auto;
                     height: 280px;
@@ -168,14 +154,12 @@
                     @media (min-width: 1920px) {
                         height: 250px;
                     }
-                
                 }
 
                 &_text {
                     padding: 25px 5px 10px 5px;
                     box-sizing: border-box;
                     text-align: center;
-                    
                                 
                     @media (min-width: 1280px) {
                         text-align: justify;
@@ -195,10 +179,6 @@
                         @media (min-width: 1280px) {
                             font-size: 33px;
                             margin-bottom: 20px;
-                        }
-                                
-                        @media (min-width: 1920px) {
-                      
                         }
                     }
                                 
@@ -230,23 +210,13 @@
                 width: 85%;
                 margin: 0 auto;
                 
-
-                @media (min-width: 768px) {
-                        
-                    }
-                
-                    @media (min-width: 1280px) {
-                       
-                        width: 30%;
-                    }
-                
-                    @media (min-width: 1920px) {
-                      
-                    }
+                @media (min-width: 1280px) {
+                    width: 30%;
+                }
 
                 &_img {
                     width: 90%;
-                        height: 280px;
+                    height: 280px;
                     @include flexcenter;
                     margin: 0 auto;
                     height: 280px;
@@ -259,20 +229,17 @@
                     @media (min-width: 1280px) {
                         height: 230px;
                         width: 100%;
-                       
                     }
                 
                     @media (min-width: 1920px) {
                         height: 250px;
                     }
-                
                 }
 
                 &_text {
                     padding: 25px 5px 30px 5px;
                     box-sizing: border-box;
                     text-align: center;
-                    
                                 
                     @media (min-width: 1280px) {
                         text-align: justify;
@@ -292,10 +259,6 @@
                         @media (min-width: 1280px) {
                             font-size: 33px;
                             margin-bottom: 20px;
-                        }
-                                
-                        @media (min-width: 1920px) {
-                            
                         }
                     }
                                 

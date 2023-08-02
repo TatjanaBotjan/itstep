@@ -21,10 +21,9 @@ const Header = (props) => {
             email: "",
             comment: ""
         });
-        props.history.push("/post");
+       
        
     }
-
 
 
     function handleNameChange(event) {
@@ -42,6 +41,8 @@ const Header = (props) => {
     function handleCommentChange(event) {
         setForm({ ...form, comment: event.target.value });
     }
+
+    
 
     function handleQuestionClick(event) {
         let question = document.querySelector(".question-invis");

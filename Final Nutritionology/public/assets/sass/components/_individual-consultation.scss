@@ -31,7 +31,7 @@
                     height: 115px;
                     margin-top: 10px;
                     margin-right: 67px;
-                        margin-left: -148px;
+                    margin-left: -148px;
                 }
                 
                 @media (min-width: 1280px) {
@@ -44,8 +44,8 @@
                 
                 @media (min-width: 1920px) {
                     margin: 40px 129px 0 -251px;
-                        width: 250px;
-                        height: 195px;
+                    width: 250px;
+                    height: 195px;
                 }
             }
     
@@ -67,7 +67,7 @@
                 
                 @media (min-width: 1920px) {
                     margin-top: 55px;
-                        font-size: 60px;
+                    font-size: 60px;
                 }
             }
         }
@@ -96,7 +96,7 @@
                 
                 @media (min-width: 1280px) {
                     font-size: 45px;
-                        width: 88%;
+                    width: 88%;
                 }
                 
                 @media (min-width: 1920px) {
@@ -171,9 +171,8 @@
                     margin-bottom: 0;
 
                     @media (min-width: 1280px) {
-                            font-size: 30px;
-                           
-                        }
+                        font-size: 30px;  
+                    }
 
                     @media (min-width: 1920px) {
                         font-size: 30px;
@@ -228,13 +227,11 @@
 
                     @media (min-width: 768px) {
                         font-size: 27px;
-                      
                     }
 
-                                        @media (min-width: 1280px) {
-                                            
-                                            padding: 20px 20px 30px 20px;
-                                        }
+                    @media (min-width: 1280px) {
+                        padding: 20px 20px 30px 20px;
+                    }
                 }
 
                 &_btn {
@@ -308,13 +305,13 @@
                     align-items: center;
 
                     @media (min-width: 768px) {
-                        padding: 15px 0 15px 133px;
+                        padding: 15px 0 15px 153px;
                     }
 
-                                        @media (min-width: 1280px) {
-                                            font-size: 30px;
-                                            padding: 25px 25px 25px 120px;
-                                        }
+                    @media (min-width: 1280px) {
+                        font-size: 30px;
+                        padding: 25px 25px 25px 120px;
+                    }
                         
                     @media (min-width: 1920px) {
                         font-size: 33px;
@@ -369,13 +366,11 @@
 
                     @media (min-width: 768px) {
                         font-size: 27px;
-                    
                     }
 
-                                        @media (min-width: 1280px) {
-                                           
-                                            padding: 20px 20px 30px 20px;
-                                        }
+                    @media (min-width: 1280px) {
+                        padding: 20px 20px 30px 20px;
+                    }
                 }
                 
                 &_btn {

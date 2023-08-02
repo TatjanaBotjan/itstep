@@ -1759,7 +1759,7 @@ header {
 }
 @media (min-width: 1920px) {
   .consultation_close_btn {
-    margin-left: 1245px;
+    margin-left: 1240px;
     top: 89px;
   }
 }
@@ -2960,7 +2960,7 @@ header {
 }
 @media (min-width: 768px) {
   .individual-consultation__row_services_personal_h2 {
-    padding: 15px 0 15px 133px;
+    padding: 15px 0 15px 153px;
   }
 }
 @media (min-width: 1280px) {
@@ -3200,11 +3200,11 @@ header {
   width: 100%;
   position: absolute;
   height: 732px;
-  top: 342px;
+  top: 750px;
 }
 @media (min-width: 768px) {
   .form-individual {
-    top: 342px;
+    top: 750px;
     height: 732px;
   }
 }
@@ -6241,7 +6241,7 @@ footer {
 }
 @media (min-width: 768px) {
   .form-personal {
-    top: 343px;
+    top: 750px;
     height: 745px;
   }
 }
@@ -6839,7 +6839,7 @@ footer {
 }
 @media (min-width: 1920px) {
   .gratitude_close-btn {
-    margin-left: 1254px;
+    margin-left: 1248px;
     top: 54px;
   }
 }

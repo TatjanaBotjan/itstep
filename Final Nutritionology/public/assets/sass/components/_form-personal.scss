@@ -6,7 +6,7 @@
     height: 745px;
 
     @media (min-width: 768px) {
-        top: 343px;
+        top: 750px;
         height: 745px;
     }
 
@@ -27,7 +27,7 @@
         z-index: 100000;
         width: 350px;
         margin: 100px auto 0;
-        background-color: #ffffff;
+        background-color: $formcolor;
         background-position: center center;
         border-color: transparent;
         border-style: solid;
@@ -75,8 +75,6 @@
                 font-weight: 600;
                 padding: 10px 0;
 
-                @media (min-width: 768px) {}
-
                 @media (min-width: 1280px) {
                     font-size: 20px;
                 }
@@ -114,28 +112,20 @@
             text-align: center;
             padding-bottom: 5px;
 
-            @media (min-width: 768px) {}
-
             @media (min-width: 1280px) {
                 font-size: 35px;
                 margin-bottom: 15px;
                 padding-bottom: 25px;
             }
 
-            @media (min-width: 1920px) {}
-
             &_span {
-                color: rgb(3, 63, 3);
+                color: $darkgreen;
                 font-weight: 600;
                 font-size: 30px;
-
-                @media (min-width: 768px) {}
 
                 @media (min-width: 1280px) {
                     font-size: 30px;
                 }
-
-                @media (min-width: 1920px) {}
             }
         }
 
@@ -157,7 +147,7 @@
                         width: 270px;
                         height: 40px;
                         margin-bottom: 25px;
-                        border: 1px solid#d6b77a;
+                        border: 1px solid $gold;
                         border-radius: 5px;
                         padding: 20px;
                         font-size: 16px;
@@ -181,7 +171,7 @@
                         width: 270px;
                         height: 40px;
                         margin-bottom: 25px;
-                        border: 1px solid#d6b77a;
+                        border: 1px solid $gold;
                         border-radius: 5px;
                         padding: 20px;
                         font-size: 16px;
@@ -205,7 +195,7 @@
                         width: 270px;
                         height: 40px;
                         margin-bottom: 25px;
-                        border: 1px solid#d6b77a;
+                        border: 1px solid $gold;
                         border-radius: 5px;
                         padding: 20px;
                         font-size: 16px;
@@ -229,7 +219,7 @@
                         width: 270px;
                         height: 40px;
                         margin-bottom: 35px;
-                        border: 1px solid#d6b77a;
+                        border: 1px solid $gold;
                         border-radius: 5px;
                         padding: 20px;
                         font-size: 16px;
@@ -254,9 +244,9 @@
 
         &_button {
             border-radius: 5px;
-            border: rgb(255, 255, 255);
+            border: $white;
             margin: 0 auto;
-            background-color: #d6b77a;
+            background-color: $gold;
             transition: color, background-color;
             width: 270px;
             height: 40px;
@@ -297,14 +287,14 @@
         }
 
         &_button:hover {
-            background-color: #c29c4f;
+            background-color: $darkgold;
         }
 
         &_agreement {
             font-size: 15px;
             padding: 0;
             text-align: justify;
-            color: rgb(73, 72, 72);
+            color: $textgrey;
             margin-bottom: 0;
         }
     }
@@ -313,7 +303,7 @@
         width: 42px;
         height: 42px;
         top: 64px;
-        border: 3px solid #d6b77a;
+        border: 3px solid $gold;
         position: absolute;
         margin-left: 393px;
         display: flex;

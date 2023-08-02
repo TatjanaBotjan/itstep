@@ -5,24 +5,19 @@ footer{
 
 .footer__row{
     &_contacts{
-       
 
-        @media (min-width: 768px) {}
-        
-            @media (min-width: 1280px) {
-                padding: 50px 0 10px 0;
-                    display: flex;
-                    justify-content: space-between;
-            }
-        
-            @media (min-width: 1920px) {}
-
+        @media (min-width: 1280px) {
+            padding: 50px 0 10px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+ 
         &_logo{
             text-align: center;
 
             @media (min-width: 1920px) {
-                    margin-left: -150px;
-                }
+                margin-left: -150px;
+            }
 
             &_img{
                 margin-top: 20px;
@@ -32,18 +27,18 @@ footer{
 
                 @media (min-width: 768px) {
                     width: 160px;
-                        height: 115px;
+                    height: 115px;
                 }
                 
-                    @media (min-width: 1280px) {
-                        margin-top: 0;
-                    }
+                @media (min-width: 1280px) {
+                    margin-top: 0;
+                }
                 
-                    @media (min-width: 1920px) {
-                        width: 190px;
-                            height: 145px;
-                            margin-bottom: 16px;
-                    }
+                @media (min-width: 1920px) {
+                    width: 190px;
+                    height: 145px;
+                    margin-bottom: 16px;
+                }
             }
 
             &_text{
@@ -58,11 +53,9 @@ footer{
                     margin-bottom: 30px;
                 }
                 
-                    @media (min-width: 1280px) {}
-                
-                    @media (min-width: 1920px) {
-                        font-size: 35px;
-                    }
+                @media (min-width: 1920px) {
+                    font-size: 35px;
+                }
             }
 
             &_text:hover {
@@ -77,17 +70,13 @@ footer{
             text-align: center;
             margin-bottom: 40px;
 
-            @media (min-width: 768px) {
-               
+            @media (min-width: 1280px) {
+                text-align: left;
             }
             
-                @media (min-width: 1280px) {
-                    text-align: left;
-                }
-            
-                @media (min-width: 1920px) {
+            @media (min-width: 1920px) {
                 margin-bottom: 25px;
-                }
+            }
 
             &_h2{
                 color: $darkgreen;
@@ -99,12 +88,10 @@ footer{
                     font-size: 38px;
                 }
                 
-                    @media (min-width: 1280px) {}
-                
-                    @media (min-width: 1920px) {
-                        font-size: 45px;
-                        margin-bottom: 20px;
-                    }
+                @media (min-width: 1920px) {
+                    font-size: 45px;
+                    margin-bottom: 20px;
+                }
             }
 
             &_ul{
@@ -120,18 +107,17 @@ footer{
                        font-size: 18px;
                        font-weight: 500;
 
-                    @media (min-width: 768px) {
-                        font-size: 20px;
-                    }
-                    
+                        @media (min-width: 768px) {
+                            font-size: 20px;
+                        }
+                        
                         @media (min-width: 1280px) {
                             font-size: 22px;
                         }
-                    
+                        
                         @media (min-width: 1920px) {
                             font-size: 25px;
                         }
-                       
                     }
 
                     a:hover {
@@ -144,14 +130,10 @@ footer{
 
         &_info{
             text-align: center;
-            
-                @media (min-width: 768px) {}
-            
-                @media (min-width: 1280px) {
-                    text-align: left;
-                }
-            
-                @media (min-width: 1920px) {}
+           
+            @media (min-width: 1280px) {
+                text-align: left;
+            }
 
             &_h2{
                 color: $darkgreen;
@@ -164,47 +146,35 @@ footer{
                     margin-bottom: 40px;
                 }
                 
-                    @media (min-width: 1280px) {
-                       
-                    }
-                
-                    @media (min-width: 1920px) {
-                        font-size: 45px;
-                        margin-bottom: 20px;
-                    }
+                @media (min-width: 1920px) {
+                    font-size: 45px;
+                    margin-bottom: 20px;
+                }
             }
 
             &_phone{
-                
                 margin-bottom: 10px;
 
-                @media (min-width: 768px) {}
+                @media (min-width: 1280px) {
+                    display: flex;
+                }
                 
-                    @media (min-width: 1280px) {
-                        display: flex;
-                    }
-                
-                    @media (min-width: 1920px) {
-                        font-size: 25px;
-                    }
+                @media (min-width: 1920px) {
+                    font-size: 25px;
+                }
 
                 &_image{
                     width: 30px;
                     height: 30px;
                     margin-right: 10px;
                     margin-top: -3px;
-
-                    @media (min-width: 768px) {}
                     
-                        @media (min-width: 1280px) {
-                            margin-right: 15px;
-                        }
-                    
-                        @media (min-width: 1920px) {}
+                    @media (min-width: 1280px) {
+                        margin-right: 15px;
+                    }
                 }
 
                 &_numbers{
-                   
                     color: $gold;
                     text-decoration: none;
                     font-size: 18px;
@@ -214,13 +184,13 @@ footer{
                         font-size: 20px;
                     }
                     
-                        @media (min-width: 1280px) {
-                            font-size: 22px;
-                        }
+                    @media (min-width: 1280px) {
+                        font-size: 22px;
+                    }
                     
-                        @media (min-width: 1920px) {
-                            font-size: 25px;
-                        }
+                    @media (min-width: 1920px) {
+                        font-size: 25px;
+                    }
                     
                     &:hover {
                         color: $darkgold;
@@ -230,30 +200,21 @@ footer{
             }
 
             &_email {
-                
                 margin-bottom: 10px;
                 
-                    @media (min-width: 768px) {}
-                
-                    @media (min-width: 1280px) {
-                        display: flex;
-                    }
-                
-                    @media (min-width: 1920px) {}
+                @media (min-width: 1280px) {
+                    display: flex;
+                }
                         
                 &_image {
                     width: 30px;
-                        height: 30px;
-                        margin-right: 10px;
-                        margin-top: -3px;
+                    height: 30px;
+                    margin-right: 10px;
+                    margin-top: -3px;
                     
-                        @media (min-width: 768px) {}
-                    
-                        @media (min-width: 1280px) {
-                            margin-right: 15px;
-                        }
-                    
-                        @media (min-width: 1920px) {}
+                    @media (min-width: 1280px) {
+                        margin-right: 15px;
+                    }
                 }
 
                 &_mail {
@@ -266,13 +227,13 @@ footer{
                         font-size: 20px;
                     }
                     
-                                                @media (min-width: 1280px) {
-                                                    font-size: 22px;
-                                                }
+                    @media (min-width: 1280px) {
+                        font-size: 22px;
+                    }
                         
-                                                @media (min-width: 1920px) {
-                                                    font-size: 25px;
-                                                }
+                    @media (min-width: 1920px) {
+                        font-size: 25px;
+                    }
                 
                     &:hover {
                         color: $darkgold;
@@ -284,37 +245,28 @@ footer{
             &_whatsapp{
                 margin-bottom: 40px;
                 
-
                 @media (min-width: 768px) {
                     margin-bottom: 50px;
                 }
                 
-                    @media (min-width: 1280px) {
-                        display: flex;
-                    }
-                
-                    @media (min-width: 1920px) {
-                        
-                    }
+                @media (min-width: 1280px) {
+                    display: flex;
+                }
 
                 &_image {
                     width: 30px;
-                        height: 30px;
-                        margin-right: 10px;
-                        margin-top: -3px;
+                    height: 30px;
+                    margin-right: 10px;
+                    margin-top: -3px;
                     
-                        @media (min-width: 768px) {
-                            width: 40px;
-                                height: 38px;
-                        }
+                    @media (min-width: 768px) {
+                        width: 40px;
+                        height: 38px;
+                    }
                     
-                        @media (min-width: 1280px) {
-                            margin-right: 15px;
-                        }
-                    
-                        @media (min-width: 1920px) {
-                            
-                        }
+                    @media (min-width: 1280px) {
+                        margin-right: 15px;
+                    }
                 }
 
                 &_numbers {
@@ -327,13 +279,13 @@ footer{
                         font-size: 20px;
                     }
                     
-                                                @media (min-width: 1280px) {
-                                                    font-size: 22px;
-                                                }
+                    @media (min-width: 1280px) {
+                        font-size: 22px;
+                    }
                         
-                                                @media (min-width: 1920px) {
-                                                    font-size: 25px;
-                                                }
+                    @media (min-width: 1920px) {
+                        font-size: 25px;
+                    }
                 
                     &:hover {
                         color: $darkgold;
@@ -362,12 +314,12 @@ footer{
         font-size: 13px;
     }
     
-        @media (min-width: 1280px) {
-            font-size: 14px;
-            width: 100%;
-        }
+    @media (min-width: 1280px) {
+        font-size: 14px;
+        width: 100%;
+    }
     
-        @media (min-width: 1920px) {
-            font-size: 18px;
-        }
+    @media (min-width: 1920px) {
+        font-size: 18px;
+    }
 }

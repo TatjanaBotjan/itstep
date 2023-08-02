@@ -7,16 +7,13 @@
    
 
     @media (min-width: 1280px) {
-            top: 0;
-            height: 1015px;
-        }
+        top: 0;
+        height: 1015px;
+    }
 
     @media (min-width: 1920px) {
-        
-            height: 995px;
-        }
-
-    
+        height: 995px;
+    }
 
     &__row {
         z-index: 100000;
@@ -40,9 +37,9 @@
             margin: 180px auto 0;
         }
 
-                @media (min-width: 1920px) {
-                    margin: 187px auto 0;
-                }
+        @media (min-width: 1920px) {
+            margin: 187px auto 0;
+        }
 
         &_h2 {
             font-size: 21px;
@@ -206,18 +203,15 @@
         }
 
         @media (min-width: 1280px) {
-                top: 140px;
-                    margin-left: 926px;
+            top: 140px;
+            margin-left: 926px;
         }
 
-                @media (min-width: 1920px) {
-                    z-index: 10000000;
-                    top: 143px;
-                        margin-left: 1236px;
-                }
-
-
-
+        @media (min-width: 1920px) {
+            z-index: 10000000;
+            top: 143px;
+            margin-left: 1236px;
+        }
     } 
 }
 

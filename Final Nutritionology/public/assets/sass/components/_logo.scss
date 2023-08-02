@@ -4,15 +4,9 @@
     &__row {
         @include flexbetween;
 
-
-        @media (min-width: 768px) {}
-
         @media (min-width: 1280px) {
             display: inline-block;
-
         }
-
-        @media (min-width: 1920px) {}
 
         &_block {
             width: 70%;
@@ -75,7 +69,6 @@
                 @media (min-width: 1920px) {
                     font-size: 60px;
                     width: 100%;
-
                 }
             }
             

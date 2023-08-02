@@ -3,12 +3,6 @@
     background: $lightgreen;
     margin-top: 20px;
     display: none;
-   
-
-
-    @media (min-width: 768px) {
-       
-    }
 
     @media (min-width: 1280px) {
         display: none;
@@ -22,18 +16,15 @@
             margin-bottom: 40px;
         }
      
-        
-
         &_header{
             display: flex;
             justify-content: space-between;
 
             &_logo{
                 text-align: center;
-               display: flex;
-            margin-left: -145px;
+                display: flex;
+                margin-left: -145px;
                    
-
                 &_image{
 
                    &_img{
@@ -43,12 +34,12 @@
 
                         @media (min-width: 768px) {
                             width: 160px;
-                                height: 117px;
+                            height: 117px;
                         }
                         
-                            @media (min-width: 1280px) {
-                                display: none;
-                            }
+                        @media (min-width: 1280px) {
+                            display: none;
+                        }
                     } 
                 }
 
@@ -65,10 +56,10 @@
                     transition: all 1s;
 
                     @media (min-width: 768px) {
-                            width: 100%;
-                            font-size: 30px;
-                            margin-top: 36px;
-                        }
+                        width: 100%;
+                        font-size: 30px;
+                        margin-top: 36px;
+                    }
                 }  
                 &_text:hover {
                     text-shadow:
@@ -85,17 +76,12 @@
                 height: 42px;
                 border-radius: 5px;
 
-                @media (min-width: 768px) {
-                        
-                    }
-
                 &_a{
                     background: url(../img/x.svg);
                     background-repeat: no-repeat;
                     width: 37px;
                     height: 35px;
                     display: flex;
-                    
                 }
             }
         }
@@ -118,8 +104,8 @@
                         font-size: 27px; 
 
                         @media (min-width: 768px) {
-                                font-size: 33px;
-                            }
+                            font-size: 33px;
+                        }
                     }
 
                     a:hover {
@@ -160,8 +146,8 @@
                 text-transform: uppercase;
 
                 @media (min-width: 768px) {
-                        font-size: 18px;
-                    }
+                    font-size: 18px;
+                }
             }
         }
     }
@@ -170,9 +156,8 @@
 .mobile-invis{
 
     @media (min-width: 1280px) {
-            display: none;
-        }
-    
+        display: none;
+    }
 }
 
 .mobile-vis {

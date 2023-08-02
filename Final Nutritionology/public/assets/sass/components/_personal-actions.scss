@@ -60,24 +60,23 @@
                         
                     @media (min-width: 1280px) {
                         font-size: 45px;
-                            width: 82%;
-                            margin-left: -44px;
+                        width: 82%;
+                        margin-left: -44px;
                     }
                         
                     @media (min-width: 1920px) {
                         font-size: 55px;
                         width: 70%;
                         margin: 0;
-                        }
                     }
                 }
+            }
         
                 &_block {
        
                     @media (min-width: 1280px) {
                         display: flex;
-                        justify-content: space-between;
-                        
+                        justify-content: space-between;   
                     }
                     
                     @media (min-width: 1920px) {
@@ -101,7 +100,6 @@
                         @media (min-width: 768px) {
                             width: 85%;
                             margin: 0 auto 50px;
-                         
                         }
                         
                         @media (min-width: 1280px) {
@@ -128,7 +126,6 @@
                             align-items: center;
 
                             @media (min-width: 768px) {
-                              
                                 margin-left: 30px;
                             }
                             
@@ -138,7 +135,7 @@
                             }
                             
                             @media (min-width: 1920px) {
-                            margin: 0 20px 0 30px;
+                                margin: 0 20px 0 30px;
                                 font-size: 65px;
                             }
                         }
@@ -162,42 +159,41 @@
                                 font-size: 20px;
                             }
 
-                                                        @media (min-width: 1920px) {
-                                                            margin: 0 40px;
-                                                            font-size: 22px;
-                                                        }
+                            @media (min-width: 1920px) {
+                                margin: 0 40px;
+                                font-size: 22px;
+                            }
                         }
                     }
         
                     &_two {
                         display: flex;
-                            background-position: center center;
-                            border-color: transparent;
-                            border-style: solid;
-                            box-shadow: 0px 0px 10px 0px rgb(230, 230, 230);
-                            background-color: $lightgreen;
-                            width: 90%;
-                            margin: 0 auto 40px;
-                            text-align: center;
-                            height: 150px;
+                        background-position: center center;
+                        border-color: transparent;
+                        border-style: solid;
+                        box-shadow: 0px 0px 10px 0px rgb(230, 230, 230);
+                        background-color: $lightgreen;
+                        width: 90%;
+                        margin: 0 auto 40px;
+                        text-align: center;
+                        height: 150px;
                         
-                            @media (min-width: 768px) {
-                                width: 85%;
-                                margin: 0 auto 50px;
-                              
-                            }
+                        @media (min-width: 768px) {
+                            width: 85%;
+                            margin: 0 auto 50px;
+                        }
                         
-                            @media (min-width: 1280px) {
-                                height: 170px;
-                                width: 70%;
-                            }
+                        @media (min-width: 1280px) {
+                            height: 170px;
+                            width: 70%;
+                        }
                         
-                            @media (min-width: 1920px) {
-                                width: 80%;
-                                height: 200px;
-                                margin-left: 80px;
-                                margin-bottom: 0;
-                            }
+                        @media (min-width: 1920px) {
+                            width: 80%;
+                            height: 200px;
+                            margin-left: 80px;
+                            margin-bottom: 0;
+                        }
         
         
                         &_number {
@@ -211,7 +207,6 @@
                             align-items: center;
                             
                             @media (min-width: 768px) {
-                                
                                 margin-left: 30px;
                             }
                             
@@ -250,7 +245,6 @@
                             }
                         }
                     }
-                
                 }
         }
     }

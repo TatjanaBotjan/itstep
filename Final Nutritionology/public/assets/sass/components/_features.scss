@@ -3,15 +3,10 @@
     padding-top: 30px;
     padding-bottom: 30px;
     margin-bottom: 40px;
-
-    @media (min-width: 768px) {}
     
-        @media (min-width: 1280px) {
-            margin-bottom: 50px;
-        }
-    
-        @media (min-width: 1920px) {}
-
+    @media (min-width: 1280px) {
+        margin-bottom: 50px;
+    }
 
     &__row {
 
@@ -22,18 +17,6 @@
             border: none;
             background-color: #d5ad5d;
             height: 3px;
-
-            @media (min-width: 768px) {
-                    
-                }
-            
-                @media (min-width: 1280px) {
-                  
-                }
-            
-                @media (min-width: 1920px) {
-                    
-                }
         }
 
         &_bottom {
@@ -43,15 +26,6 @@
             border: none;
             background-color: #d5ad5d;
             height: 2px;
-            
-
-            @media (min-width: 768px) {
-          
-            }
-            
-                @media (min-width: 1280px) {}
-            
-                @media (min-width: 1920px) {}
         }
 
         &_h2 {
@@ -61,40 +35,28 @@
             color: $darkgreen;
 
             @media (min-width: 768px) {
-                    font-size: 38px;
-                }
+                font-size: 38px;
+            }
             
-                @media (min-width: 1280px) {
+            @media (min-width: 1280px) {
                 font-size: 45px;
-                }
+            }
             
-                @media (min-width: 1920px) {
+            @media (min-width: 1920px) {
                 font-size: 55px;
-                }
+            }
         }
 
         &_block{
-    
-            @media (min-width: 768px) {}
             
-                @media (min-width: 1280px) {
-                    display: flex;
-                        justify-content: space-around;
-                }
-            
-                @media (min-width: 1920px) {}
+            @media (min-width: 1280px) {
+                display: flex;
+                justify-content: space-around;
+            }
 
             &_one{
                 text-align: center;
-                
 
-                @media (min-width: 768px) {}
-                
-                    @media (min-width: 1280px) {
-                       
-                    }
-                
-                    @media (min-width: 1920px) {}
                 &_image{
                     background-image: url(../img/base.svg);
                     height: 85px;
@@ -106,15 +68,14 @@
                         margin-left: 277px;
                     }
                     
-                        @media (min-width: 1280px) {
-                            margin-left: 64px;
-                            margin-top: 8px;
-                        }
+                    @media (min-width: 1280px) {
+                        margin-left: 64px;
+                        margin-top: 8px;
+                    }
                     
-                        @media (min-width: 1920px) {
-                            margin-left: 80px;
-                        }
-                    
+                    @media (min-width: 1920px) {
+                        margin-left: 80px;
+                    }
                 }
 
                 &_p{
@@ -123,28 +84,22 @@
 
                     @media (min-width: 768px) {
                         font-size: 20px;
-                        }
+                    }
                     
-                        @media (min-width: 1280px) {
-                            font-size: 23px;
-                                padding-top: 20px;
-                        }
+                    @media (min-width: 1280px) {
+                        font-size: 23px;
+                        padding-top: 20px;
+                    }
                     
-                        @media (min-width: 1920px) {
-                            font-size: 28px;
-                        }
+                    @media (min-width: 1920px) {
+                        font-size: 28px;
+                    }
                 }
             }
 
             &_two {
                 text-align: center;
-                
-                
-                    @media (min-width: 768px) {}
-                
-                    @media (min-width: 1280px) {}
-                
-                    @media (min-width: 1920px) {}
+
                 &_image {
                     background-image: url(../img/puzzle.svg);
                     height: 85px;
@@ -156,45 +111,39 @@
                         height: 110px;
                     }
                     
-                        @media (min-width: 1280px) {
+                    @media (min-width: 1280px) {
                         height: 120px;
                         margin-left: 84px;
-                        }
+                    }
                     
-                                                @media (min-width: 1920px) {
-                                                    font-size: 28px;
-                                                    margin-left: 105px;
-                                                }
+                    @media (min-width: 1920px) {
+                        font-size: 28px;
+                        margin-left: 105px;
+                    }
                 }
             
                 &_p {
                     color: $textgrey;
                     font-size: 18px;
                     
-                        @media (min-width: 768px) {
-                            font-size: 20px;
-                        }
+                    @media (min-width: 768px) {
+                        font-size: 20px;
+                    }
                     
-                        @media (min-width: 1280px) {
-                            font-size: 23px;
-                            padding-top: 20px;
-                        }
+                    @media (min-width: 1280px) {
+                        font-size: 23px;
+                        padding-top: 20px;
+                    }
                     
-                        @media (min-width: 1920px) {
-                            font-size: 28px;
-                        }
+                    @media (min-width: 1920px) {
+                        font-size: 28px;
+                    }
                 }
             }
 
             &_three {
                 text-align: center;
-                
-                
-                    @media (min-width: 768px) {}
-                
-                    @media (min-width: 1280px) {}
-                
-                    @media (min-width: 1920px) {}
+ 
                 &_image {
                 background-image: url(../img/exp.svg);
                 height: 85px;
@@ -206,15 +155,14 @@
                     height: 110px;
                 }
                 
-                    @media (min-width: 1280px) {
-                        height: 120px;
-                        margin-left: 68px;
-
-                    }
+                @media (min-width: 1280px) {
+                    height: 120px;
+                    margin-left: 68px;
+                }
                 
-                    @media (min-width: 1920px) {
-                        margin-left: 77px;
-                    }
+                @media (min-width: 1920px) {
+                    margin-left: 77px;
+                }
             }
             
                 &_p {
@@ -225,17 +173,16 @@
                         font-size: 20px;
                     }
                     
-                        @media (min-width: 1280px) {
-                            font-size: 23px;
-                                padding-top: 20px;
-                        }
+                    @media (min-width: 1280px) {
+                        font-size: 23px;
+                        padding-top: 20px;
+                    }
                     
-                                                @media (min-width: 1920px) {
-                                                    font-size: 28px;
-                                                }
+                    @media (min-width: 1920px) {
+                        font-size: 28px;
+                    }
                 }
             }
         }
     }
-
 }
